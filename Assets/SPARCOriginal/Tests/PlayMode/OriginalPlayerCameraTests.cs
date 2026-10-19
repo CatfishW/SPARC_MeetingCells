@@ -109,6 +109,46 @@ namespace Sparc.Original.Tests
             SafeOutput("Close world wall");Assert.That(ModelVisible,Is.False,"A legitimate wall may push the native camera into the avatar; only its render layer should disappear");Capture("native-close-wall");
             wall.SetActive(false);yield return new WaitForSeconds(2.7f);Assert.That(HorizontalDistance(),Is.GreaterThan(2));Assert.That(ModelVisible,Is.True);NativeRigContract();
         }
+        [UnityTest] public IEnumerator ConversationCamerasKeepTheirSpeakerWhileExplorerRigsClearCloseCharacters()
+        {
+            yield return Ready(true);brain.m_DefaultBlend=new CinemachineBlendDefinition(CinemachineBlendDefinition.Style.Cut,0);brain.m_CustomBlends=null;yield return null;
+            var eye=brain.OutputCamera.transform;
+            // A small animated character, the kind clearance considers, right inside the explorer's lens.
+            var character=GameObject.CreatePrimitive(PrimitiveType.Cube);character.name="Clearance fixture character";character.AddComponent<Animator>();
+            UnityEngine.Object.Destroy(character.GetComponent<Collider>());character.transform.localScale=Vector3.one*.4f;var renderer=character.GetComponent<Renderer>();
+            character.transform.position=eye.position+eye.forward*.4f;yield return new WaitForSeconds(2.3f); // candidates are rescanned every 2 s
+            character.transform.position=eye.position+eye.forward*.4f;yield return null;yield return null;
+            Assert.That(renderer.forceRenderingOff,Is.True,"A character inside the explorer's own lens is cleared");
+            // White's conversation camera sits within reach of White. An NPC camera framing its speaker up close keeps it in shot.
+            var shot=new GameObject("Conversation fixture camera").AddComponent<CinemachineVirtualCamera>();shot.Priority=1000;
+            shot.transform.SetPositionAndRotation(eye.position+Vector3.right*3,Quaternion.LookRotation(Vector3.forward));
+            character.transform.position=shot.transform.position+Vector3.forward*.4f;yield return null;yield return null;yield return null;
+            Assert.That(brain.ActiveVirtualCamera?.VirtualCameraGameObject,Is.SameAs(shot.gameObject));
+            Assert.That(Vector3.Distance(brain.OutputCamera.transform.position,shot.transform.position),Is.LessThan(.05f));
+            Assert.That(renderer.forceRenderingOff,Is.False,"NPC and conversation cameras frame their speaker; clearance must not hide it");
+            Assert.That(runtime.player.ClearedRenderers,Is.Empty);
+            UnityEngine.Object.Destroy(shot.gameObject);yield return null;yield return null;
+            character.transform.position=brain.OutputCamera.transform.position+brain.OutputCamera.transform.forward*.4f;yield return null;yield return null;
+            Assert.That(renderer.forceRenderingOff,Is.True,"Back on the explorer's rig, clearance resumes");
+            UnityEngine.Object.Destroy(character);
+        }
+        [UnityTest] public IEnumerator SpokenLinesKeepEveryCharacterInShotThenExplorerClearanceResumes()
+        {
+            yield return Ready(true);var eye=brain.OutputCamera.transform;
+            var character=GameObject.CreatePrimitive(PrimitiveType.Cube);character.name="Clearance fixture character";character.AddComponent<Animator>();
+            UnityEngine.Object.Destroy(character.GetComponent<Collider>());character.transform.localScale=Vector3.one*.4f;var renderer=character.GetComponent<Renderer>();
+            character.transform.position=eye.position+eye.forward*.4f;yield return new WaitForSeconds(2.3f); // candidates are rescanned every 2 s
+            character.transform.position=eye.position+eye.forward*.4f;yield return null;yield return null;
+            Assert.That(renderer.forceRenderingOff,Is.True,"Exploring: a character inside the explorer's lens is cleared");
+            // A guide's line on screen, even on the explorer's own rig: the shot is authored, nothing is cleared.
+            var presentation=typeof(OriginalPresentation);
+            presentation.GetProperty("Speaker").SetValue(runtime.presentation,"WhiteBloodCell");presentation.GetProperty("Line").SetValue(runtime.presentation,"Hey there! I'm White.");presentation.GetProperty("IsSpeaking").SetValue(runtime.presentation,true);
+            yield return null;yield return null;
+            Assert.That(renderer.forceRenderingOff,Is.False,"While a line is spoken every character stays in shot");Assert.That(runtime.player.ClearedRenderers,Is.Empty);
+            runtime.presentation.CancelSpeech();yield return null;yield return null;
+            Assert.That(renderer.forceRenderingOff,Is.True,"After the line, explorer clearance resumes");
+            UnityEngine.Object.Destroy(character);
+        }
         [UnityTest] public IEnumerator CapturedSourceWorldIdleAndJumpPositionsRemainSafeWithoutChangingNativeObstacles()
         {
             yield return Ready(false);body.isKinematic=true;body.interpolation=RigidbodyInterpolation.None;

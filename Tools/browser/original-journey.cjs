@@ -91,7 +91,10 @@ async function interactionBeforeTalk(s){
   assert(s.interaction.highlight&&s.interaction.nativeButtons===2&&s.interaction.controllers===3,'Source highlight/options contract missing');
   await capture('interaction-'+id);await auditUiProfiles('interaction-'+id);s=await state();rows.push({sourceId:id,npc:s.nearestTalk,highlight:s.interaction.highlight,menuVisible:s.interaction.menuVisible,nativeButtons:s.interaction.nativeButtons,method:'real approach; native Talk button pointer; no setters'});save();
  }
- const talk=s.buttons.find(b=>b.name==='OptionButton1'&&/talk/i.test(b.text));assert(talk,'Visible original Talk option missing');await clickButton(talk);return true;
+ // At the edge of talk range the menu can fold between two probe reads; give it a moment, else walk closer and retry.
+ let talk=s.buttons.find(b=>b.name==='OptionButton1'&&/talk/i.test(b.text));for(const end=Date.now()+2000;!talk&&Date.now()<end;){await wait(100);s=await state();talk=s.buttons.find(b=>b.name==='OptionButton1'&&/talk/i.test(b.text));}
+ if(!talk){assert(s.nearestTalk!==npc||!s.interaction?.menuVisible,'Visible original Talk option missing');return false;}
+ await clickButton(talk);return true;
 }
 function peerRectInside(rect){return rect&&['x','y','w','h'].every(key=>Number.isFinite(rect[key]))&&rect.w>0&&rect.h>0&&rect.x>=0&&rect.y>=0&&rect.x+rect.w<=1&&rect.y+rect.h<=1;}
 function peerRectMotion(a,b,viewport){return Math.max(Math.abs(a.x-b.x)*viewport.width,Math.abs(a.y-b.y)*viewport.height,Math.abs(a.x+a.w-b.x-b.w)*viewport.width,Math.abs(a.y+a.h-b.y-b.h)*viewport.height);}

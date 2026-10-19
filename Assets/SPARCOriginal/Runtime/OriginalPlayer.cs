@@ -111,14 +111,22 @@ namespace Sparc.Original
             // the avatar. Keep the rig active; hide only its render layer until clear.
             if(modelRequested&&(!runtime||!runtime.activityUi||!runtime.activityUi.IsTaskPanelOpen)&&!CameraNearBody(camera.transform.position))camera.cullingMask|=1<<layer;
             else camera.cullingMask&=~(1<<layer);
-            Clearance(camera);
+            Clearance(camera,ExplorerShot(brain));
         }
+        /// <summary>True while the brain shows one of the explorer's own rigs (or no virtual camera at all).
+        /// NPC and conversation cameras frame their speaker on purpose: White's sits within reach of White,
+        /// so clearing there removed the speaker from its own conversation.</summary>
+        bool ExplorerShot(CinemachineBrain brain)
+        {var live=brain.ActiveVirtualCamera?.VirtualCameraGameObject;return !live||live.transform.IsChildOf(transform);}
+        /// <summary>Renderers currently hidden by clearance, for the read-only QA probe.</summary>
+        public string[] ClearedRenderers=>clearanceHidden.Where(r=>r).Select(r=>r.name).ToArray();
         /// <summary>Characters and drifting cells that enter the lens, or stand between the
         /// third-person camera and the explorer, stop rendering until they move clear.</summary>
-        void Clearance(Camera camera)
+        void Clearance(Camera camera,bool explorer)
         {
-            // Authored cinematics frame their own close-ups; only the explorer's rigs are cleared.
-            if(!runtime||!runtime.Started||runtime.CinematicActive||runtime.HandoffStarted){RestoreClearance();return;}
+            // Authored cinematics, NPC/conversation cameras and spoken lines frame their own subjects
+            // (White's conversation camera sits within reach of White); only the explorer's rigs are cleared.
+            if(!runtime||!runtime.Started||runtime.CinematicActive||runtime.HandoffStarted||!explorer||(runtime.presentation&&runtime.presentation.IsSpeaking)){RestoreClearance();return;}
             if(Time.unscaledTime>clearanceScan)
             {
                 clearanceScan=Time.unscaledTime+2;clearanceCandidates.Clear();
