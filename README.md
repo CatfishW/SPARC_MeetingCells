@@ -1,15 +1,53 @@
 # SPARC Meeting Cells — standalone Unity/WebGL module
 
-Project: `/Users/zlad/Development/SPARC_MeetingCells`  
+Repository: <https://github.com/CatfishW/SPARC_MeetingCells>  
 Unity: **6000.3.0b10**  
 Playable scene: **Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity**
 
 This module uses the original SPARC Meeting Cells environment, characters, animation controllers, Timelines, objectives and narrative graph. The current follow-up adds a restored native interaction layer, approved pixel/sketch minigame art, a compact objective HUD and responsive notebook presentation. The source project `/Users/zlad/Development/Yanlai_Zlad_SPARC_Merge` remains separate and read-only. New runtime and editor code lives in `Assets/SPARCOriginal/`. The older expedition scene under `Assets/SPARC/Scenes/` is historical; use the playable scene above.
 
+## Screenshots
+
+Captured from the verified WebGL builds (see `Reports/OriginalScene/`).
+
+### Exploration and story
+
+| Start screen | Bloodstream exploration |
+|---|---|
+| ![Start screen](docs/screenshots/01-start.png) | ![Exploration](docs/screenshots/02-exploration.png) |
+
+| Dialogue with a red blood cell | Third-person camera |
+|---|---|
+| ![Dialogue](docs/screenshots/03-dialogue.png) | ![Third person](docs/screenshots/04-third-person.png) |
+
+| First-person camera | Objective card HUD |
+|---|---|
+| ![First person](docs/screenshots/05-first-person.png) | ![Objective HUD](docs/screenshots/06-objective-hud.png) |
+
+![Settings](docs/screenshots/07-settings.png)
+
+### Activities
+
+| Oxygen Run | White-cell defence |
+|---|---|
+| <img src="docs/screenshots/08-oxygen-minigame.png" width="480"> | <img src="docs/screenshots/09-white-cell-minigame.png" width="480"> |
+
+| Quiz | Peer explanation |
+|---|---|
+| <img src="docs/screenshots/10-quiz.png" width="480"> | <img src="docs/screenshots/11-peer-explanation.png" width="480"> |
+
+### Mobile
+
+| Worksheet (390×844) | Portrait HUD | Ending card |
+|---|---|---|
+| <img src="docs/screenshots/12-mobile-workbook.png" width="220"> | <img src="docs/screenshots/14-mobile-portrait.png" width="220"> | <img src="docs/screenshots/15-ending.png" width="220"> |
+
+![Landscape mobile settings](docs/screenshots/13-mobile-landscape.png)
+
 ## Play locally
 
 ```sh
-cd /Users/zlad/Development/SPARC_MeetingCells
+git clone git@github.com:CatfishW/SPARC_MeetingCells.git && cd SPARC_MeetingCells
 python3 Tools/serve_webgl.py --port 8092
 # Open http://127.0.0.1:8092/
 ```
@@ -74,6 +112,6 @@ When the original Heart-transition Timeline starts, the standalone module locks 
 
 The external Heart game remains a handoff. Signed-in PING outfit synchronization requires its real same-origin service and account. The retained multiplayer chat launcher has no accepted local panel/service in this isolated module. The peer provider follows the original unavailable-service fallback when unconfigured; no guessed local grading is substituted. Server credentials are supplied through environment variables and are excluded from Unity/distribution.
 
-Physical phones, Safari, physical gamepads, every optional story branch and audio remain separate acceptance work. No public deployment or repository push is included. Original artwork retains its existing ownership and license conditions.
+Physical phones, Safari, physical gamepads, every optional story branch and audio remain separate acceptance work.  Original artwork retains its existing ownership and license conditions.
 
 Generated art provenance and full prompts are in `Reports/OriginalScene/GeneratedArt/assets.json` and `prompt-set.json`; selected PNGs are in `Assets/Resources/MeetingCellsArt/`. Generation used the built-in imagegen tool. Earlier glossy drafts were discarded after the pixel/sketch request.
