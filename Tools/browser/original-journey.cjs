@@ -8,6 +8,8 @@ const root=path.resolve(__dirname,'../..'),build=path.resolve(process.env.SPARC_
 const [viewportWidth,viewportHeight]=(process.env.SPARC_VIEWPORT||'1440x900').split('x').map(Number),deviceScale=Number(process.env.SPARC_DPR||1);
 const mobileWorksheet=process.env.SPARC_MOBILE_WORKSHEET==='1';
 const liveAgent=process.env.SPARC_LIVE_AGENT||'',stopAfterPeer=process.env.SPARC_STOP_AFTER_PEER==='1',requireWhiteWin=process.env.SPARC_REQUIRE_WHITE_WIN==='1',stopAfterWhite=process.env.SPARC_STOP_AFTER_WHITE==='1';
+const stubScript=(process.env.SPARC_STUB_AGENT_SCRIPT||'success').split(',').map(s=>s.trim()).filter(Boolean),stubDelay=Number(process.env.SPARC_STUB_AGENT_DELAY_MS||0);let stubTurn=0;
+const stubReplies={success:{ok:true,session:'stub',text:'Nice explanation! Losing the nucleus leaves room for hemoglobin, so B is correct.'},ask:{ok:true,session:'stub',text:'Ooh bestie, that is a start, no cap! But why would losing a nucleus help me carry more oxygen? Spill the deets, I am listening fr fr.'},error:{ok:false,code:'busy'}};
 const whiteVictoryHoldMilliseconds=Number(process.env.SPARC_WHITE_VICTORY_HOLD_MS||6200);
 assert(!requireWhiteWin||process.env.SPARC_WHITE_ASSIST!=='1','White win acceptance cannot use the activity exit assist');
 assert(Number.isFinite(whiteVictoryHoldMilliseconds)&&whiteVictoryHoldMilliseconds>=0,'Invalid White victory hold interval');
@@ -52,6 +54,17 @@ async function state(){
 }
 async function key(name,ms=130){await page.keyboard.down(name);await wait(ms);await page.keyboard.up(name);await wait(200);}
 async function clickButton(button){const r=button.rect,v=page.viewportSize();assert(r.w>0&&r.h>0);assert(r.x>=0&&r.y>=0&&r.x+r.w<=1.001&&r.y+r.h<=1.001,'Native button outside viewport: '+JSON.stringify(button));await page.mouse.move((r.x+r.w/2)*v.width,(r.y+r.h/2)*v.height);await page.mouse.down();await wait(160);await page.mouse.up();await wait(320);}
+// SPARC_PEER_FRAMES=1: timed frames of Cap thinking and of the reply streaming in after each Send.
+async function peerFrames(n){
+ const sent=Date.now(),shot=name=>page.screenshot({path:path.join(out,name+'.png'),timeout:8000}).catch(()=>{});
+ for(const at of [250,1400]){await wait(Math.max(0,at-(Date.now()-sent)));if((await state()).peerAgent?.Pending)await shot('peer-'+n+'-thinking-'+at);}
+ while((await state()).peerAgent?.Pending&&Date.now()-sent<60000)await wait(50);
+ const arrived=Date.now();for(const at of [60,350,800,1500,2600])
+ {await wait(Math.max(0,at-(Date.now()-arrived)));await shot('peer-'+n+'-reply-'+at);}
+ const action=(await state()).buttons.find(b=>/ContinueButton|CompleteBButton|CompleteAButton/.test(b.name)),v=page.viewportSize();
+ if(action){await page.mouse.move((action.rect.x+action.rect.w/2)*v.width,(action.rect.y+action.rect.h/2)*v.height,{steps:6});await wait(220);await shot('peer-'+n+'-hover');await page.mouse.move(8,8);}
+ if(process.env.SPARC_PEER_PHONE==='1'){const initial=page.viewportSize();for(const viewport of [{width:390,height:844},{width:844,height:390}]){await page.setViewportSize(viewport);await wait(900);await shot('peer-'+n+'-reply-'+viewport.width+'x'+viewport.height);}await page.setViewportSize(initial);await wait(700);}
+}
 async function auditUiProfiles(family){
  if(process.env.SPARC_VISUAL_UI_AUDIT!=='1')return;
  const done=report.visualUiAudit||(report.visualUiAudit={scope:'Real browser input/state captures; no scene or score mutation',families:[]});if(done.families.includes(family))return;done.families.push(family);const initial=page.viewportSize();
@@ -200,7 +213,8 @@ async function main(){
   try{
    const url=new URL(req.url,'http://localhost');if(url.pathname==='/favicon.ico'){res.writeHead(204);res.end();return;}
    // Layout-only runs without provider credentials: SPARC_STUB_AGENT=1 answers the peer contract locally.
-   if(process.env.SPARC_STUB_AGENT==='1'&&url.pathname==='/api/sparc/agent'&&req.method==='POST'){req.resume();res.writeHead(200,{'Content-Type':'application/json'});res.end(JSON.stringify({ok:true,session:'stub',text:'Nice explanation! Losing the nucleus leaves room for hemoglobin, so B is correct.'}));report.stubAgent=true;return;}
+   // SPARC_STUB_AGENT_SCRIPT=ask,error,success plays those replies in turn (the last repeats); SPARC_STUB_AGENT_DELAY_MS holds each one.
+   if(process.env.SPARC_STUB_AGENT==='1'&&url.pathname==='/api/sparc/agent'&&req.method==='POST'){req.resume();const kind=stubScript[Math.min(stubTurn++,stubScript.length-1)];setTimeout(()=>{res.writeHead(200,{'Content-Type':'application/json'});res.end(JSON.stringify(stubReplies[kind]||stubReplies.success));},stubDelay);report.stubAgent=true;(report.stubReplies||(report.stubReplies=[])).push(kind);return;}
    // SPARC_LIVE_AGENT=https://ping.agaii.org forwards the game's peer POST to the deployed service as that page origin would send it.
    if(liveAgent&&url.pathname==='/api/sparc/agent'&&req.method==='POST'){const chunks=[];req.on('data',c=>chunks.push(c));req.on('end',async()=>{try{const answer=await fetch(liveAgent+'/api/sparc/agent',{method:'POST',headers:{'Content-Type':'application/json',Origin:liveAgent,'Sec-Fetch-Site':'same-origin'},body:Buffer.concat(chunks)});const body=await answer.text();let parsed=null;try{parsed=JSON.parse(body);}catch{}(report.liveAgentResponses||(report.liveAgentResponses=[])).push({status:answer.status,ok:parsed?.ok===true,code:parsed?.code,text:parsed?.text});save();res.writeHead(answer.status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(body);}catch(e){(report.liveAgentResponses||(report.liveAgentResponses=[])).push({error:String(e)});res.writeHead(502);res.end();}});return;}
    const p=path.resolve(build,'.'+(url.pathname==='/'?'/index.html':decodeURIComponent(url.pathname)));
@@ -271,7 +285,7 @@ async function main(){
    const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');if(stopAfterPeer){report.status='passed-original-peer-feedback';break;}await clickButton(completion);await wait(400);continue;}
    const again=s.buttons.find(b=>b.name==='ContinueButton');if(again){await clickButton(again);await wait(250);continue;}
    await auditUiProfiles('peer-input');s=await state();const initialField=s.fields.find(f=>/InputField/.test(f.name))||s.fields[0],field=await readyPeerField(initialField,s.frame);await capture('peer-field-ready-'+String((report.peerSubmissions||0)+1));await clickButton(field);await page.keyboard.type('Red blood cells do not contain a nucleus. Losing the nucleus leaves more room for hemoglobin to carry oxygen, and helps them bend through narrow capillaries. That is why B is correct.',{delay:8});
-   await wait(350);const send=(await state()).buttons.find(b=>b.name==='Send'||b.name==='__SPARC_UI_PeerSend');assert(send,'A visible, enabled Send action must be available after typing');await clickButton(send);report.peerSendMethod='real-native-Send-button';report.peerSubmissions=(report.peerSubmissions||0)+1;assert(report.peerSubmissions<=7,'Peer input did not converge or send');await wait(600);continue;
+   await wait(350);if(process.env.SPARC_PEER_FRAMES==='1')await page.screenshot({path:path.join(out,'peer-'+((report.peerSubmissions||0)+1)+'-typed.png'),timeout:8000}).catch(()=>{});const send=(await state()).buttons.find(b=>b.name==='Send'||b.name==='__SPARC_UI_PeerSend');assert(send,'A visible, enabled Send action must be available after typing');await clickButton(send);report.peerSendMethod='real-native-Send-button';report.peerSubmissions=(report.peerSubmissions||0)+1;assert(report.peerSubmissions<=7,'Peer input did not converge or send');if(process.env.SPARC_PEER_FRAMES==='1')await peerFrames(report.peerSubmissions);else await wait(600);continue;
   }
   const retryPeer=s.buttons.find(b=>b.name==='ContinueButton');if(retryPeer){await auditUiProfiles('peer-feedback');await capture('original-peer-retry-'+(s.peerAgent?.Failures||0));await clickButton((await state()).buttons.find(b=>b.name==='ContinueButton'));await wait(250);continue;}
   const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');if(stopAfterPeer){report.status='passed-original-peer-feedback';break;}await clickButton(completion);await wait(300);continue;}

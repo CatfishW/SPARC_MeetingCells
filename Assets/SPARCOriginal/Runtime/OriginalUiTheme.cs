@@ -200,7 +200,7 @@ namespace Sparc.Original
             var labels=button.GetComponentsInChildren<TMP_Text>(true).Where(t=>t.GetComponentInParent<Button>(true)==button&&!Has(PathOf(t.transform),"NotificationBadge")).ToArray();
             var legacy=button.GetComponentsInChildren<Text>(true).Where(t=>t.GetComponentInParent<Button>(true)==button&&!Has(PathOf(t.transform),"NotificationBadge")).ToArray();
             bool hasLabel=labels.Any(t=>!string.IsNullOrWhiteSpace(t.text))||legacy.Any(t=>!string.IsNullOrWhiteSpace(t.text));
-            bool symbolic=!word&&labels.Cast<Graphic>().Concat(legacy).Any()&&labels.Select(t=>t.text.Trim()).Concat(legacy.Select(t=>t.text.Trim())).All(t=>t=="?"||t=="!"||t=="×"||t=="<"||t==">"||t=="X"||t=="");
+            bool symbolic=!word&&labels.Cast<Graphic>().Concat(legacy).Any()&&labels.Select(t=>(t.text??"").Trim()).Concat(legacy.Select(t=>(t.text??"").Trim())).All(t=>t=="?"||t=="!"||t=="×"||t=="<"||t==">"||t=="X"||t=="");
             if(symbolic){hasLabel=false;foreach(var label in labels){label.enabled=false;Mark(label,"replaced symbolic icon label");}foreach(var label in legacy){label.enabled=false;Mark(label,"replaced symbolic icon label");}}
             if(button.targetGraphic is Image image){image.sprite=word?tile:primaryButton?primary:panel;image.type=Image.Type.Sliced;image.color=Color.white;image.material=null;Mark(image,word?"redesigned word tile":"redesigned button surface");}
             else if(button.targetGraphic is RawImage raw){raw.texture=(primaryButton?primary:panel).texture;raw.color=Color.white;raw.material=null;Mark(raw,"redesigned button surface");}
@@ -222,7 +222,7 @@ namespace Sparc.Original
                 var r=graphic.rectTransform;var size=((RectTransform)button.transform).rect.size;
                 if(hasLabel&&size.x>145)
                 {r.anchorMin=r.anchorMax=new Vector2(0,.5f);r.pivot=new Vector2(0,.5f);r.anchoredPosition=new Vector2(14,0);r.sizeDelta=new Vector2(24,24);foreach(var label in labels)label.margin=new Vector4(36,0,10,0);}
-                else if(hasLabel&&labels.Any(t=>t.text.Trim().Length>1)&&size.x>=80)
+                else if(hasLabel&&labels.Any(t=>(t.text??"").Trim().Length>1)&&size.x>=80)
                 {r.anchorMin=r.anchorMax=new Vector2(0,.5f);r.pivot=new Vector2(0,.5f);r.anchoredPosition=new Vector2(8,0);r.sizeDelta=new Vector2(18,18);foreach(var label in labels)label.margin=new Vector4(27,0,6,0);}
                 else if(!hasLabel){r.anchorMin=new Vector2(.17f,.17f);r.anchorMax=new Vector2(.83f,.83f);r.offsetMin=r.offsetMax=Vector2.zero;}
                 else graphic.enabled=false;
@@ -439,7 +439,7 @@ namespace Sparc.Original
                 .Where(r=>r.gameObject.scene==gameObject.scene&&r.name=="Holo_Ring"&&Has(PathOf(r.transform),"QuestEffect")))
             {
                 mesh.enabled=false;
-                foreach(var label in mesh.GetComponentsInChildren<TMP_Text>(true).Where(t=>t.text.Trim()=="?"))
+                foreach(var label in mesh.GetComponentsInChildren<TMP_Text>(true).Where(t=>(t.text??"").Trim()=="?"))
                 {label.enabled=false;if(label is Graphic graphic)Mark(graphic,"replaced world quest glyph");}
                 if(mesh.transform.Find(Own+"QuestBadge"))continue;
                 var badge=new GameObject(Own+"QuestBadge");badge.transform.SetParent(mesh.transform,false);

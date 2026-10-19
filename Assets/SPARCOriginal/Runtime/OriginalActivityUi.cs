@@ -409,7 +409,7 @@ namespace Sparc.Original
             foreach(var layout in feedbackLayouts.Values.Where(l=>l.viewport&&l.viewport.GetComponentInParent<Canvas>(true)==canvas))
             {if(layout.body&&layout.originalParent)layout.body.SetParent(layout.originalParent,false);layout.viewport.gameObject.SetActive(false);}
         }
-        void FeedbackViewport(RectTransform panel,RectTransform body,float width,float height,float unit)
+        void FeedbackViewport(RectTransform panel,RectTransform body,float top,float width,float height,float unit)
         {
             if(!body||!body.GetComponent<TMP_Text>())return;int id=body.GetInstanceID();
             if(!feedbackLayouts.TryGetValue(id,out var layout))
@@ -418,22 +418,34 @@ namespace Sparc.Original
                 layout=new FeedbackLayout{viewport=obj.GetComponent<RectTransform>(),body=body,originalParent=body.parent as RectTransform,scroll=obj.GetComponent<ScrollRect>()};layout.scroll.viewport=layout.viewport;layout.scroll.content=body;layout.scroll.horizontal=false;layout.scroll.vertical=true;layout.scroll.inertia=false;layout.scroll.movementType=ScrollRect.MovementType.Clamped;feedbackLayouts[id]=layout;
             }
             layout.viewport.gameObject.SetActive(true);var text=body.GetComponent<TMP_Text>();float normalized=layout.text==text.text?layout.scroll.verticalNormalizedPosition:1;layout.text=text.text;
-            Box(layout.viewport,20,52,width,height,unit);body.SetParent(layout.viewport,false);float contentHeight=Mathf.Max(height,text.GetPreferredValues(text.text,width*unit,Mathf.Infinity).y/unit);
+            Box(layout.viewport,20,top,width,height,unit);body.SetParent(layout.viewport,false);float contentHeight=Mathf.Max(height,text.GetPreferredValues(text.text,width*unit,Mathf.Infinity).y/unit);
             Fixed(body,new Vector2(0,1),new Vector2(0,1),new Vector2(width,contentHeight)*unit);layout.scroll.verticalNormalizedPosition=float.IsNaN(normalized)?1:Mathf.Clamp01(normalized);
+        }
+        static bool Owned(Component c)=>c.name.StartsWith("__SPARC_UI_",StringComparison.Ordinal);
+        /// <summary>The theme styles each button once; a peer button styled before its label was set got a
+        /// centred icon over the text and an icon-only tooltip. Pin the icon left of the label instead.</summary>
+        static void PeerButtonIcon(Button button,string icon,float unit)
+        {
+            var image=button.transform.Find("__SPARC_UI_Icon")?.GetComponent<Image>();var hint=button.GetComponent<OriginalUiHint>();if(hint)hint.label="";
+            if(!image)return;image.sprite=OriginalUiIcons.Get(icon);image.preserveAspect=true;image.color=Color.white;image.enabled=true;
+            var r=image.rectTransform;r.anchorMin=r.anchorMax=new Vector2(0,.5f);r.pivot=new Vector2(0,.5f);r.anchoredPosition=new Vector2(18*unit,0);r.sizeDelta=new Vector2(22,22)*unit;r.localScale=Vector3.one;
         }
         void CompactPeer(Canvas canvas)
         {
             var v=View(canvas);float w=Mathf.Min(720,v.width-32),inputHeight=Mathf.Min(232,v.height*.42f);
+            // Cap's bubbles dock low, under the guide, so Cap's face stays in view; above the note card when both show.
+            bool inputVisible=canvases.Any(c=>c&&c.isActiveAndEnabled&&(c.name is "PlayerInputField" or "LAMInputField"));
+            float dock=v.top+v.height-20-(inputVisible?inputHeight+30:0);
             if(canvas.name=="PlayerInputField"||canvas.name=="LAMInputField")
             {
                 var field=canvas.GetComponentInChildren<TMP_InputField>(true);if(!field)return;
                 foreach(var decoration in canvas.GetComponentsInChildren<RectTransform>(true).Where(r=>r.name.StartsWith("ConnectionBubble",StringComparison.Ordinal)))foreach(var graphic in decoration.GetComponentsInChildren<Graphic>(true))graphic.enabled=false;
                 float top=v.top+v.height-16-inputHeight;bool shortView=v.height<500;
                 var card=PeerSurface(canvas.transform,"__SPARC_UI_PeerCard",OriginalUiTheme.Paper);Box(card,v.left+(v.width-w)/2,top,w,inputHeight,v.unit);
-                var title=PeerHeading(canvas.transform);Box(title.rectTransform,v.left+(v.width-w)/2+16,top+12,w-32,28,v.unit);NativeText(title,20*v.unit,true);title.text="Your explanation";
-                float fieldWidth=shortView?w-160:w-32,fieldHeight=shortView?inputHeight-60:inputHeight-116;
-                Box(field.transform as RectTransform,v.left+(v.width-w)/2+16,top+48,fieldWidth,fieldHeight,v.unit);
-                Stretch(field.textViewport,Vector2.zero,Vector2.one,new Vector2(12,10)*v.unit,new Vector2(-12,-10)*v.unit);
+                var title=PeerHeading(canvas.transform);Box(title.rectTransform,v.left+(v.width-w)/2+46,top+14,w-230,28,v.unit);NativeText(title,19*v.unit,true);title.text="Your explanation";title.alignment=TextAlignmentOptions.MidlineLeft;
+                float fieldWidth=shortView?w-160:w-32,fieldHeight=shortView?inputHeight-64:inputHeight-120;
+                Box(field.transform as RectTransform,v.left+(v.width-w)/2+16,top+50,fieldWidth,fieldHeight,v.unit);
+                Stretch(field.textViewport,Vector2.zero,Vector2.one,new Vector2(14,10)*v.unit,new Vector2(-14,-10)*v.unit);
                 foreach(var text in field.GetComponentsInChildren<TMP_Text>(true)){NativeText(text,18*v.unit);text.alignment=TextAlignmentOptions.TopLeft;}
                 var send=canvas.GetComponentsInChildren<Button>(true).FirstOrDefault(b=>b.name is "Send" or "__SPARC_UI_PeerSend");
                 if(!send)
@@ -449,23 +461,31 @@ namespace Sparc.Original
             else if(canvas.name=="AnswerField"||canvas.name=="LAMAnswerField")
             {
                 var panel=canvas.transform.Find("GameObject") as RectTransform;if(!panel)return;
-                bool inputVisible=canvases.Any(c=>c&&c.isActiveAndEnabled&&(c.name is "PlayerInputField" or "LAMInputField"));
-                var answer=Child(panel,"AF")?.GetComponent<TMP_Text>();NativeText(answer,18*v.unit);
+                var answer=Child(panel,"AF")?.GetComponent<TMP_Text>();NativeText(answer,19*v.unit);if(answer){answer.alignment=TextAlignmentOptions.TopLeft;answer.lineSpacing=6;}
                 float answerHeight=answer?answer.GetPreferredValues(answer.text,(w-40)*v.unit,Mathf.Infinity).y/v.unit:44;
-                float available=Mathf.Max(160,v.height-(inputVisible?inputHeight:0)-48),h=Mathf.Min(Mathf.Clamp(answerHeight+132,172,330),available),top=v.top+16+Mathf.Max(0,(available-h)/2);
+                // Header: the guide's name chip and the ink rule (OriginalPeerPresentation); footer: the action.
+                bool tight=v.height<480;float header=tight?60:74,footer=tight?62:76,buttonHeight=tight?44:48;
+                float limit=Mathf.Max(172,Mathf.Min(360,v.height*.5f,dock-v.top-16)),h=Mathf.Clamp(answerHeight+header+footer,172,limit),top=Mathf.Max(v.top+16,dock-h);
                 Box(panel,v.left+(v.width-w)/2,top,w,h,v.unit);Stretch(panel.Find("BG") as RectTransform,Vector2.zero,Vector2.one);
+                // The native BG stays as the card's click surface; the owned card draws the paper.
+                var bg=panel.Find("BG")?.GetComponent<Image>();if(bg){bg.color=Color.clear;bg.raycastTarget=true;}
                 var feedbackCard=PeerSurface(panel,"__SPARC_UI_FeedbackCard",OriginalUiTheme.Paper);Stretch(feedbackCard,Vector2.zero,Vector2.one);
-                Box(panel.Find("Name") as RectTransform,20,12,w-40,30,v.unit);
-                foreach(var text in panel.GetComponentsInChildren<TMP_Text>(true))NativeText(text,18*v.unit);
-                FeedbackViewport(panel,Child(panel,"AF"),w-40,Mathf.Max(44,h-132),v.unit);
-                foreach(var button in panel.GetComponentsInChildren<Button>(true)){Box(button.transform as RectTransform,w-180,h-60,160,48,v.unit);foreach(var text in button.GetComponentsInChildren<TMP_Text>(true)){text.text=button.name=="ContinueButton"?"Try again":"Continue";text.enabled=true;NativeText(text,17*v.unit,true);text.alignment=TextAlignmentOptions.Center;}}
-                Box(panel.Find("GradientWhiteline") as RectTransform,20,46,w-40,1,v.unit);
+                Box(panel.Find("Name") as RectTransform,20,14,w-40,30,v.unit);
+                foreach(var text in panel.GetComponentsInChildren<TMP_Text>(true))if(!Owned(text)&&text!=answer)NativeText(text,18*v.unit);
+                FeedbackViewport(panel,Child(panel,"AF"),header,w-40,Mathf.Max(44,h-header-footer),v.unit);
+                foreach(var button in panel.GetComponentsInChildren<Button>(true))
+                {
+                    bool retry=button.name=="ContinueButton";Box(button.transform as RectTransform,w-200,h-buttonHeight-(tight?10:16),180,buttonHeight,v.unit);
+                    foreach(var text in button.GetComponentsInChildren<TMP_Text>(true)){text.text=retry?"Try again":"Continue";text.enabled=true;NativeText(text,17*v.unit,true);text.alignment=TextAlignmentOptions.Center;text.margin=new Vector4(34,0,10,0)*v.unit;}
+                    PeerButtonIcon(button,retry?"retry":"next",v.unit);
+                }
+                Box(panel.Find("GradientWhiteline") as RectTransform,20,62,w-40,1,v.unit);
             }
             else if(canvas.name=="WaitForResponse")
             {
-                bool inputVisible=canvases.Any(c=>c&&c.isActiveAndEnabled&&(c.name is "PlayerInputField" or "LAMInputField"));
-                float h=92,top=v.top+16+Mathf.Max(0,(v.height-(inputVisible?inputHeight:0)-48-h)/2);var p=canvas.transform.Find("P") as RectTransform;Box(p,v.left+(v.width-w)/2,top,w,h,v.unit);
-                if(p){var background=PeerSurface(p,"__SPARC_UI_WaitCard",OriginalUiTheme.Teal);Stretch(background,Vector2.zero,Vector2.one);var image=Child(p,"Image");Box(image,16,22,48,48,v.unit);foreach(var text in p.GetComponentsInChildren<TMP_Text>(true)){Box(text.rectTransform,80,18,w-100,56,v.unit);NativeText(text,18*v.unit);text.color=Color.white;text.alignment=TextAlignmentOptions.MidlineLeft;}}
+                // The native cue keeps its rectangle; OriginalPeerPresentation draws Cap's thinking bubble on it.
+                float tw=Mathf.Min(400,v.width-32),h=84;var p=canvas.transform.Find("P") as RectTransform;Box(p,v.left+(v.width-tw)/2,dock-h,tw,h,v.unit);
+                if(p){var image=Child(p,"Image");Box(image,16,18,48,48,v.unit);foreach(var text in p.GetComponentsInChildren<TMP_Text>(true)){Box(text.rectTransform,80,14,tw-100,56,v.unit);NativeText(text,18*v.unit);text.alignment=TextAlignmentOptions.MidlineLeft;}}
             }
         }
         static RectTransform PeerSurface(Transform parent,string name,Color color)

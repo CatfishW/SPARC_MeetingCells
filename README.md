@@ -128,6 +128,12 @@ Browser check against the deployed service: the journey serves the development b
 SPARC_LIVE_AGENT=https://ping.agaii.org SPARC_STOP_AFTER_PEER=1 SPARC_RBC_ASSIST=1 SPARC_VIEWPORT=1280x620 SPARC_DPR=2 node Tools/browser/original-journey.cjs
 ```
 
+Peer-step visuals without a provider: `SPARC_STUB_AGENT_SCRIPT` plays stub replies in turn (`ask` asks for more, `error` returns `ok:false`, `success` makes Cap choose B; the last repeats), and `SPARC_STUB_AGENT_DELAY_MS` holds each one so the thinking bubble shows. `SPARC_PEER_FRAMES=1` saves timed frames after every Send (`peer-N-typed`, `-thinking-250/1400`, `-reply-60…2600`, `-hover`), and `SPARC_PEER_PHONE=1` adds the reply at 390×844 and 844×390.
+
+```sh
+SPARC_STUB_AGENT=1 SPARC_STUB_AGENT_SCRIPT=ask,error,success SPARC_STUB_AGENT_DELAY_MS=2600 SPARC_PEER_FRAMES=1 SPARC_PEER_PHONE=1 SPARC_STOP_AFTER_PEER=1 SPARC_RBC_ASSIST=1 SPARC_VIEWPORT=1280x620 SPARC_DPR=2 node Tools/browser/original-journey.cjs
+```
+
 ## Improvements
 
 The main interface uses warm paper, ink outlines, readable type, teal accents and a 61-definition semantic icon library. Start, dialogue, subtitles, interaction prompts, objective cards, navigation, Settings, tooltips, inactive prefabs and dynamically created controls are covered. The objective card emphasizes the current instruction, folds through its native control and places the actual completion count in a compact header badge with a brief decorative task-change pulse. The toolbar fits before Start, and long intro captions wrap safely on phones while keeping their source text and timing. Utility targets are at least 44 CSS pixels. Settings hides the objective while open and returns through its native Back button.
@@ -138,7 +144,7 @@ Cinematic teaching cues use readable 20 CSS-pixel body text, 28-pixel titles, li
 
 Activity layouts fit the viewport on wide, square and tall desktop windows as well as phones. The native board and borders scale uniformly; instructions use their original illustrations as small aligned row icons, with an explicit scroll hint when needed. Desktop instructions name keyboard controls. Launch buttons use a compact lower-screen position and wait until dialogue finishes.
 
-Peer explanation screens use bounded forms with a visible Send action. Feedback actions are labeled Try again or Continue, long feedback scrolls, and world movement/avatar rendering are suspended while quiz or peer forms own input. The original 2,000-character input contract and source feedback callbacks remain in use.
+Peer explanation screens are field-note cards in the same language as the Talk/Observe layer (`OriginalPeerPresentation`). The player's note card has a pencil header, an inset field whose teal underline grows on focus, a live character count and a Send button that pops awake once there is text. While the reply is pending, Cap's thinking bubble shows Cap's amber name streak, rotating status phrases, bouncing dots and an unhurried progress sweep. The reply is a speech bubble docked under Cap, so Cap's face stays in view, with a tail, a kicker for Cap's mood and a matching stripe. The text streams in at a talking pace behind a caret (tap the card to finish it), then Try again or Continue slides in. A correct explanation lands a GOT IT! stamp with a confetti burst; service errors appear whole with a short shake. Cards fade and spring in over a soft bottom scrim. Long feedback scrolls, and world movement/avatar rendering are suspended while quiz or peer forms own input. The original 2,000-character input contract and source feedback callbacks remain in use.
 
 The worksheet keeps all 13 source pages and 14 slots, diagrams, text, matching data and submission callbacks. Mobile reflow presents readable original sentence fragments, answer fields and word-bank tiles with at least 44 CSS-pixel targets. Placed words fill the visible blank, and rotation preserves assigned answers while cancelling stale drags and movement animations. The original Tutorial field retains its 16-character alphanumeric rule. The same notebook design adapts to desktop, square and phone viewports. Cancelled touch events also clear UI-module drags queued after browser lifecycle cancellation. Tile return positions use top-left anchors so the first bank size/pivot change cannot shift words on cancellation.
 

@@ -30,6 +30,7 @@ namespace Sparc.Original
         public OriginalActivityUi activityUi;
         public OriginalInteraction interaction;
         public OriginalPeerAgent peerAgent;
+        public OriginalPeerPresentation peerPresentation;
         public OriginalBehaviour[] components=Array.Empty<OriginalBehaviour>();
         public OriginalDirector[] directors=Array.Empty<OriginalDirector>();
         public bool Started {get;private set;}
@@ -82,6 +83,7 @@ namespace Sparc.Original
             hud=gameObject.AddComponent<OriginalHudLayout>();hud.runtime=this;
             activityUi=gameObject.AddComponent<OriginalActivityUi>();activityUi.runtime=this;activityUi.Initialize();
             interaction=gameObject.AddComponent<OriginalInteraction>();interaction.runtime=this;
+            peerPresentation=gameObject.AddComponent<OriginalPeerPresentation>();peerPresentation.runtime=this;peerPresentation.Initialize();
             gameObject.AddComponent<OriginalLighting>();
             gameObject.AddComponent<OriginalUiTheme>();
             var menus=gameObject.AddComponent<OriginalMenuUi>();menus.runtime=this;
