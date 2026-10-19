@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-16T19:24:09.344390+00:00",
+  "acceptanceSha256": "44b02b2aea1f9deda6031adf6da3ca1d2cd2a118fd7a4db91d5c4a80d05c5788",
+  "method": "Direct inspection of the exact final release PNGs through project_artifact image",
+  "screenshots": {
+    "02-original-timeline.png": "48ac7a9464040c3e60c5bf26bb614a430765e7f2f128aaeafcfdefaedd54e908",
+    "03-original-dialogue.png": "79806d04a4ef66f45f437aa4786fd3cc9af88e55a027e0a5dc5151d87e72a9bd",
+    "03b-dialogue-small-viewport.png": "e4bb2211bf4578b1ec97b10c15b2e65c448298f16b4262a78db73c25e7642029"
+  },
+  "findings": [
+    "Original bloodstream environment, original cell objects, authored intro composition and original subtitle are visible.",
+    "Original CAP character and original dialogue line appear in the new paper panel with a legible Continue control.",
+    "At 960x600 the dialogue, speaker and Continue button are inside the viewport and do not overlap.",
+    "No pink missing-shader surfaces, absent text rendering or blank game screen in these final inspected frames."
+  ],
+  "limits": [
+    "These selected frames are not complete cinematography or physical-device acceptance.",
+    "Real actor motion and controls are proven separately by the matching original-controls browser report and recording.",
+    "Known Chromium loader cancellations and all warnings remain in the acceptance report."
+  ]
+}

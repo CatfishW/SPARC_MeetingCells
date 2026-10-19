@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "acceptanceSha256": "8e0cc5e54a9afb1cb7e836f8d0c0697b15afabcc67d0092cddd512b3917d4246",
+  "screenshots": {
+    "01-original-start.png": "f7377aed911be93010cfe45e873fde8875a8e213e0c99a9fdc9790e0c545a8aa",
+    "02-original-timeline.png": "f15f8d354c3be87f20e76824628b768cfe0cbad12cb412061c50ca309b612ac0",
+    "03-original-dialogue.png": "e4104f1f8a78f2a7e237a530e07850444e343d793845f1049b3b1d61556b0b4c",
+    "03b-dialogue-small-viewport.png": "d353e30260aef6dd0f0fabaf7c790ac04eb2f2a2d4419cf5b0f352a204d05dd2",
+    "04-real-dialogue-input.png": "7c33af67000b59b0989717cfb7ec8e3d1c35d990b0972df8c826192da18caf50",
+    "05-small-viewport.png": "d3cb8f537f17cf86650875552ad42cc78046235fa0dcc139e81b62ff270be29d"
+  },
+  "method": "Inspected all release Start, Timeline, dialogue, small-viewport and input captures in this engine.",
+  "findings": [
+    "Release loader, authored Timeline and dialogue render with no application errors.",
+    "Small viewport resizing keeps the source dialogue and controls bounded."
+  ],
+  "scope": "Current release browser smoke in firefox.",
+  "limitations": [
+    "Smoke coverage is not a full story route and does not certify audio, physical devices or Safari."
+  ]
+}

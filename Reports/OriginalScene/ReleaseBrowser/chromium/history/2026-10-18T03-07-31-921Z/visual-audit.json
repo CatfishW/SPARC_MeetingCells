@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T03:09:44.385800+00:00",
+  "acceptanceSha256": "b758b665ba74ddd0adc916183b94cfbb62fa477ef51f815f31a827a9056e1822",
+  "verifiedInputSha256": "c1ad336381f831108d01ecc4fe17cae9291127ed97f6e2c417fd0a9ca496cef9",
+  "method": "Assistant inspection of all six original-resolution final artifact PNGs using view_image",
+  "screenshots": {
+    "01-original-start.png": "e9cd5483708b37f1c802ce474a210e10501ec904e6ed3cb753db18d3e2382f86",
+    "02-original-timeline.png": "745d058083f170bea510d695ab3923f63769f0f4e56f3f85edd744a713e745b8",
+    "03-original-dialogue.png": "37dbc1828bbb073c2d89a4dd5e8c9bc60aa6ad16609a47df9b13d2a4f913e0ba",
+    "03b-dialogue-small-viewport.png": "6ab6189d0436ff469704439f190d454e329e8d7892b25a117c231002cdeb64cf",
+    "04-real-dialogue-input.png": "eb0431ead33c087bc2ed21d61f2ff7751ee6e9af8c24391098c5c148e910bbd2",
+    "05-small-viewport.png": "1025e6ee0b907a896eff5e0b1899857fd18eca495bec54bf665e17ed161e6955"
+  },
+  "findings": [
+    "The authored bloodstream intro and original cell assets render in the selected Timeline frame without missing-material panels or a blank screen.",
+    "The complete original intro caption is visibly legible in light paper-colored type over the vessel scene.",
+    "The original CAP dialogue, clear speaker label, ink icon and Continue control are legible and fit at1440 by900.",
+    "At960 by600, the dialogue, keyboard hint and Continue control fit without clipping or overlap.",
+    "Later captures show the original scene after actual dialogue keyboard input and canvas resizing."
+  ],
+  "scope": "Production release intro/dialogue and960 by600 viewport visual acceptance only; no full-route, task-HUD, menu, crowd or audio acceptance.",
+  "limitations": [
+    "The immediate01-original-start frame catches Unity\u2019s splash because loader resolution precedes splash completion; it does not visually accept the Start card. The separate production-phone run records the visible Start card after splash completion.",
+    "This does not certify the full route, task HUD, optional branches, settings/chat menus, minigame playability, continuous crowd behavior, audio, physical mobile devices, performance or overall human difficulty/cinematography.",
+    "Exact cell placement and animation timing differ between browser engines.",
+    "Startup NavMesh and browser GPU warnings remain recorded in acceptance.json; this is not a zero-warning runtime claim.",
+    "1 narrowly identified loader cancellations are recorded; the loader resolved and the real release ran. Cancelled streams are not reported as successful downloads."
+  ]
+}

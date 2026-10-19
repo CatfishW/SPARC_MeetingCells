@@ -1,0 +1,13 @@
+{
+  "execution": "Direct node Tools/browser/original-controls.cjs; no in-memory source modification.",
+  "originalRunnerPath": "/Users/zlad/Development/SPARC_MeetingCells/Tools/browser/original-controls.cjs",
+  "exactExecutedSourcePath": "/Users/zlad/Development/SPARC_MeetingCells/Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/original-controls-executed-source.cjs",
+  "sourceSha256": "2af207652f9323e2382a022c39576adeb986e296c7cfab26138b02c257cb552f",
+  "environment": {
+    "SPARC_TEST_ORIGIN": "http://127.0.0.1:18093/",
+    "SPARC_UI_MENUS": "1"
+  },
+  "inputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "verifiedDevelopmentStatus": "passed",
+  "timing": "Source runner includes real canvas refocus/frame settling before unchanged RMB drag. Objective and menu checks use real pointer clicks; no app setters or lowered controller assertions."
+}

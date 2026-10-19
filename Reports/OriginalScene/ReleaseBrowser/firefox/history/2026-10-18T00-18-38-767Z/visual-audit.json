@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T00:19:54.423466+00:00",
+  "acceptanceSha256": "c34d281366b3027764876472b9b5e1e78619eaea6f406915ff2ed97180c2e0be",
+  "method": "Assistant inspection of original-resolution final artifact PNGs using view_image",
+  "screenshots": {
+    "02-original-timeline.png": "bea2e9d14b0af2c77ae7957545c4f7f5749b00669c067938267d927f11dbd8f4",
+    "03-original-dialogue.png": "d062a20d19b3e9acb82e0c12ecdb1712f4ccb678319edf060dca5e355291270c",
+    "03b-dialogue-small-viewport.png": "75c9f8e483efce1d72f13efba58c98049cddb3b5b84c8eda2976c879258e4e94"
+  },
+  "findings": [
+    "The authored bloodstream intro environment and original cells render in the selected Timeline frame without missing-material panels or a blank screen.",
+    "The original CAP dialogue appears in the redesigned paper panel with a clear speaker label, legible source text, new ink icon and fully visible Continue control at 1440 by 900.",
+    "At 960 by 600, the dialogue, keyboard hint and Continue control fit inside the viewport without clipping or overlap."
+  ],
+  "scope": "Release intro/dialogue and 960 by 600 viewport visual review only; full-route, task-HUD, menu and audio acceptance are outside this audit.",
+  "limitations": [
+    "Intro/dialogue and small-viewport review only. This does not certify the full route, optional branches, settings/chat menus, minigames, audio, physical mobile devices or overall human difficulty/cinematography.",
+    "Exact animation and subtitle activation timing differs between browser engines.",
+    "The auxiliary 04-real-dialogue-input and 05-small-viewport frames were also inspected, but the task HUD is not visible at those cinematic moments; no task-label contrast acceptance is claimed from this smoke.",
+    "Startup NavMesh and browser GPU warnings remain recorded in acceptance.json; this is not a zero-warning claim.",
+    "The selected Firefox Timeline frame falls between subtitle activations. Subtitle contrast is visually confirmed in the matching Chromium frame and is not separately claimed from this Firefox frame."
+  ]
+}

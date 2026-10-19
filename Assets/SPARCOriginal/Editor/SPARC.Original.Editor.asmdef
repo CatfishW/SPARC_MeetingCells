@@ -1,0 +1,1 @@
+{"name":"SPARC.Original.Editor","references":["SPARC.Original","Unity.InputSystem","Cinemachine","Unity.Timeline","Unity.TextMeshPro","Unity.Newtonsoft.Json","Unity.RenderPipelines.Universal.Runtime","Unity.AI.Navigation"],"includePlatforms":["Editor"],"autoReferenced":true}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checkedUtc": "2026-10-19T02:36:08.526902+00:00",
+  "originalProviderSecretCount": 2,
+  "filesScanned": 143,
+  "buildsScanned": [
+    "Builds/WebGLOriginal",
+    "Builds/WebGLOriginalRelease"
+  ],
+  "decodedBytesScanned": 525339358,
+  "filesWithCredentialMatches": [],
+  "method": "Exact original provider-secret matching in UTF-8 and UTF-16, including streamed GZIP WebGL payloads",
+  "privateInventoriesExcludedFromDelivery": true
+}

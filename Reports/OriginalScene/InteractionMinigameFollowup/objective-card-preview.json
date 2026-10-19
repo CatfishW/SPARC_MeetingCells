@@ -1,0 +1,12 @@
+{
+  "method": "Unaltered crop of actual current browser capture; no generated UI mockup",
+  "source": "Reports/OriginalScene/BrowserJourney/2026-10-19T01-59-00-440Z/visual-interaction-320056978242275436-800x1100.png",
+  "sourceSha256": "c44781e79bab5538a1b93e859470fdfee6189dd945ddf64494c2e14f37a0bcca",
+  "cropBox": [
+    12,
+    12,
+    358,
+    148
+  ],
+  "outputSha256": "f2889a5fb5b192ea9df85904b29a58a4416085ff5ba94c4d43723f6eb35d1df5"
+}

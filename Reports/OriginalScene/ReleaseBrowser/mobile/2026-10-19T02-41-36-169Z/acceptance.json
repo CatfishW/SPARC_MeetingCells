@@ -1,0 +1,365 @@
+{
+  "status": "smoke-passed-awaiting-visual-review",
+  "sourceInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "startedUtc": "2026-10-19T02:41:36.173Z",
+  "scope": "Supplementary Android/touch/DPR2 production-release Start, authored intro and dialogue smoke at390x844 and844x390; no physical-device or full-route acceptance",
+  "physicalDeviceAcceptance": false,
+  "buildHashes": {
+    "Build/WebGLOriginalRelease.data.unityweb": "a0777c088460dfb419f451e3cb714c594029eacdf313a78ffc476aa1c88e79e3",
+    "Build/WebGLOriginalRelease.framework.js.unityweb": "ba9c72b0e4064a24a2627bb9b0843541becbd746f1b4249a719e3d5e5e107332",
+    "Build/WebGLOriginalRelease.loader.js": "4673f24559b6741a90dda4cdb1b305e797f7c6d563ad5ab02b528a63ae55527e",
+    "Build/WebGLOriginalRelease.wasm.unityweb": "460f4a754320d3d770520c20146be525bad6cb2933b1f8fa20da4ad20bedb40f",
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+    "appearance-handoff.js": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+    "browser-platform.js": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+    "index.html": "085d0b3954ffa47a281617c214874b050f7a586be9b3b55c966ad427e0761ef6"
+  },
+  "runner": {
+    "path": "runner.cjs",
+    "sha256": "8088fb6cd35583b4875b52c36fa7d81bebf3a3c25fb91403fd7a42986b5acf0c",
+    "nodeVersion": "v24.20.0"
+  },
+  "cases": [
+    {
+      "name": "portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "warnings": [
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n"
+      ],
+      "externalRequests": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.framework.js.unityweb",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.wasm.unityweb",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "390x844-start.png",
+          "sha256": "988a8a233f8729fd24554c27b05bb507d4846079d61a1b350b7e49576ff04d95"
+        },
+        {
+          "name": "390x844-intro.png",
+          "sha256": "103d68ea283f44bce01199e8fbd39c4e3d539e604835070dbcf667b7ed4b5495"
+        },
+        {
+          "name": "390x844-dialogue.png",
+          "sha256": "7ecaec3daf88ea97fb48746484769f9153e346cf6cfb99f57007b1182cf64aff"
+        }
+      ],
+      "checks": [
+        "verified-release-loader-resolved",
+        "Android-multitouch-DPR2-environment",
+        "release-QA-telemetry-absent",
+        "canvas-CSS-and-scaled-backbuffer-recorded",
+        "real-touch-Start-and-post-intro-frames-captured"
+      ],
+      "startupSeconds": 2.7,
+      "environment": {
+        "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+        "maxTouchPoints": 5,
+        "coarsePointer": true,
+        "devicePixelRatio": 2,
+        "qaTelemetry": "undefined",
+        "renderToCssScale": 1.2512820512820513,
+        "canvas": {
+          "width": 488,
+          "height": 1055,
+          "cssWidth": 390,
+          "cssHeight": 844
+        },
+        "visibility": "visible"
+      },
+      "browserRaf": {
+        "samplesMilliseconds": [
+          7.099999976155232,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.60000000000582,
+          16.799999999995634,
+          16.599999999998545,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.60000000000582,
+          16.69999999999709,
+          16.69999999999709,
+          16.60000000000582,
+          16.69999999999709
+        ],
+        "medianMilliseconds": 16.69999999999709,
+        "p95Milliseconds": 16.700000000004366,
+        "scope": "Browser RAF timing only, not Unity FPS or physical-device performance"
+      },
+      "nonfatalLoaderCancellations": [
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.framework.js.unityweb",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.wasm.unityweb",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "unexpectedRequestFailures": [],
+      "status": "smoke-passed-awaiting-visual-review"
+    },
+    {
+      "name": "landscape",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "errors": [],
+      "warnings": [
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because there is no valid NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n",
+        "Failed to create agent because it is not close enough to the NavMesh\n"
+      ],
+      "externalRequests": [],
+      "failedRequests": [
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.wasm.unityweb",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "844x390-start.png",
+          "sha256": "98a9fb47344a4dec99449074c7e061ac61e11feeedd0c7b96d86472a895dee60"
+        },
+        {
+          "name": "844x390-intro.png",
+          "sha256": "d2b135e3d9302434a7fcd38d070fb366d6d9e74658ca90e12a3903828811e48d"
+        },
+        {
+          "name": "844x390-dialogue.png",
+          "sha256": "93b43d12eb12af9c62a91bec6e0076dd4389bba0beadfd8cd4842c3b9d2dfb11"
+        }
+      ],
+      "checks": [
+        "verified-release-loader-resolved",
+        "Android-multitouch-DPR2-environment",
+        "release-QA-telemetry-absent",
+        "canvas-CSS-and-scaled-backbuffer-recorded",
+        "real-touch-Start-and-post-intro-frames-captured"
+      ],
+      "startupSeconds": 3.336,
+      "environment": {
+        "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+        "maxTouchPoints": 5,
+        "coarsePointer": true,
+        "devicePixelRatio": 2,
+        "qaTelemetry": "undefined",
+        "renderToCssScale": 1.25,
+        "canvas": {
+          "width": 1055,
+          "height": 488,
+          "cssWidth": 844,
+          "cssHeight": 390
+        },
+        "visibility": "visible"
+      },
+      "browserRaf": {
+        "samplesMilliseconds": [
+          3.3000000476822606,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.69999999999709,
+          16.599999999998545,
+          16.599999999998545,
+          16.80000000000291,
+          16.599999999998545,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.700000000004366,
+          16.599999999998545,
+          16.69999999999709,
+          16.599999999998545,
+          16.700000000004366
+        ],
+        "medianMilliseconds": 16.69999999999709,
+        "p95Milliseconds": 16.700000000004366,
+        "scope": "Browser RAF timing only, not Unity FPS or physical-device performance"
+      },
+      "nonfatalLoaderCancellations": [
+        {
+          "url": "http://127.0.0.1:50418/Build/WebGLOriginalRelease.wasm.unityweb",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "unexpectedRequestFailures": [],
+      "status": "smoke-passed-awaiting-visual-review"
+    }
+  ],
+  "limitations": [
+    "Browser emulation and RAF timing do not certify physical-device speed, Unity frame rate, thermals, battery use, Safari or a phone soft keyboard.",
+    "This smoke does not cover the full story route, task HUD, settings, minigame controls or worksheet interactions.",
+    "Audio is not accepted by silent image evidence."
+  ],
+  "browserVersion": "156.0.8078.4",
+  "finishedUtc": "2026-10-19T02:42:52.075Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "acceptanceSha256": "6f3af83b1f788bfc1c0be8806f14101e3066856f1ba85f1869cd1c962b09f89c",
+  "verifiedInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "executedSourceSha256": "2af207652f9323e2382a022c39576adeb986e296c7cfab26138b02c257cb552f",
+  "screenshots": {
+    "01-original-camera.png": "f086f36b041d2a5deddee7943a14cca92f97d7c9027b760aad25ebc43f6e0080",
+    "02-original-third-person.png": "bcc92c160a8868a04a8206caef389638f5c4676a48921ddb15f23eec3078a7b6",
+    "03-original-walking-rig.png": "543b18f303b35fe241e818abcdb5f6aa1931158050fd9a786e66efa032f8929c",
+    "04-original-jump.png": "0c38e26d098d4b6ad7fdc8ee02b6e86f14b445839125944612d0e1b5630ce0be",
+    "05-original-first-person.png": "dcd79fff80a998f11d72b89df512795e12fc6cf56ee7df9272569d11c576fd46",
+    "06-original-look.png": "10fd24239cc4c6bcb7cd57968759b3f6bd6b52f0057d22ad24260bc800295e32",
+    "06a-objective-expanded.png": "528d66cab860f26ea0ea10daa2f79a9ec34a02724a71e02f55c3cd90bd5a61eb",
+    "06b-objective-folded.png": "f0b0b15099766dd917613ccaf871d92393e77850834b58c8dd21f06e692eea21",
+    "06c-objective-reopened.png": "dc7bfbc688f05768c4fec3e91dc55ba3508dc66329d3401b2cf36e1954028f50",
+    "07-native-settings-desktop.png": "a3a08c302c59e38334d3e90895732ddb1043979310bbfa884e64d6f7c60daab9",
+    "08-native-settings-960x600.png": "73efb2879d6a4324316863a8ed5b70b87c2031dfcb5ccdc72958af0270df109b",
+    "09-native-settings-closed.png": "ffe14f2d88b9ae8bd26225f8c53052a8aee3745b01d63bd1939f100784d3c095",
+    "10-native-chat-unavailable.png": "9b5a9dfb1eed33f611c2357e028f1e88c7a063a78787488a82e47308baaa1475"
+  },
+  "method": "Inspected all accepted desktop controller/UI captures at the tested desktop and 960x600 profiles; objective fold/reopen and Settings were opened with real pointer clicks.",
+  "findings": [
+    "Objective fold/reopen preserves story and the compact card.",
+    "Toolbar and Settings targets remain reachable and at least44 CSS pixels.",
+    "Original movement, jump, camera perspectives, right-drag look and locomotion clip are visible."
+  ],
+  "scope": "Current desktop controls browser run.",
+  "limitations": [
+    "No external chat login or submission; physical controller and Safari are outside scope."
+  ]
+}

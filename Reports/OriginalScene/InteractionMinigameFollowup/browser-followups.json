@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "sourceInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "journey": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-26-19-157Z",
+  "steps": [
+    {
+      "name": "original-controls.cjs",
+      "exitCode": 0
+    },
+    {
+      "name": "original-mobile-controls.cjs",
+      "exitCode": 0
+    },
+    {
+      "name": "original-release-mobile-smoke.cjs",
+      "exitCode": 0
+    },
+    {
+      "name": "chromium",
+      "exitCode": 0
+    },
+    {
+      "name": "firefox",
+      "exitCode": 0
+    }
+  ]
+}

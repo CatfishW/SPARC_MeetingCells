@@ -1,0 +1,113 @@
+{
+  "status": "smoke-passed-awaiting-visual-review",
+  "engine": "chromium",
+  "startedUtc": "2026-10-18T02:24:51.451Z",
+  "scope": "Release intro/dialogue/resize smoke only; full input-driven story uses the matching development build",
+  "buildHashes": {
+    "Build/WebGLOriginalRelease.data.unityweb": "e1fadb8705007b7f8dcabac63abcd5910aa4355ae36375751de0595b8795fbde",
+    "Build/WebGLOriginalRelease.framework.js.unityweb": "fc060920ac94667d8b05203425d795c9e0d5bfe0f56b8cd3ada9bd20910fc29d",
+    "Build/WebGLOriginalRelease.loader.js": "45b7d5ce300f3fdf6fa13200a9c90307a8317ad94c813e4bb735869a7535ef6a",
+    "Build/WebGLOriginalRelease.wasm.unityweb": "8fd304a5669d480c185f1bdb964d2858c90e6979cfa680efcf5399f0cd6d36ed",
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+    "appearance-handoff.js": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+    "browser-platform.js": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+    "index.html": "1399fae4d29535ba83620d48925ce4e906da37e7d74e6ada1bbef2ffab7a80ba"
+  },
+  "errors": [],
+  "warnings": [
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n"
+  ],
+  "externalRequests": [],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:53534/Build/WebGLOriginalRelease.framework.js.unityweb",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:53534/Build/WebGLOriginalRelease.wasm.unityweb",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-original-start.png",
+      "sha256": "e9cd5483708b37f1c802ce474a210e10501ec904e6ed3cb753db18d3e2382f86"
+    },
+    {
+      "name": "02-original-timeline.png",
+      "sha256": "806e98f475fa25b37282704723414a67ccb05ab32e02bea754fde769212758c4"
+    },
+    {
+      "name": "03-original-dialogue.png",
+      "sha256": "8cc0d8829d76f9115db0d748b8daba35f9129916d03858d94b9940e8d3c620d3"
+    },
+    {
+      "name": "03b-dialogue-small-viewport.png",
+      "sha256": "6f651cd730f8a720fd2adb02fc181d57ef6b58407f9f33c19937097fba96e13b"
+    },
+    {
+      "name": "04-real-dialogue-input.png",
+      "sha256": "4cc700e26e9fc26b550092ff1d7bf04fe6c7543fdc7b8e41d06ba8a11385d016"
+    },
+    {
+      "name": "05-small-viewport.png",
+      "sha256": "5ae0e51d80dea130b4aa844bdc5b977a96780206f5f80e78c8804f1b997a2d90"
+    }
+  ],
+  "checks": [
+    "release-loader-resolved",
+    "development-telemetry-absent",
+    "dialogue-captured-at-desktop-and-small-viewport",
+    "actual-menu-pointer-and-dialogue-key-input",
+    "canvas-resizes"
+  ],
+  "browserVersion": "156.0.8078.4",
+  "startupSeconds": 1.435,
+  "recoveredRequests": [],
+  "nonfatalLoaderCancellations": [
+    {
+      "url": "http://127.0.0.1:53534/Build/WebGLOriginalRelease.framework.js.unityweb",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:53534/Build/WebGLOriginalRelease.wasm.unityweb",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "unexpectedRequestFailures": [],
+  "networkStatus": "game-ran-with-recorded-loader-cancellations",
+  "finishedUtc": "2026-10-18T02:25:29.904Z"
+}

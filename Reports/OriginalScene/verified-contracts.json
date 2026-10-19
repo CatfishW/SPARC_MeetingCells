@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "startedUtc": "2026-10-19T01:43:43.153611+00:00",
+  "sources": {
+    "Assets/WebGLTemplates/SPARCOriginal/browser-platform.js": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+    "Assets/WebGLTemplates/SPARCOriginal/appearance-handoff.js": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+    "Tools/original_agent_proxy.py": "1087ad818e3d78d36ade3ab1a1700e781a8f073c7836b3bb152a40761f73df7f",
+    "Tools/serve_webgl.py": "f1565aa2f475303551e9bd0241956406dc43381f5248a908416cf0efb43556a7",
+    "Tools/browser/original-white-navigation.cjs": "f9c5ad9bcc035f971c3a9d4afe676a20ba3b504971e48d3ff587cbabb782261b",
+    "Tools/tests/test_original_agent_proxy.py": "07edbcb1a10a0e232d2ffe3f6fc1410af77b28d3dd34ae371db9e3fb15b2240e",
+    "Tools/tests/test_original_web_server.py": "055f314ff9279d5cfb0524e1d473fa82f4fab7e4ad4647901acf6230b965c4e0",
+    "Tools/tests/original-white-navigation.test.cjs": "b787f07cf93ec4c39d04741c53da846d0f62455e2d352779dadaded2e6046e18",
+    "Tools/tests/appearance-handoff.test.cjs": "93dc09dcbaee8d7bd349fc3861054c330ed81cc8a876e2027eb454771c03d034",
+    "Tools/tests/browser-platform.test.cjs": "27df7bd0343ca731610d95e1131d529d8e5a6d6e5057a6af49234a535fbd692e",
+    "Tools/verify_original_contracts.py": "1969e76e97acafade44d8321155fd3730504b3b99806c11e2ac300e44892b515"
+  },
+  "checks": [
+    {
+      "name": "node",
+      "exitCode": 0,
+      "log": "Reports/OriginalScene/browser-contracts.tap",
+      "sha256": "dd5810d1a47ac038311ba4b3692513930f1eb76df8ea2a024fd950d3f952c3bd"
+    },
+    {
+      "name": "python",
+      "exitCode": 0,
+      "log": "Reports/OriginalScene/python-contracts.log",
+      "sha256": "c0ec3c85bed16e68e682da5bc520609f1d561454f77764c7bba20653e89c002e"
+    }
+  ],
+  "finishedUtc": "2026-10-19T01:43:46.978260+00:00"
+}

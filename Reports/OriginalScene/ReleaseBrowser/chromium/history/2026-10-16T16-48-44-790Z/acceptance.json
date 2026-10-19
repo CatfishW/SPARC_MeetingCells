@@ -1,0 +1,97 @@
+{
+  "status": "failed",
+  "engine": "chromium",
+  "startedUtc": "2026-10-16T16:48:44.790Z",
+  "scope": "Release intro/dialogue/resize smoke only; full input-driven story uses the matching development build",
+  "buildHashes": {
+    "Build/WebGLOriginalRelease.data.unityweb": "062cf8bc82543ed42126615f3d489e96d00eeaa13fbb41b8c95e5a44b497b9fa",
+    "Build/WebGLOriginalRelease.framework.js.unityweb": "02c60934ae9d248a1988d761736c06b53b7592a3a0f5c5b3e55e909629739b52",
+    "Build/WebGLOriginalRelease.loader.js": "73c988a42d4b40cbdc507e9abfa53d2de89a230aea65c4a415a9ecba077ce5a8",
+    "Build/WebGLOriginalRelease.wasm.unityweb": "c183e2ea95908dc50cd3f6a529f982563fe5c59d9446c89e11278052bae9587e",
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+    "appearance-handoff.js": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+    "browser-platform.js": "f604086b2f6e9f7ab29453b22a112f35d9b3de7e637e0b9df924dbaac53c0b76",
+    "index.html": "c6522ed9088865d7a4aecf75d531af98b626b03cd2fff742f1724cfde1416390"
+  },
+  "errors": [],
+  "warnings": [
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "WebGL: INVALID_ENUM: getInternalformatParameter: invalid internalformat",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n"
+  ],
+  "externalRequests": [],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:53356/Build/WebGLOriginalRelease.framework.js.unityweb",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:53356/Build/WebGLOriginalRelease.wasm.unityweb",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-original-start.png",
+      "sha256": "315fac5e7266ded7cce7955a2589d7d912826109c04fa44c812d08a7aa8e145e"
+    },
+    {
+      "name": "02-original-timeline.png",
+      "sha256": "87a919e704dc8a0fa23e8a8d77443cc1767185f476235a8451085019b327df15"
+    },
+    {
+      "name": "03-original-dialogue.png",
+      "sha256": "0022e9f2d96e796771aa115edf0a142fa76a37970c00feabcaf800fcc890e994"
+    },
+    {
+      "name": "04-real-dialogue-input.png",
+      "sha256": "bf45b63323ffaa0e51cd8c651bdcea11424b77a417c8973baf42254d3a526caf"
+    },
+    {
+      "name": "05-small-viewport.png",
+      "sha256": "6c83ddfa26c88744346f57e8198bad17fcb8c1bf236e663069d18cc6e2d04141"
+    }
+  ],
+  "checks": [
+    "release-loader-resolved",
+    "development-telemetry-absent",
+    "actual-menu-pointer-and-dialogue-key-input",
+    "canvas-resizes"
+  ],
+  "browserVersion": "156.0.8078.4",
+  "startupSeconds": 1.528,
+  "recoveredRequests": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Failed build requests\n\n2 !== 0\n\n    at main (/Users/zlad/Development/SPARC_MeetingCells/Tools/browser/original-release-smoke.cjs:29:153)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:541:9)",
+  "finishedUtc": "2026-10-16T16:49:22.074Z"
+}

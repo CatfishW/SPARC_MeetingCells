@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "acceptanceSha256": "f361b6b74c1859e24d22133cb610c84c35f2fdf353c55eaa40ca07d5fedd0559",
+  "verifiedInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "executedSourceSha256": "1206816f2e52d3112480e57b72bf3c4bcdf42b72136ba5f480506282c13f423d",
+  "screenshots": {
+    "01-mobile-start-landscape.png": "48a80f83a8964ef5ab803a4f8afe6b6430546f848471d0670c389775840e4e2b",
+    "02-mobile-hud-landscape.png": "b7b45dcd609dbe55ebe98c87c8b0e5bf334f6e5025637e6a5a67a88539ff502c",
+    "landscape-forward-gesture-result.png": "ea300b620570a005949ed493b4cec6538240113d808c1bef099899c565d1660f",
+    "landscape-touch-jump.png": "2a3b2793122e6cf8ef053c2f4befbf30a579cc11bb74102f3ab497f06b309f20",
+    "landscape-settings.png": "37e261a027d9d17b0a62d97eb4f01879588bca02c6d0177aab5b4744e07daf7f",
+    "landscape-settings-closed.png": "2b6193778cadb49dc7c12cab38fe29a2eb2b70742326580dae419d8a543cbfb4",
+    "portrait-hud.png": "d321504d1347304af596a534266f9b263ac5c247571763135dc18a40c6ae67f5",
+    "portrait-forward-gesture-result.png": "285505bba141cad8354d97452280512be558f63090f6224fa2267bca4efd44da",
+    "portrait-right-gesture-result.png": "42e2cd5d6a5de5cac7d0787ab48c2c47333beb42991127f62b6e5be01907e39e",
+    "portrait-settings.png": "f7eedb10ac9a9d5ede20aa0023f0798797933f9aea4cd5c5171042739170c785",
+    "portrait-settings-closed.png": "3a6263a172af912c7e9d302431e7a6ae4124b862b44e0ad2a2c56302fac6bd38",
+    "tablet-hud.png": "53fbcaf39d3813aa6fe54f9c11761bb65af684097ae0a8b21891518ce7b208d2",
+    "dpr2-portrait-hud.png": "327972f3083694883f1279fc644215c79398c78e131bdfc36442df59bcaff102"
+  },
+  "method": "Inspected accepted portrait, landscape, tablet and DPR2 touch captures alongside the real multi-touch ownership/release measurements.",
+  "findings": [
+    "Independent movement/look fingers release correctly, including touchcancel.",
+    "Thumbstick, Jump, Settings and objective targets remain inside safe areas and meet the reported CSS sizes.",
+    "The phone UI remains readable at portrait, landscape and DPR2 emulation."
+  ],
+  "scope": "Current Chromium mobile-emulation controls run.",
+  "limitations": [
+    "Emulation does not establish physical-device frame pacing, thermals, battery, Safari or soft-keyboard behavior."
+  ]
+}

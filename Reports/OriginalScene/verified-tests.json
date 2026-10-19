@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "startedUtc": "2026-10-19T02:25:59.458894+00:00",
+  "inputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "finishedUtc": "2026-10-19T02:32:01.582323+00:00",
+  "exitCode": 0,
+  "inputSha256After": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "tests": {
+    "file": "Reports/OriginalScene/original-complete-tests.xml",
+    "sha256": "e8f9d0b29bfdd23cf25a9da34572dcaeb1295f6df1895642c4a2a8f2cf439ced",
+    "id": "2",
+    "testcasecount": "101",
+    "result": "Passed",
+    "total": "101",
+    "passed": "101",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-19 02:26:11Z",
+    "end-time": "2026-10-19 02:31:59Z",
+    "duration": "348.5730064"
+  }
+}

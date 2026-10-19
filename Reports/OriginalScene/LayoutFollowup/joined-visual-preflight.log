@@ -1,0 +1,37 @@
+{
+  "status": "failed",
+  "auditedUtc": "2026-10-18T04:07:32.980199+00:00",
+  "sourceInputSha256": "d103f1af6f1906912f987b34b855c7d88b1e1a8ee09a6555aea3fcbb3047eb6a",
+  "fidelity": {
+    "sourceSceneSha256": "80f17f2da9382c2ad3a0c26d8e563d96ef7b375fe9f224e44e4d384d3fce259f",
+    "sourceSceneUnchanged": true,
+    "nativeRecordsExact": 4746,
+    "nativeRecordsExpected": 4746,
+    "sourceGraphBlocks": 29,
+    "sourceGraphCommands": 416,
+    "newImplementationFiles": 53,
+    "exactLegacyCSharpCopies": [],
+    "dialogueRecords": 107,
+    "timelineAssets": 23,
+    "standaloneClips": 19,
+    "animatorControllers": 10,
+    "directors": 20,
+    "originalWorksheetPages": 13
+  },
+  "failures": [
+    "development build does not match current source and output",
+    "release build does not match current source and output",
+    "Unity test evidence is stale",
+    "Exact hybrid route/helper runner provenance is absent or stale",
+    "Hybrid mobile evidence is not joined to an accepted, current, provenance-bound full original route",
+    "Current full-journey visual acceptance failed: Full-journey visual-review.json is required",
+    "Exact real-input controls runner provenance is missing or stale",
+    "Real multi-touch emulation acceptance is incomplete or stale",
+    "chromium smoke must bind every current release artifact",
+    "chromium current release smoke did not pass",
+    "firefox smoke must bind every current release artifact",
+    "firefox current release smoke did not pass",
+    "Current production phone acceptance failed: Release-mobile source fingerprint is stale"
+  ]
+}
+Journey: passed-original-meetingcells-to-external-handoff Oxygen: {'Score': 16, 'Elapsed': 120.011871, 'Duration': 120, 'Finished': True} White: {'Score': 6, 'Level': 3, 'Elapsed': 250.016586, 'Duration': 250, 'Finished': True, 'remaining': 5} Peer: {'Pending': False, 'Outcome': 'A', 'ServiceState': 'unavailable', 'Answers': 0, 'Failures': 3}

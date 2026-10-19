@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d77e609b96f748b2a9d2e847a29fad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SPARC.MeetingCells::Sparc.MeetingCells.VoiceLibrary
+  paths:
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/14RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/15RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/16RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Trouble
+    like that in.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Ohhhh
+    noooo.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Uhhhhh
+    maybe you sho.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/11WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/12RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/13RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/14RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/15RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/The
+    heart Oh man I c.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/Wait
+    Before that we1.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/LoseWBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/WinWBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/2WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/3WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/4WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/5WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/6WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/7WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Wait
+    wait wait.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/You
+    ve got superhero.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/That
+    s incredible.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/8WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/9WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/10WBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/Scene Heart_To
+    White/4_wrong.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Good
+    call Red phew T.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/3RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/4RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/5RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/6RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/Wait a
+    second Red Ho.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/Where
+    s yours.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/7RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/8RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/Red/Think
+    of it like tak.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/Whoa So
+    you re like.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/You re
+    so profession.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/Red/Hey
+    explorer why don.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/Red/Click
+    Mini game butt.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/Watch
+    out pal you al.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/I am CAP
+    I ve been h.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/You must
+    be new Look.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/QA/InCorrect.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/QA/Lose,
+    Thank you so much ad.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/QA/Correct.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/QA/Win,
+    Thank you for helpin.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC15.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC16.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC17.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC18.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC19.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC20.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/Scene Heart_To
+    White/3_BGV.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/QA/Oh interesting
+    choic.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/White/1_RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/White/2.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC1.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC2.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC3.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC4.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC5.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC6.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC7.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC8.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC9.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC10.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC11.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/RBC12.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/RBC13.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/RBC14.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC15.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC16.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/WBC_Split/WBC17.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC1.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC2.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC3.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC4.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC5.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC6.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC7.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC8.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RBC3.wav
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC9.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC10.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC11.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC12.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC13.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/RedVoiceSplit/Red/RBC14.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/Red/Why don
+    t I introduc.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/Red/12RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Red Modified Voice/Red/Let
+    s see if you ve.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell1224/White/1RBC.mp3
+  - Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/Cap Voice/White/Whoa
+    He s like a rea.mp3
+  clips:
+  - {fileID: 8300000, guid: 3521a768ded9bd54797510dbe3226910, type: 3}
+  - {fileID: 8300000, guid: 94ce11546b9dffc498b2d31c2a6655e8, type: 3}
+  - {fileID: 8300000, guid: 1474f8e66c7238b4894a5658a20c92b2, type: 3}
+  - {fileID: 8300000, guid: 334d1e0bfa38b2b419afab793393ec90, type: 3}
+  - {fileID: 8300000, guid: ae76e2872cce0d64b868a288e20b4ddd, type: 3}
+  - {fileID: 8300000, guid: 1dcb976cdc61ee04a94444cf8331cc69, type: 3}
+  - {fileID: 8300000, guid: 2153d40ed76f7db46a9c50846ef9e709, type: 3}
+  - {fileID: 8300000, guid: 4b67a047f2b6d2444b90b143bea38fba, type: 3}
+  - {fileID: 8300000, guid: d245f7b4dd78f9d40a777eb745119e90, type: 3}
+  - {fileID: 8300000, guid: 79d23badc8caa724d9ec6fcc81743383, type: 3}
+  - {fileID: 8300000, guid: bca57aa9c1d2381418b2ec7230663834, type: 3}
+  - {fileID: 8300000, guid: 7c36a2388ee644c4fb22a336bac26c6b, type: 3}
+  - {fileID: 8300000, guid: c922476eb6a4e9542b9a347db6d51a97, type: 3}
+  - {fileID: 8300000, guid: f06083acfb15d714e9a15c15d60c57f0, type: 3}
+  - {fileID: 8300000, guid: b76cc42ff76ce884db6f4c46d6f3f66d, type: 3}
+  - {fileID: 8300000, guid: 2523add183c252045b3cb4f6db7d6881, type: 3}
+  - {fileID: 8300000, guid: 20f5ba40cb95eff44bc67c4382e0153b, type: 3}
+  - {fileID: 8300000, guid: 59ff30dff418189499d4de33117bf2a4, type: 3}
+  - {fileID: 8300000, guid: d27c0b877e5518f4ba9a57200bda197c, type: 3}
+  - {fileID: 8300000, guid: 215b051beff1672458fc6274c56e9b3b, type: 3}
+  - {fileID: 8300000, guid: 18cdcd6b38ea9e24b9cc2f0f270cefb2, type: 3}
+  - {fileID: 8300000, guid: 6e1f2aa8ccccea34f865831441cf8438, type: 3}
+  - {fileID: 8300000, guid: e47fffe961f458747909539d6f8d0ae0, type: 3}
+  - {fileID: 8300000, guid: 03958ed4345271b439731caf79b4867a, type: 3}
+  - {fileID: 8300000, guid: 0535447656538244d8e308423c9286e7, type: 3}
+  - {fileID: 8300000, guid: d59af2b2f17f2614eb3b8377c0b5f5e7, type: 3}
+  - {fileID: 8300000, guid: 776b8d8ea987f5142b7e64d1c2ea38c2, type: 3}
+  - {fileID: 8300000, guid: 5ad8ee0b206c2424e9e980a9bfe182b2, type: 3}
+  - {fileID: 8300000, guid: 703a2a1214a044a4eb6dc313408cec52, type: 3}
+  - {fileID: 8300000, guid: bbb6e473d2561ab4d8bc02d2ca2f4d17, type: 3}
+  - {fileID: 8300000, guid: 583db95db49417b43b174b1978c8f4f1, type: 3}
+  - {fileID: 8300000, guid: 8134f945715881442a0dc97dfa29b137, type: 3}
+  - {fileID: 8300000, guid: fe6818649076220468af4311b94d02f1, type: 3}
+  - {fileID: 8300000, guid: 59de33a78df01f449bffb54726879d98, type: 3}
+  - {fileID: 8300000, guid: de5268e97aabd564a80f853e5f001bb5, type: 3}
+  - {fileID: 8300000, guid: 8de64ca68b0265f49a5b0ddf02bbe9d3, type: 3}
+  - {fileID: 8300000, guid: 3fc3fe951b24a4748a013a559f2bc3d7, type: 3}
+  - {fileID: 8300000, guid: 7b6c94d6ca97322459fc13294625d5c6, type: 3}
+  - {fileID: 8300000, guid: 1590edae2ba5ffa4ea9fe83e56b5c27c, type: 3}
+  - {fileID: 8300000, guid: 923619d6df4c4cd46b93849bf009b2f3, type: 3}
+  - {fileID: 8300000, guid: 6fd4e8e0309e7044490788c6321d7ff5, type: 3}
+  - {fileID: 8300000, guid: b7fe56f091abc304988ae6106a50b99d, type: 3}
+  - {fileID: 8300000, guid: a7777a5ed23e8e545bac6b828447158a, type: 3}
+  - {fileID: 8300000, guid: 15b251ff5aaccf441a1c870870c629c6, type: 3}
+  - {fileID: 8300000, guid: 98e415c4de620664ba20d692eb60a733, type: 3}
+  - {fileID: 8300000, guid: 3d67dd501630c554bb36e82a083316fc, type: 3}
+  - {fileID: 8300000, guid: 5edae2d3db6fcfd4aac1dfa15a005dd2, type: 3}
+  - {fileID: 8300000, guid: 01e7f925e6ad8274ea921c6b3b7d98fb, type: 3}
+  - {fileID: 8300000, guid: 7c3685fdc7f369e4a911135b01b8ab8e, type: 3}
+  - {fileID: 8300000, guid: f62112589e8995e468f0f0407b9162f8, type: 3}
+  - {fileID: 8300000, guid: bcf68f866d7554447aa9113ed84d3399, type: 3}
+  - {fileID: 8300000, guid: 2429e1b9ce37b684580a4a00a0b78fc3, type: 3}
+  - {fileID: 8300000, guid: cd9bc462ee146da488f8243e51d7dc8f, type: 3}
+  - {fileID: 8300000, guid: 38381ff5d6709a64b9ff0bc1cb3d14d2, type: 3}
+  - {fileID: 8300000, guid: 36dbda41f87065145aebb8de760ae8f5, type: 3}
+  - {fileID: 8300000, guid: dbc502f30df1b494da8f3e275c031bb2, type: 3}
+  - {fileID: 8300000, guid: 3ab19f9d5eaaba34bb26348e2ae96ef6, type: 3}
+  - {fileID: 8300000, guid: 8c7246fcb114bea449d21847da8b410c, type: 3}
+  - {fileID: 8300000, guid: bb1289a1ab93c42469306d22f2decb4d, type: 3}
+  - {fileID: 8300000, guid: bae43937fe0fabb42b2b0f5a1cc9c3eb, type: 3}
+  - {fileID: 8300000, guid: 53cfebd8f79ccdf4da6c89a2d59a58dd, type: 3}
+  - {fileID: 8300000, guid: 5540f513f4e3b1346af8dfd015dc48d8, type: 3}
+  - {fileID: 8300000, guid: ba0f0aad82b8f06429470ebd09290c92, type: 3}
+  - {fileID: 8300000, guid: aa76a1fb80bc2444da75718c24a192de, type: 3}
+  - {fileID: 8300000, guid: d6ea11a3ad1faf34db6240c0ebd9772d, type: 3}
+  - {fileID: 8300000, guid: a16bc0f6c96ef2b4db26cfb469e24524, type: 3}
+  - {fileID: 8300000, guid: abaafd51b74f9144fab10dd77cc5d13f, type: 3}
+  - {fileID: 8300000, guid: 9a78db69e971bb54a8778caa6237016f, type: 3}
+  - {fileID: 8300000, guid: 54e1c0168845e6f4f87a35f3d1b71a52, type: 3}
+  - {fileID: 8300000, guid: ee56d85fd967b4e41befb2751f9a7fc7, type: 3}
+  - {fileID: 8300000, guid: 0e0e0dd4d59005d43867c8e9f8c9df4a, type: 3}
+  - {fileID: 8300000, guid: 2a55977810841ec45b1f3c728f983db0, type: 3}
+  - {fileID: 8300000, guid: 0a03536b7efb5c24d83835fcc375483f, type: 3}
+  - {fileID: 8300000, guid: 94f9b465490f5df4ea544e5a26f5b694, type: 3}
+  - {fileID: 8300000, guid: 98570682ee2de9a4c9313846dd71d1c9, type: 3}
+  - {fileID: 8300000, guid: 491400ff594c53a46b0773bee8cc3326, type: 3}
+  - {fileID: 8300000, guid: 26403d799a3fc6144b32b9915a0514af, type: 3}
+  - {fileID: 8300000, guid: 896b7930885da1e4f90a6d2d68013255, type: 3}
+  - {fileID: 8300000, guid: 22511256547aec34c8c9f6994343680a, type: 3}
+  - {fileID: 8300000, guid: 951aad4756cb6ca45b998bb558cab921, type: 3}
+  - {fileID: 8300000, guid: 81986bb8091bf2346a7e34a1d5188b32, type: 3}
+  - {fileID: 8300000, guid: 5a8973b251332774d8fd2ab3cbe5d199, type: 3}
+  - {fileID: 8300000, guid: 52c4028af322bd448b44b5c51314a4f5, type: 3}
+  - {fileID: 8300000, guid: 8418e0826fbb8db4e8fc46ede438d2f9, type: 3}
+  - {fileID: 8300000, guid: 3387235e4083b704abcc857498f38394, type: 3}
+  - {fileID: 8300000, guid: c3446d61e463be04fb3ef7e3550e5d3c, type: 3}
+  - {fileID: 8300000, guid: 43233ab1df12bd745b621dec2d394bd1, type: 3}
+  - {fileID: 8300000, guid: c50b91e5552721941b56166bc2f5ad0b, type: 3}
+  - {fileID: 8300000, guid: f223ec6d9f122ac40ba36a3af8174cf6, type: 3}
+  - {fileID: 8300000, guid: 4656a59baefecaf479310bc94d8f7ccd, type: 3}
+  - {fileID: 8300000, guid: d3991191b053a1a4394ff4cf50824062, type: 3}
+  - {fileID: 8300000, guid: d6d41aa290e9c6e46b7023b2e81d7464, type: 3}
+  - {fileID: 8300000, guid: dfc82a50afa324d498e1f1338670e22e, type: 3}
+  - {fileID: 8300000, guid: 68bafa97f3699904ba5ff3b63564b03e, type: 3}
+  - {fileID: 8300000, guid: e3ba7bd4fdb3aa743843e5bb2c0104a6, type: 3}
+  - {fileID: 8300000, guid: 9aaa1f617ce9c4d4ba5fc103f93d5db3, type: 3}

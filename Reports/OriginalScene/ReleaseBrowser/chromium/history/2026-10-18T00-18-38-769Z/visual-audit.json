@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T00:19:54.420787+00:00",
+  "acceptanceSha256": "79f765dd7958301ede7afc6f56fe50c0bafc79b00e3db9bb4e0754002c7350a3",
+  "method": "Assistant inspection of original-resolution final artifact PNGs using view_image",
+  "screenshots": {
+    "02-original-timeline.png": "7dc1c6de09337c4a1e1fc55ce9a70a2b0bf2fe0b88470dbf5c8560dfeddf2e77",
+    "03-original-dialogue.png": "4204769b73dbed8321e09e7e8530970df64519db9f0bf3bf34412b66ad64bda8",
+    "03b-dialogue-small-viewport.png": "e4d83e52992ff08433db9ba24bf0eccafdf51b8d6c74970caa36bf6840426c12"
+  },
+  "findings": [
+    "The authored bloodstream intro environment and original cells render in the selected Timeline frame without missing-material panels or a blank screen.",
+    "The original CAP dialogue appears in the redesigned paper panel with a clear speaker label, legible source text, new ink icon and fully visible Continue control at 1440 by 900.",
+    "At 960 by 600, the dialogue, keyboard hint and Continue control fit inside the viewport without clipping or overlap.",
+    "The original intro caption is visibly readable in light paper-colored type over the vessel scene; the earlier dark-ink subtitle contrast issue is corrected."
+  ],
+  "scope": "Release intro/dialogue and 960 by 600 viewport visual review only; full-route, task-HUD, menu and audio acceptance are outside this audit.",
+  "limitations": [
+    "Intro/dialogue and small-viewport review only. This does not certify the full route, optional branches, settings/chat menus, minigames, audio, physical mobile devices or overall human difficulty/cinematography.",
+    "Exact animation and subtitle activation timing differs between browser engines.",
+    "The auxiliary 04-real-dialogue-input and 05-small-viewport frames were also inspected, but the task HUD is not visible at those cinematic moments; no task-label contrast acceptance is claimed from this smoke.",
+    "Startup NavMesh and browser GPU warnings remain recorded in acceptance.json; this is not a zero-warning claim.",
+    "2 narrowly identified loader cancellations are recorded; the loader resolved and the real release ran. Cancelled streams are not reported as successful downloads."
+  ]
+}

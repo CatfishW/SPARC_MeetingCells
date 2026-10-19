@@ -1,0 +1,141 @@
+{
+  "status": "packaged-and-hash-verified",
+  "createdUtc": "2026-10-19T03:07:40.253593+00:00",
+  "sourceInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "stage": "Deliverables/OriginalScene/release-package",
+  "releaseBytes": 132388883,
+  "sourceSecretValuesExported": 0,
+  "entries": [
+    "Build/WebGLOriginalRelease.data.unityweb",
+    "Build/WebGLOriginalRelease.framework.js.unityweb",
+    "Build/WebGLOriginalRelease.loader.js",
+    "Build/WebGLOriginalRelease.wasm.unityweb",
+    "README-ORIGINAL.txt",
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4",
+    "appearance-handoff.js",
+    "browser-platform.js",
+    "index.html",
+    "release-manifest.json",
+    "serve-preview.py",
+    "server/agent-config.json",
+    "server/original_agent_proxy.py",
+    "server/serve_webgl.py"
+  ],
+  "files": {
+    "Build/WebGLOriginalRelease.data.unityweb": {
+      "sha256": "a0777c088460dfb419f451e3cb714c594029eacdf313a78ffc476aa1c88e79e3",
+      "bytes": 116631374,
+      "kind": "verified-release"
+    },
+    "Build/WebGLOriginalRelease.framework.js.unityweb": {
+      "sha256": "ba9c72b0e4064a24a2627bb9b0843541becbd746f1b4249a719e3d5e5e107332",
+      "bytes": 97125,
+      "kind": "verified-release"
+    },
+    "Build/WebGLOriginalRelease.loader.js": {
+      "sha256": "4673f24559b6741a90dda4cdb1b305e797f7c6d563ad5ab02b528a63ae55527e",
+      "bytes": 47866,
+      "kind": "verified-release"
+    },
+    "Build/WebGLOriginalRelease.wasm.unityweb": {
+      "sha256": "460f4a754320d3d770520c20146be525bad6cb2933b1f8fa20da4ad20bedb40f",
+      "bytes": 15222847,
+      "kind": "verified-release"
+    },
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": {
+      "sha256": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+      "bytes": 371291,
+      "kind": "verified-release"
+    },
+    "appearance-handoff.js": {
+      "sha256": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+      "bytes": 7146,
+      "kind": "verified-release"
+    },
+    "browser-platform.js": {
+      "sha256": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+      "bytes": 4044,
+      "kind": "verified-release"
+    },
+    "index.html": {
+      "sha256": "085d0b3954ffa47a281617c214874b050f7a586be9b3b55c966ad427e0761ef6",
+      "bytes": 7190,
+      "kind": "verified-release"
+    },
+    "serve-preview.py": {
+      "sha256": "1a3f05028621fa508a6d416acd87a3097b85ff15852f55941b27af68ad621d39",
+      "bytes": 3452,
+      "kind": "safe-preview-support"
+    },
+    "server/serve_webgl.py": {
+      "sha256": "f1565aa2f475303551e9bd0241956406dc43381f5248a908416cf0efb43556a7",
+      "bytes": 5420,
+      "kind": "safe-preview-support"
+    },
+    "server/original_agent_proxy.py": {
+      "sha256": "1087ad818e3d78d36ade3ab1a1700e781a8f073c7836b3bb152a40761f73df7f",
+      "bytes": 8170,
+      "kind": "safe-preview-support"
+    },
+    "server/agent-config.json": {
+      "sha256": "6a86a703271d08ac808ddc4264da872d8fd60b5158b5f77645266bd4afadb216",
+      "bytes": 2121,
+      "kind": "safe-preview-support"
+    },
+    "README-ORIGINAL.txt": {
+      "sha256": "1adf5544c9e255bd60db032b7f233d312405bc173706158aee56f69f5a5d5acc",
+      "bytes": 2544,
+      "kind": "safe-preview-support"
+    }
+  },
+  "package": "SPARC_MeetingCells_Original_WebGL.zip",
+  "archiveContentChecksumsVerified": true,
+  "archiveSecretsExcluded": true,
+  "uiVisualAudit": {
+    "captures": 263,
+    "manifestSha256": "15e13bd128f85d6034275b01f3dfde5da3deb6fa0ad892471f0172c51c649d8a",
+    "nativeReviewSha256": "97e4474b2e02050e4dcfbb41108380fc87e2e095deced19abd57015eb116bd5a"
+  },
+  "artifacts": [
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_WebGL.zip",
+      "bytes": 131713101,
+      "sha256": "5d829c59405d89053c6425ab2b45a599ad27bc8a2f8b104e370871a43f9bc640"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Audit.html",
+      "bytes": 30493344,
+      "sha256": "6b57f554315e1be8e0958387474a3ef80b48a88580c8ecbc6a217b1ce36492a3"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_UI_Audit.html",
+      "bytes": 140196420,
+      "sha256": "0058bee08cc6a55f725e64a52cbc550d95b3402a4dbedda29439f399ea2c95b7"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Evidence.zip",
+      "bytes": 466822734,
+      "sha256": "2c1351b6b105d7ee118afe6591579af3a945fedca9aaf82d15505fc38806b194"
+    },
+    {
+      "path": "Deliverables/OriginalScene/runtime-video-evidence.json",
+      "bytes": 4815,
+      "sha256": "e44ae7932fc531517cc55cc1593b965ccc80b0c4cbd02e4b34f31f64730bb2c5"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Runtime.mp4",
+      "bytes": 121372764,
+      "sha256": "13b861c37500b502344c12f3ebe5217aa69198ce8d07c33319cb7a55f3f2adfd"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Controls.mp4",
+      "bytes": 23726240,
+      "sha256": "453095796b84994c7d5c3df27633441be8dc37a4e5283c96c5719275105cda84"
+    },
+    {
+      "path": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Mobile.mp4",
+      "bytes": 9893538,
+      "sha256": "ab5e9a799c6e75a48aabbf6329279837e480b36945ab5e70cfce40193cc0f202"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "status": "smoke-passed-awaiting-visual-review",
+  "engine": "firefox",
+  "startedUtc": "2026-10-16T18:28:31.755Z",
+  "scope": "Release intro/dialogue/resize smoke only; full input-driven story uses the matching development build",
+  "buildHashes": {
+    "Build/WebGLOriginalRelease.data.unityweb": "888800de5d11ed3385675930b958d7c82dd2937ed0b540ea5a5570f2e2e4cd7c",
+    "Build/WebGLOriginalRelease.framework.js.unityweb": "17e3a463164140fddb7fabeffea377e63c0dc0a5c02bacc756686fb353b4db5f",
+    "Build/WebGLOriginalRelease.loader.js": "74e63239466c4295609781656db22c58e4cb3b2947b43ed4f9ab30e6f547acf2",
+    "Build/WebGLOriginalRelease.wasm.unityweb": "defd0f1ddac0d7a4ac72985e52a5162653e4f07b940530960385c017a3a328f9",
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+    "appearance-handoff.js": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+    "browser-platform.js": "f604086b2f6e9f7ab29453b22a112f35d9b3de7e637e0b9df924dbaac53c0b76",
+    "index.html": "c6522ed9088865d7a4aecf75d531af98b626b03cd2fff742f1724cfde1416390"
+  },
+  "errors": [],
+  "warnings": [
+    "[JavaScript Warning: \"WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.\" {file: \"http://127.0.0.1:58077/Build/WebGLOriginalRelease.loader.js\" line: 1}]",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because there is no valid NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "Failed to create agent because it is not close enough to the NavMesh\n",
+    "[JavaScript Warning: \"WebGL warning: drawArraysInstanced: Drawing without vertex attrib 0 array enabled forces the browser to do expensive emulation work when running on desktop OpenGL platforms, for example on Mac. It is preferable to always draw with vertex attrib 0 array enabled, by using bindAttribLocation to bind some always-used attribute to location 0.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Depth texture comparison requests (e.g. `LINEAR`) Filtering, but behavior is implementation-defined, and so on some systems will sometimes behave as `NEAREST`. (warns once)\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_X level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_X level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Y level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Y level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Z level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Z level 1 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_X level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_X level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Y level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Y level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Z level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Z level 2 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_X level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_X level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Y level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Y level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Z level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Z level 3 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_X level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_X level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Y level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Y level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Z level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Z level 4 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_X level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_X level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Y level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Y level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_POSITIVE_Z level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"WebGL warning: drawElementsInstanced: Tex image TEXTURE_CUBE_MAP_NEGATIVE_Z level 5 is incurring lazy initialization.\"]",
+    "[JavaScript Warning: \"After reporting 32, no further warnings will be reported for this WebGL context.\"]",
+    "Failed to create agent because it is not close enough to the NavMesh\n"
+  ],
+  "externalRequests": [],
+  "failedRequests": [],
+  "screenshots": [
+    {
+      "name": "01-original-start.png",
+      "sha256": "1aa0ff1da025eb5af4f897becf180b349b66b7331ab60276b7bc9d8d7f822248"
+    },
+    {
+      "name": "02-original-timeline.png",
+      "sha256": "f2bc371187c668f0446a04d84b24bdc1ea33a9345916df5bf88e80999f846518"
+    },
+    {
+      "name": "03-original-dialogue.png",
+      "sha256": "e724aa3ceaa5dfa7038e6516a7f1102f8840ec5056b9f4cc616bd5b766a4452c"
+    },
+    {
+      "name": "03b-dialogue-small-viewport.png",
+      "sha256": "24acc9d7a741ce558ed3967f3d0cb7129730f2796de2138053369bb9bb4070b9"
+    },
+    {
+      "name": "04-real-dialogue-input.png",
+      "sha256": "fd0325393cad15346daefd595af6c238bc4d451e61c29955587e048c0b5f05cc"
+    },
+    {
+      "name": "05-small-viewport.png",
+      "sha256": "1e4d4a00c01e41cf17e0dfd86943837d2515c0d482155f51163d9620c7b1a098"
+    }
+  ],
+  "checks": [
+    "release-loader-resolved",
+    "development-telemetry-absent",
+    "dialogue-captured-at-desktop-and-small-viewport",
+    "actual-menu-pointer-and-dialogue-key-input",
+    "canvas-resizes"
+  ],
+  "browserVersion": "157.0",
+  "startupSeconds": 1.561,
+  "recoveredRequests": [],
+  "nonfatalLoaderCancellations": [],
+  "unexpectedRequestFailures": [],
+  "networkStatus": "no-failed-requests",
+  "finishedUtc": "2026-10-16T18:29:11.053Z"
+}

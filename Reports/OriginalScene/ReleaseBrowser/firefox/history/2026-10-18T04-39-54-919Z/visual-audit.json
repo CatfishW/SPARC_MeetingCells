@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T04:45:31.999862+00:00",
+  "acceptanceSha256": "d0765815a7896855efdded93f8bde5230101775866e9b539337604826eb28c35",
+  "verifiedInputSha256": "3e5ea3365dda19b56a26da35351747d2f7c27a290ac6675f11f7fce58f2ee27b",
+  "method": "Assistant inspection of all six original-resolution artifact PNGs using view_image",
+  "screenshots": {
+    "01-original-start.png": "c61bd0d48a38bc7a5bfab68e9396c3a3efd10c337fcfdce6f01a529977d35b91",
+    "02-original-timeline.png": "c58334c9292529c6fb951c095f9e219f22051c3df640ba31e0b54cfac3059c34",
+    "03-original-dialogue.png": "d4774c60f398b57085612d5d5c31d4d5466f6dfbe8423f6549a20fa88a242673",
+    "03b-dialogue-small-viewport.png": "9f9049b7e3bda3ea7deae73ea50afecbd9bbe5069fad781c3d4a229fc5ac14f4",
+    "04-real-dialogue-input.png": "f358caa7ef753930653a73068b2d525cdbb1e71b8d1c2de08ee807b2836fdcd7",
+    "05-small-viewport.png": "83da8f75cf772734390eaaf8502fd8299968c4e6106c8853a46d86eb04c1783e"
+  },
+  "findings": [
+    "The original bloodstream intro and cell assets render without missing-material panels or a blank screen.",
+    "The complete original intro caption is legible in light paper-colored type over the vessel scene.",
+    "The original CAP dialogue, speaker label, ink icon and Continue control fit and remain legible at1440 by900.",
+    "The dialogue, keyboard hint and Continue control fit at960 by600 without clipping or overlap.",
+    "Later captures show the original scene after actual dialogue keyboard input and viewport resizing."
+  ],
+  "scope": "Historical3e5 production release intro/dialogue and960 by600 viewport visual review only; no full-module or ending-handoff acceptance.",
+  "limitations": [
+    "The immediate01-original-start frame still records Unity\u2019s splash; the separate production-phone run captures the actual visible Start card after splash completion.",
+    "This does not certify the full route, task HUD, menus, activities, continuous crowd behavior, audio, physical devices, performance or human difficulty.",
+    "The known3e5 ending interaction artifact is outside this narrow review and remains unapproved; refreshed source/evidence is required for delivery.",
+    "Exact cell placement and animation timing differ between engines.",
+    "Startup NavMesh/GPU warnings remain in acceptance.json; this is not a zero-warning runtime claim.",
+    "0 known loader cancellations are retained; cancelled streams are not called successful downloads."
+  ]
+}

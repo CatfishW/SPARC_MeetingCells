@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T02:27:08.657438+00:00",
+  "acceptanceSha256": "d231a7cdd5b09c6e24e53017feaab3ddd51291ed283ea1ad025564b7891d6874",
+  "method": "Assistant inspection of all six original-resolution final artifact PNGs using view_image",
+  "screenshots": {
+    "01-original-start.png": "e9cd5483708b37f1c802ce474a210e10501ec904e6ed3cb753db18d3e2382f86",
+    "02-original-timeline.png": "806e98f475fa25b37282704723414a67ccb05ab32e02bea754fde769212758c4",
+    "03-original-dialogue.png": "8cc0d8829d76f9115db0d748b8daba35f9129916d03858d94b9940e8d3c620d3",
+    "03b-dialogue-small-viewport.png": "6f651cd730f8a720fd2adb02fc181d57ef6b58407f9f33c19937097fba96e13b",
+    "04-real-dialogue-input.png": "4cc700e26e9fc26b550092ff1d7bf04fe6c7543fdc7b8e41d06ba8a11385d016",
+    "05-small-viewport.png": "5ae0e51d80dea130b4aa844bdc5b977a96780206f5f80e78c8804f1b997a2d90"
+  },
+  "findings": [
+    "The authored bloodstream intro and original cell assets render in the selected Timeline frame without missing-material panels or a blank screen.",
+    "The original intro caption is visibly readable in light paper-colored type over the vessel scene.",
+    "The original CAP dialogue is legible in the paper panel with a clear speaker label, ink icon and fully visible Continue control at1440 by900.",
+    "At960 by600, the dialogue, keyboard hint and Continue control fit without clipping or overlap.",
+    "Later captures show the original scene after actual dialogue keyboard input and the canvas resizing."
+  ],
+  "scope": "Release intro/dialogue and960 by600 viewport review only; no full-route, task-HUD, menu, crowd or audio acceptance.",
+  "limitations": [
+    "The immediate01-original-start capture still shows Unity\u2019s splash because loader resolution precedes splash completion; it does not visually accept the Start card.",
+    "This does not certify the full route, task HUD, optional branches, settings/chat menus, minigame playability, continuous crowd behavior, audio, physical mobile devices, performance or overall human difficulty/cinematography.",
+    "Exact cell placement and animation timing differ between browser engines.",
+    "Startup NavMesh and browser GPU warnings remain recorded in acceptance.json; this is not a zero-warning runtime claim.",
+    "2 narrowly identified loader cancellations are recorded; the loader resolved and the real release ran. Cancelled streams are not reported as successful downloads."
+  ]
+}

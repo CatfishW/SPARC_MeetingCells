@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-16T18:34:06.258134+00:00",
+  "acceptanceSha256": "ac0d2aaa722e03d4be21f3111300f42b62c67272787a1ca5871f7d4f5237236b",
+  "method": "Direct visual inspection of these exact images with project_artifact image",
+  "screenshots": {
+    "02-original-timeline.png": "f2bc371187c668f0446a04d84b24bdc1ea33a9345916df5bf88e80999f846518",
+    "03-original-dialogue.png": "e724aa3ceaa5dfa7038e6516a7f1102f8840ec5056b9f4cc616bd5b766a4452c",
+    "03b-dialogue-small-viewport.png": "24acc9d7a741ce558ed3967f3d0cb7129730f2796de2138053369bb9bb4070b9"
+  },
+  "findings": [
+    "The original bloodstream environment and source cell objects appear during the authored intro, with its original subtitle readable.",
+    "The original CAP model appears during the source conversation; original dialogue text and the new paper-styled panel/Continue button are visible and legible.",
+    "At 960x600 the original line, speaker and Continue button remain inside the viewport, without clipping or overlap.",
+    "No pink missing-shader surfaces or missing text rendering in these inspected final frames."
+  ],
+  "limits": [
+    "Selected intro/dialogue frames do not establish all-story cinematography or physical mobile-device acceptance.",
+    "Motion is verified separately by actual animation tests and the recorded input-driven development run.",
+    "Warnings and recorded Chromium loader cancellations remain in the acceptance report."
+  ]
+}

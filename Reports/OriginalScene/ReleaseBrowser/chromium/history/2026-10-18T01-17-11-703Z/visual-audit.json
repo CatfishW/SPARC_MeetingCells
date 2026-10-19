@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T01:19:16.335827+00:00",
+  "acceptanceSha256": "187f438812fe126ccd76b585c7f3112395abe56ec922e4491e0ac4cd99b9db0a",
+  "method": "Assistant inspection of original-resolution final artifact PNGs using view_image",
+  "screenshots": {
+    "02-original-timeline.png": "03c7c1946022f152f9e513a0aa924d468d7bc0762ed87193880641eec370d3c1",
+    "03-original-dialogue.png": "dbf2b90e09fc16f8f2eefea9941126f52b9cb08ee06019b060ab44dc6890384d",
+    "03b-dialogue-small-viewport.png": "4c41d268ecc778aa50a6db71b50de3b0148024e37610f58ce71f4dc04911f2fa"
+  },
+  "findings": [
+    "The authored bloodstream intro environment and original cell assets render in the selected Timeline frame without missing-material panels or a blank screen.",
+    "The original CAP dialogue appears in the redesigned paper panel with a clear speaker label, legible source text, ink icon and fully visible Continue control at 1440 by 900.",
+    "At 960 by 600, the dialogue, keyboard hint and Continue control fit inside the viewport without clipping or overlap.",
+    "The original intro caption is visibly readable in light paper-colored type over the vessel scene; no dark-ink subtitle contrast regression is visible."
+  ],
+  "scope": "Release intro/dialogue and 960 by 600 viewport visual review only; full-route, task-HUD, menu, crowd and audio acceptance are outside this audit.",
+  "limitations": [
+    "Intro/dialogue and small-viewport review only. This does not certify the full route, task HUD, optional branches, settings/chat menus, minigame playability, continuous crowd behavior, audio, physical mobile devices or overall human difficulty/cinematography.",
+    "Exact cell placement, animation and subtitle activation timing differs between browser engines.",
+    "Startup NavMesh and browser GPU warnings remain recorded in acceptance.json; this is not a zero-warning claim.",
+    "2 narrowly identified loader cancellations are recorded; the loader resolved and the real release ran. Cancelled streams are not reported as successful downloads."
+  ]
+}

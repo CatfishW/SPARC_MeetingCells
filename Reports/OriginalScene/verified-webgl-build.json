@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "startedUtc": "2026-10-19T02:32:01.632401+00:00",
+  "project": "SPARC_MeetingCells original-scene rework",
+  "kind": "development-read-only-observation",
+  "inputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "finishedUtc": "2026-10-19T02:32:35.763821+00:00",
+  "exitCode": 0,
+  "inputSha256After": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "changedInputs": [],
+  "buildSummary": {
+    "result": "Succeeded",
+    "builtUtc": "2026-10-19T02:32:33.8832240Z",
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 270445702,
+    "messages": []
+  },
+  "outputDirectory": "Builds/WebGLOriginal",
+  "outputs": {
+    "Build/WebGLOriginal.data": {
+      "sha256": "401fbc8e185e1cdb6182c45bd0899edf06f77ec33147459ab6ec2eee390133d4",
+      "bytes": 139582309
+    },
+    "Build/WebGLOriginal.framework.js": {
+      "sha256": "71fbf43c1c5e6335cda5b6ec58ee10428ee99d640b0cc92eb78c96e81cf4dd89",
+      "bytes": 881766
+    },
+    "Build/WebGLOriginal.loader.js": {
+      "sha256": "bbf85841a5e6b7cc1ba92b126a703a0e333920f2f8b647d0ad1786a7a3896889",
+      "bytes": 58349
+    },
+    "Build/WebGLOriginal.wasm": {
+      "sha256": "6ac923617c1d9986016c5a709dea595b4e628788a8a739f0828b92da968d0f33",
+      "bytes": 129533662
+    },
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": {
+      "sha256": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+      "bytes": 371291
+    },
+    "appearance-handoff.js": {
+      "sha256": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+      "bytes": 7146
+    },
+    "browser-platform.js": {
+      "sha256": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+      "bytes": 4044
+    },
+    "index.html": {
+      "sha256": "97adb2ccc2232b48cf364af68e878e40444203ef6db858efd0cb5d5cf300076a",
+      "bytes": 7135
+    }
+  }
+}

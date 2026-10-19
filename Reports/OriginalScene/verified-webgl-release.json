@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "startedUtc": "2026-10-19T02:32:36.426790+00:00",
+  "project": "SPARC_MeetingCells original-scene rework",
+  "kind": "release",
+  "inputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "finishedUtc": "2026-10-19T02:35:55.088385+00:00",
+  "exitCode": 0,
+  "inputSha256After": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "changedInputs": [],
+  "buildSummary": {
+    "result": "Succeeded",
+    "builtUtc": "2026-10-19T02:35:53.3734290Z",
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 132388883,
+    "messages": []
+  },
+  "outputDirectory": "Builds/WebGLOriginalRelease",
+  "outputs": {
+    "Build/WebGLOriginalRelease.data.unityweb": {
+      "sha256": "a0777c088460dfb419f451e3cb714c594029eacdf313a78ffc476aa1c88e79e3",
+      "bytes": 116631374
+    },
+    "Build/WebGLOriginalRelease.framework.js.unityweb": {
+      "sha256": "ba9c72b0e4064a24a2627bb9b0843541becbd746f1b4249a719e3d5e5e107332",
+      "bytes": 97125
+    },
+    "Build/WebGLOriginalRelease.loader.js": {
+      "sha256": "4673f24559b6741a90dda4cdb1b305e797f7c6d563ad5ab02b528a63ae55527e",
+      "bytes": 47866
+    },
+    "Build/WebGLOriginalRelease.wasm.unityweb": {
+      "sha256": "460f4a754320d3d770520c20146be525bad6cb2933b1f8fa20da4ad20bedb40f",
+      "bytes": 15222847
+    },
+    "StreamingAssets/OriginalMedia/ecca669a92bd1dc419e3c3459aa757ac.mp4": {
+      "sha256": "ea03ddd682fdb1ce5be19a1e0e94ed0e0e7f9ada82613e7756d545c91d091d63",
+      "bytes": 371291
+    },
+    "appearance-handoff.js": {
+      "sha256": "7d6666962ec32fd866b38293acf236cd9a8a7737965a65e9cf967adb174ecaa8",
+      "bytes": 7146
+    },
+    "browser-platform.js": {
+      "sha256": "c2ce8bb3b93490d35e142c9f6dd91e2da1b9f395b35b3e444907c7780af010f5",
+      "bytes": 4044
+    },
+    "index.html": {
+      "sha256": "085d0b3954ffa47a281617c214874b050f7a586be9b3b55c966ad427e0761ef6",
+      "bytes": 7190
+    }
+  }
+}

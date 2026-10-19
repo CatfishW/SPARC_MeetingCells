@@ -1,0 +1,1514 @@
+{
+  "status": "passed-source-fidelity-only",
+  "checkedUtc": "2026-10-19T02:36:07.732547+00:00",
+  "sourceSceneSha256": "80f17f2da9382c2ad3a0c26d8e563d96ef7b375fe9f224e44e4d384d3fce259f",
+  "sourceSceneUnchanged": true,
+  "nativeRecordsExact": 4746,
+  "nativeRecordsExpected": 4746,
+  "sourceGraphBlocks": 29,
+  "sourceGraphCommands": 416,
+  "dialogueAndVoiceRecords": [
+    {
+      "id": "728318322",
+      "text": "Uh… maybe you should take the lead, Explorer!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "1dcb976cdc61ee04a94444cf8331cc69",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318324",
+      "text": "Oh no…",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "ae76e2872cce0d64b868a288e20b4ddd",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318326",
+      "text": "Trouble like that infection!?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "334d1e0bfa38b2b419afab793393ec90",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318332",
+      "text": "like damaged blood vessels or traces of invading germs.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "1474f8e66c7238b4894a5658a20c92b2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318334",
+      "text": "You’ll need to watch for signs of infection",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "94ce11546b9dffc498b2d31c2a6655e8",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318337",
+      "text": "Great! Now, Let’s head to my buddy White.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "3521a768ded9bd54797510dbe3226910",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318367",
+      "text": "The heart? Oh man, I can’t wait! Lead the way, team!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "7c36a2388ee644c4fb22a336bac26c6b",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318369",
+      "text": "it’s the powerhouse of the circulatory system and keeps everything moving.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bca57aa9c1d2381418b2ec7230663834",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318370",
+      "text": "Let’s head to the heart.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "79d23badc8caa724d9ec6fcc81743383",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318371",
+      "text": "Explorer, Cap, are you ready for the next adventure?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d245f7b4dd78f9d40a777eb745119e90",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318372",
+      "text": "Absolutely!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "4b67a047f2b6d2444b90b143bea38fba",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318381",
+      "text": "Red, I think it’s time we take our friend to the heart, don’t you?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "2153d40ed76f7db46a9c50846ef9e709",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318383",
+      "text": "Nice try buddy, I'll cover the rest  for you.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "f06083acfb15d714e9a15c15d60c57f0",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318384",
+      "text": "Nice job!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "b76cc42ff76ce884db6f4c46d6f3f66d",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318389",
+      "text": "Let’s see if you can help me protect the body in a mini-game!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "776b8d8ea987f5142b7e64d1c2ea38c2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318390",
+      "text": "Now that you know so much about me, how about a challenge?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d59af2b2f17f2614eb3b8377c0b5f5e7",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318391",
+      "text": "Exactly.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "0535447656538244d8e308423c9286e7",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318395",
+      "text": "You’ve got superhero squads?! ",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "e47fffe961f458747909539d6f8d0ae0",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318396",
+      "text": "That’s incredible!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "03958ed4345271b439731caf79b4867a",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318397",
+      "text": "Wait, wait, wait!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "6e1f2aa8ccccea34f865831441cf8438",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318398",
+      "text": "There are many main types of me.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "215b051beff1672458fc6274c56e9b3b",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318399",
+      "text": "Each type specializes in fighting different threats.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "18cdcd6b38ea9e24b9cc2f0f270cefb2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318400",
+      "text": "So unlike Red, I’ve kept my nucleus as the command center.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d27c0b877e5518f4ba9a57200bda197c",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318401",
+      "text": "I protect the body from harmful invaders like bacteria and viruses.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "59ff30dff418189499d4de33117bf2a4",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318402",
+      "text": "Hey there! I’m White.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "20f5ba40cb95eff44bc67c4382e0153b",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318411",
+      "text": "All done! You arrived just in time to see me clean up.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "2523add183c252045b3cb4f6db7d6881",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318432",
+      "text": "Good call, Red. Phew! The yellow circle is also not there, Just follow the guide, Explorer!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "703a2a1214a044a4eb6dc313408cec52",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318437",
+      "text": "I don’t think this area is infected... White wouldn’t be here. Let’s turn around and try another path.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "5ad8ee0b206c2424e9e980a9bfe182b2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318460",
+      "text": "Hey, explorer, why don’t you try delivering some oxygen yourself?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "6fd4e8e0309e7044490788c6321d7ff5",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318463",
+      "text": "You're so professional.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "923619d6df4c4cd46b93849bf009b2f3",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318464",
+      "text": "Whoa! So you’re like an elite delivery service!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "1590edae2ba5ffa4ea9fe83e56b5c27c",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318465",
+      "text": "Think of it like taking out the seats from a truck to carry extra cargo!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "7b6c94d6ca97322459fc13294625d5c6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318466",
+      "text": "I traded my nucleus for extra space to carry oxygen.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "3fc3fe951b24a4748a013a559f2bc3d7",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318467",
+      "text": "Good question, Cap!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "8de64ca68b0265f49a5b0ddf02bbe9d3",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318470",
+      "text": "Wait a second, Red. How can you be so squishy? Don’t all cells have a large nucleus?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "59de33a78df01f449bffb54726879d98",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318471",
+      "text": "Where’s yours?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "de5268e97aabd564a80f853e5f001bb5",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318473",
+      "text": "making me incredibly efficient at picking up and delivering oxygen.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "fe6818649076220468af4311b94d02f1",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318474",
+      "text": "This design increases my surface area,",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "8134f945715881442a0dc97dfa29b137",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318475",
+      "text": "Look here's my shape—it’s like a squished gummy!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "583db95db49417b43b174b1978c8f4f1",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318478",
+      "text": "Hey there, I’m Red, your oxygen delivery expert.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bbb6e473d2561ab4d8bc02d2ca2f4d17",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318486",
+      "text": "Be careful!",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318496",
+      "text": "You must be new. Look ahead, that’s my buddy, Red!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "98e415c4de620664ba20d692eb60a733",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318497",
+      "text": "I am CAP. I’ve been here a while, keeping things in check.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "15b251ff5aaccf441a1c870870c629c6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318498",
+      "text": "Watch out, pal, you almost get hit by that RBC.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "a7777a5ed23e8e545bac6b828447158a",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318502",
+      "text": "So, you’ve already met Red and watched their intro, huh? ",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "ba0f0aad82b8f06429470ebd09290c92",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318503",
+      "text": "Hey there, I’m White. It’s great to meet you!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bae43937fe0fabb42b2b0f5a1cc9c3eb",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318504",
+      "text": "Ready to continue the adventure? Let’s go!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "491400ff594c53a46b0773bee8cc3326",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318505",
+      "text": "And we’re going to need you with us as we explore it.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "98570682ee2de9a4c9313846dd71d1c9",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318506",
+      "text": "Red, I think it’s time we take our friend to the heart, don’t you?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "ee56d85fd967b4e41befb2751f9a7fc7",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318507",
+      "text": "I’ve got a final mini-game that will need your help to pass!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "9a78db69e971bb54a8778caa6237016f",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318508",
+      "text": "Now, are you ready to join me on my next adventure? ",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "abaafd51b74f9144fab10dd77cc5d13f",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318509",
+      "text": "Why not give it a watch and learn a bit more about what makes me, well, me!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d6ea11a3ad1faf34db6240c0ebd9772d",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318510",
+      "text": "You and I are going to be good friends, I can already tell.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "53cfebd8f79ccdf4da6c89a2d59a58dd",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318511",
+      "text": "You can think of me as a brave knight, always on guard, protecting the body from harmful invaders like bacteria and viruses!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "5540f513f4e3b1346af8dfd015dc48d8",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318512",
+      "text": "It’s where all the magic of blood circulation begins.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "0a03536b7efb5c24d83835fcc375483f",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318513",
+      "text": "Now, let’s head to the heart—the powerhouse that keeps everything pumping!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "2a55977810841ec45b1f3c728f983db0",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318515",
+      "text": "Those are the infected areas, and White is out for handling those.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "36dbda41f87065145aebb8de760ae8f5",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318516",
+      "text": "There are signs of infection along the way.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "cd9bc462ee146da488f8243e51d7dc8f",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318517",
+      "text": "But be careful, things aren’t as simple as they seem.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "2429e1b9ce37b684580a4a00a0b78fc3",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318518",
+      "text": " To reach White, you'll have to go through a few branching paths",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bcf68f866d7554447aa9113ed84d3399",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318519",
+      "text": "And I hope you enjoyed this journey.\r",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d3991191b053a1a4394ff4cf50824062",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318520",
+      "text": "It is wonderful to have you joining me today.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "4656a59baefecaf479310bc94d8f7ccd",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318521",
+      "text": "Ensuring that every cell gets the oxygen it needs to thrive.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "f223ec6d9f122ac40ba36a3af8174cf6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318522",
+      "text": "I'm proud to be a vital part of the transportation system in the human body",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "c50b91e5552721941b56166bc2f5ad0b",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318523",
+      "text": "As a red blood cell, my life may be simple, but it's incredibly important!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "43233ab1df12bd745b621dec2d394bd1",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318524",
+      "text": "How our shape helps us squeeze through the narrowest capillaries and perform our super-important job.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "8418e0826fbb8db4e8fc46ede438d2f9",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318525",
+      "text": "Well, hang tight! I’ve got a cool video coming up that’ll show you exactly...",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "52c4028af322bd448b44b5c51314a4f5",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318526",
+      "text": "🏙️💨We navigate the twists and turns of veins and arteries, making pit stops at every cell to keep them energized and happy.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "81986bb8091bf2346a7e34a1d5188b32",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318527",
+      "text": "We’re always in a rush, delivering oxygen just like turbo-charged delivery trucks in the bustling metropolis of the human body! 🏙️",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "951aad4756cb6ca45b998bb558cab921",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318528",
+      "text": "Sorry if my buddies zoom past you.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "22511256547aec34c8c9f6994343680a",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318529",
+      "text": "Welcome to the high-speed highway of blood circulation!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "896b7930885da1e4f90a6d2d68013255",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318549",
+      "text": "Thank you for helping it out adventurer! Now, time to move forward!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "7c3685fdc7f369e4a911135b01b8ab8e",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318550",
+      "text": "Thank you so much, adventurer! Now, time to move forward!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "5edae2d3db6fcfd4aac1dfa15a005dd2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318557",
+      "text": "It's so close! Although you still have a little bit of error, it's good enough!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "3d67dd501630c554bb36e82a083316fc",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318562",
+      "text": "You got it correct!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "01e7f925e6ad8274ea921c6b3b7d98fb",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318566",
+      "text": "You’ll notice some damaged blood vessels and traces of invading germs.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "38381ff5d6709a64b9ff0bc1cb3d14d2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318568",
+      "text": "Signs of infection? What should I look out for?",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318570",
+      "text": "Well, let's go meet my buddy White next.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "f62112589e8995e468f0f0407b9162f8",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318575",
+      "text": "I’m ready! Let’s find the White Blood Cell.",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318576",
+      "text": "Keep an eye out as you navigate the forks in the path, and mind the infected areas. White is waiting for you ahead. If you get lost, the infection traces might guide you in the right direction",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "dbc502f30df1b494da8f3e275c031bb2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318577",
+      "text": "Got it, I’ll stay alert!",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318584",
+      "text": "Oh, interesting choice! But why do you think that’s the right answer?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "3ab19f9d5eaaba34bb26348e2ae96ef6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318604",
+      "text": "That’s right! The heart is at the center of it all",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "94f9b465490f5df4ea544e5a26f5b694",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318605",
+      "text": "Absolutely! You’ve already seen how I deliver oxygen, and White showed you how to fight off invaders.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "0e0e0dd4d59005d43867c8e9f8c9df4a",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318606",
+      "text": "Haha!Better than Red right?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "a16bc0f6c96ef2b4db26cfb469e24524",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318610",
+      "text": "All done! You arrived just in time to see me clean up.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bb1289a1ab93c42469306d22f2decb4d",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318615",
+      "text": "I don’t think this area is infected... White wouldn’t be here. Let’s turn around and try another path.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "5ad8ee0b206c2424e9e980a9bfe182b2",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318623",
+      "text": "That was fun! Now that you know all about me and how I protect the body.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "54e1c0168845e6f4f87a35f3d1b71a52",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318624",
+      "text": "Well, now it’s my turn! I’ve got my own video too.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "aa76a1fb80bc2444da75718c24a192de",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318625",
+      "text": "Look, there’s White, just wrapping up the last bit of infection.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "8c7246fcb114bea449d21847da8b410c",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318637",
+      "text": "Thank you for listening to me.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "c3446d61e463be04fb3ef7e3550e5d3c",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318638",
+      "text": "Speaking of which, ever wondered why we’re shaped like little donuts without holes?",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "5a8973b251332774d8fd2ab3cbe5d199",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318639",
+      "text": "Pretty interesting right? If you want to know more, why not try my exclusive trivia game？",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "3387235e4083b704abcc857498f38394",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318642",
+      "text": "Hey there, young explorer! I'm Red Blood Cell, your friendly oxygen delivery specialist.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "26403d799a3fc6144b32b9915a0514af",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318646",
+      "text": "Why don’t I introduce you to Red! Follow me!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "d6d41aa290e9c6e46b7023b2e81d7464",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318682",
+      "text": "Hmm, round and smooth body, interesting.",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318726",
+      "text": "Busy big guy.",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318836",
+      "text": "Let’s see if you’ve been paying attention! Answer the following question to prove you’re an honorary blood cell!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "68bafa97f3699904ba5ff3b63564b03e",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318839",
+      "text": "That was fun, right? Now you know more about me.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "dfc82a50afa324d498e1f1338670e22e",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318840",
+      "text": "Click Mini game button and show me your skills!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "b7fe56f091abc304988ae6106a50b99d",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318864",
+      "text": "Whoa! He’s like a real-life superhero!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "9aaa1f617ce9c4d4ba5fc103f93d5db3",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318870",
+      "text": "There’s White, just wrapping up the last bit of infection!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "e3ba7bd4fdb3aa743843e5bb2c0104a6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318886",
+      "text": "Wait! Before that, we have a tradition. Let's see if you can handle the Word Game we've prepared to check how much you've learned from meeting the cells!",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "c922476eb6a4e9542b9a347db6d51a97",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318893",
+      "text": "(inner thought: hum...)",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318899",
+      "text": "Hey there, I’m Red, your oxygen delivery expert.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "bbb6e473d2561ab4d8bc02d2ca2f4d17",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318918",
+      "text": "I am CAP. I’ve been here a while, keeping things in check.",
+      "voice": {
+        "fileID": 8300000,
+        "guid": "15b251ff5aaccf441a1c870870c629c6",
+        "type": 3
+      },
+      "unchanged": true
+    },
+    {
+      "id": "728318925",
+      "text": "Bot with a bulb. ",
+      "voice": {
+        "fileID": 0
+      },
+      "unchanged": true
+    }
+  ],
+  "timelines": [
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCells_RBC_Gummy.playable",
+      "sourceSha256": "6970f1bd9dfce54badb11a748984e68a970e60a3ed31da73ace2b49b3c6ebea3",
+      "currentSha256": "6970f1bd9dfce54badb11a748984e68a970e60a3ed31da73ace2b49b3c6ebea3",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCells_RBC_JUMP.playable",
+      "sourceSha256": "179f6d9429595c2966a92ec7dc168277220c453140d4927aeb9ad860520b98b4",
+      "currentSha256": "179f6d9429595c2966a92ec7dc168277220c453140d4927aeb9ad860520b98b4",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_Camera_Casual_SwitchTimeline.playable",
+      "sourceSha256": "acbb6c19a952fd9932e334a0947b053cda7cbfa82569a8e798b2347d578e3b8d",
+      "currentSha256": "acbb6c19a952fd9932e334a0947b053cda7cbfa82569a8e798b2347d578e3b8d",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_RBC_Raise_QuestionTimeline.playable",
+      "sourceSha256": "30a3a07efcbf292850fe1d2e1cefb035a2451f3da6435c1f0f0c4ebe1a1c088d",
+      "currentSha256": "30a3a07efcbf292850fe1d2e1cefb035a2451f3da6435c1f0f0c4ebe1a1c088d",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_introduce_task_list_foldTimeline.playable",
+      "sourceSha256": "08899f46b2773947079c7cde2604655f3655cbd6702eb33db612f758690e07c5",
+      "currentSha256": "08899f46b2773947079c7cde2604655f3655cbd6702eb33db612f758690e07c5",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/StorylineRBC_Infections.playable",
+      "sourceSha256": "3449756c27aa397188f6eb5529875c9367f3bd0cffadf2ad05849a68cb3d6746",
+      "currentSha256": "3449756c27aa397188f6eb5529875c9367f3bd0cffadf2ad05849a68cb3d6746",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCellsTimeline2.playable",
+      "sourceSha256": "e288eee5a91ff1aa057c480e626d396937d210d37a8ddc2c586014237ccaccc2",
+      "currentSha256": "e288eee5a91ff1aa057c480e626d396937d210d37a8ddc2c586014237ccaccc2",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/MeetingCells_RBC_Gummy.playable",
+      "sourceSha256": "c6fc0bbdd71bcad93af70121232111f0b2ef16f0505e2ebe8aa3062d47ea7784",
+      "currentSha256": "c6fc0bbdd71bcad93af70121232111f0b2ef16f0505e2ebe8aa3062d47ea7784",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/GameKarting/Timelines/RaceStart.playable",
+      "sourceSha256": "956185bcc2b6625e24be2a5d32841705491edbe4c1e3f719eb0da87667299e0e",
+      "currentSha256": "956185bcc2b6625e24be2a5d32841705491edbe4c1e3f719eb0da87667299e0e",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_introduce_yellow_circleTimeline.playable",
+      "sourceSha256": "b5bafcc6223d71b48b59e9f342b98bd2a2f8bd89ffb3603d860b26b585ec8b49",
+      "currentSha256": "b5bafcc6223d71b48b59e9f342b98bd2a2f8bd89ffb3603d860b26b585ec8b49",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCellsTimeline.playable",
+      "sourceSha256": "29043b6f177aa22bdb05a58f0f98b8b9c8ba4e4457750777ebb1317bcf22c4e5",
+      "currentSha256": "29043b6f177aa22bdb05a58f0f98b8b9c8ba4e4457750777ebb1317bcf22c4e5",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCells_RBC_Shift.playable",
+      "sourceSha256": "afe1d000b2cde265e5315bc7701e7062e45b9af5549e5da16743c001b1c9d5ff",
+      "currentSha256": "afe1d000b2cde265e5315bc7701e7062e45b9af5549e5da16743c001b1c9d5ff",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingTimelines/WBC_Rushing2RBCandCAP.playable",
+      "sourceSha256": "ef7b70fc787f5aeab9a1ee39bb3e4873fb226f6c514a27f9f9c5de2bff78d6e5",
+      "currentSha256": "ef7b70fc787f5aeab9a1ee39bb3e4873fb226f6c514a27f9f9c5de2bff78d6e5",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCells_Cap.playable",
+      "sourceSha256": "384906fd03924dcf570b8b416cb620ebabf55e799bf213afd15ae03fcc722c4f",
+      "currentSha256": "384906fd03924dcf570b8b416cb620ebabf55e799bf213afd15ae03fcc722c4f",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_Cap_RBC_TalkTimeline.playable",
+      "sourceSha256": "31ef1e8c304f35b49c6de6a883bc3a5623bc73c0386152ad2ea30df3ffc0a468",
+      "currentSha256": "31ef1e8c304f35b49c6de6a883bc3a5623bc73c0386152ad2ea30df3ffc0a468",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/MeetingCellsRBC_PointsAhead.playable",
+      "sourceSha256": "5851a54a353b78a68b607647d6bac58634f2b80c20b1ce4e14d308934ad51d27",
+      "currentSha256": "5851a54a353b78a68b607647d6bac58634f2b80c20b1ce4e14d308934ad51d27",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_BlackInBlackOut_TransitionTimeline.playable",
+      "sourceSha256": "d71dc663041ed2bee227796cf6791da790b79976fe339497eb05619ad301ba80",
+      "currentSha256": "d71dc663041ed2bee227796cf6791da790b79976fe339497eb05619ad301ba80",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_MeetingCellsTransition2HeartTimeline.playable",
+      "sourceSha256": "bbac7eab0bb2d3598aa7e3acce0091de881572cb4371f2f7f06e13bb7ca9523b",
+      "currentSha256": "bbac7eab0bb2d3598aa7e3acce0091de881572cb4371f2f7f06e13bb7ca9523b",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_RBC_Back_2_PlayerTimeline.playable",
+      "sourceSha256": "575e562257d59a067a1808631c62b28829275799b0a2d193f685a6063008eea4",
+      "currentSha256": "575e562257d59a067a1808631c62b28829275799b0a2d193f685a6063008eea4",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/StorylineWBC_Fighting_GermTimeline.playable",
+      "sourceSha256": "6b79eb798af162e444967127b2ef1866e75667aa10b6df4b5aec295a06d2737c",
+      "currentSha256": "6b79eb798af162e444967127b2ef1866e75667aa10b6df4b5aec295a06d2737c",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/StorylineWBC_Turn_AroundTimeline.playable",
+      "sourceSha256": "1220925c93f75164d798a424e338c66eb28adc93c93ecc65bcfa4b1f48bc6467",
+      "currentSha256": "1220925c93f75164d798a424e338c66eb28adc93c93ecc65bcfa4b1f48bc6467",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/Storyline_RBC_HIT_PLAYERTimeline.playable",
+      "sourceSha256": "fb8e20c4990990db2dba589cc27de7f86cec3d65121fde57a34b70bff80682d5",
+      "currentSha256": "fb8e20c4990990db2dba589cc27de7f86cec3d65121fde57a34b70bff80682d5",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsTimelines/StorylineWBC_Camera_Zoom_InTimeline.playable",
+      "sourceSha256": "d8f11c55624a47a96bf53026d84fe640a2d72d3d80458522d47417488f6986f6",
+      "currentSha256": "d8f11c55624a47a96bf53026d84fe640a2d72d3d80458522d47417488f6986f6",
+      "byteIdentical": true
+    }
+  ],
+  "animationClips": [
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingAnimations/RBC_Walk.anim",
+      "sourceSha256": "64ae747135aa039fc37e305ac7b7dfd31789b5f9301c3acf4f304864ed0a6403",
+      "currentSha256": "64ae747135aa039fc37e305ac7b7dfd31789b5f9301c3acf4f304864ed0a6403",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingAnimations/Float.anim",
+      "sourceSha256": "d7e34d438b28f8079620aa811f81a176c8feb6affe2a5be4f80230912dc220d6",
+      "currentSha256": "d7e34d438b28f8079620aa811f81a176c8feb6affe2a5be4f80230912dc220d6",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Idle/Updated_Idle.anim",
+      "sourceSha256": "1f67fa60857137003e4322f00cea69335230ec2949d4c5ccda53dbfb3e96c161",
+      "currentSha256": "1f67fa60857137003e4322f00cea69335230ec2949d4c5ccda53dbfb3e96c161",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsAnimations/Cocci_being_punched.anim",
+      "sourceSha256": "a52c4307f07c5e42bbe34497f7a752e33e31d839abbb02c8d4f6219830a63f2e",
+      "currentSha256": "a52c4307f07c5e42bbe34497f7a752e33e31d839abbb02c8d4f6219830a63f2e",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Punch/Updated_WBC_Punch.anim",
+      "sourceSha256": "2a0b85768bd9955d0b5ea8d01e7cb4c130bd89cbcdca8195c8575a9bbd724b4c",
+      "currentSha256": "2a0b85768bd9955d0b5ea8d01e7cb4c130bd89cbcdca8195c8575a9bbd724b4c",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/ThirdParty/Blink/Art/Animations/Animations_Starter_Pack/Combat/PunchLeft.anim",
+      "sourceSha256": "19fd1f73f55e8b48d030163b69f8b5ae0924716fa17289307801b8ccb2302408",
+      "currentSha256": "19fd1f73f55e8b48d030163b69f8b5ae0924716fa17289307801b8ccb2302408",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/ThirdParty/Blink/Art/Animations/Animations_Starter_Pack/Combat/PunchRight.anim",
+      "sourceSha256": "501a22d05625be811e3db9d3c8e8b45550cdefe48ccd207d54210842eda7b4c3",
+      "currentSha256": "501a22d05625be811e3db9d3c8e8b45550cdefe48ccd207d54210842eda7b4c3",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Walk/Updated Walk.anim",
+      "sourceSha256": "d90b4d64792857240dc6bbaa6f89c38a401b067c4b24c34c078ae02259070b3a",
+      "currentSha256": "d90b4d64792857240dc6bbaa6f89c38a401b067c4b24c34c078ae02259070b3a",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Point/POINT_V5.anim",
+      "sourceSha256": "bde78df9a2aadbc31dd9c2ac3ae911b9546ccb72640d1ae0901304ac930267f7",
+      "currentSha256": "bde78df9a2aadbc31dd9c2ac3ae911b9546ccb72640d1ae0901304ac930267f7",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Idle/IDLE.anim",
+      "sourceSha256": "e3bdfe7a668f7ca0661fcbe89461ef96e780c4682018cfc064d09dace19c2aab",
+      "currentSha256": "e3bdfe7a668f7ca0661fcbe89461ef96e780c4682018cfc064d09dace19c2aab",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Idle/IDLE_ANIM.anim",
+      "sourceSha256": "48be235222b3447a7eddf1f6524b4abc4727772107d29ab3d590164f62e57a90",
+      "currentSha256": "48be235222b3447a7eddf1f6524b4abc4727772107d29ab3d590164f62e57a90",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Running/Run.anim",
+      "sourceSha256": "7a96d645e80c1d5a27a81878b70c122a13301c2a1a2849b71e98b19908c84510",
+      "currentSha256": "7a96d645e80c1d5a27a81878b70c122a13301c2a1a2849b71e98b19908c84510",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Walk/WALK_ANIM.anim",
+      "sourceSha256": "eaadcc3712449f45d8322b6a0a4478e26b9baee466181bd06dda5ee4125d99ee",
+      "currentSha256": "eaadcc3712449f45d8322b6a0a4478e26b9baee466181bd06dda5ee4125d99ee",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Jump/JUMP.anim",
+      "sourceSha256": "ee0d8ecfb207b9f77666476baf67864e25069fd6840419d252b78132b2836789",
+      "currentSha256": "ee0d8ecfb207b9f77666476baf67864e25069fd6840419d252b78132b2836789",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/MobileUIAnimations/Switch/SwitchBgJumpOffInit.anim",
+      "sourceSha256": "1f6a29114b87d26324d0d4e3371a8338fdf943318f163e6551598994c5cf99e1",
+      "currentSha256": "1f6a29114b87d26324d0d4e3371a8338fdf943318f163e6551598994c5cf99e1",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/MobileUIAnimations/Switch/SwitchBgJumpOff.anim",
+      "sourceSha256": "9f66d176da3f46ab3c93ac804e1d142c3c92d146646b47abdb7dd3db97d56f15",
+      "currentSha256": "9f66d176da3f46ab3c93ac804e1d142c3c92d146646b47abdb7dd3db97d56f15",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/MobileUIAnimations/Switch/SwitchBgJumpOnInit.anim",
+      "sourceSha256": "9ab7fad0b3da910c2eb26819f7d2a04a5ef645a3c4c2e791c5cf2a586eb3de01",
+      "currentSha256": "9ab7fad0b3da910c2eb26819f7d2a04a5ef645a3c4c2e791c5cf2a586eb3de01",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/MobileUIAnimations/Switch/SwitchBgJumpOn.anim",
+      "sourceSha256": "b6be14cdb4592bf1b1b7d06fcf723fba0d4542328b808fc086bf35842257e988",
+      "currentSha256": "b6be14cdb4592bf1b1b7d06fcf723fba0d4542328b808fc086bf35842257e988",
+      "byteIdentical": true
+    },
+    {
+      "path": "Assets/Resource/Action_Punch_Editable.anim",
+      "sourceSha256": "337d33dd7932d441dd5dc886cadbf73bc470d19ae6d0d01a1c0c7f310d5b4c54",
+      "currentSha256": "337d33dd7932d441dd5dc886cadbf73bc470d19ae6d0d01a1c0c7f310d5b4c54",
+      "byteIdentical": true
+    }
+  ],
+  "animatorControllers": [
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingAnimations/RBC.controller",
+      "sourceSha256": "a60e4314b46d989b69b7291c8126c4c42056f69edbd65aa93a7cbf6e90bd98e3",
+      "currentSha256": "a60e4314b46d989b69b7291c8126c4c42056f69edbd65aa93a7cbf6e90bd98e3",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 5
+    },
+    {
+      "path": "Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Idle/Updated_Idle.controller",
+      "sourceSha256": "d7fa57c1647d73d6c74f9ddb7a95d59f65f038d64d78a15377feccc7cf25d7b8",
+      "currentSha256": "d7fa57c1647d73d6c74f9ddb7a95d59f65f038d64d78a15377feccc7cf25d7b8",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 3
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsAnimations/Cocci_Grp (3).controller",
+      "sourceSha256": "d274c8d9cf35e11972226bb7d25dbb692798be9b1c8741aa7c6e218197beb96f",
+      "currentSha256": "d274c8d9cf35e11972226bb7d25dbb692798be9b1c8741aa7c6e218197beb96f",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 5
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Animated_WBC/Animations/WBC.controller",
+      "sourceSha256": "ac91a69718da40438870943fd5766dfe03855a6a48125e73afa8322e0fe1b671",
+      "currentSha256": "ac91a69718da40438870943fd5766dfe03855a6a48125e73afa8322e0fe1b671",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 26
+    },
+    {
+      "path": "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Idle/Mo_Controller.controller",
+      "sourceSha256": "e616bb47aee3ff5a1b4871409f045a164f7961c06022352909d0ac8fad257b56",
+      "currentSha256": "e616bb47aee3ff5a1b4871409f045a164f7961c06022352909d0ac8fad257b56",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 13
+    },
+    {
+      "path": "Assets/Resource/MobileUIAnimations/Switch/SwitchBgJump.controller",
+      "sourceSha256": "f6c16407199363f3dbe69b3e09c96bcdeaa567f8abed2e8baa966048c6229730",
+      "currentSha256": "f6c16407199363f3dbe69b3e09c96bcdeaa567f8abed2e8baa966048c6229730",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 11
+    },
+    {
+      "path": "Assets/ThirdParty/CleanFlatUI/Animations/Button/ButtonScaleGlow.controller",
+      "sourceSha256": "9b15bf2b3aaa86a03afc866e439c4562a458ac647a2555d34977f751769f323a",
+      "currentSha256": "9b15bf2b3aaa86a03afc866e439c4562a458ac647a2555d34977f751769f323a",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 17
+    },
+    {
+      "path": "Assets/Resource/Customized_Character_Anime.controller",
+      "sourceSha256": "fcd0487af2a13a1300e0a310a188ca449fda7be8f6ba7231f0c9592e0c1197a7",
+      "currentSha256": "fcd0487af2a13a1300e0a310a188ca449fda7be8f6ba7231f0c9592e0c1197a7",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 38
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_Peer_Agent_Mo/Animations/Idle/Mo_Controller.controller",
+      "sourceSha256": "e6b6e248268cad6befbd50969c012d8699d5589a5cc1fa1746d7c5a9be0b7b28",
+      "currentSha256": "e6b6e248268cad6befbd50969c012d8699d5589a5cc1fa1746d7c5a9be0b7b28",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 12
+    },
+    {
+      "path": "Assets/Resource/GameMeetingCells/MeetingCellsAnimations/wo2v2WalkController.controller",
+      "sourceSha256": "dbd5d5c47ded8f2f5f4a99924065a31b17b6d8d8dc7cf05758fd0aad39d68f99",
+      "currentSha256": "dbd5d5c47ded8f2f5f4a99924065a31b17b6d8d8dc7cf05758fd0aad39d68f99",
+      "byteIdentical": true,
+      "nativeAnimationStateRecordsUnchanged": true,
+      "nativeRecordCount": 6
+    }
+  ],
+  "originalDirectors": [
+    {
+      "id": "431241101",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "475495777",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "480585836",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "520107236",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "573254463",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "604285187",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "671245516",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "829173504",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "859121523",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "890159924",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1145545587",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1158144752",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1253517783",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1368784479",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1549063133",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1674686862",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1685490220",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1790074237",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "1853030853",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    },
+    {
+      "id": "2048926604",
+      "originalAssetAndBindingsUnchanged": true,
+      "changedFields": []
+    }
+  ],
+  "newImplementationFiles": 62,
+  "exactLegacyCSharpCopies": [],
+  "errors": [],
+  "limits": [
+    "This audit checks asset/graph fidelity. It does not prove every source behavior, legacy external service or branch has completed runtime acceptance.",
+    "The prepared scene additionally contains input/runtime compatibility adapters, WebGL-safe streaming video URLs, staggered reflection probes and rebaked navigation using the original geometry.",
+    "Original scene GameObjects and transforms are verified at the imported baseline; the prepared scene contains documented compatibility components."
+  ]
+}

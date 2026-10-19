@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "createdUtc": "2026-10-19T03:03:07.754147+00:00",
+  "sourceInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "recordings": [
+    {
+      "label": "Runtime",
+      "source": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-journey.webm",
+      "sourceSha256": "258e3a4453af6be25ff90a1fad521a349dbbac924c1e93e48653504be20377bc",
+      "output": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Runtime.mp4",
+      "outputSha256": "13b861c37500b502344c12f3ebe5217aa69198ce8d07c33319cb7a55f3f2adfd",
+      "bytes": 121372764,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "657.720000"
+        }
+      },
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "657.720000"
+        }
+      },
+      "acceptanceReport": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/acceptance.json",
+      "acceptanceSha256": "7f62a60bac2bc7192fbbbcfa7354c9d4400a26e04fac20082f59fe9e5d501c7b",
+      "editing": "MP4 encoding only: no cuts, time changes, generated frames or synthetic gameplay.",
+      "audio": "Silent browser screen recording, not verification of runtime audio."
+    },
+    {
+      "label": "Controls",
+      "source": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/original-controls.webm",
+      "sourceSha256": "e8f854420a1250500dc645cce4eab0554c56a1e878eb6e2e154a16f076be2ebd",
+      "output": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Controls.mp4",
+      "outputSha256": "453095796b84994c7d5c3df27633441be8dc37a4e5283c96c5719275105cda84",
+      "bytes": 23726240,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "103.480000"
+        }
+      },
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "103.480000"
+        }
+      },
+      "acceptanceReport": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/acceptance.json",
+      "acceptanceSha256": "6f3af83b1f788bfc1c0be8806f14101e3066856f1ba85f1869cd1c962b09f89c",
+      "editing": "MP4 encoding only: no cuts, time changes, generated frames or synthetic gameplay.",
+      "audio": "Silent browser screen recording, not verification of runtime audio."
+    },
+    {
+      "label": "Mobile",
+      "source": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/mobile-controls.webm",
+      "sourceSha256": "498a4d9107ac6ff5ee5093e1c1265b90819e6638297c4736bf701b1d46ee59a6",
+      "output": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_Mobile.mp4",
+      "outputSha256": "ab5e9a799c6e75a48aabbf6329279837e480b36945ab5e70cfce40193cc0f202",
+      "bytes": 9893538,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "113.720000"
+        }
+      },
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 800,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "113.720000"
+        }
+      },
+      "acceptanceReport": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/acceptance.json",
+      "acceptanceSha256": "f361b6b74c1859e24d22133cb610c84c35f2fdf353c55eaa40ca07d5fedd0559",
+      "editing": "MP4 encoding only: no cuts, time changes, generated frames or synthetic gameplay.",
+      "audio": "Silent browser screen recording, not verification of runtime audio."
+    }
+  ]
+}

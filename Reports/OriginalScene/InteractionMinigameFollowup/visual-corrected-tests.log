@@ -1,0 +1,1402 @@
+Unity Editor version:    6000.3.0b10 (9f756a58f7c9)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.6.2 (Build 25G83)
+Darwin version:          25.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        24576 MB
+Date:                    2026-10-19T00:52:08Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-zlad" at "2026-10-19T00:52:08.10674Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              0f15a6d680354656ac83ad378d5ad00a
+  Correlation Id:          71b8d43ff608ad0ad78aaacf9b8664b9
+  External correlation Id: 3190065477512169713
+  Machine Id:              jZ5i5YHy1S/r8mOpcr/ttXcPxqc=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-zlad" (connect: 0.00s, validation: 0.00s, handshake: 0.25s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-zlad-notifications" at "2026-10-19T00:52:08.35932Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 2476036244053-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Module] Licensing Background thread has ended after 0.26s
+[Licensing::Module] Licensing is initialized (took 0.26s).
+[Licensing::Client] Successfully resolved entitlement details
+Pro License: NO
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/MacOS/Unity
+-batchmode
+-force-metal
+-projectPath
+/Users/zlad/Development/SPARC_MeetingCells
+-runTests
+-testPlatform
+PlayMode
+-testFilter
+Sparc.Original.Tests.NativeWorksheetLayoutTests;Sparc.Original.Tests.OriginalInteractionTests
+-testResults
+/Users/zlad/Development/SPARC_MeetingCells/Reports/OriginalScene/InteractionMinigameFollowup/visual-corrected-tests.xml
+-logFile
+/Users/zlad/Development/SPARC_MeetingCells/Reports/OriginalScene/InteractionMinigameFollowup/visual-corrected-tests.log
+Successfully changed project path to: /Users/zlad/Development/SPARC_MeetingCells
+/Users/zlad/Development/SPARC_MeetingCells
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8375705984]  Target information:
+
+Player connection [8375705984]  * "[IP] 192.168.1.214 [Port] 55505 [Flags] 2 [Guid] 1110829324 [EditorId] 1110829324 [Version] 1048832 [Id] OSXEditor(0,Mac) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8375705984]  * "[IP] 169.254.130.101 [Port] 55505 [Flags] 2 [Guid] 1110829324 [EditorId] 1110829324 [Version] 1048832 [Id] OSXEditor(0,Mac) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8375705984] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8375705984] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-83839" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0b10 (9f756a58f7c9)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/zlad/Development/SPARC_MeetingCells/Assets
+Forcing GfxDevice: Metal
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M5 Pro (high power)
+Metal devices available: 1
+0: Apple M5 Pro (high power)
+Using device Apple M5 Pro (high power)
+Initializing Metal device caps: Apple M5 Pro
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56839
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001301 seconds.
+- Loaded All Assemblies, in  0.253 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.230 seconds
+Domain Reload Profiling: 483ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (83ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (104ms)
+			TypeCache.Refresh (103ms)
+				TypeCache.ScanAssembly (92ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (230ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (207ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (84ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+Package Manager log level set to [2]
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 38 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.probuilder@6.1.2 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.probuilder@8be9724b2335)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.ai.navigation@2.0.14 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.ai.navigation@134dd6a3b97b)
+    com.unity.cinemachine@2.10.7 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.cinemachine@631385387c5a)
+    com.unity.inputsystem@1.20.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.timeline@1.8.13 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.timeline@3a22918286f5)
+    com.unity.settings-manager@2.1.1 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86)
+    com.unity.searcher@4.9.4 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.25 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.burst@1df634d836b8)
+    com.unity.mathematics@1.3.3 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.2 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.collections@aea9d3bd5e19)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.2.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.test-framework.performance@0840f58e4562)
+  Built-in packages:
+    com.unity.modules.ai@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai)
+    com.unity.render-pipelines.universal@17.3.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27)
+    com.unity.test-framework@1.6.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.test-framework@92cb1b3bb400)
+    com.unity.ugui@2.0.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.ugui@aabff4083222)
+    com.unity.modules.animation@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation)
+    com.unity.modules.audio@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio)
+    com.unity.modules.director@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.director)
+    com.unity.modules.imgui@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d)
+    com.unity.modules.ui@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.video@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.video)
+    com.unity.modules.screencapture@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture)
+    com.unity.modules.imageconversion@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.ext.nunit@d8c07649098d)
+    com.unity.render-pipelines.core@17.3.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff)
+    com.unity.shadergraph@17.3.0 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.shadergraph@58e42bcf55f3)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: /Users/zlad/Development/SPARC_MeetingCells/Library/PackageCache/com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+    com.unity.modules.terrain@1.0.0 (location: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-6d7f308687b22f33bc16a2d8ac74baa4
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/zlad/Development/SPARC_MeetingCells/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 29.4537ms
+Starting: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/2000b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Users/zlad/Development/SPARC_MeetingCells
+DisplayProgressbar: Compiling Scripts
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@1df634d836b8/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 16.0000ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.dll, with 113 defines and 252 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 8.4947ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.PlayTests.dll, with 113 defines and 247 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.Editor.dll, with 111 defines and 285 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 2.4554ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 2.5727ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll, with 113 defines and 291 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine/UnityEditor.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine/UnityEngine.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@1df634d836b8/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 161.2612ms
+ExitCode: 0 Duration: 1s889ms
+[607/801    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[785/801    1s] Csc Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.dll (+2 others)
+[786/801    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/SPARC.Original.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.dll, with 113 defines and 252 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[787/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.dll
+[788/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.pdb
+[789/801    0s] Csc Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.Editor.dll (+2 others)
+[790/801    0s] Csc Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.PlayTests.dll (+2 others)
+[791/801    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/SPARC.Original.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.Editor.dll, with 111 defines and 285 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[792/801    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/SPARC.Original.PlayTests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/SPARC.Original.PlayTests.dll, with 113 defines and 247 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[793/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.Editor.pdb
+[794/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.PlayTests.pdb
+[795/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.Editor.dll
+[796/801    0s] CopyFiles Library/ScriptAssemblies/SPARC.Original.PlayTests.dll
+[797/801    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll (+2 others)
+[798/801    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp.dll, with 113 defines and 291 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[799/801    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[800/801    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+*** Tundra build success (1.87 seconds), 17 items updated, 801 evaluated
+AssetDatabase: script compilation time: 2.352029s
+Begin MonoManager ReloadAssembly
+Total cache size 267794070
+Total cache size after purge 267794070, took 00:00:00.1122170
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.338 seconds
+Refreshing native plugins compatible for Editor in 2.32 ms, found 0 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-SPARC_MeetingCells
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.574 seconds
+Domain Reload Profiling: 1912ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (44ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (16ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (74ms)
+			TypeCache.Refresh (56ms)
+				TypeCache.ScanAssembly (49ms)
+			BuildScriptInfoCaches (12ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1574ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1453ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (1239ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b9f35e18a9be84acba5921b71a10ce15): Total: 4.812 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1975 ms
+		Asset DB Callback time: managed=119 ms, native=11 ms
+		Scripting: domain reloads=1, domain reload time=338 ms, compile time=2353 ms, other=14 ms
+		Project Asset Count: scripts=1424, non-scripts=3013
+		Asset File Changes: new=0, changed=3, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 7.016ms
+	ApplyChangesToAssetFolders: 0.148ms
+	Scan: 264.167ms
+	OnSourceAssetsModified: 0.446ms
+	CategorizeAssetsWithTransientArtifact: 17.061ms
+	ProcessAssetsWithTransientArtifactChanges: 23.952ms
+	CategorizeAssets: 35.554ms
+	ImportOutOfDateAssets: 1579.604ms (-774.215ms without children)
+		CompileScripts: 2352.718ms
+		ReloadNativeAssets: 0.021ms
+		UnloadImportedAssets: 0.438ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.389ms
+		InitializingProgressBar: 0.000ms
+		OnDemandSchedulerStart: 0.252ms
+	PostProcessAllAssets: 119.788ms
+	Hotreload: 3.647ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 1.643ms
+	PersistCurrentRevisions: 0.081ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 1.526ms
+	Untracked: 2758.631ms
+
+Application.AssetDatabase Initial Refresh End
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Scanning for USB devices : 0.107ms
+Initializing Unity extensions:
+2026-10-18 20:52:14.723 Unity[83839:32574680] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0xa59592c60 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Unloading 51 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4641 unused Assets / (9.6 MB). Loaded Objects now: 5435.
+Memory consumption went from 209.0 MB to 199.4 MB.
+Total: 8.870500 ms (FindLiveObjects: 0.135750 ms CreateObjectMapping: 0.095083 ms MarkObjects: 5.887958 ms  DeleteObjects: 2.751625 ms)
+
+2026-10-18 20:52:14.774 Unity[83839:32574680] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0xa5958f480 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[Project] Loading completed in 6.713 seconds
+	Project init time: 				6.113 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.171 seconds
+		Asset Database init time: 		0.182 seconds
+		Global illumination init time: 	0.000 seconds
+		Assemblies load time: 			0.492 seconds
+		Unity extensions init time: 	0.004 seconds
+		Asset Database refresh time: 	4.812 seconds
+	Scene opening time: 			0.249 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792371134810,"processId":83839,"projectLoad":6.71262425,"projectInit":6.112622667,"templateInit":0.0,"packageManagerInit":0.17141225,"assetDatabaseInit":0.182339791,"globalIlluminationInit":0.000496375,"assembliesLoad":0.49218275,"unityExtensionsInit":0.003797834,"assetDatabaseRefresh":4.811784458,"sceneOpening":0.248757958}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792371134810,"processId":83839,"editorVersion":"6000.3.0b10 (9f756a58f7c9)","branch":"6000.3/staging","buildType":"Release","platform":"OSX"}
+Subscribe to USB device events
+Scanning for USB devices : 0.061ms
+Asset Pipeline Refresh (id=cce59f55224174ba0b17433f88aead80): Total: 0.139 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Running tests for ExecutionSettings with details:
+targetPlatform = 
+playerHeartbeatTimeout = 600
+filters[0] = 
+   Filter with settings:
+   testMode = PlayMode
+   targetPlatform = 
+   testNames = null
+   groupNames = Sparc.Original.Tests.NativeWorksheetLayoutTests, Sparc.Original.Tests.OriginalInteractionTests
+   categoryNames = null
+   assemblyNames = null
+ignoreTests = {}
+featureFlags = null
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:InitializeAndExecuteRun (string[]) (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/Executer.cs:53)
+UnityEditor.TestTools.TestRunner.CommandLineTest.TestStarter:InitializeAndExecuteRun () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/TestStarter.cs:64)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 53)
+
+DisplayProgressbar: Material Upgrader re-import
+ConsistencyChecker - guid: a27c70424afd6b24fa08ec5fa1e0f506, dependenciesHash.value: c19008d471c17ed7c06d070520aceed9, artifactid: 05cba3929e1d3e690067f6e9a89b4116, producedFiles[0].extension: , producedFiles[0].contentHash: 3a9a56bc582ea717b1b8676acaa05251
+ConsistencyChecker - guid: a27c70424afd6b24fa08ec5fa1e0f506, dependenciesHash.value: c19008d471c17ed7c06d070520aceed9, artifactid: 17a56f92ddc4fd9cd8e5bcc655e93a00, producedFiles[0].extension: , producedFiles[0].contentHash: 54eada8ae7329077f1538adb79faca99
+Importer(FBXImporter) generated inconsistent result for asset(guid:a27c70424afd6b24fa08ec5fa1e0f506) "Assets/Resource/GameFixing/GameFixingArt/BLUE_YELLOW_SMALL_ALBUMIN/MODELS/BLUE_ALBUMIN.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 24c8dff625e1db946aecff6390e3ccdf, dependenciesHash.value: 582acf9bcba945cf01b4921c2520ac29, artifactid: 22a69ed3922bbffd365b67ef845c9b23, producedFiles[0].extension: , producedFiles[0].contentHash: 896cd3f1da6f39d29b15f363fa8bf6ca
+ConsistencyChecker - guid: 24c8dff625e1db946aecff6390e3ccdf, dependenciesHash.value: 582acf9bcba945cf01b4921c2520ac29, artifactid: cc928e20e9736cde622f3a1f69d5535b, producedFiles[0].extension: , producedFiles[0].contentHash: 88bac85bd8359185dbdda2cb2bfa9416
+Importer(FBXImporter) generated inconsistent result for asset(guid:24c8dff625e1db946aecff6390e3ccdf) "Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Models/Bacilli_LP.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: e2f3b26427865fb4b93e26ac915af195, dependenciesHash.value: 79b6ff982263319cc60592f4faf5333c, artifactid: 95bb1ceeaa8a813559efcd4af67f7523, producedFiles[0].extension: , producedFiles[0].contentHash: 9ef35b4a046088371b2b6944e1969f6a
+ConsistencyChecker - guid: e2f3b26427865fb4b93e26ac915af195, dependenciesHash.value: 79b6ff982263319cc60592f4faf5333c, artifactid: c1d2fd9c0c1ace93059d03c180180952, producedFiles[0].extension: , producedFiles[0].contentHash: d432771b0267db4082c9b0bd0d575a74
+Importer(FBXImporter) generated inconsistent result for asset(guid:e2f3b26427865fb4b93e26ac915af195) "Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Models/Spirochetes_LP.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: e028fd704e7efc34289f5bbdfb70fa5b, dependenciesHash.value: 8b704fd7bdd8264fb9d744a8c30c384c, artifactid: 18b56f1e76e1068b2d351ec1512b93bd, producedFiles[0].extension: , producedFiles[0].contentHash: 407ecd96933fe259b361e3a9b9f1b99b
+ConsistencyChecker - guid: e028fd704e7efc34289f5bbdfb70fa5b, dependenciesHash.value: 8b704fd7bdd8264fb9d744a8c30c384c, artifactid: 49dc557cc8e64ec31f4b311c8e8f7f9f, producedFiles[0].extension: , producedFiles[0].contentHash: e19b8d518c56a1f90a8a7ce279b370a0
+Importer(FBXImporter) generated inconsistent result for asset(guid:e028fd704e7efc34289f5bbdfb70fa5b) "Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Idle/MO_IDLE.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 067968ec2d6ba2242a2f637fa9148de5, dependenciesHash.value: 42659b9a36b237efb4ac2a298856fff6, artifactid: e2f3d7295c5cf57e605b54f1f75f0310, producedFiles[0].extension: , producedFiles[0].contentHash: 0373b9fa970f2905143f4146903209f0
+ConsistencyChecker - guid: 067968ec2d6ba2242a2f637fa9148de5, dependenciesHash.value: 42659b9a36b237efb4ac2a298856fff6, artifactid: 87a1983ffb3a530949ba94b1329d936b, producedFiles[0].extension: , producedFiles[0].contentHash: 2155a94e04f902fd19a5b8cdab9427a8
+Importer(FBXImporter) generated inconsistent result for asset(guid:067968ec2d6ba2242a2f637fa9148de5) "Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET1.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 83418b73b817cd14e9fbed27c3f5c8ae, dependenciesHash.value: 946eb0a7f182151965f0d834f18c1ae0, artifactid: 530ce984b494f2c57d6e562cbad829e5, producedFiles[0].extension: , producedFiles[0].contentHash: 2b6eef5be9d7e1ea61c2e39085930b24
+ConsistencyChecker - guid: 83418b73b817cd14e9fbed27c3f5c8ae, dependenciesHash.value: 946eb0a7f182151965f0d834f18c1ae0, artifactid: 0e05dff1cf83687585b66227028f368b, producedFiles[0].extension: , producedFiles[0].contentHash: a5b07bca8347a81afb2632dff058545d
+Importer(FBXImporter) generated inconsistent result for asset(guid:83418b73b817cd14e9fbed27c3f5c8ae) "Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET2.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 695a6c919ee98384d81adafeeb832221, dependenciesHash.value: 777500fb8ee944029beb05ea5d28327a, artifactid: b515ccfa24f622f97678ae8d742ceff2, producedFiles[0].extension: , producedFiles[0].contentHash: 9a9c0e53a6b081af16aa3df5ae273b76
+ConsistencyChecker - guid: 695a6c919ee98384d81adafeeb832221, dependenciesHash.value: 777500fb8ee944029beb05ea5d28327a, artifactid: 0e1ff829212a50ff21d66caf8342141c, producedFiles[0].extension: , producedFiles[0].contentHash: 0f9441662f36793e5aef777ae6d3821f
+Importer(FBXImporter) generated inconsistent result for asset(guid:695a6c919ee98384d81adafeeb832221) "Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET3.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: ec693441d4268b14ca6d9310032094f0, dependenciesHash.value: 06f1d4553934da407900fd46d788be1c, artifactid: 932d867edcd3da774cf11df7b6703163, producedFiles[0].extension: , producedFiles[0].contentHash: cc1bc545ec70db06d5f9b4ba790be697
+ConsistencyChecker - guid: ec693441d4268b14ca6d9310032094f0, dependenciesHash.value: 06f1d4553934da407900fd46d788be1c, artifactid: 7a7021e3a28238181db1ceb273caa49d, producedFiles[0].extension: , producedFiles[0].contentHash: 144545c852e253bbe9f0880d5e93e1cf
+Importer(FBXImporter) generated inconsistent result for asset(guid:ec693441d4268b14ca6d9310032094f0) "Assets/Resource/GameFixing/GameFixingArt/SM_RBC/MODELS/RBC_MOLECULE.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 90e8bb5fe8bc2564083742e2958bdcc3, dependenciesHash.value: d10c1cc33ffa9d4e34894615c749d69e, artifactid: 4b8323bf5c204d2dc8298570b8fa08f9, producedFiles[0].extension: , producedFiles[0].contentHash: 1a0b636b408c95e1c4e20f8ff8cf4377
+ConsistencyChecker - guid: 90e8bb5fe8bc2564083742e2958bdcc3, dependenciesHash.value: d10c1cc33ffa9d4e34894615c749d69e, artifactid: 7e503c5fae95655f704b8e1f73f221e3, producedFiles[0].extension: , producedFiles[0].contentHash: 249e027a57d9bfd99874e4b2c9f75878
+Importer(FBXImporter) generated inconsistent result for asset(guid:90e8bb5fe8bc2564083742e2958bdcc3) "Assets/Resource/GameHeartArt/SM_Germs/Models/Cocci_LP.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 8f1cda0ada1635640aeea843d89f81e2, dependenciesHash.value: bc1a04a6f10e5196296643fe942ede8a, artifactid: 9933881c2fdadaa65dfd49e118e591e8, producedFiles[0].extension: , producedFiles[0].contentHash: 9f07fbb56377286eb6e6615c1d20a638
+ConsistencyChecker - guid: 8f1cda0ada1635640aeea843d89f81e2, dependenciesHash.value: bc1a04a6f10e5196296643fe942ede8a, artifactid: 4ee10c5aa6829cee6c80887ef7b76972, producedFiles[0].extension: , producedFiles[0].contentHash: 039ddae8fa629d635d8c2d2f421b2591
+Importer(FBXImporter) generated inconsistent result for asset(guid:8f1cda0ada1635640aeea843d89f81e2) "Assets/Resource/GameMeetingCells/MeetingCellsArt/Albumins/REd/FBX/Pink_Albumin_LP.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: d1bfcedbc6d5a9842a8871ebfff0f689, dependenciesHash.value: dd6c16943f2fb89a97830fbfabced4fa, artifactid: 5150681b63d8a281796c344fbcc2d0f8, producedFiles[0].extension: , producedFiles[0].contentHash: a05c0339a259a1275dc0b4db45af581e
+ConsistencyChecker - guid: d1bfcedbc6d5a9842a8871ebfff0f689, dependenciesHash.value: dd6c16943f2fb89a97830fbfabced4fa, artifactid: c91587af6d205b4c080b0863cad69fb8, producedFiles[0].extension: , producedFiles[0].contentHash: 8818e22d46e7a61f086daf605feb2c80
+Importer(FBXImporter) generated inconsistent result for asset(guid:d1bfcedbc6d5a9842a8871ebfff0f689) "Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MODEL/RBC_CHARACTER.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 86c7e56488a1f0f468242506962e2f38, dependenciesHash.value: 8387db863fb7307954b0b81989a1d177, artifactid: 4768ca513523f022f2211cad8c155e1f, producedFiles[0].extension: , producedFiles[0].contentHash: 784e5125a56d023077940394d25f5a81
+ConsistencyChecker - guid: 86c7e56488a1f0f468242506962e2f38, dependenciesHash.value: 8387db863fb7307954b0b81989a1d177, artifactid: de9956fca345bf618d0220980e6b1e59, producedFiles[0].extension: , producedFiles[0].contentHash: adae39197995e1d5709e2a9b5ced9ec3
+Importer(FBXImporter) generated inconsistent result for asset(guid:86c7e56488a1f0f468242506962e2f38) "Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MODEL/RBC_CHARACTER_v2.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: e5391e7755f21264ea98871c39ea8206, dependenciesHash.value: 938c7a88b9060a5db7f9741123d65207, artifactid: 03d2752d8c29fe5251f8076e333bf87f, producedFiles[0].extension: , producedFiles[0].contentHash: 02d35520a0ea75bad6326043c05a9ec8
+ConsistencyChecker - guid: e5391e7755f21264ea98871c39ea8206, dependenciesHash.value: 938c7a88b9060a5db7f9741123d65207, artifactid: 5564348de32bfc8dec23d4f43d482e7e, producedFiles[0].extension: , producedFiles[0].contentHash: e0fd7407e81a48876439c1bad6818688
+Importer(FBXImporter) generated inconsistent result for asset(guid:e5391e7755f21264ea98871c39ea8206) "Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_VESSEL_DIVERGES/MODEL/VESSEL_DIVERGES.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: cfc81e2b6242bc64093593e5aff35a1c, dependenciesHash.value: a5b391b4d316d177b1fc1bbbe498ad62, artifactid: c038c5c29a01eed3e27400625afdce46, producedFiles[0].extension: , producedFiles[0].contentHash: 27951cfc051a8e1b1420e9d3126b92dc
+ConsistencyChecker - guid: cfc81e2b6242bc64093593e5aff35a1c, dependenciesHash.value: a5b391b4d316d177b1fc1bbbe498ad62, artifactid: 2e28bbce60faa08981a39d2d2f0225e7, producedFiles[0].extension: , producedFiles[0].contentHash: e18f3f8bd64cfcea3604b904ad95cc03
+Importer(FBXImporter) generated inconsistent result for asset(guid:cfc81e2b6242bc64093593e5aff35a1c) "Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MODELS/VESSEL_FLOW.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: e5caad972c66ec64b9827d4f0555b5f1, dependenciesHash.value: cc01f9610b61395ef7a4e5351d0accfe, artifactid: 7bc3823f724ab6cabc12bab95f222bcc, producedFiles[0].extension: , producedFiles[0].contentHash: 244a64c54f681bcc2e6ef8754ca8883e
+ConsistencyChecker - guid: e5caad972c66ec64b9827d4f0555b5f1, dependenciesHash.value: cc01f9610b61395ef7a4e5351d0accfe, artifactid: 8799e7f05f98b9ea6043e87bca090e2b, producedFiles[0].extension: , producedFiles[0].contentHash: bbbd64a222b65fc08591c699762b2a2b
+Importer(FBXImporter) generated inconsistent result for asset(guid:e5caad972c66ec64b9827d4f0555b5f1) "Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MODELS/VESSEL_ROOM.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ConsistencyChecker - guid: 8cd16adda8c765a4e95787f173864570, dependenciesHash.value: fff9fc9bc68850de1c91ca0bbaea9d3f, artifactid: 77fb68913e00b84605d42342e2b8a1ca, producedFiles[0].extension: , producedFiles[0].contentHash: 455f0109f978cff76eabf8db563bb717
+ConsistencyChecker - guid: 8cd16adda8c765a4e95787f173864570, dependenciesHash.value: fff9fc9bc68850de1c91ca0bbaea9d3f, artifactid: fb90f4a292b65cffcfbb30a1d3c24db9, producedFiles[0].extension: , producedFiles[0].contentHash: e1f7f6b6035ccd00e762ba3a0eb04dbb
+Importer(FBXImporter) generated inconsistent result for asset(guid:8cd16adda8c765a4e95787f173864570) "Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Idle/Updated_WBC_Idle.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /Users/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:36)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+Start importing Assets/ThirdParty/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat using Guid(00c13c49894d46146b27ce3a995d98d4) (NativeFormatImporter) -> (artifact id: 'a63d4d685aa013017fafff410334f2ab') in 0.003226291 seconds
+Start importing Assets/SPARC/Generated/Materials/Vessel rose.mat using Guid(20a0e2baccc044d00936253aef8a0a83) (NativeFormatImporter) -> (artifact id: 'bd2e9eff3d9d0c25bf8ae0f094183b4a') in 0.001368625 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/VertexPicker.mat using Guid(30a8575e1d4cc4e01a88ffbf4f973d80) (NativeFormatImporter) -> (artifact id: '2efbb2afd0964159f26427a4c77d0f9a') in 0.000714209 seconds
+Start importing Assets/GameMeetingCells/Scripts/2DGameScripts/Sprites/Scenes/Spark.mat using Guid(506f4525d876eec4aa8059d89c767838) (NativeFormatImporter) -> (artifact id: '91d10a3ca8c1b9d907dcc095d8e70c3a') in 0.000677583 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/EdgePickerURP.mat using Guid(70d1a6407fa29bb44b936d5325490696) (NativeFormatImporter) -> (artifact id: '8b09c832677031c1f864622d450098c1') in 0.000767458 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Materials/M_Spriochetes.mat using Guid(b06f85244c1d67349baf6921a4c21eeb) (NativeFormatImporter) -> (artifact id: '38dbffafb351b8121d7882e583c7c9c9') in 0.00072025 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_RBC/MATERIALS/M_BODY/M_EXCITED.mat using Guid(d04aee44b0152f14a95173d9234e9d99) (NativeFormatImporter) -> (artifact id: 'd142319f08049afb44393af2e7d70025') in 0.000681834 seconds
+Start importing Assets/SPARC/Generated/Materials/Skin3.mat using Guid(e08c860bab6e64115a154aaa119c5ca2) (NativeFormatImporter) -> (artifact id: 'de40a0e91bc2957c54801b2cc3114940') in 0.000562041 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MATERIAL/M_RBC_EXCITED.mat using Guid(01c231d522159f14bbd682600ae3c20f) (NativeFormatImporter) -> (artifact id: '80f97852e3373483215650e86551c2c2') in 0.000518666 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/FacePickerURP.mat using Guid(0143c5b21b48c1643bc5417c60bbf848) (NativeFormatImporter) -> (artifact id: '28f6505f296f147d979b695107c7b367') in 0.001018917 seconds
+Start importing Assets/SPARC/Generated/Exhibition/Living coral.mat using Guid(010627caa33024cf58a48a78ce4931b5) (NativeFormatImporter) -> (artifact id: '5097c19bbad50ddbcc1818dd3703678e') in 0.000489875 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) (NativeFormatImporter) -> (artifact id: '8f3d32c29394a79b41f28a25b53defe8') in 0.000366 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) (NativeFormatImporter) -> (artifact id: '960643f9fe6857c5d72b0d2fd2085c0e') in 0.000379292 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_VESSEL_DIVERGES/TEXTURE/Materials/T_DIVERGES_C.mat using Guid(4166a0d4899cb3441b1cfb0b53b8ab12) (NativeFormatImporter) -> (artifact id: '0bc38d2c6417cf5e94ba88c14b02f997') in 0.000496166 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Materials/M_MOUTHOPEN.mat using Guid(511ee3015373961459fe5ccd563606d1) (NativeFormatImporter) -> (artifact id: '57aea15022865f4d58a0ef461e549a8c') in 0.000591042 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Unlit-Default.mat using Guid(71942363c5608a64bb62421349d39c9c) (NativeFormatImporter) -> (artifact id: 'ef7311a66811940111367c78fa0cdd5d') in 0.000631 seconds
+Start importing Assets/ThirdParty/Epic Toon FX/Materials/Basics/cloud_2x2_soft_AB.mat using Guid(719f8d52fe2e6b444b41c2f7a8fe587b) (NativeFormatImporter) -> (artifact id: '7fd5638f92e166f9c6c5d99a1561d8b3') in 0.000704167 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/Materials/Trigger.mat using Guid(a1e97cbf2538241b691aae8243b5fb10) (NativeFormatImporter) -> (artifact id: '42bc6ad864111097d44212d21e42cfba') in 0.001251125 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_PLATELETS_PLAIN/TEXTURES/T_PLATELET2/Materials/T_PLATELET2_C.mat using Guid(e1baf8a26b1adf640ba8b66a2a6e212f) (NativeFormatImporter) -> (artifact id: '9fe24497ec94af536021f8e96d059991') in 0.000674166 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Emissive.mat using Guid(92f845725428c954b878da352f657fe5) (NativeFormatImporter) -> (artifact id: 'b1f26f5eeb8ffbff6a8f6611506c4115') in 0.000594958 seconds
+Start importing Assets/ThirdParty/Epic Toon FX/Materials/Basics/glow2_ADD.mat using Guid(b29e688b444288148ad46d4aae66cffc) (NativeFormatImporter) -> (artifact id: 'de1eada00eb906c60609c3af67ee73e3') in 0.000551666 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Gold.mat using Guid(c2e40fa84d53ccd428f640eac126b1fb) (NativeFormatImporter) -> (artifact id: '9f9661d44e363023702c87ca4956e3f6') in 0.000691959 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/Materials/ProBuilderDefault.mat using Guid(c22777d6e868e4f2fb421913386b154e) (NativeFormatImporter) -> (artifact id: 'fbf2eaea0d595b7f29d062446cb0da14') in 0.001151625 seconds
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/Materials/24 - Default.mat using Guid(d25b6ec31a3ef4c10a9553da272608f2) (NativeFormatImporter) -> (artifact id: 'd225ad9e599f90330b8bb0d91c84248e') in 0.000710625 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsMats/Runner/Red.mat using Guid(e2e59a6554aeafe44a4387afd68aae8a) (NativeFormatImporter) -> (artifact id: '894cd519786b212433c24f569ab4df62') in 0.000585541 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsMats/CutoutCircle.mat using Guid(f2e6bd921c46a704aae2d3989e778603) (NativeFormatImporter) -> (artifact id: 'ca3f1275b8e974e5ef3923158806e057') in 0.001152583 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/Built-in_RP/BuiltInTriplanar_01_Mat.mat using Guid(3300a5c4710bac244815734e484b3b90) (NativeFormatImporter) -> (artifact id: '6f8e9372f6716f89d2eee54f98db2069') in 0.001242333 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/BLUE_YELLOW_SMALL_ALBUMIN/MATERIALS/M_B_NEUTRAL.mat using Guid(43b76ef635b1923488c7af5f38202db8) (NativeFormatImporter) -> (artifact id: 'c87f49b08385cdf0f2559f7e6583282a') in 0.000648334 seconds
+Start importing Assets/SPARC/Generated/Materials/Graphite.mat using Guid(83b2f9e2f7cfe4b90ba41658d4a2c122) (NativeFormatImporter) -> (artifact id: '6cb58f40ed0f130758ecd533769ad5e0') in 0.000513875 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Metal_Black.mat using Guid(b34b07a45ba63ce47896c9e674f3a7a7) (NativeFormatImporter) -> (artifact id: '2e543c70b0a48798291a154a0176c0e2') in 0.000570959 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Animated_WBC/Materials/T_WBC_NEUTRAL.mat using Guid(d3861465441c9c442924c86dc76564b9) (NativeFormatImporter) -> (artifact id: 'ef0ebc6df62c74259d1af22bc540aa4a') in 0.000555125 seconds
+Start importing Assets/SPARC/Generated/Materials/Skin2.mat using Guid(046154e0042234b2b8034b847c45df40) (NativeFormatImporter) -> (artifact id: '492ca679d4745d90eac59fd1e2abce76') in 0.000572958 seconds
+Start importing Assets/Resource/GameExchange/GameExchangeModels/RBCParticles.mat using Guid(54aa9ecd9597d2e4b9c54cb383336e76) (NativeFormatImporter) -> (artifact id: '9afedd34840ff58e1c9d3a423f496f6f') in 0.000797667 seconds
+Start importing Assets/Resource/HoloRing/Terminal/Art/VFX/Materials/HoloLoading_01_Mat.mat using Guid(74d171be166267747872c9b0340a0555) (NativeFormatImporter) -> (artifact id: '73cf8344625efe651f81e74f7db2ab86') in 0.001429291 seconds
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/Materials/22 - Default.mat using Guid(74fdafbcef07a457fb1099080f7cbc8b) (NativeFormatImporter) -> (artifact id: 'c72890c67a038c67d5d3757e1b670ed2') in 0.000673042 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Materials/M_Bacilli.mat using Guid(8454f9f6e73631948949bc01937581e2) (NativeFormatImporter) -> (artifact id: '5f8876f7ffa8920e4898c313727d7a75') in 0.000493041 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Lit-Default.mat using Guid(9452ae1262a74094f8a68013fbcd1834) (NativeFormatImporter) -> (artifact id: 'a9f6a1c64081483a70fbc1be53f18baa') in 0.000405583 seconds
+Start importing Assets/SPARC/Generated/Materials/Oxygen blue.mat using Guid(942aa2a3032794fd78af891f93eacd2c) (NativeFormatImporter) -> (artifact id: '7befb1c70f06af882ca049f18702dc78') in 0.000443834 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Materials/M_Cocci_Projectile.mat using Guid(e461c18d10ab0f041b2a5c20f368fccf) (NativeFormatImporter) -> (artifact id: '4927ddb384d082da43f1ecd7782cbdaf') in 0.000708958 seconds
+Start importing Assets/Resource/GameHeartMat/Bricks.mat using Guid(e472a553b92864a25b58515850f6317a) (NativeFormatImporter) -> (artifact id: '0a2ec680992e328867cd4d957b83d48c') in 0.000582166 seconds
+Start importing Assets/Resource/GameHeartArt/SM_Germs/Materials/M_Cocci.mat using Guid(057711e48e795b04aa3f3d7cf57cbdb7) (NativeFormatImporter) -> (artifact id: '1a009b27536c106598b075559d2c4d3c') in 0.000519375 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat using Guid(15d0c3709176029428a0da2f8cecf0b5) (NativeFormatImporter) -> (artifact id: '9b9123c1145efbdb38e316f85cad951e') in 0.000323875 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsMats/MeetingCellsRedLight.mat using Guid(25d17f590b73b974e8bbdc3c81db0c0c) (NativeFormatImporter) -> (artifact id: '150aaa530b53edf3227aecb736894685') in 0.000454625 seconds
+Start importing Assets/SPARC/Generated/Exhibition/Shell paper.mat using Guid(4528cdea8261c42239a158eb9014d37c) (NativeFormatImporter) -> (artifact id: '0cbc063ebc8cee724adfc35dc2f5ce88') in 0.000461916 seconds
+Start importing Assets/SPARC/Generated/Materials/World lettering.mat using Guid(551763c640b0744eb8a556ac5030eb94) (NativeFormatImporter) -> (artifact id: 'b574837abb24bde0c050788d9a7d5540') in 0.000546458 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat using Guid(b51db210fe78df745a372851b3db949e) (NativeFormatImporter) -> (artifact id: 'e725b235a682e6bf286c10ab07552b74') in 0.000448875 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/CapMaterials_V5/M_MOUTH_OPEN_V5.mat using Guid(e5151dc56aa6a3c4491eff678c481d74) (NativeFormatImporter) -> (artifact id: 'cddee70ca5c8bfe599860721e012a71f') in 0.00044725 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MATERIALS/M_PLATELET3.mat using Guid(f554aff071654ca4284ecfad0c2cff52) (NativeFormatImporter) -> (artifact id: 'a04fa392918a40bd555c36cac9bfdee9') in 0.000465667 seconds
+Start importing Assets/Resource/GameFixing/GameFixingMat/Outline.mat using Guid(26b1dc1a1592a4a49ba32e69b4c2ae88) (NativeFormatImporter) -> (artifact id: '9743440422ebbce5aba93a0df5973572') in 0.001027083 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/FacePicker.mat using Guid(5695904020f064fdab5ad265b274a616) (NativeFormatImporter) -> (artifact id: 'd65b6616becdc8888f0923c5394be28c') in 0.000539334 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Ground.mat using Guid(761d8e1f988ed2345a28312145c79c6e) (NativeFormatImporter) -> (artifact id: '27ce923cbd5bcc4047b0e855e6fb0af9') in 0.0004855 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/RenderAs2D-Flattening.mat using Guid(b697f6a938056384e968ccf6527dac83) (NativeFormatImporter) -> (artifact id: '5ecfe90ca8080262222ed764ee85060b') in 0.000454208 seconds
+Start importing Assets/ThirdParty/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_PointGlow_01.mat using Guid(f634288f1034a534fab9a6b8055d29c3) (NativeFormatImporter) -> (artifact id: 'b5754b56b76dea258ed965fd8d6cc30a') in 0.000465959 seconds
+Start importing Packages/com.unity.probuilder/Content/Material/Checker.mat using Guid(4717b199010ca4cb3a8a7a465ec457d2) (NativeFormatImporter) -> (artifact id: '16bffb7339e3220c1a039f4cc606a6a4') in 0.0004915 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MATERIALS/M_PLATELET2.mat using Guid(87a198cbf00e86e4e8954bbe78b59ce2) (NativeFormatImporter) -> (artifact id: 'a96d74f4832a6bc6f78f666c107e71d4') in 0.000418917 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/Blue_Mat.mat using Guid(979aef027a1c86c42a15ce35fce366fa) (NativeFormatImporter) -> (artifact id: '1368999cecf854623fcf4ac1684ad48d') in 0.000443292 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/Materials/InvisibleFace.mat using Guid(978bbcf5050244f1b95128c04103f628) (NativeFormatImporter) -> (artifact id: '2e449faca2c8a742adf675248c79b363') in 0.000545625 seconds
+Start importing Assets/Resource/SM_Updated_WBC/MATERIALS/M_WBC.mat using Guid(97dfc24815cb7d445972ba37b1fcce88) (NativeFormatImporter) -> (artifact id: '17944090b059cafb6c925ed0f4a17621') in 0.000495417 seconds
+Start importing Assets/GameFixing/Art/Materials/ObjectiveReachPoint.mat using Guid(f7ca4b4869bf6e34c82313b54df6d8d4) (NativeFormatImporter) -> (artifact id: 'acdc9bcd88d6ba84a97e79a6a6fa8a3f') in 0.000542958 seconds
+Start importing Assets/SPARC/Generated/Materials/Warm field paper.mat using Guid(087e0251e3e0842e1a806b7f54648baa) (NativeFormatImporter) -> (artifact id: '8569b456e183d51fc5102077691cfbb3') in 0.000502083 seconds
+Start importing Assets/SPARC/Generated/Materials/Infection violet.mat using Guid(18cd70df0e6844a60851ea1eb6662e1f) (NativeFormatImporter) -> (artifact id: '12ae054654a4d7234a5785115961d738') in 0.000487708 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_RBC/MATERIALS/M_MOLECULE/M_O2.mat using Guid(380d3630ce2124a449de71cf18590db9) (NativeFormatImporter) -> (artifact id: '9db9f69c0660240ae30b00a08ae3b7f4') in 0.000620167 seconds
+Start importing Assets/Resource/SM_Updated_WBC/MATERIALS/M_WBC_MouthOpen.mat using Guid(58b33d7e54678904d963c293b8833f5d) (NativeFormatImporter) -> (artifact id: '9d6361f3ba9d9b2467228ce38173daa2') in 0.000526416 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/FullscreenInvertColors.mat using Guid(78a08787ca30045abb69f6f7dd878e09) (NativeFormatImporter) -> (artifact id: 'ee24d1240c4d3093a35a8ce9cd6a6123') in 0.000989083 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) (NativeFormatImporter) -> (artifact id: '40a3a03ad30c23572795ee7951b74454') in 0.000577458 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/TEXTURES/T_RBC_NEUTRAL/Materials/T_RBC_NEUTRAL_C.mat using Guid(98ee29ac1d4e8554cb94612dbe46cbc2) (NativeFormatImporter) -> (artifact id: 'daa0e68b8ce4249fdb2b13dc9e615e92') in 0.000495917 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_PLATELETS_PLAIN/TEXTURES/T_PLATELET1/Materials/T_PLATELET1_C.mat using Guid(b8625a7161e05f542adacc81a6b1e129) (NativeFormatImporter) -> (artifact id: 'c210ca64d0116aa7dca1bae158f8d936') in 0.000492125 seconds
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/Materials/20 - Default.mat using Guid(c855d2abcb7c84518983df3410977579) (NativeFormatImporter) -> (artifact id: '15267b90f2183bf362a0fc5d9c008f1e') in 0.000480291 seconds
+Start importing Assets/ThirdParty/Epic Toon FX/Materials/Misc/Text/sharp_red.mat using Guid(c8c5f86f3a7ff694faf5f45758f045de) (NativeFormatImporter) -> (artifact id: '15288aba5664c6e2bfd513987005c1b0') in 0.0005365 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) (NativeFormatImporter) -> (artifact id: 'aa862bff269d59d834f13819255630e6') in 0.000359334 seconds
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Orange.mat using Guid(09adc4af150569a4cb996354c367b8c8) (NativeFormatImporter) -> (artifact id: 'b92c3cadb10e3e60ed6e4a6b13aa832b') in 0.000511 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/Materials/Fog Near.mat using Guid(3902167fab6c2ca498af416802712edf) (NativeFormatImporter) -> (artifact id: 'aa2892b55fba015d594575a56f5ec5c6') in 0.000575708 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/TerrainLit.mat using Guid(594ea882c5a793440b60ff72d896021e) (NativeFormatImporter) -> (artifact id: '32c0756065a4c99773d8b19abfdb7370') in 0.000442042 seconds
+Start importing Assets/SPARC/Generated/Materials/Skin5.mat using Guid(a99b2e00d89444456aef8e154efafdff) (NativeFormatImporter) -> (artifact id: '04ac075fc102f714405bfa7d92ac3abe') in 0.00070025 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat using Guid(a97c105638bdf8b4a8650670310a4cd3) (NativeFormatImporter) -> (artifact id: '6b65b378b739cf40c13c1e455b16dff7') in 0.0004095 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/White.mat using Guid(f96821bbefeea864b9b418af4b8615ac) (NativeFormatImporter) -> (artifact id: 'b0a10ce88eba78cadb227317064359ad') in 0.000430084 seconds
+Start importing Assets/SPARC/Generated/Materials/Safe cell green.mat using Guid(1a1fb3ac535b74b71a3631d68467462c) (NativeFormatImporter) -> (artifact id: '4fbb5b3e886a4f870cbe3c4f59f49948') in 0.00049875 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MATERIAL/RBC_2D_SPRITE_MAT.mat using Guid(4abb22c0bf7c10146b9f06039768fc42) (NativeFormatImporter) -> (artifact id: '84fbaa69799f9d2ea1ed284d25bce394') in 0.000434167 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SimpleLit.mat using Guid(6a1143ee683302f4aa628c052723efc1) (NativeFormatImporter) -> (artifact id: '4e947c4ad6c49ec8c3dbccd89f2ba9c5') in 0.000472292 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/GridOrange_01_Mat.mat using Guid(7ab977a21c92388468ee65ad1c0e5a78) (NativeFormatImporter) -> (artifact id: '0aba92d3709dd98a250551a3269ee0db') in 0.000469541 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/FallbackMaterial.mat using Guid(8a239b3da89050c4e89ac06b168fc684) (NativeFormatImporter) -> (artifact id: '365f287f19db505f8da5f5a7aa1bdbca') in 0.000433166 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsMats/Outline_WBC_MeetingCells.mat using Guid(8a474c402c96b0d4d8565f1c5926c7a8) (NativeFormatImporter) -> (artifact id: 'a5722e1ff1a559d259acc726861b3ad3') in 0.000462833 seconds
+Start importing Assets/ThirdParty/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Flash_2x2_01.mat using Guid(caa5d03f2c3027148b70f4e303fbfb33) (NativeFormatImporter) -> (artifact id: '976d9fb9a1d2714a2c32f6ec2c8a125a') in 0.000393167 seconds
+Start importing Assets/SPARC/Generated/Materials/Discovery ochre.mat using Guid(daded52023e8c476aa918c8d6d850a11) (NativeFormatImporter) -> (artifact id: '2c9d9e492bf3ab286f919663a0cc50fe') in 0.000449458 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/VertexPickerURP.mat using Guid(eae7185451278b54bb78d0d5ff3f9452) (NativeFormatImporter) -> (artifact id: '6f319dd1b2ed99152df77cdd7832549c') in 0.000708541 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_PLATELETS_PLAIN/TEXTURES/T_PLATELET3/Materials/T_PLATELET3_C.mat using Guid(0b9166009fba18249b2f57f5ee87d139) (NativeFormatImporter) -> (artifact id: '1e55cd7b83f7b3285c468b7bbabfbe87') in 0.00053925 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MATERIALS/M_FLOW.mat using Guid(0bdbbfc24b3228745bf713b7848f3801) (NativeFormatImporter) -> (artifact id: '75af4eb8eb2b859a654344be550d8603') in 0.000411916 seconds
+Start importing Assets/ThirdParty/Epic Toon FX/Materials/Misc/Bubbles/bubble_soap_ADD_texture.mat using Guid(3be8ddfefd82d4c46aacf35c0e709d9d) (NativeFormatImporter) -> (artifact id: '1c0220be0126b176747bfb75dadccac5') in 0.000455709 seconds
+Start importing Assets/ThirdParty/Layer Lab/3D Casual Character/3D Characters Pro - Casual/Material/ColorD.mat using Guid(3bba2e27606afb847ab23d736d534fd8) (NativeFormatImporter) -> (artifact id: 'b09365a6e9c3667b5c010df28b597817') in 0.000438916 seconds
+Start importing Assets/Resource/GameFixing/GameFixingMat/Scan.mat using Guid(3bebb4a9cb25fb54680c532ede1b9b64) (NativeFormatImporter) -> (artifact id: '7714cbb1e6717674ef9028f8cc35517a') in 0.000339625 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/GreyBlue_Mat.mat using Guid(6b911390c5825014e8377183a7837d3f) (NativeFormatImporter) -> (artifact id: 'a9a6a4f7b2b68e37181c7189e119c17f') in 0.000466625 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Walk/LightBulb.mat using Guid(8b22f75c22af58340925ba2551584538) (NativeFormatImporter) -> (artifact id: 'fd158d8c7b9da5adb7b7a4da5fb32363') in 0.000461584 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsAudio&Video/MeetingCell/Materials/Fog.mat using Guid(9bd51460b3352fc4ea3cdefce9eb1e55) (NativeFormatImporter) -> (artifact id: '830d1f46811c0e821c59ffdf095f6483') in 0.00053625 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_RBC/MATERIALS/M_BODY/M_HAPPY.mat using Guid(9b2e3a50129238243a52c1dbc0971ebd) (NativeFormatImporter) -> (artifact id: '39f984536dec6a5e2b6481ba566cc4ef') in 0.000667917 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/Materials/Collider.mat using Guid(bbb235fff4f48426b863b36058ab66d2) (NativeFormatImporter) -> (artifact id: 'a09771a320d51b725c2e884e0308b63c') in 0.000527459 seconds
+Start importing Assets/ThirdParty/ModAssets/Materials/TrailMaterials/SubtleTrailMaterial.mat using Guid(bb6ceb127383a4152a4041c9babd6912) (NativeFormatImporter) -> (artifact id: '157eb213a7e40b29591de38fcd4e49db') in 0.0005955 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MATERIAL/M_RBC_NEUTRAL.mat using Guid(dbd4706848c1e734ea259bf80314df95) (NativeFormatImporter) -> (artifact id: 'c19386c51c35d1cd0c8d2613a3fa4c7d') in 0.000499917 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/GridWhite_01_Mat.mat using Guid(dbf898c9f9c4a2d46aa6336e23caeb61) (NativeFormatImporter) -> (artifact id: '9c69724902c708f05659f12adf9eb763') in 0.000478375 seconds
+Start importing Assets/Resource/GameFixing/GameFixingMat/Outline_WBC.mat using Guid(ebd5dd199ddaeee40977c33387264666) (NativeFormatImporter) -> (artifact id: 'dc673039aa3af7fcebda9856889a7976') in 0.000483125 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/CapMaterials_V5/M_SMILE_V5.mat using Guid(ebe6a68532b3e2d48aa2713e5687eba2) (NativeFormatImporter) -> (artifact id: 'c4e1d24dbb519d7968f4078686f1473f') in 0.000465958 seconds
+Start importing Assets/ThirdParty/Epic Toon FX/Materials/Misc/Liquid/drop_AB.mat using Guid(8c90b6e3637e4fd499d5ff1d47052517) (NativeFormatImporter) -> (artifact id: 'f12f6503a4ad4f51b8756928ad339a6b') in 0.000407916 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/Materials/NoDraw.mat using Guid(8cb4d6fee77fd4ee6895f08b240d625f) (NativeFormatImporter) -> (artifact id: 'b679da69f5297d2c78f217d9e6c0a1d4') in 0.0003985 seconds
+Start importing Assets/Resource/ProjectionCone/Terminal/Art/VFX/Materials/ProjectionCone_Mat.mat using Guid(cc5c58fec14cfe14299f57d22b608785) (NativeFormatImporter) -> (artifact id: 'a81c506efb5afb5eb3e9b5d739cec33e') in 0.001096833 seconds
+Start importing Assets/SPARC/Generated/Materials/Skin1.mat using Guid(0df7cd9bdba084399b7a3ede3ef2af59) (NativeFormatImporter) -> (artifact id: '98911ea7c6ed9bdcbe3b1a8c61452dd0') in 0.000471625 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat using Guid(9dfc825aed78fcd4ba02077103263b40) (NativeFormatImporter) -> (artifact id: '3535407266e63a704ebed07394e8e29d') in 0.000363666 seconds
+Start importing Assets/GameFixing/Art/Materials/VFX/PickupSparkles.mat using Guid(bd15f58914d13654ea82dac46526077b) (NativeFormatImporter) -> (artifact id: '03c7411771de2a6b69ac90e399b6d7aa') in 0.00058175 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_VESSEL_DIVERGES/MATERIAL/M_DIVERGES.mat using Guid(cd3b4ab89775aba42915b2a07eca2a65) (NativeFormatImporter) -> (artifact id: '8732b2a978d8017433d7b2fe10d230af') in 0.000577709 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Materials/M_MO_SMILE.mat using Guid(7ef7d03f671191741810f7b37c0346a4) (NativeFormatImporter) -> (artifact id: 'd64b436ab2d9f8a711ba63c05875393e') in 0.000545667 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Materials/M_MO_HAPPY.mat using Guid(be59eaa4a9523cf428438cf75b79aeca) (NativeFormatImporter) -> (artifact id: '64dbbddc5c7830d53af9e53ea1ba525c') in 0.000468584 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MATERIALS/M_ROOM.mat using Guid(fec26e64af8e2bf4ca426e0b560b6d6f) (NativeFormatImporter) -> (artifact id: 'c5622b1e3def948d85aa0872550a3570') in 0.000526542 seconds
+Start importing Packages/com.unity.probuilder/Content/Resources/com.unity.probuilder/Materials/EdgePicker.mat using Guid(4ff996e3a0a5743a3987ab6231160665) (NativeFormatImporter) -> (artifact id: '1c7757876c94487432276178c515d634') in 0.000474083 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Black.mat using Guid(4f1ef37ae953c484bbc5d5e4049147e5) (NativeFormatImporter) -> (artifact id: 'c073248664ba5268b69bc9cf80293393') in 0.000470083 seconds
+Start importing Assets/SPARC/Generated/Materials/Skin4.mat using Guid(8fa0a738e90fd4407a93e1a38f2c2f90) (NativeFormatImporter) -> (artifact id: '9d99d772bf7b3e6b51f504194ed1faaf') in 0.000504417 seconds
+Start importing Assets/ThirdParty/Layer Lab/3D Casual Character/3D Characters Pro - Casual/Material/ColorC.mat using Guid(8fb1841a6870ca44a99a2038a4cd1c19) (NativeFormatImporter) -> (artifact id: 'ca2cced3b7613176514e9a6b31d90ec2') in 0.000447 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/Albumins/REd/Pink_Albumin/Materials/T_P_ALBUMIN_MOUTH_OPEN_C.mat using Guid(afa157d9d41ceed469c96fad576d3fbd) (NativeFormatImporter) -> (artifact id: '72e1116abe47e450106d382a08699b08') in 0.000444583 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MATERIALS/M_PLATELET1.mat using Guid(af29c8f215ffc5d4f9fb33224bc2e924) (NativeFormatImporter) -> (artifact id: '8f67947672077153320fc855d55163ad') in 0.000434834 seconds
+Start importing Assets/ThirdParty/Layer Lab/3D Casual Character/3D Characters Pro - Casual/Material/ColorB.mat using Guid(ef0832830e560094c89ac7057a02ce11) (NativeFormatImporter) -> (artifact id: '747dd8e62c372f2fe1576360e0795427') in 0.000492458 seconds
+Start importing Assets/ThirdParty/Layer Lab/3D Casual Character/3D Characters Pro - Casual/Material/ColorA.mat using Guid(ef6dd8261c965ec439be47be6da07027) (NativeFormatImporter) -> (artifact id: '0d7ddc64e993c285119fc2ed693a2bc3') in 0.00042725 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Materials/GridBlue_01_Mat.mat using Guid(ff188f58422043f489060e28a5e4e0c0) (NativeFormatImporter) -> (artifact id: '5c0f400c9a4b77ecad3cb01db6717304') in 0.000471542 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) (TrueTypeFontImporter) -> (artifact id: '2feea29baf7e6fa252273a2e45116209') in 0.002737375 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) (TrueTypeFontImporter) -> (artifact id: '6b2366ebd64281a376ac63ede2f4c73b') in 0.004124458 seconds
+Start importing Assets/Resource/GameHeartArt/Fonts/nasalization/Nasalization Rg.otf using Guid(214f3d690152fbb478e35d78170ae968) (TrueTypeFontImporter) -> (artifact id: '8a421c746266b1d66d43f3e60281c455') in 0.000811666 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) (TrueTypeFontImporter) -> (artifact id: '7ef1eca1c4919446a3a1c01e011abb47') in 0.000774334 seconds
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) (TrueTypeFontImporter) -> (artifact id: '1ea918f91b236a5e566a97567987458e') in 0.109504041 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) (TrueTypeFontImporter) -> (artifact id: 'e048246c0dd3ddc1e60567d1ab2bc788') in 0.001865125 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) (TrueTypeFontImporter) -> (artifact id: '0b8e2640126b8818e550b69ed4346dca') in 0.00088575 seconds
+Start importing Assets/Resource/NavigationTextures/Fonts/coolvetica/Coolvetica Rg.otf using Guid(067dc0590fbfc4046b65ccc7ce06388a) (TrueTypeFontImporter) -> (artifact id: '8b8c1b5da474b488309452755f0f206a') in 0.000825875 seconds
+Start importing Assets/ThirdParty/Font Nation/TTF Fonts/Cincinnati.ttf using Guid(468bb306afd97eb47a5869f0744261e3) (TrueTypeFontImporter) -> (artifact id: '0bfe6ab56f98988b1bd935793ed663fb') in 0.000652375 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) (TrueTypeFontImporter) -> (artifact id: 'd743bdafeb52d8401fa35a8716f535d5') in 0.000961625 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) (TrueTypeFontImporter) -> (artifact id: '2cb27b29095b399caf76d10a80ef2212') in 0.001090292 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) (TrueTypeFontImporter) -> (artifact id: '50d935b2bd1ba44545ff980fc861c16f') in 0.000837 seconds
+Start importing Assets/ThirdParty/Layer Lab/GUI-YellowKid/ResourcesData/Fonts/BPreplayBold.otf using Guid(59c4b9934a23a4090855b0a96b9cf1fb) (TrueTypeFontImporter) -> (artifact id: '1dc02bbd1435f5beaa3f02fcab26d2f8') in 0.002113375 seconds
+Start importing Assets/Fungus/Fonts/Exo2/Exo2-Regular.ttf using Guid(79197ecfbc3a4294a89ce589dac02cf2) (TrueTypeFontImporter) -> (artifact id: '1de55370d96ffe26da66c291e5ed0ddf') in 0.000905458 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) (TrueTypeFontImporter) -> (artifact id: '4348a1782bd1c5c606edcd7b06029fd4') in 0.001084792 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) (TrueTypeFontImporter) -> (artifact id: 'b636b56ce05be801108b6cd4e4bed77c') in 0.000876542 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) (TrueTypeFontImporter) -> (artifact id: 'ed8a0b5da1c09b4c81a300f8c7dd5f42') in 0.001581584 seconds
+Start importing Assets/Fungus/Fonts/Amaranth/Amaranth-Regular.otf using Guid(bb145366ce7024469a5758b08d31802c) (TrueTypeFontImporter) -> (artifact id: 'b4a9b37831ac5d010ff5cb34d0093f24') in 0.001860459 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) (TrueTypeFontImporter) -> (artifact id: '1afadb64fef1e1fe964dc5e97cf05839') in 0.0007745 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) (TrueTypeFontImporter) -> (artifact id: '9ff2af4d6b4dc2315500d61611a066c4') in 0.00195825 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Lit Basic.shadergraph using Guid(2019d78ad3d1c5c4a8d309a857ca449f) (ScriptedImporter) -> (artifact id: '9eb0acdda148f098d13c456e4f5d2e36') in 0.15057375 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) (ScriptedImporter) -> (artifact id: 'c61c953916bb2800166a31a131393021') in 0.082739584 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) (ScriptedImporter) -> (artifact id: 'e8f037f5dc28707ffec16f66ff3579ec') in 0.06031075 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Lit Basic.shadergraph using Guid(a2407126e3372f64cacb75ed466a5621) (ScriptedImporter) -> (artifact id: 'c6fef748acf894a4870ac75d5c4a4e96') in 0.052293625 seconds
+Start importing Assets/Resource/HoloRing/Terminal/Art/VFX/Shaders/HoloRing_Graph.shadergraph using Guid(f3e7c7efad4bb42478d8d9dc026a5c6b) (ScriptedImporter) -> (artifact id: '1d1bbf6631f1a46116e040e03c129cf5') in 0.068994792 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/Unlit Simple.shadergraph using Guid(2476a2d151e824143af40dce1fc93a12) (ScriptedImporter) -> (artifact id: 'edfb5d58e66217f07e66da489c6487dc') in 0.037958208 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) (ScriptedImporter) -> (artifact id: '92079bec23daf377b0735e6943c91c45') in 0.035264666 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) (ScriptedImporter) -> (artifact id: '097f8f01003780e45ee7425e557232be') in 0.051758291 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/1_2D Sprite Unlit.shadergraph using Guid(25a0ebb4827f3cc47a1af2c79005f65b) (ScriptedImporter) -> (artifact id: '24c4c2f38996ecad90be5729d19e3149') in 0.03340425 seconds
+Start importing Packages/com.unity.probuilder/Content/Shader/Standard Vertex Color.shadergraph using Guid(8547ec39534635c4289065e5c5033f43) (ScriptedImporter) -> (artifact id: '1c5733b7f8cc004fbfa01021317616e3') in 0.066234542 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Unlit Basic.shadergraph using Guid(9618d41bb71f74048bb6cace8785b93d) (ScriptedImporter) -> (artifact id: '76be4dd69e9b3121d95c8fe8a2e322c5') in 0.027162625 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/2_Particle Lit.shadergraph using Guid(a680d9a9f8b66514abbfd3ae1c8f77f7) (ScriptedImporter) -> (artifact id: '0cf4feba38edb29afd0c18be56cff1cb') in 0.053388083 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKBasicTemplate.shadergraph using Guid(0738648e2f2f84b489a2f0076b69e30a) (ScriptedImporter)Warning in Graph at Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKBasicTemplate.shadergraph on line 5: 'UIE_NOINTERPOLATION': macro redefinition. Previous definition found at /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/CGIncludes/Internal/UnityUIE.cginc:88.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:44)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ -> (artifact id: '08b276cfd857962b52e96e0cf904e1f2') in 0.02482275 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/1_Decal Material Volume.shadergraph using Guid(1716ff8c1e51af14280cc97fbcba3b11) (ScriptedImporter) -> (artifact id: 'da1ba61267818ce222ea3a59e4402410') in 0.052635583 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) (ScriptedImporter) -> (artifact id: 'd4b7bbb0003f38831eecc2f06ea6e2cd') in 0.047495833 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) (ScriptedImporter) -> (artifact id: '4e02be32c1e65fe2391f240198807c91') in 0.027568875 seconds
+Start importing Assets/Resource/ProjectionCone/Terminal/Shaders/HolgramCone_Graph.shadergraph using Guid(a8e95bd088c85ed4e8914d97ddb0e750) (ScriptedImporter) -> (artifact id: 'bdac9417085b3d525e29cc697ca82536') in 0.039481417 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Decal Simple.shadergraph using Guid(39144937a5efe954dac51acbbe54157e) (ScriptedImporter) -> (artifact id: 'cb474a969940a1407bfb764d9ec29ee4') in 0.035432333 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) (ScriptedImporter) -> (artifact id: 'cb0501b922f2cbabddb5648232d6a19e') in 0.135399375 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) (ScriptedImporter) -> (artifact id: '62027483bf4b4fe143aa4b966d16434d') in 0.052707541 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Basic.shadergraph using Guid(5a4a765e921b8554eb959f7cf697b3be) (ScriptedImporter) -> (artifact id: 'bf3e8fa161dee1370c6bafe69f62f588') in 0.028714708 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) (ScriptedImporter) -> (artifact id: '839f88a612671c98b0f020f5b4b53618') in 0.036453208 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) (ScriptedImporter) -> (artifact id: 'c0fc4eea88a3c116a381f8fe7aea1705') in 0.082245375 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) (ScriptedImporter) -> (artifact id: 'e970796087cfc98b512e985a2f09078b') in 0.026685666 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) (ScriptedImporter) -> (artifact id: '75ec9b7d631ff786d57413aa01e552c2') in 0.04535875 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/Terrain Standard 4 Layers URP.shadergraph using Guid(bc3def193b270c649b041063a70a1a1f) (ScriptedImporter)Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_AddPass' not found
+Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_BaseMapGen' not found
+Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_AddPass' not found
+Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_BaseMapGen' not found
+ -> (artifact id: '8f0be67107b721c4a713b674a3e5f46c') in 0.162665416 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Meter.shadergraph using Guid(9d4e8ca8c5046914c87ca6ccef140dac) (ScriptedImporter) -> (artifact id: '39bd7bc4d0a6f138831096f96da4264b') in 0.02596275 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/0_2D Sprite Lit.shadergraph using Guid(bde135b320597544b9ac325092409f8b) (ScriptedImporter) -> (artifact id: '77967dce6addb6c28bdffd12ab3482a6') in 0.030430209 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) (ScriptedImporter) -> (artifact id: 'f69f6a283bc03e8e1fa0bc834f452d78') in 0.046753042 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKFullTemplate.shadergraph using Guid(3e01bbae25716b24ea9da11102b44902) (ScriptedImporter)Warning in Graph at Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKFullTemplate.shadergraph on line 5: 'UIE_NOINTERPOLATION': macro redefinition. Previous definition found at /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Resources/CGIncludes/Internal/UnityUIE.cginc:88.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@0fa2eca7fcff/Editor/Material/AssetReimportUtils.cs:44)
+UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
+UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@5c5573a7fc27/Editor/AssetPostProcessors/MaterialPostprocessor.cs line 37]
+
+ -> (artifact id: '75191ce8b8e52ca3acd1f634a2839c58') in 0.020461375 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Custom Render Texture.shadergraph using Guid(7ef2cf71ad164fe479662ae612dff99e) (ScriptedImporter) -> (artifact id: '02543daeef589076f5e0aa71c0cde776') in 0.008346875 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/1_Lit Full.shadergraph using Guid(aee84ce0dab81b049bb88017d78a63cd) (ScriptedImporter) -> (artifact id: 'fcbd91a884defd1040ae501b92262553') in 0.077975167 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/Terrain Simple.shadergraph using Guid(def488a52add6574d9f295a507032cb8) (ScriptedImporter)Shader 'Hidden/Terrain/Terrain Simple': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_AddPass' not found
+Shader 'Hidden/Terrain/Terrain Simple': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_BaseMapGen' not found
+Shader 'Hidden/Terrain/Terrain Simple': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_AddPass' not found
+Shader 'Hidden/Terrain/Terrain Simple': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_BaseMapGen' not found
+ -> (artifact id: '3198bb937b27ce5a1592fffd24c4bdec') in 0.113478375 seconds
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Particle Unlit.shadergraph using Guid(af66091e0eca0c04a9c3584ae867418a) (ScriptedImporter) -> (artifact id: '76243bc3d31200a380e17e4c173e1eea') in 0.037580583 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/2_2D Sprite Custom Lit.shadergraph using Guid(bfad0aba0faa90547b68abd10bb6be86) (ScriptedImporter) -> (artifact id: '39159f4438f240446a9f5a5c8bfb0df6') in 0.034900042 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/Fullscreen Basic URP.shadergraph using Guid(df41eefe8c13d444ca890dddbbc61f8d) (ScriptedImporter) -> (artifact id: '790ddbaad4850feb64ec4deea7e69da9') in 0.020904583 seconds
+Start importing Assets/Resource/ModAssets/Materials/SpeedArrow.fbx using Guid(304e2fac27c3c42fc9b584187f281fcb) (FBXImporter) -> (artifact id: '5a69d740a1687c6e56a9b076773ad7af') in 0.024141459 seconds
+Start importing Assets/Resource/GameHeartArt/SM_Germs/Models/Cocci_LP.fbx using Guid(90e8bb5fe8bc2564083742e2958bdcc3) (FBXImporter) -> (artifact id: '4b8323bf5c204d2dc8298570b8fa08f9') in 0.017778625 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Structure_Mesh.fbx using Guid(d0a9bfb4b5f28174884e89dd76563ae8) (FBXImporter) -> (artifact id: '8f07d360e90bb41a17513176c2040d32') in 0.010926584 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Peer_Agent_Mo/Animations/Idle/MO_IDLE.fbx using Guid(e028fd704e7efc34289f5bbdfb70fa5b) (FBXImporter)Keyframe reduction: Ratio: 11.982248%;
+ -> (artifact id: '18b56f1e76e1068b2d351ec1512b93bd') in 0.042306708 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MODEL/RBC_CHARACTER.fbx using Guid(d1bfcedbc6d5a9842a8871ebfff0f689) (FBXImporter)Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL
+Launched and connected uv unwrapper /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL after 0.01 seconds
+Launched and connected uv unwrapper /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL after 0.01 seconds
+Launched and connected uv unwrapper /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL after 0.01 seconds
+Launched and connected uv unwrapper /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL after 0.01 seconds
+Launched and connected uv unwrapper /Applications/Unity/Hub/Editor/6000.3.0b10/Unity.app/Contents/Helpers/UnwrapCL after 0.01 seconds
+Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: '5150681b63d8a281796c344fbcc2d0f8') in 0.027716542 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Ramp_Mesh.fbx using Guid(426a2785f8a940049aac2c246661cf09) (FBXImporter) -> (artifact id: 'b7237a7e4cb8be620c545fb126d6fcc7') in 0.008972083 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/BLUE_YELLOW_SMALL_ALBUMIN/MODELS/BLUE_ALBUMIN.fbx using Guid(a27c70424afd6b24fa08ec5fa1e0f506) (FBXImporter)Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: '05cba3929e1d3e690067f6e9a89b4116') in 0.00885725 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFixture.fbx using Guid(b28fa67a0ff82c5478f27368dc627683) (FBXImporter) -> (artifact id: '803523159eee463a98038853e86eb680') in 0.008954666 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Box_350x250x300_Mesh.fbx using Guid(d2f0da3998423f44594868ffed55c3e6) (FBXImporter) -> (artifact id: '1001a271d47e05c2394789267346f29a') in 0.00951575 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Models/Spirochetes_LP.fbx using Guid(e2f3b26427865fb4b93e26ac915af195) (FBXImporter) -> (artifact id: '95bb1ceeaa8a813559efcd4af67f7523') in 0.011505708 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET2.fbx using Guid(83418b73b817cd14e9fbed27c3f5c8ae) (FBXImporter) -> (artifact id: '530ce984b494f2c57d6e562cbad829e5') in 0.009626417 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_Germs/Models/Bacilli_LP.fbx using Guid(24c8dff625e1db946aecff6390e3ccdf) (FBXImporter) -> (artifact id: '22a69ed3922bbffd365b67ef845c9b23') in 0.010823083 seconds
+Start importing Assets/ThirdParty/NiceTouch/Demos/MovementDemo/Models/MMControlsMovementDemoSword.fbx using Guid(440b3e4b9878d1944a24095c9bd380fa) (FBXImporter) -> (artifact id: '7d37f26d6e072eecb21453b9e31f317b') in 0.007895708 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/SM_VESSEL_DIVERGES/MODEL/VESSEL_DIVERGES.fbx using Guid(e5391e7755f21264ea98871c39ea8206) (FBXImporter)Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: '03d2752d8c29fe5251f8076e333bf87f') in 0.012020333 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MODELS/VESSEL_ROOM.fbx using Guid(e5caad972c66ec64b9827d4f0555b5f1) (FBXImporter)Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: '7bc3823f724ab6cabc12bab95f222bcc') in 0.009864125 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET1.fbx using Guid(067968ec2d6ba2242a2f637fa9148de5) (FBXImporter) -> (artifact id: 'e2f3d7295c5cf57e605b54f1f75f0310') in 0.009692583 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/RBC_CHARACTER_v2/MODEL/RBC_CHARACTER_v2.fbx using Guid(86c7e56488a1f0f468242506962e2f38) (FBXImporter)Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: '4768ca513523f022f2211cad8c155e1f') in 0.018711833 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Box_350x250x200_Mesh.fbx using Guid(c6a55ba99e9e99d41b7eef123e311a43) (FBXImporter) -> (artifact id: '83d125c941f4141ca65f609439074d1c') in 0.009576375 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Tunnel_Mesh.fbx using Guid(f712806514868e54699156ec05dcb749) (FBXImporter) -> (artifact id: 'b5035ae631972ae6a3e7c22382c4710b') in 0.009800875 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_PLATELETS_PLAIN_20250220/MODELS/PLATELET3.fbx using Guid(695a6c919ee98384d81adafeeb832221) (FBXImporter) -> (artifact id: 'b515ccfa24f622f97678ae8d742ceff2') in 0.009777625 seconds
+Start importing Assets/ThirdParty/MFPC/Resources/Environment/Icosphere.obj using Guid(894fc3b049a7892409c64c78fd2f80f0) (FBXImporter) -> (artifact id: '602977b3df255e4cdcafde73b5246a27') in 0.010395167 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Ground_Mesh.fbx using Guid(aa38d7b0e367ecc4aac915dcfe957879) (FBXImporter) -> (artifact id: 'e93d21eb48640039750f66de6164638f') in 0.00939975 seconds
+Start importing Assets/Resource/SM_Updated_WBC/ANIMATIONS/UPDATED_WBC_Idle/Updated_WBC_Idle.fbx using Guid(8cd16adda8c765a4e95787f173864570) (FBXImporter)Keyframe reduction: Ratio: 15.772145%;
+ -> (artifact id: '77fb68913e00b84605d42342e2b8a1ca') in 0.033355667 seconds
+Start importing Assets/Resource/GameFixing/GameFixingArt/SM_RBC/MODELS/RBC_MOLECULE.fbx using Guid(ec693441d4268b14ca6d9310032094f0) (FBXImporter) -> (artifact id: '932d867edcd3da774cf11df7b6703163') in 0.010539625 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Stairs_200x100x200_Mesh.fbx using Guid(fce3bf5a5b603db45ab0048fb6ab44df) (FBXImporter) -> (artifact id: 'be4c20f2605154ed08c9321fefc160cf') in 0.00838825 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFloorSpotlight.fbx using Guid(1dbf28c1bb322474d981b2dc555e28b0) (FBXImporter) -> (artifact id: '1758e0d012ddb0e93f9b36a25d60bc16') in 0.008538 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Stairs_650_400_300_Mesh.fbx using Guid(7e0223e1d3e1733499accfa5ebffb67e) (FBXImporter) -> (artifact id: '2973e855bcdb1bc4d0ab3e5680d9285b') in 0.009621042 seconds
+Start importing Assets/Resource/GameExchange/GameExchangeModels/Red Oxygen Cells/RedOxygenCellWO2_V2.fbx using Guid(0fc137cd0ea87a641bf7d63678eba2c6) (FBXImporter)Keyframe reduction: Ratio: 18.000000%;
+ -> (artifact id: '39b45fe188a93b356d7148fc3cfffbf9') in 0.016567125 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/Albumins/REd/FBX/Pink_Albumin_LP.fbx using Guid(8f1cda0ada1635640aeea843d89f81e2) (FBXImporter) -> (artifact id: '9933881c2fdadaa65dfd49e118e591e8') in 0.019441792 seconds
+Start importing Assets/Resource/GameMeetingCells/MeetingCellsArt/VESSEL_ROOM_v3/MODELS/VESSEL_FLOW.fbx using Guid(cfc81e2b6242bc64093593e5aff35a1c) (FBXImporter)Keyframe reduction: Ratio: 100.000000%;
+ -> (artifact id: 'c038c5c29a01eed3e27400625afdce46') in 0.016012958 seconds
+Start importing Assets/ThirdParty/Starter Assets/Sample/Environment/Art/Models/Wall_Mesh.fbx using Guid(ff02a0a00ab750f48b09459b1cafd1b8) (FBXImporter) -> (artifact id: '353ef844312e7dc463a71184df71b677') in 0.008652208 seconds
+Start importing Assets/ThirdParty/ModAssets/Fonts/Orbitron-Regular SDF.asset using Guid(d393f12bd75574ef991a7a2c74b29c69) (NativeFormatImporter) -> (artifact id: 'd00607684e140efdeb15ff90d9f2e4f4') in 0.005695833 seconds
+Start importing Assets/GameFixing/Art/Fonts/Roboto-Black SDF.asset using Guid(75063828274bdb145a55f6dd2f22e8b2) (NativeFormatImporter) -> (artifact id: '41b215cb81370f3c4098473be31e9b3d') in 0.002611375 seconds
+Start importing Assets/Resource/NavigationTextures/Fonts/coolvetica/Coolvetica Rg SDF.asset using Guid(77618992c97aebc4a9283960a62c0abb) (NativeFormatImporter) -> (artifact id: 'd22f1b93c9931a011cb2e1bfd0367d9a') in 0.010242125 seconds
+Start importing Assets/ThirdParty/Layer Lab/GUI-YellowKid/ResourcesData/Fonts/BPreplayBold SDF.asset using Guid(7aa392bfa79454ff5977b4fa16adf56f) (NativeFormatImporter) -> (artifact id: '4dc364b262a977713df47852eb6fa6d3') in 0.005716542 seconds
+Start importing Assets/Resource/GameHeartArt/Fonts/nasalization/Nasalization Rg SDF.asset using Guid(2c7462e63bc5e7540b472546303dbd11) (NativeFormatImporter) -> (artifact id: 'a35e79e63e0bf2df0cae6b59bd2bf9a7') in 0.010852 seconds
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) (NativeFormatImporter) -> (artifact id: 'c3b60cb7915f8d23d3e475dac82118e7') in 0.001334208 seconds
+Start importing Assets/ThirdParty/ModAssets/Fonts/ZCOOLKuaiLe-Regular SDF.asset using Guid(8ebfeea7062344f0c96b8a1d614a92b1) (NativeFormatImporter) -> (artifact id: 'e10aeb2e91d99c00ca429e9b85a4f206') in 0.002394459 seconds
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) (NativeFormatImporter) -> (artifact id: '7055972fc60a7912ea5976ba5c66435a') in 0.006132958 seconds
+Start importing Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss using Guid(e82f84bf6bc1a4d099858e97c18f6acf) (ScriptedImporter) -> (artifact id: '9f63b9a56014cd40092f76c777d70934') in 0.023603708 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3711d735cf00f457cb1e8ebec30ce162): Total: 2.960 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=218 (actual=215, local cache=3, cache server=0)
+		Asset DB Process Time: managed=22 ms, native=2753 ms
+		Asset DB Callback time: managed=96 ms, native=86 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1424, non-scripts=3013
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 421
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 0.000ms
+	ApplyChangesToAssetFolders: 0.032ms
+	Scan: 13.127ms
+	OnSourceAssetsModified: 0.000ms
+	CategorizeAssetsWithTransientArtifact: 0.115ms
+	ProcessAssetsWithTransientArtifactChanges: 0.008ms
+	CategorizeAssets: 0.657ms
+	ImportOutOfDateAssets: 2759.995ms (-3.582ms without children)
+		ImportManagerImport: 2758.697ms (82.253ms without children)
+			ImportInProcess: 2672.171ms
+			UpdateCategorizedAssets: 4.273ms
+		ReloadNativeAssets: 0.016ms
+		UnloadImportedAssets: 0.764ms
+		ReloadImportedAssets: 3.697ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.242ms
+		InitializingProgressBar: 0.003ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.158ms
+	PostProcessAllAssets: 179.248ms
+	Hotreload: 3.940ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.069ms
+	UnloadStreamsBegin: 0.001ms
+	PersistCurrentRevisions: 0.091ms
+	UnloadStreamsEnd: 0.023ms
+	Untracked: 2.201ms
+
+[Indexing] Starting Initial Indexing for Assets
+2026-10-18 20:52:18.111 Unity[83839:32574680] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0xa5958eb20 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at /Users/zlad/Library/Caches/com.unity3d.UnityEditor/GiCache. Took: 0.003s, timestamps: [6.714 - 6.717]
+Starting new worker id: 0 with log in 
+Starting new worker id: 1 with log in 
+Starting new worker id: 2 with log in 
+Unloading 410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1017 unused Assets / (17.2 MB). Loaded Objects now: 5545.
+Memory consumption went from 296.3 MB to 279.1 MB.
+Total: 13.328083 ms (FindLiveObjects: 0.123666 ms CreateObjectMapping: 0.057500 ms MarkObjects: 9.834125 ms  DeleteObjects: 3.312000 ms)
+
+Start importing Assets/InitTestScene88448470-9180-4b9f-8c61-ccedb8baffae.unity using Guid(d58eb6fe7d3df400f97d823df32b90dc) (DefaultImporter) -> (artifact id: '1e9cd4f4f56c54fbedc4127e5f224fea') in 0.001076417 seconds
+Refreshing native plugins compatible for Editor in 0.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2834c68bdc9a34e26b4dc561399c98f7): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:173)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:108)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Thread 0x16edb3000 may have been prematurely finalized
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+<CFData 0xa52e8b750 [0x1f4a45308]>{length = 6, capacity = 6, bytes = 0xfcb214b3a805}
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.372 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.638 seconds
+Domain Reload Profiling: 1013ms
+	BeginReloadAssembly (234ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (23ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (168ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (42ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (86ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (67ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (444ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (152ms)
+			ProcessInitializeOnLoadMethodAttributes (149ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Asset Pipeline Refresh (id=cc360d9526e8746f5a7cce0feca5617f): Total: 1.109 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=714 ms
+		Asset DB Callback time: managed=15 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=376 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1424, non-scripts=3014
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 0.772ms
+	ApplyChangesToAssetFolders: 0.113ms
+	Scan: 0.000ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.002ms
+	ProcessAssetsWithTransientArtifactChanges: 2.039ms
+	CategorizeAssets: 47.592ms
+	ImportOutOfDateAssets: 644.184ms (638.799ms without children)
+		CompileScripts: 1.437ms
+		CollectScriptTypesHashes: 0.828ms
+		ReloadNativeAssets: 0.825ms
+		UnloadImportedAssets: 0.263ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.565ms
+		InitializingProgressBar: 0.000ms
+		OnDemandSchedulerStart: 1.468ms
+	PostProcessAllAssets: 15.907ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.105ms
+	UnloadStreamsBegin: 0.150ms
+	PersistCurrentRevisions: 0.086ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 3.435ms
+	Untracked: 397.570ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.396 ms
+	Integration:            127.902 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.017 ms
+	Total Operation Time:   128.316 ms
+2026-10-18 20:52:19.784 Unity[83839:32574680] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0xa5a10e800 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+The referenced script (Unknown) on this Behaviour is missing!
+Worker ready: AssetImportWorker2 2
+Worker ready: AssetImportWorker0 0
+Worker ready: AssetImportWorker1 1
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 571 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.249583 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            935.445 ms
+	Integration:            405.214 ms
+	Integration of assets:  264.755 ms
+	Thread Wait Time:       36.802 ms
+	Total Operation Time:   1642.216 ms
+Unloading 2659 unused Assets / (70.6 MB). Loaded Objects now: 17346.
+Memory consumption went from 0.65 GB to 0.58 GB.
+Total: 10.913667 ms (FindLiveObjects: 0.397041 ms CreateObjectMapping: 0.169959 ms MarkObjects: 8.180250 ms  DeleteObjects: 2.166167 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 159 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.299584 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            104.473 ms
+	Integration:            143.319 ms
+	Integration of assets:  13.795 ms
+	Thread Wait Time:       3.652 ms
+	Total Operation Time:   265.239 ms
+Unloading 2475 unused Assets / (51.1 MB). Loaded Objects now: 17358.
+Memory consumption went from 0.64 GB to 0.59 GB.
+Total: 8.722041 ms (FindLiveObjects: 0.444083 ms CreateObjectMapping: 0.153875 ms MarkObjects: 6.863500 ms  DeleteObjects: 1.260208 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.105709 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            106.878 ms
+	Integration:            146.579 ms
+	Integration of assets:  13.389 ms
+	Thread Wait Time:       3.814 ms
+	Total Operation Time:   270.660 ms
+Unloading 2475 unused Assets / (27.9 MB). Loaded Objects now: 17361.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 13.659791 ms (FindLiveObjects: 0.392458 ms CreateObjectMapping: 0.220709 ms MarkObjects: 11.747458 ms  DeleteObjects: 1.298917 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.086167 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            95.630 ms
+	Integration:            143.558 ms
+	Integration of assets:  12.943 ms
+	Thread Wait Time:       3.948 ms
+	Total Operation Time:   256.079 ms
+Unloading 2475 unused Assets / (28.0 MB). Loaded Objects now: 17362.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 15.618833 ms (FindLiveObjects: 0.352417 ms CreateObjectMapping: 0.137500 ms MarkObjects: 13.800541 ms  DeleteObjects: 1.327833 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.093667 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            108.152 ms
+	Integration:            167.255 ms
+	Integration of assets:  17.243 ms
+	Thread Wait Time:       4.535 ms
+	Total Operation Time:   297.185 ms
+Unloading 2475 unused Assets / (24.9 MB). Loaded Objects now: 17363.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 17.703834 ms (FindLiveObjects: 0.484959 ms CreateObjectMapping: 0.193458 ms MarkObjects: 15.684167 ms  DeleteObjects: 1.340833 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.113542 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            134.172 ms
+	Integration:            162.749 ms
+	Integration of assets:  14.247 ms
+	Thread Wait Time:       1.778 ms
+	Total Operation Time:   312.948 ms
+Unloading 2475 unused Assets / (24.8 MB). Loaded Objects now: 17364.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 19.662667 ms (FindLiveObjects: 0.415583 ms CreateObjectMapping: 0.180958 ms MarkObjects: 17.639417 ms  DeleteObjects: 1.426458 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.103958 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            97.621 ms
+	Integration:            154.034 ms
+	Integration of assets:  13.659 ms
+	Thread Wait Time:       3.816 ms
+	Total Operation Time:   269.130 ms
+Unloading 2475 unused Assets / (24.9 MB). Loaded Objects now: 17358.
+Memory consumption went from 0.64 GB to 0.62 GB.
+Total: 17.848833 ms (FindLiveObjects: 0.406000 ms CreateObjectMapping: 0.157542 ms MarkObjects: 16.003125 ms  DeleteObjects: 1.282083 ms)
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Unloading 149 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.091042 ms
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Loaded scene 'Assets/SPARCOriginal/Scenes/SPARC_MeetingCells.unity'
+	Deserialize:            95.880 ms
+	Integration:            147.234 ms
+	Integration of assets:  13.540 ms
+	Thread Wait Time:       3.914 ms
+	Total Operation Time:   260.568 ms
+Unloading 2478 unused Assets / (53.2 MB). Loaded Objects now: 17366.
+Memory consumption went from 0.64 GB to 0.58 GB.
+Total: 18.068250 ms (FindLiveObjects: 0.370875 ms CreateObjectMapping: 0.128750 ms MarkObjects: 16.204292 ms  DeleteObjects: 1.363959 ms)
+
+Saving results to: /Users/zlad/Library/Application Support/SPARC/SPARC_MeetingCells/TestResults.xml
+Saving results to: /Users/zlad/Development/SPARC_MeetingCells/Reports/OriginalScene/InteractionMinigameFollowup/visual-corrected-tests.xml
+Thread 0x17939f000 may have been prematurely finalized
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.256 ms
+	Integration:            90.348 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   90.611 ms
+Unloading 1256 unused Assets / (195.4 MB). Loaded Objects now: 6055.
+Memory consumption went from 0.56 GB to 383.1 MB.
+Total: 21.873583 ms (FindLiveObjects: 0.138541 ms CreateObjectMapping: 0.069417 ms MarkObjects: 16.169542 ms  DeleteObjects: 5.495625 ms)
+
+Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:173)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:108)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Asset Pipeline Refresh (id=b812b3a40f2274df59663d9275b1e5f4): Total: 0.062 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 6060.
+Memory consumption went from 337.0 MB to 337.0 MB.
+Total: 15.560375 ms (FindLiveObjects: 0.102667 ms CreateObjectMapping: 0.040292 ms MarkObjects: 15.409750 ms  DeleteObjects: 0.007625 ms)
+
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6cffd7b451cf24c9fb371b4f7d47b970): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+DisplayProgressbar: Undo
+Test run completed. Exiting with code 0 (Ok). Run completed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/Executer.cs:81)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@92cb1b3bb400/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
+
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: 'fe32603e1ae680fd7ae9ba8a141e9750') in 0.002710958 seconds
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=33a1819dd1f674a4198b92c52899ea9d): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x322cc7000 may have been prematurely finalized
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-zlad-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-zlad channel disconnected successfully.
+Thread 0x16f223000 may have been prematurely finalized
+Thread 0x16f197000 may have been prematurely finalized
+Thread 0x16f2af000 may have been prematurely finalized
+Thread 0x16f33b000 may have been prematurely finalized
+Thread 0x16f3c7000 may have been prematurely finalized
+Thread 0x16f453000 may have been prematurely finalized
+Thread 0x16f4df000 may have been prematurely finalized
+Thread 0x16f56b000 may have been prematurely finalized
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      ALC ILPP context 1 is unloading
+debugger-agent: Unable to listen on 40

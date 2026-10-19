@@ -1,0 +1,41 @@
+{
+  "status": "packaged-and-static-verified",
+  "lastFocusedCases": 30,
+  "lastFocusedPassed": 30,
+  "expectedFinalNativeCases": 101,
+  "latestUserSteering": [
+    "restore source highlight/curved-line/native option menus",
+    "pixel plus sketch generated assets",
+    "redesign minigames and worksheet",
+    "wider delivery targets gap432 native units versus224",
+    "animate sprites and add effects without scaling physics bodies",
+    "compact redesigned objective card with completion badge and decorative task-change feedback"
+  ],
+  "assetManifest": "Reports/OriginalScene/GeneratedArt/assets.json",
+  "prompts": "Reports/OriginalScene/GeneratedArt/prompt-set.json",
+  "sourceFrozen": true,
+  "remaining": [
+    "optional external or physical-device acceptance only"
+  ],
+  "currentCandidate": "pending-final-cinematic-and-anchor-build",
+  "historicalBrowserFailure": "Current browser reproduced a whole-bank20CSS offset after cancel. Root cause: saved local coordinates precede parent bank size/pivot change. New anchored home coordinates and two actual regression cases added.",
+  "overlayBoundsFocusedPassed": 23,
+  "glyphCoverageFocusedPassed": 1,
+  "nativePassed": 101,
+  "nativeFailed": 0,
+  "developmentBuildPassed": true,
+  "releaseBuildPassed": true,
+  "buildErrors": 0,
+  "buildWarnings": 0,
+  "originalSceneUnchanged": true,
+  "currentJourney": "Reports/OriginalScene/BrowserJourney/2026-10-19T01-59-00-440Z",
+  "bankFocusedCases": 11,
+  "bankFocusedPassed": 11,
+  "cinematicFocusedPassed": true,
+  "currentSource": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "fullJourney": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z",
+  "joinedAudit": "Reports/OriginalScene/delivery-audit.json",
+  "package": "Deliverables/OriginalScene/SPARC_MeetingCells_Original_WebGL.zip",
+  "galleryCaptures": 263,
+  "staticArtifactCheck": "passed"
+}

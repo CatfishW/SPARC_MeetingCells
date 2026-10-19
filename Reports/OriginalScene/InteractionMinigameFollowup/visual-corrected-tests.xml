@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Passed" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.5513498">
+  <test-suite type="TestSuite" id="1138" name="SPARC_MeetingCells" fullname="SPARC_MeetingCells" runstate="Runnable" testcasecount="107" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.551350" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1131" name="SPARC.Original.PlayTests.dll" fullname="/Users/zlad/Development/SPARC_MeetingCells/Library/ScriptAssemblies/SPARC.Original.PlayTests.dll" runstate="Runnable" testcasecount="94" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.547476" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="83839" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1132" name="Sparc" fullname="Sparc" runstate="Runnable" testcasecount="94" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.546802" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1133" name="Original" fullname="Sparc.Original" runstate="Runnable" testcasecount="94" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.546235" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1134" name="Tests" fullname="Sparc.Original.Tests" runstate="Runnable" testcasecount="94" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:29Z" duration="9.545656" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1019" name="NativeWorksheetLayoutTests" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:25Z" duration="5.381745" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1024" name="NativeWorksheetReflowsScaleAndSafeAreaWithoutViewportResizeAndKeepsAnswers" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests.NativeWorksheetReflowsScaleAndSafeAreaWithoutViewportResizeAndKeepsAnswers" methodname="NativeWorksheetReflowsScaleAndSafeAreaWithoutViewportResizeAndKeepsAnswers" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" seed="1912856183" result="Passed" start-time="2026-10-19 00:52:19Z" end-time="2026-10-19 00:52:22Z" duration="3.112537" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1020" name="NativeWorksheetTargetsAndArtAt390By844" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests.NativeWorksheetTargetsAndArtAt390By844" methodname="NativeWorksheetTargetsAndArtAt390By844" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" seed="605152903" result="Passed" start-time="2026-10-19 00:52:22Z" end-time="2026-10-19 00:52:23Z" duration="0.550917" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1021" name="NativeWorksheetTargetsAndArtAt844By390" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests.NativeWorksheetTargetsAndArtAt844By390" methodname="NativeWorksheetTargetsAndArtAt844By390" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" seed="1719123819" result="Passed" start-time="2026-10-19 00:52:23Z" end-time="2026-10-19 00:52:24Z" duration="0.530144" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1022" name="NotebookTargetsAndSourceWordsAt1440By900" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests.NotebookTargetsAndSourceWordsAt1440By900" methodname="NotebookTargetsAndSourceWordsAt1440By900" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" seed="2108574461" result="Passed" start-time="2026-10-19 00:52:24Z" end-time="2026-10-19 00:52:24Z" duration="0.573506" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1023" name="NotebookTargetsAndSourceWordsAt960By940" fullname="Sparc.Original.Tests.NativeWorksheetLayoutTests.NotebookTargetsAndSourceWordsAt960By940" methodname="NotebookTargetsAndSourceWordsAt960By940" classname="Sparc.Original.Tests.NativeWorksheetLayoutTests" runstate="Runnable" seed="9228892" result="Passed" start-time="2026-10-19 00:52:24Z" end-time="2026-10-19 00:52:25Z" duration="0.608039" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1062" name="OriginalInteractionTests" fullname="Sparc.Original.Tests.OriginalInteractionTests" classname="Sparc.Original.Tests.OriginalInteractionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-19 00:52:25Z" end-time="2026-10-19 00:52:29Z" duration="4.160740" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1064" name="ApproachingShowsHighlightConnectorAndOptionsAndLeavingRestoresMaterials" fullname="Sparc.Original.Tests.OriginalInteractionTests.ApproachingShowsHighlightConnectorAndOptionsAndLeavingRestoresMaterials" methodname="ApproachingShowsHighlightConnectorAndOptionsAndLeavingRestoresMaterials" classname="Sparc.Original.Tests.OriginalInteractionTests" runstate="Runnable" seed="8575322" result="Passed" start-time="2026-10-19 00:52:25Z" end-time="2026-10-19 00:52:26Z" duration="1.340403" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1065" name="OriginalObserveAndTalkButtonsEnterTheirSourceBlocksAndSuppressSelection" fullname="Sparc.Original.Tests.OriginalInteractionTests.OriginalObserveAndTalkButtonsEnterTheirSourceBlocksAndSuppressSelection" methodname="OriginalObserveAndTalkButtonsEnterTheirSourceBlocksAndSuppressSelection" classname="Sparc.Original.Tests.OriginalInteractionTests" runstate="Runnable" seed="449461572" result="Passed" start-time="2026-10-19 00:52:26Z" end-time="2026-10-19 00:52:28Z" duration="2.349126" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+              </test-case>
+              <test-case id="1063" name="ThreeOriginalOptionGroupsAndReferencesAreRestored" fullname="Sparc.Original.Tests.OriginalInteractionTests.ThreeOriginalOptionGroupsAndReferencesAreRestored" methodname="ThreeOriginalOptionGroupsAndReferencesAreRestored" classname="Sparc.Original.Tests.OriginalInteractionTests" runstate="Runnable" seed="564588772" result="Passed" start-time="2026-10-19 00:52:28Z" end-time="2026-10-19 00:52:29Z" duration="0.469075" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Saving results to: /Users/zlad/Library/Application Support/SPARC/SPARC_MeetingCells/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

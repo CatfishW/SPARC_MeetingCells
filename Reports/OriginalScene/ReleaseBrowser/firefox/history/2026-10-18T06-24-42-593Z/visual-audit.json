@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T06:26:06.531494+00:00",
+  "acceptanceSha256": "244923e478163ef39236e6a7a3eeaf4d2e142ccf0ab6756993c4473d6c2bfecc",
+  "verifiedInputSha256": "c60e76195b54e97cb02dadca188f70615577a256f5efe32e32c90b7a528fe0a3",
+  "method": "Assistant inspection of all six original-resolution artifact PNGs using view_image",
+  "screenshots": {
+    "01-original-start.png": "02ca45ed57ae75bce704c90d9f1ce94c67b3ee85b1f634a1ccf223d55118febe",
+    "02-original-timeline.png": "a63d85960fffd31351245741210914eacd6177b5b9b5590bf2c7040001bbf26e",
+    "03-original-dialogue.png": "45d8bd89606e3d5bd38510015dc3c3f2f985b8f99b1c386268f381c969101241",
+    "03b-dialogue-small-viewport.png": "d22fdd7fd2124c35962b39162ea97545097fb07b79df305a7c1a4dd5a9fba12c",
+    "04-real-dialogue-input.png": "43c3c3a2e90927ef0a5315cb98c8c45fa79339b962e38cd830f6456ec75c7af3",
+    "05-small-viewport.png": "0195c8cfc38371ef471b5484a539a0f60245ece96a365a576e8d8e7788af554e"
+  },
+  "findings": [
+    "The original bloodstream intro and cell assets render without missing-material panels or a blank screen.",
+    "The original CAP dialogue, speaker label, ink icon and Continue control fit and remain legible at1440 by900.",
+    "The dialogue, keyboard hint and Continue control fit at960 by600 without clipping or overlap.",
+    "Later captures show the original scene after actual dialogue keyboard input and viewport resizing."
+  ],
+  "scope": "Current production release intro environment, dialogue and960 by600 viewport visual review only.",
+  "limitations": [
+    "The immediate01-original-start frame records Unity\u2019s splash; the separate production-phone run captures the actual visible Start card after splash completion.",
+    "The timed02-original-timeline still falls between authored caption cues and does not independently show an intro subtitle; the current Chromium and both production-phone intro captures show the complete caption.",
+    "This does not certify the full route, task HUD, menus, activities, continuous crowd behavior, free gameplay camera, audio, physical devices, performance or human difficulty.",
+    "Exact cell placement and animation timing differ between engines.",
+    "Startup NavMesh/GPU warnings remain in acceptance.json; this is not a zero-warning runtime claim."
+  ]
+}

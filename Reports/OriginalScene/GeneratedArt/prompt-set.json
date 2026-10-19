@@ -1,0 +1,71 @@
+{
+  "mode": "built-in image_gen",
+  "request": "Pixel plus sketch themed minigame assets",
+  "prompts": [
+    {
+      "name": "oxygen-player-v2",
+      "prompt": "Use case: stylized-concept\nAsset type: production Unity 2D educational minigame sprite, isolated transparent cutout.\nPrimary request: a charming red blood cell player character for an oxygen-delivery game. One single mature red blood cell, anatomically recognizable as a soft biconcave disc with a deep central depression, no nucleus. Warm vermilion and coral, glossy soft toy-like 2.5D painted game art, thick clean silhouette, tiny friendly eyes and a small smile low on the rim. Three-quarter top view, full character centered with generous 12 percent transparent margin. Subtle rim highlight, no cast shadow outside the object. Suitable at 80 pixels, bold readable forms and limited fine detail.\nConstraints: exactly one cell; no arms, legs, cape, equipment, surrounding objects, letters, logos, watermark, border or UI. Genuinely transparent background with alpha. This is the actual game sprite, not a mockup."
+    },
+    {
+      "name": "defense-player-v2",
+      "prompt": "Use case: stylized-concept\nAsset type: Unity 2D educational minigame sprite, isolated transparent cutout.\nPrimary request: one friendly white blood cell hero for an immune-defense arcade game. A rounded, gently lobed pale ivory cell with a cool mint rim and one softly visible purple lobed nucleus inside; recognizable cell biology, appealing 2.5D painted soft toy game art matching a glossy coral red blood cell companion. Two tiny expressive eyes and a determined friendly smile, no clothing or equipment. Top-down three-quarter view, compact rounded silhouette, full object centered, 12 percent clear margin. Broad shapes readable at 80 pixels, soft internal texture and clean polished edges.\nConstraints: exactly one cell, genuinely transparent alpha background. No limbs, weapons, shield prop, medical cross, text, letters, border, logos, watermark, cast shadow outside the subject. This is the actual playable sprite, no mockup."
+    },
+    {
+      "name": "defense-bacterium-v2",
+      "prompt": "Use case: stylized-concept\nAsset type: Unity 2D educational minigame sprite, isolated transparent cutout.\nPrimary request: one playful hostile bacterium for a friendly immune-defense arcade minigame. Rounded capsule-shaped green-and-chartreuse bacterium, slightly mischievous small eyes, short rounded pili along its sides, one simple curved flagellum. Cute rather than scary. Polished 2.5D painted soft toy game art, broad saturated forms and clear dark teal silhouette readable at 40 pixels. View from above, single subject centered with 15 percent transparent margin, crisp edges, soft highlights.\nConstraints: actual bacterium sprite only, transparent background with real alpha. No nucleus, no human limbs, no weapons, no text, letters, logo, border, UI or watermark. No cast shadow outside object."
+    },
+    {
+      "name": "red-cell-pixel-sketch",
+      "file": "exec-92e2051c-c717-4693-96e4-fe18ce0975b3.png",
+      "subject": "red blood cell, its biconcave depression, coral/crimson color and friendly face; no nucleus",
+      "prompt": "Use case: style-transfer\nAsset type: transparent Unity 2D game sprite.\nInput image: edit target and subject reference.\nChange only the rendering style of the red blood cell, its biconcave depression, coral/crimson color and friendly face; no nucleus. Reinterpret it as deliberate PIXEL ART crossed with a hand-drawn INK SKETCH: a visible 96-pixel logical grid, clean stair-stepped blocky silhouette, chunky dark charcoal ink contour, limited 10-color palette, sparse pixel-dither shading and pencil crosshatching expressed as small angular pixel marks. Matte flat color. Charming educational indie game art. No smooth painting, no glossy 3D, no soft airbrush gradients or glow. Simplify detail so it reads at 64 pixels. Full subject centered, generous 12-percent clear margin, no cropping. Preserve the recognizable subject and friendly character; no new objects or limbs.\nConstraints: genuine transparent background with alpha. Remove all background glows, shadows and halos. No text, letters, border, watermark, UI or ground. One actual sprite only. Crisp pixel edges and sketched details are essential."
+    },
+    {
+      "name": "white-cell-pixel-sketch",
+      "file": "exec-20cb4844-6d57-4fb4-8d11-73bd8b92a560.png",
+      "subject": "white blood cell, rounded lobed ivory/mint membrane, purple lobed nucleus and friendly face",
+      "prompt": "Use case: style-transfer\nAsset type: transparent Unity 2D game sprite.\nInput image: edit target and subject reference.\nChange only the rendering style of the white blood cell, rounded lobed ivory/mint membrane, purple lobed nucleus and friendly face. Reinterpret it as deliberate PIXEL ART crossed with a hand-drawn INK SKETCH: a visible 96-pixel logical grid, clean stair-stepped blocky silhouette, chunky dark charcoal ink contour, limited 10-color palette, sparse pixel-dither shading and pencil crosshatching expressed as small angular pixel marks. Matte flat color. Charming educational indie game art. No smooth painting, no glossy 3D, no soft airbrush gradients or glow. Simplify detail so it reads at 64 pixels. Full subject centered, generous 12-percent clear margin, no cropping. Preserve the recognizable subject and friendly character; no new objects or limbs.\nConstraints: genuine transparent background with alpha. Remove all background glows, shadows and halos. No text, letters, border, watermark, UI or ground. One actual sprite only. Crisp pixel edges and sketched details are essential."
+    },
+    {
+      "name": "bacterium-pixel-sketch",
+      "file": "exec-8ee7e077-d424-4c3c-b51d-ba5ef0e01ff2.png",
+      "subject": "single green capsule-shaped bacterium, mischievous face, short pili and flagellum; no nucleus",
+      "prompt": "Use case: style-transfer\nAsset type: transparent Unity 2D game sprite.\nInput image: edit target and subject reference.\nChange only the rendering style of the single green capsule-shaped bacterium, mischievous face, short pili and flagellum; no nucleus. Reinterpret it as deliberate PIXEL ART crossed with a hand-drawn INK SKETCH: a visible 96-pixel logical grid, clean stair-stepped blocky silhouette, chunky dark charcoal ink contour, limited 10-color palette, sparse pixel-dither shading and pencil crosshatching expressed as small angular pixel marks. Matte flat color. Charming educational indie game art. No smooth painting, no glossy 3D, no soft airbrush gradients or glow. Simplify detail so it reads at 64 pixels. Full subject centered, generous 12-percent clear margin, no cropping. Preserve the recognizable subject and friendly character; no new objects or limbs.\nConstraints: genuine transparent background with alpha. Remove all background glows, shadows and halos. No text, letters, border, watermark, UI or ground. One actual sprite only. Crisp pixel edges and sketched details are essential."
+    },
+    {
+      "name": "oxygen-vessel-pixel-sketch",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept\nAsset type: 2D Unity arcade arena background texture, opaque, landscape 4:3 composition.\nPrimary request: an inside-the-bloodstream backdrop in crisp PIXEL ART plus INK SKETCH style. Warm burgundy and dusty coral vessel walls frame the outer 10 percent; a broad uninterrupted dark plum center is reserved for active game sprites. A few subtle curved flow lines and sparse angular pencil hatch marks along the edges suggest circulation. Pixel clusters and stair-step shapes, hand-inked contours, limited muted palette, matte colors. Calm readable low-contrast center; decorative detail only at outer edges. Whimsical educational game, not horror.\nConstraints: background texture only, no characters, cells, objects, particles, oxygen bubbles, text, labels, logos, HUD, buttons or watermark. Avoid detailed perspective tunnel that competes with gameplay. No smooth 3D render or glossy lighting. No border outside the vessel texture. Fill entire canvas."
+    },
+    {
+      "name": "defense-vessel-pixel-sketch",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept\nAsset type: 2D Unity immune-defense arcade arena background texture, opaque, landscape 4:3 composition.\nPrimary request: a microscopic vessel arena rendered as crisp PIXEL ART crossed with INK SKETCH. Deep midnight teal and desaturated blue-green, subtle organic membrane scallops and angular pencil crosshatching only near the outer 10 percent. The broad center is nearly flat dark petrol blue, quiet and low contrast so ivory white cells, red cells and lime bacteria stand out clearly. Small restrained pixel dithering, matte colors, limited palette, inked stepped edges. Friendly educational game atmosphere.\nConstraints: texture backdrop only. No characters, cells, germs, particles, bubbles, labels, text, logos, UI, borders, buttons, vignette glow or watermark. No smooth 3D, no photographic realism. Fill the entire canvas."
+    },
+    {
+      "name": "oxygen-pixel-sketch",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept\nAsset type: transparent Unity arcade collectible sprite.\nPrimary request: a small oxygen molecule collectible: two joined cyan-blue circular oxygen atoms, one a little behind the other, a compact double-bubble silhouette. Crisp PIXEL ART mixed with INK SKETCH, visible 64-pixel logical grid, stair-stepped dark navy contours, flat pale cyan and electric turquoise fills, sparse angular pencil hatching and pixel dither. Simple bold readable shape at32 pixels, full subject centered with15 percent clear margin. A couple of small square highlight pixels inside the atoms only.\nConstraints: one molecule with exactly two joined atoms, no face, no orbit rings, no unrelated bubbles. Genuine transparent alpha background. No soft outer glow or shadow. No letters, labels, text, logos, border, UI or watermark. No smooth gradients or glossy3D."
+    },
+    {
+      "name": "worksheet-cells-pixel-sketch",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept\nAsset type: transparent educational game cover illustration for a cell-biology word worksheet.\nPrimary request: two friendly cell characters together: one coral red blood cell as a biconcave disc without nucleus and one pale mint white blood cell with a purple lobed nucleus. They smile next to one small two-atom cyan oxygen molecule. A compact horizontal grouped composition, full subjects visible, centered with12 percent clear margin. PIXEL ART crossed with INK SKETCH: stair-stepped block silhouettes, chunky charcoal ink contours, matte limited palette, sparse angular pencil crosshatching and pixel dithering, clear form at160 pixels. Warm friendly educational indie game art, no3D gloss.\nConstraints: exactly two cells and one oxygen molecule; no limbs, props, arrows, text, labels, paper, page, UI, frame, watermark or logo. Genuinely transparent background with no outer glow or ground shadow. Scientifically distinguish RBC without nucleus and WBC with nucleus."
+    }
+  ],
+  "selectedFinalAssets": [
+    "red-cell-pixel-sketch",
+    "white-cell-pixel-sketch",
+    "bacterium-pixel-sketch",
+    "oxygen-pixel-sketch",
+    "oxygen-vessel-pixel-sketch",
+    "defense-vessel-pixel-sketch",
+    "worksheet-cells-pixel-sketch"
+  ],
+  "discardedDrafts": [
+    "oxygen-player-v2",
+    "defense-player-v2",
+    "defense-bacterium-v2"
+  ],
+  "finalStyle": "Pixel art silhouettes with ink outlines, pencil hatching and limited palettes; final PNG alpha preserved"
+}

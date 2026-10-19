@@ -1,0 +1,12 @@
+# Unity-generated local state
+Library/
+Temp/
+Logs/
+Obj/
+UserSettings/
+Builds/macOS/
+Reports/Toolchain/
+.DS_Store
+*.csproj
+*.sln
+*.userprefs

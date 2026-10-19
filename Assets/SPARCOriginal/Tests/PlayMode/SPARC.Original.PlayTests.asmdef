@@ -1,0 +1,1 @@
+{"name":"SPARC.Original.PlayTests","references":["SPARC.Original","Unity.Timeline","Cinemachine","Unity.TextMeshPro","Unity.InputSystem"],"optionalUnityReferences":["TestAssemblies"],"defineConstraints":["UNITY_INCLUDE_TESTS"],"autoReferenced":false,"overrideReferences":true,"precompiledReferences":["nunit.framework.dll","Newtonsoft.Json.dll"]}

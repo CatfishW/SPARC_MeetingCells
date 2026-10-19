@@ -1,0 +1,1 @@
+{"name":"SPARC.Original","rootNamespace":"Sparc.Original","references":["Unity.InputSystem","Cinemachine","Unity.Timeline","Unity.TextMeshPro","Unity.Newtonsoft.Json","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime"],"autoReferenced":true}

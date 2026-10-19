@@ -1,0 +1,104 @@
+{
+  "generationMode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "red-cell-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/red-cell-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-310241f0-43d4-4ee9-b9cf-d0410004968a.png",
+      "sha256": "aa15e46a3782706a8f0b09eac8ca06d1f2431a57cefff223012e6884b0ab30ba",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "white-cell-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/white-cell-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-91b9c075-2a46-4d24-a7c2-8af534f01c23.png",
+      "sha256": "d4fd6d602ab9009bf05262bd40711842f3da43377876c2d209ca096ffbb1b586",
+      "width": 1302,
+      "height": 1208,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "bacterium-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/bacterium-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-5c99dc75-5baa-44cd-8c0c-cb7dad3a6c3f.png",
+      "sha256": "d79c04f39948144277cca8958e6311959ac6a826f607b2aae2db40fd1ed797df",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "oxygen-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/oxygen-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-86ebf330-bd79-4c48-ba2d-6a38f0e77863.png",
+      "sha256": "52626ad5c35bfc16e4cb98f306e64da1a6eed04b6e9b91045a75fa33d240bbc5",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "oxygen-vessel-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/oxygen-vessel-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-df597a8a-7c4e-4320-950a-76845a919d2e.png",
+      "sha256": "aa599b4cbfb5b3e10e8e783a788df8d5b7be04aa69ff23c69d9008e31a29128a",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "alphaRange": null,
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "defense-vessel-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/defense-vessel-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-afe7af5a-9c91-4ef6-9f6d-15040872df18.png",
+      "sha256": "35df72ee6a978d374efb298530e178a241dd81140527cd6edd461ac4353b4b6d",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "alphaRange": null,
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    },
+    {
+      "name": "worksheet-cells-pixel-sketch",
+      "path": "Assets/Resources/MeetingCellsArt/worksheet-cells-pixel-sketch.png",
+      "originalGeneratedPath": "/Users/zlad/.codex/generated_images/01a14bfc-9c7b-7881-8288-d97d9302a549/exec-2e9b9e49-8be5-443c-9edc-bcd282cec272.png",
+      "sha256": "7d54036c753a1771ee94854f29a17bb8576604f1148fb668c1470a4a827781e6",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "method": "Copied original built-in generated PNG without raster editing",
+      "style": "pixel plus ink sketch"
+    }
+  ]
+}

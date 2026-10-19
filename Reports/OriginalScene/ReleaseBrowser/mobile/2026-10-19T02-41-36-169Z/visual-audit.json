@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "acceptanceSha256": "8691b8b0fd14f1e4809ad30436e48d30ae0ad026e7d21161d64778bcbbf9c011",
+  "screenshots": {
+    "390x844-start.png": "988a8a233f8729fd24554c27b05bb507d4846079d61a1b350b7e49576ff04d95",
+    "390x844-intro.png": "103d68ea283f44bce01199e8fbd39c4e3d539e604835070dbcf667b7ed4b5495",
+    "390x844-dialogue.png": "7ecaec3daf88ea97fb48746484769f9153e346cf6cfb99f57007b1182cf64aff",
+    "844x390-start.png": "98a9fb47344a4dec99449074c7e061ac61e11feeedd0c7b96d86472a895dee60",
+    "844x390-intro.png": "d2b135e3d9302434a7fcd38d070fb366d6d9e74658ca90e12a3903828811e48d",
+    "844x390-dialogue.png": "93b43d12eb12af9c62a91bec6e0076dd4389bba0beadfd8cd4842c3b9d2dfb11"
+  },
+  "method": "Inspected all six production release phone captures at390x844 and844x390, including Start, authored intro caption and dialogue.",
+  "findings": [
+    "The production bundle starts cleanly without development telemetry.",
+    "Portrait and landscape Start, intro and dialogue stay inside the viewport with readable source text and reachable controls."
+  ],
+  "scope": "Current release mobile smoke.",
+  "limitations": [
+    "Android Chromium emulation is not physical-device or Safari acceptance; the smoke does not cover the full route or audio."
+  ]
+}

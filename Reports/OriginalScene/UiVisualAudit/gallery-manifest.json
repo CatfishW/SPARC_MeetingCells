@@ -1,0 +1,2536 @@
+{
+  "status": "passed-scoped-ui-visual-audit",
+  "createdUtc": "2026-10-19T03:01:35.237958+00:00",
+  "sourceInputSha256": "2e9a016b64747881be622c3de9c8ed7eacd965e5fb04abef6c333bdac1228de8",
+  "nativeTestXmlSha256": "e8f9d0b29bfdd23cf25a9da34572dcaeb1295f6df1895642c4a2a8f2cf439ced",
+  "nativeTests": "101",
+  "images": [
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06a-objective-expanded.png",
+      "name": "06a-objective-expanded.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "528d66cab860f26ea0ea10daa2f79a9ec34a02724a71e02f55c3cd90bd5a61eb",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-04.png",
+      "name": "mobile-workbook-04.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "f3190ad3bcf3565a526721a817402c10d2f4fd64f3d59fe5e138c63e3a21ae65",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/interaction-320056978242275436.png",
+      "name": "interaction-320056978242275436.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d72c74788c6c09bb687ff33d1d7b3a7646e02f678065a2477af0febeb7768df8",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/interaction-815680816.png",
+      "name": "interaction-815680816.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 1440,
+      "height": 900,
+      "sha256": "96c07f1357df92e9b54a0c7bda92a3bff067c29fffac14aa6f304651c1b4e050",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-play-960x940.png",
+      "name": "visual-oxygen-play-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "e4fbcd867ac317aa85f9b0554833385220d2bfb140629dfd2b7a47fc2e423460",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-input-960x940.png",
+      "name": "visual-peer-input-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "4e91a39fced0a35498fd0fe5b77d310d5b8ef69fc7ab89cfa50ecfab8ca61758",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameRBC-launcher-960x940.png",
+      "name": "visual-PlayGameRBC-launcher-960x940.png",
+      "family": "Activity launchers",
+      "width": 960,
+      "height": 940,
+      "sha256": "e054a9595c677cc776ef42daa1e8e4e1c9f2fecbef4e2baaae8637da1de0c322",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-play-800x1100.png",
+      "name": "visual-white-play-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "7332123b7bd1c882df2542721dd31f2133d3d011a6a9403b2234519b2f4d5d87",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-dialogue.png",
+      "name": "390x844-dialogue.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "7ecaec3daf88ea97fb48746484769f9153e346cf6cfb99f57007b1182cf64aff",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/01-start.png",
+      "name": "01-start.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "581f78f74b926f3f2758881028e1ed5c1c9a20d4c5f8f5cce9101a885571c00a",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/02-exploration.png",
+      "name": "02-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "45e2b84ef251c2fa187334963e88d1a89ce1ba7e85be85b4fa0375167f68516d",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/03-Mo.png",
+      "name": "03-Mo.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "bae27964fb441831d64d8385a9b6a4bf483d61272fa177d05c96155130ba05db",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/04-exploration.png",
+      "name": "04-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "818580ab46dfa54d510cbfc2341d07939e16b3af1aed8d8fd95908c6eb9d798d",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/05-Mo_MeetRBC.png",
+      "name": "05-Mo_MeetRBC.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "a7fb65a4a67a512a9b6e41045bdeb676ab3c4f87a0541cd8accc76183afc6f2c",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/06--_Follow_CAP.png",
+      "name": "06--_Follow_CAP.png",
+      "family": "Story captions and teaching cues",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d3745a8a3bf86b283b390dfafc17cb5a80ef1bd3374cdb556cbd9447efad99ef",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/07--_Meet_RBC.png",
+      "name": "07--_Meet_RBC.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f6d49ec107ef8215605e8cd8467be8169f9161add7a8aea65912e83f6bd21d99",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/08-Meeting_Cells.png",
+      "name": "08-Meeting_Cells.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "13b5011bcdceee61fc6244a9edbd8c1443397d05a10ea2601297b601e86752c7",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/12-RBC_new.png",
+      "name": "12-RBC_new.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "5f7c28da933e6de868b574c060361117de702219cadf41f263f33cf3a91af4ee",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/13-exploration.png",
+      "name": "13-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "cd1fa9b00c13001f4ada52099c1e397c3f5367169017da4ad16b156272a75db8",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/16-oxygen-activity.png",
+      "name": "16-oxygen-activity.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "097b4829d541f8674be98da5ee4df5671c4e573d49630877b63120f3852d56a2",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/25-AfterRBCMinigame.png",
+      "name": "25-AfterRBCMinigame.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0219acce4ee4264f1879a0f5b94886284c53c416bd74580d0ee89827b094827e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/26-exploration.png",
+      "name": "26-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e2638d3f657379d8e33dc551ccc2724c943d500727bc30332ac9c935c0d33255",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/30-Agent.png",
+      "name": "30-Agent.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "18f61f8d33cc52938c9164e84dd6265824d25f79cf78dc7ae157aa7b73572f39",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/31-exploration.png",
+      "name": "31-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "aaf833c51369c1085579771ff2767962fbe5ed75c87acd163c26631abac6a595",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/42-Incorrect.png",
+      "name": "42-Incorrect.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ae59aa0737b1de5c1ecaec194b6bc5bbc6cccf1b868fabb5a2a1877910059cd1",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/43--_Find_White.png",
+      "name": "43--_Find_White.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b2b901e467bb70dae57278dd7d059b0c0a94d360d4b3864b858365e62adb8f0b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/44-FindWBC_New.png",
+      "name": "44-FindWBC_New.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "bb312f48e9b5a4044c7f3f3367a46837bd5e8906b82c45db0b587bb834ad9df3",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/45--_Find_White.png",
+      "name": "45--_Find_White.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d43aae29086886909ac4f772698e43edf3c7d1aec74a7183176d5a93dbbc20c7",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/46-Meeting_Cells.png",
+      "name": "46-Meeting_Cells.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "6dfd9deb846adbd6280f5e9e712ae4cfca6fc9543db3299b4356f3328381f978",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/50-WBC_New.png",
+      "name": "50-WBC_New.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4f35eb85d705c2a64fa9d0d6cb35769753a0898c4fe95f8a1cec07456c0edd9c",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/51-exploration.png",
+      "name": "51-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b81e27548dac7facdf0604fdac7118bbabcafe971745e7c0db8d798c8c220676",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/54-white-activity.png",
+      "name": "54-white-activity.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4f3031790479b35094e94bdc171e86b2ac2fbfec47d694756d37e4b5867b16c9",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/63-WBC_LOSE.png",
+      "name": "63-WBC_LOSE.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "00242e8613541d58be28900306f85f968e393b33617ce1117967a80c6d493141",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/64-WBC_After.png",
+      "name": "64-WBC_After.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b9fedfb1185963acf0de9c596ee5a7e232391529f8b2d81f6aff5cc59ec9da06",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/65-exploration.png",
+      "name": "65-exploration.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "1a8d79b533273a54b068041b237676ee1646bea0aab2fc983a2ec302d8820177",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/final-state.png",
+      "name": "final-state.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 390,
+      "height": 844,
+      "sha256": "c93a89a4b7d91c5cf41b944ce77cf8614721131f3acfa61b77c2d5786ca9a930",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/manual-replay-fresh-start.png",
+      "name": "manual-replay-fresh-start.png",
+      "family": "Completion and replay",
+      "width": 390,
+      "height": 844,
+      "sha256": "0f0cd9b307f8ec4d11a74596b4f9885c6cf3021bcc8ce84cb51cd03c4bfa4967",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-oxygen-native-stick.png",
+      "name": "mobile-oxygen-native-stick.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "298ec1e983f72ed128e3df4bf1867f49b492ae20d61effb0d01868df6e404a4c",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-white-native-stick.png",
+      "name": "mobile-white-native-stick.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "47d84bf7439374e3a828be67e345660f2cd12ec869969d0b5c41f8ab0eed2397",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-01-filled.png",
+      "name": "mobile-workbook-01-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "0da046edb7d29c2194786220c6ff07f29e9799ce0e2f0010b879fdfdb635de26",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-01.png",
+      "name": "mobile-workbook-01.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "0da046edb7d29c2194786220c6ff07f29e9799ce0e2f0010b879fdfdb635de26",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-field-committed.png",
+      "name": "mobile-workbook-02-field-committed.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "6ba16ecdccd834311d5aafd5f85d94a9dcf852875b2cf5c9f85d7e6d8c88e7af",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-field-entry.png",
+      "name": "mobile-workbook-02-field-entry.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "786d6d48607ee9ddb0098129fff38823689b2ea533a46a38663a2f014ebc5b4d",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-filled.png",
+      "name": "mobile-workbook-02-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "6ba16ecdccd834311d5aafd5f85d94a9dcf852875b2cf5c9f85d7e6d8c88e7af",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02.png",
+      "name": "mobile-workbook-02.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "1528db6956d342ea6239ad61f814bc40ec682a84e25c583dc9274d9cf814bfb1",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-03-filled.png",
+      "name": "mobile-workbook-03-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "737074f0aef1027a165155156bd6fe56914316e0df8ea830e321a7c94fecf09e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-03.png",
+      "name": "mobile-workbook-03.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "453e13b206342fd4b0a31b5f067494c6cb3065eee5bb4e311846bc5fc19ca617",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-04-filled.png",
+      "name": "mobile-workbook-04-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "c4bad573ee9e8840071dea7060d28c369c422902251048853e32a55c787f5c9e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-05-filled.png",
+      "name": "mobile-workbook-05-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "83b3c4211d9c2cbe9bf0cb6836c0e78395e8199b46a610d1675efdd1071e773b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-05.png",
+      "name": "mobile-workbook-05.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "3fa8fcd43b8dcb02d974d6f4d8a409e5becbb7174f0623a1bfaf84fcc5efb068",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-06-filled.png",
+      "name": "mobile-workbook-06-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "597e1d81b97cdceed57bcb2e1643956af165a57cb73072e3ac9b4dcf52103f0b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-06.png",
+      "name": "mobile-workbook-06.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "3b27fd3666e2735dc9a64cc6faeeab482966533c53160c319b95a23af7829afe",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-07-filled.png",
+      "name": "mobile-workbook-07-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "4057a2d2e0638ccdb3dce8449ccc5c54d12b365c132514fbd41fe6b5b999bece",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-07.png",
+      "name": "mobile-workbook-07.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "6e906fae3f8bc221de1b2d3e18e741d874a08c05f72507ede9ce79040126c643",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-08-filled.png",
+      "name": "mobile-workbook-08-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "a5b3aef47902dcfa47ebeb85249143c63f909dc513c52702074edbe4edb39e6e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-08.png",
+      "name": "mobile-workbook-08.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "10c0875c8c9b1b16030cd2760b1c1d290a01dfbc7f17e1a662f48445a03e7082",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-09-filled.png",
+      "name": "mobile-workbook-09-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "24eb10e2a4f273bc6c7096cea2dae119404795127a5c601d751b43c87d6aff06",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-09.png",
+      "name": "mobile-workbook-09.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "4b5241180a617254bd19f73b05c7583cd0ff59ac5006b682ce56775843136f5e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-10-filled.png",
+      "name": "mobile-workbook-10-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "83154c57f43a770c680e1a3ce16c4b5a7aaac0aa94dd60cfebbd4dff1384bae6",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-10.png",
+      "name": "mobile-workbook-10.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "283a4c24a98407aabc71a6914bcf01591ee375305a5f0c5130dcbf2b4de0a7c4",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-11-filled.png",
+      "name": "mobile-workbook-11-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "c56f35add497456146ba0a12bfdb7acf8ba28458b2e56bc03fcc67e00b40914e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-11.png",
+      "name": "mobile-workbook-11.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "c83a0cffb023eb63a9d757cd547d587783da0c6058226416f3617b8d0f5953ea",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-12-filled.png",
+      "name": "mobile-workbook-12-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "277e6cc39d72dbe59bfcf20574c82b1c5c31cfba69116a02c53b5e49d63f76ac",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-12.png",
+      "name": "mobile-workbook-12.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "55db781edaf8da957476e1c71e7d77376a64b39e9e3576d2a65f92b54052aee3",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-13-filled.png",
+      "name": "mobile-workbook-13-filled.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "f8c634a4904665a9613fc372af573ed76cbb1dc1f1899f762d42ac2e3b44afe9",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-13.png",
+      "name": "mobile-workbook-13.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "f8c634a4904665a9613fc372af573ed76cbb1dc1f1899f762d42ac2e3b44afe9",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-ending-complete.png",
+      "name": "original-ending-complete.png",
+      "family": "Completion and replay",
+      "width": 390,
+      "height": 844,
+      "sha256": "c93a89a4b7d91c5cf41b944ce77cf8614721131f3acfa61b77c2d5786ca9a930",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-ending-midpoint.png",
+      "name": "original-ending-midpoint.png",
+      "family": "Completion and replay",
+      "width": 390,
+      "height": 844,
+      "sha256": "ae8e431b793f548133fe3b8030b9b142ec511f3da68538c9925a50068b20ee54",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-feedback.png",
+      "name": "original-peer-feedback.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e9e9aa6c62ac4454a3ca115609f88bf5937689a7b27d497d7939deeff18c1684",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-retry-1.png",
+      "name": "original-peer-retry-1.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f363689a81194755d25e63eeae79abde88587f9b8326888dd47af1d9fd0dcab9",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-retry-2.png",
+      "name": "original-peer-retry-2.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "7ff46d182fb6e454e289ccddd8d219a26d88991db06864b102a0e667473fd69c",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/oxygen-full-timer-finished.png",
+      "name": "oxygen-full-timer-finished.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "69b28452c646d5d1a8450cc8a32943589785de2aa423a978bd09b85d89f7c50b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-1.png",
+      "name": "peer-field-ready-1.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "68066db61af9a4c477c88185b0e807467288572e695dc6d3a332d27c563bdf46",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-2.png",
+      "name": "peer-field-ready-2.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "62eadac7fe150b00498775a73bf9d91711051733b224205ed573f4f22619b9be",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-3.png",
+      "name": "peer-field-ready-3.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ef8061d6796b5e7a25b6115c0585c4b54b9e13932c8de6f13c8ca00e1a38edaf",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/quiz-before-answer.png",
+      "name": "quiz-before-answer.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "03e8d09e6ca3f228e81dc35c4554ac6531f9cbb8e2f0d18e31f7dd43d1d13935",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameRBC-launcher-800x1100.png",
+      "name": "visual-PlayGameRBC-launcher-800x1100.png",
+      "family": "Activity launchers",
+      "width": 800,
+      "height": 1100,
+      "sha256": "9f7603fffa8c798a5dac75549681bfcbaad41b2e37ef216dad7b5292af0bf5be",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameWBC-launcher-800x1100.png",
+      "name": "visual-PlayGameWBC-launcher-800x1100.png",
+      "family": "Activity launchers",
+      "width": 800,
+      "height": 1100,
+      "sha256": "6a2ca52c84105e62ef9015de29674ee23906ec7378db7a0fa41da7f419a12396",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameWBC-launcher-960x940.png",
+      "name": "visual-PlayGameWBC-launcher-960x940.png",
+      "family": "Activity launchers",
+      "width": 960,
+      "height": 940,
+      "sha256": "bc71d16498625649ecfb51fedb7108c03beb261f34916833f68a4e0e72fa0685",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-320056978242275436-800x1100.png",
+      "name": "visual-interaction-320056978242275436-800x1100.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 800,
+      "height": 1100,
+      "sha256": "8ddd97a2f2e81c7114b6994afda064633a38b65ca625f18c0b663c81a8da4d3f",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-320056978242275436-960x940.png",
+      "name": "visual-interaction-320056978242275436-960x940.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 960,
+      "height": 940,
+      "sha256": "4d50229c1e8a5b3a456864d102e88f49a70f80c53d56723b8b40374faec006f8",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-815680816-800x1100.png",
+      "name": "visual-interaction-815680816-800x1100.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 800,
+      "height": 1100,
+      "sha256": "9be303eb42718e020198e32bcfe699848c63c52e87efc2865bf127da7b362971",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-815680816-960x940.png",
+      "name": "visual-interaction-815680816-960x940.png",
+      "family": "Character highlights and native interaction menus",
+      "width": 960,
+      "height": 940,
+      "sha256": "276f5be669fbc53199ced888955baacd3e9d0a4aa0f391eda16eeb6a5bba5358",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-exit.png",
+      "name": "visual-oxygen-exit.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "cd143d54f159305ec128e0ed7c8fe546736b09f86b69c249bbf96d83d920fc9e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help-800x1100.png",
+      "name": "visual-oxygen-help-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "70e6aba9daa715d06cb2437c2f78c4ee9e8d0327114266df9c77ad079b872997",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help-960x940.png",
+      "name": "visual-oxygen-help-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "b752c7353281fe4bee6d4c9ff95be6f91e8901b30ea4a0daed873e847ea09c91",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help.png",
+      "name": "visual-oxygen-help.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d0ed16fcc50db12b2243e7e7ae472e42fb18878fc763b0b8d3bed5bcbccd662b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-play-800x1100.png",
+      "name": "visual-oxygen-play-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "ce3c9180533e6c445ae681c9354ad1b76007418b7c18bb4e978e7b92b5cecf1b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-feedback-800x1100.png",
+      "name": "visual-peer-feedback-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "2d6c5892f2190d90b9d38f0e0c3c48e9c99df4ea602039573a825dccad5b5143",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-feedback-960x940.png",
+      "name": "visual-peer-feedback-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "8ce62f3c7aa97c85f8a6aadd65256c6d648e56c632965f259aeb720a04d47e4a",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-input-800x1100.png",
+      "name": "visual-peer-input-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "19be29572b8cc35c7b461c15830e7907e0b0efa3ab2ab2c42080b8d0736f186e",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-quiz-800x1100.png",
+      "name": "visual-quiz-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "7dfaad466389ef2f8da66cd260f3faaea9bb70db852f13851ec8f23efd024a30",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-quiz-960x940.png",
+      "name": "visual-quiz-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "5e9a3455bf92773caf2cd4807458802219a386ef2fdcc4c803f382505e0be50d",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-exit.png",
+      "name": "visual-white-exit.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "dab6d9e8f99dd2f9b358b16501c5e7432b9b8d24450000ef018bbae3216a0216",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help-800x1100.png",
+      "name": "visual-white-help-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "f4fb531f0547240c8b12b6adc87701a8225062fcb9f30dca03920ad1e02a211b",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help-960x940.png",
+      "name": "visual-white-help-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "651435917360554952c9aaa1ca561e409bcec3a1fd9cb8577cf8a92a0e0813a7",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help.png",
+      "name": "visual-white-help.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "5820444c5bf442f253a2db63c7a7dccbf7f96655e00ac8d369f4bf2e52d25ab9",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-play-960x940.png",
+      "name": "visual-white-play-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "fe3f648d0075a98ff207a14ec782b36e8311389ee31fd9a30dc7475f361291fe",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-result.png",
+      "name": "visual-white-result.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "15a87fd216376ed09c969ecffce40c36ae98494803deae99f976b26995db4b2f",
+      "scope": "Actual journey browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/01-original-camera.png",
+      "name": "01-original-camera.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f086f36b041d2a5deddee7943a14cca92f97d7c9027b760aad25ebc43f6e0080",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/02-original-third-person.png",
+      "name": "02-original-third-person.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "bcc92c160a8868a04a8206caef389638f5c4676a48921ddb15f23eec3078a7b6",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/03-original-walking-rig.png",
+      "name": "03-original-walking-rig.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "543b18f303b35fe241e818abcdb5f6aa1931158050fd9a786e66efa032f8929c",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/04-original-jump.png",
+      "name": "04-original-jump.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0c38e26d098d4b6ad7fdc8ee02b6e86f14b445839125944612d0e1b5630ce0be",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/05-original-first-person.png",
+      "name": "05-original-first-person.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "dcd79fff80a998f11d72b89df512795e12fc6cf56ee7df9272569d11c576fd46",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06-original-look.png",
+      "name": "06-original-look.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "10fd24239cc4c6bcb7cd57968759b3f6bd6b52f0057d22ad24260bc800295e32",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06b-objective-folded.png",
+      "name": "06b-objective-folded.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f0b0b15099766dd917613ccaf871d92393e77850834b58c8dd21f06e692eea21",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06c-objective-reopened.png",
+      "name": "06c-objective-reopened.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "dc7bfbc688f05768c4fec3e91dc55ba3508dc66329d3401b2cf36e1954028f50",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/07-native-settings-desktop.png",
+      "name": "07-native-settings-desktop.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "a3a08c302c59e38334d3e90895732ddb1043979310bbfa884e64d6f7c60daab9",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/08-native-settings-960x600.png",
+      "name": "08-native-settings-960x600.png",
+      "family": "HUD and settings",
+      "width": 960,
+      "height": 600,
+      "sha256": "73efb2879d6a4324316863a8ed5b70b87c2031dfcb5ccdc72958af0270df109b",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/09-native-settings-closed.png",
+      "name": "09-native-settings-closed.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ffe14f2d88b9ae8bd26225f8c53052a8aee3745b01d63bd1939f100784d3c095",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/10-native-chat-unavailable.png",
+      "name": "10-native-chat-unavailable.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "9b5a9dfb1eed33f611c2357e028f1e88c7a063a78787488a82e47308baaa1475",
+      "scope": "Actual controls browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/01-mobile-start-landscape.png",
+      "name": "01-mobile-start-landscape.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "48a80f83a8964ef5ab803a4f8afe6b6430546f848471d0670c389775840e4e2b",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/02-mobile-hud-landscape.png",
+      "name": "02-mobile-hud-landscape.png",
+      "family": "HUD and settings",
+      "width": 1688,
+      "height": 780,
+      "sha256": "b7b45dcd609dbe55ebe98c87c8b0e5bf334f6e5025637e6a5a67a88539ff502c",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/dpr2-portrait-hud.png",
+      "name": "dpr2-portrait-hud.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "327972f3083694883f1279fc644215c79398c78e131bdfc36442df59bcaff102",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-forward-gesture-result.png",
+      "name": "landscape-forward-gesture-result.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "ea300b620570a005949ed493b4cec6538240113d808c1bef099899c565d1660f",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-settings-closed.png",
+      "name": "landscape-settings-closed.png",
+      "family": "HUD and settings",
+      "width": 1688,
+      "height": 780,
+      "sha256": "2b6193778cadb49dc7c12cab38fe29a2eb2b70742326580dae419d8a543cbfb4",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-settings.png",
+      "name": "landscape-settings.png",
+      "family": "HUD and settings",
+      "width": 1688,
+      "height": 780,
+      "sha256": "37e261a027d9d17b0a62d97eb4f01879588bca02c6d0177aab5b4744e07daf7f",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-touch-jump.png",
+      "name": "landscape-touch-jump.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "2a3b2793122e6cf8ef053c2f4befbf30a579cc11bb74102f3ab497f06b309f20",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-forward-gesture-result.png",
+      "name": "portrait-forward-gesture-result.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "285505bba141cad8354d97452280512be558f63090f6224fa2267bca4efd44da",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-hud.png",
+      "name": "portrait-hud.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "d321504d1347304af596a534266f9b263ac5c247571763135dc18a40c6ae67f5",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-right-gesture-result.png",
+      "name": "portrait-right-gesture-result.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "42e2cd5d6a5de5cac7d0787ab48c2c47333beb42991127f62b6e5be01907e39e",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-settings-closed.png",
+      "name": "portrait-settings-closed.png",
+      "family": "HUD and settings",
+      "width": 780,
+      "height": 1688,
+      "sha256": "3a6263a172af912c7e9d302431e7a6ae4124b862b44e0ad2a2c56302fac6bd38",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-settings.png",
+      "name": "portrait-settings.png",
+      "family": "HUD and settings",
+      "width": 780,
+      "height": 1688,
+      "sha256": "f7eedb10ac9a9d5ede20aa0023f0798797933f9aea4cd5c5171042739170c785",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/tablet-hud.png",
+      "name": "tablet-hud.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 2048,
+      "height": 1536,
+      "sha256": "53fbcaf39d3813aa6fe54f9c11761bb65af684097ae0a8b21891518ce7b208d2",
+      "scope": "Actual mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/01-original-start.png",
+      "name": "01-original-start.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "3e3fb560e8e2039c5746f1f0c08ff21def917e3df69d3e3a09b6e643cd136636",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/02-original-timeline.png",
+      "name": "02-original-timeline.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ba92e983814fd4bcae16a6375650b02a943ddedaa48c688cbaadf7972b6c519a",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/03-original-dialogue.png",
+      "name": "03-original-dialogue.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "854e53ef3258b2723240716f2f0d1ca55287261734309b9da690995a5aa97946",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/03b-dialogue-small-viewport.png",
+      "name": "03b-dialogue-small-viewport.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 960,
+      "height": 600,
+      "sha256": "a775e3f36a32e7b4cb7d1e53d89adfb0bd6626244e48658c2e1fdba4a4d70331",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/04-real-dialogue-input.png",
+      "name": "04-real-dialogue-input.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ab8cac02435fcd5a36e06602393756496d86b37ee8069c173c97a6ad0dc895d1",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/chromium/05-small-viewport.png",
+      "name": "05-small-viewport.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 960,
+      "height": 600,
+      "sha256": "4c2730cc0ef8a42fe5016822814a8d7ac49e70c32ad4604b932badfe4f935cf6",
+      "scope": "Actual release chromium browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/01-original-start.png",
+      "name": "01-original-start.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f7377aed911be93010cfe45e873fde8875a8e213e0c99a9fdc9790e0c545a8aa",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/02-original-timeline.png",
+      "name": "02-original-timeline.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f15f8d354c3be87f20e76824628b768cfe0cbad12cb412061c50ca309b612ac0",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/03-original-dialogue.png",
+      "name": "03-original-dialogue.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e4104f1f8a78f2a7e237a530e07850444e343d793845f1049b3b1d61556b0b4c",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/03b-dialogue-small-viewport.png",
+      "name": "03b-dialogue-small-viewport.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 960,
+      "height": 600,
+      "sha256": "d353e30260aef6dd0f0fabaf7c790ac04eb2f2a2d4419cf5b0f352a204d05dd2",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/04-real-dialogue-input.png",
+      "name": "04-real-dialogue-input.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1440,
+      "height": 900,
+      "sha256": "7c33af67000b59b0989717cfb7ec8e3d1c35d990b0972df8c826192da18caf50",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/firefox/05-small-viewport.png",
+      "name": "05-small-viewport.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 960,
+      "height": 600,
+      "sha256": "d3cb8f537f17cf86650875552ad42cc78046235fa0dcc139e81b62ff270be29d",
+      "scope": "Actual release firefox browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-intro.png",
+      "name": "390x844-intro.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "103d68ea283f44bce01199e8fbd39c4e3d539e604835070dbcf667b7ed4b5495",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-start.png",
+      "name": "390x844-start.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 780,
+      "height": 1688,
+      "sha256": "988a8a233f8729fd24554c27b05bb507d4846079d61a1b350b7e49576ff04d95",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-dialogue.png",
+      "name": "844x390-dialogue.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "93b43d12eb12af9c62a91bec6e0076dd4389bba0beadfd8cd4842c3b9d2dfb11",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-intro.png",
+      "name": "844x390-intro.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "d2b135e3d9302434a7fcd38d070fb366d6d9e74658ca90e12a3903828811e48d",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-start.png",
+      "name": "844x390-start.png",
+      "family": "Start, dialogue, camera and controls",
+      "width": 1688,
+      "height": 780,
+      "sha256": "98a9fb47344a4dec99449074c7e061ac61e11feeedd0c7b96d86472a895dee60",
+      "scope": "Actual release mobile browser capture"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-StorylineRBC_PointAhead-1440x900.png",
+      "name": "native-cue-StorylineRBC_PointAhead-1440x900.png",
+      "family": "Story captions and teaching cues",
+      "width": 1440,
+      "height": 900,
+      "sha256": "7b37edd75cf117d7ec49ea1ca3d175ef221b494560300bf504c2051da3e28d66",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-StorylineRBC_PointAhead-390x844.png",
+      "name": "native-cue-StorylineRBC_PointAhead-390x844.png",
+      "family": "Story captions and teaching cues",
+      "width": 390,
+      "height": 844,
+      "sha256": "64c46b0b1279efa1616454f6096ae864091ce4703f91fe094f4fe50ad8e7e4a8",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-StorylineRBC_PointAhead-844x390.png",
+      "name": "native-cue-StorylineRBC_PointAhead-844x390.png",
+      "family": "Story captions and teaching cues",
+      "width": 844,
+      "height": 390,
+      "sha256": "bd1518a33f10c779479cb4afdbccb6c6ba38e9c744a5f2b17008dbc64f3b7b58",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_task_list_fold-1440x900.png",
+      "name": "native-cue-Storyline_introduce_task_list_fold-1440x900.png",
+      "family": "Story captions and teaching cues",
+      "width": 1440,
+      "height": 900,
+      "sha256": "c42f3faae06e05f2e50a10c93faddff67e5b9246b17cab99a497cacf6c936a43",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_task_list_fold-390x844.png",
+      "name": "native-cue-Storyline_introduce_task_list_fold-390x844.png",
+      "family": "Story captions and teaching cues",
+      "width": 390,
+      "height": 844,
+      "sha256": "df292ced4975c40488ed2ef0a1cdc8eef5c067f855fd113cd2daa1be55d3526f",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_task_list_fold-844x390.png",
+      "name": "native-cue-Storyline_introduce_task_list_fold-844x390.png",
+      "family": "Story captions and teaching cues",
+      "width": 844,
+      "height": 390,
+      "sha256": "96a1e0df5694d0c2c39730aecd5ee88cab3b0ec0d4aeae2f0822f1fee9fb128f",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_yellow_circle-1440x900.png",
+      "name": "native-cue-Storyline_introduce_yellow_circle-1440x900.png",
+      "family": "Story captions and teaching cues",
+      "width": 1440,
+      "height": 900,
+      "sha256": "08768552a741db6b2546170aae6f5b73ed302b7b0b3d5f992fc570be1e001354",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_yellow_circle-390x844.png",
+      "name": "native-cue-Storyline_introduce_yellow_circle-390x844.png",
+      "family": "Story captions and teaching cues",
+      "width": 390,
+      "height": 844,
+      "sha256": "a258031fa0e8bfda425d2b69a8bb3c5302dbcde3ba4f663b8faf4caf70043cf6",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-cue-Storyline_introduce_yellow_circle-844x390.png",
+      "name": "native-cue-Storyline_introduce_yellow_circle-844x390.png",
+      "family": "Story captions and teaching cues",
+      "width": 844,
+      "height": 390,
+      "sha256": "e83ddbc6548d37577ffb4e83bb1995836c4008642f11d25e7477683540314795",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-hud-1440x900-expanded.png",
+      "name": "native-hud-1440x900-expanded.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "1afaa8c8e402b40d0dac33761a5edb895ecd9719cb4c2d25d59a33fd2abeea89",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-hud-1440x900-folded.png",
+      "name": "native-hud-1440x900-folded.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b6d7d64cfb932fa5c229a8ed7379303279c8bd0437875a1f448c128c16cb257e",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-hud-390x844-before-begin.png",
+      "name": "native-hud-390x844-before-begin.png",
+      "family": "HUD and settings",
+      "width": 390,
+      "height": 844,
+      "sha256": "05cb85de34118e2d3aa2974b6d88ce20c6b1272b0265fd128dc773588c605734",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-hud-960x600-expanded.png",
+      "name": "native-hud-960x600-expanded.png",
+      "family": "HUD and settings",
+      "width": 960,
+      "height": 600,
+      "sha256": "5a4e651e96d8ed97ba931d47a429ca0a13d86229ef28835dbd459795b53268e9",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-hud-960x600-folded.png",
+      "name": "native-hud-960x600-folded.png",
+      "family": "HUD and settings",
+      "width": 960,
+      "height": 600,
+      "sha256": "107727538c291c7785ccb985ece35a035f5269098a7821b6dee48e36e7a4c34c",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-intro-caption-1440x900.png",
+      "name": "native-intro-caption-1440x900.png",
+      "family": "Story captions and teaching cues",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e6794ff0d0390c80b83d81b7030f22f4b5c9f589bccd18ed5357134a88a67340",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-intro-caption-390x844.png",
+      "name": "native-intro-caption-390x844.png",
+      "family": "Story captions and teaching cues",
+      "width": 390,
+      "height": 844,
+      "sha256": "6c120d7f64186aae61f81f8f99c77c2d678136e161d73fb62f40ba917a37fe2e",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-1440x900.png",
+      "name": "native-mobile-AnswerField-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "559b008a0b045cefcdaeb2ace9d1302f70f7faf1d4e1d6dfda664cdd6bcdec91",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-390x844.png",
+      "name": "native-mobile-AnswerField-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "d16a343f0f4f2196446764b8ae734e3d9c05f2f7315732492c0d913b2b36d06c",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-800x1100.png",
+      "name": "native-mobile-AnswerField-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "73c791a07b4dd5b7337513fadfcf7e3d9f7c762e621db8941a2c9c62ebb9dab8",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-844x390.png",
+      "name": "native-mobile-AnswerField-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "cf4d6b3d76a48e2b622273d1837ddb966545a421c74b37dc33711ca776d1d8ad",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-960x940.png",
+      "name": "native-mobile-AnswerField-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "cc36992383aed315dae94621b43e33a4e1abee1be3a9bc42c736b2670e8240e9",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-long-1440x900.png",
+      "name": "native-mobile-AnswerField-long-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e8f02677473298f7bbc9fc8765fc13958a67493a008784c7fde4de22c6c789b0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-long-390x844.png",
+      "name": "native-mobile-AnswerField-long-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "ece13620e808cf046888f0c0fb330cfe55c90af8b68e3a48d4800c236ffafaf8",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-long-800x1100.png",
+      "name": "native-mobile-AnswerField-long-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "5c6ac5fbc039859227b8a82d3647e2b3ca511e0f65f71fe103fde3779faaf203",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-long-844x390.png",
+      "name": "native-mobile-AnswerField-long-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "27641c9bffa2d956e4c16063b73c5a30a0d4a9b9de37a6a679f7d36033efe760",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-AnswerField-long-960x940.png",
+      "name": "native-mobile-AnswerField-long-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "160c3517f2c19e5f445ce1e2ed18b362571b2e779b5f2e5590e954db7f9e98f4",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMAnswerField-1440x900.png",
+      "name": "native-mobile-LAMAnswerField-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "f2d21a6d740236e39afc7989cfefdecc033ccfe417bf7d4bb73bbd12157baa0a",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMAnswerField-390x844.png",
+      "name": "native-mobile-LAMAnswerField-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "3d23014175d69e7ee957b230ea9270deda7bba3361699ae3f6501b41ff5b8bca",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMAnswerField-800x1100.png",
+      "name": "native-mobile-LAMAnswerField-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "355663cb9e453d89f29d3c9120e5b7da9a89ab61ebe59d01c1bbb44beca69d70",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMAnswerField-844x390.png",
+      "name": "native-mobile-LAMAnswerField-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "8e28c1aebeb98cc283329a3ef9be22a8c6baba39c11e345896b368ea4a2fab1f",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMAnswerField-960x940.png",
+      "name": "native-mobile-LAMAnswerField-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "5596b69f21fad86aa050a5f44bdc0f5444681628f0181f831e603ef005143600",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-1440x900.png",
+      "name": "native-mobile-LAMInputField-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "c706bd27ef9433df83584ed08df7d07540e9cb35c5052276821e1f29c6346186",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-390x844.png",
+      "name": "native-mobile-LAMInputField-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "906f592c2b7d50b1686733874a5590a25162dd1f6ad33623e8b25ba1ec67a45b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-800x1100.png",
+      "name": "native-mobile-LAMInputField-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "540c3125df43c8360addda73d4f5d5c3bc9f63fc659c2b1798d3e848e695a025",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-844x390.png",
+      "name": "native-mobile-LAMInputField-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "12a6597d7d4e624b0537770e7a4325a6ac32ead8b28bd519ac87156ce892bb51",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-960x940.png",
+      "name": "native-mobile-LAMInputField-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "aef67f0420d9d75ed9b4682adcdcf66544add82c8d81dc253e81d3631adb8d66",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-empty-1440x900.png",
+      "name": "native-mobile-LAMInputField-empty-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "a6d85bb4c76afa98d6ff295be5175a73f3f263bab512c506363c2555a395ca07",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-empty-390x844.png",
+      "name": "native-mobile-LAMInputField-empty-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "3c62ccd4863f8a7c009740cf83a1528fb0ccad8eb5083d23ca007a67f1b42ef0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-empty-800x1100.png",
+      "name": "native-mobile-LAMInputField-empty-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "bc9731692662e4753983fe973989d35466d8682f4ab62a5b58a5eb197fdf757c",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-empty-844x390.png",
+      "name": "native-mobile-LAMInputField-empty-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "522c4244f868377c8e02ba6390cda2dcba21c009c6a05e9ccdfadd4e576eed3a",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-LAMInputField-empty-960x940.png",
+      "name": "native-mobile-LAMInputField-empty-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "bc81b9e89071dde08e0df66c4fcbedf23978de569b21694e5de89ea739bd41df",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-1440x900.png",
+      "name": "native-mobile-PlayerInputField-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "463439e50d416636e1e9bf25dd9b3835dc9d2a704cb245556099e4dca2994339",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-390x844.png",
+      "name": "native-mobile-PlayerInputField-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "c20731d4e3ecb8b87eef62cd01ff6db700d8747d51739fdcbb1d4cb03793191a",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-800x1100.png",
+      "name": "native-mobile-PlayerInputField-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "4efb67f3d80ac1660d0cfdbc12479498f79e16ec38773d9a035a1e98692ad140",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-844x390.png",
+      "name": "native-mobile-PlayerInputField-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "cb796c9b7c735b87eae14d9116084970291cc8002edec97c31a108b160d3546e",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-960x940.png",
+      "name": "native-mobile-PlayerInputField-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "ef43aa8dd5011b530e7128b4ed9a2b04d92c075b0320bca41522ce4cfc371c9d",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-empty-1440x900.png",
+      "name": "native-mobile-PlayerInputField-empty-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "3a797b881787ec6e96ebc979b4e9d07c961440669c7a468780328d99c9362572",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-empty-390x844.png",
+      "name": "native-mobile-PlayerInputField-empty-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "822fb843c2791618373ccde361d55d8b1277935a98d64938ad66333d9a1b0150",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-empty-800x1100.png",
+      "name": "native-mobile-PlayerInputField-empty-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "074cb171bf6ddc90fd9d1faea023dcdc2eb273765b175e6e8e0af2b5129bf516",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-empty-844x390.png",
+      "name": "native-mobile-PlayerInputField-empty-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "95290dd2a8eec32deea5efd7fde4566e6188398ad1f023454152738de89d8f43",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-PlayerInputField-empty-960x940.png",
+      "name": "native-mobile-PlayerInputField-empty-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "6875ce7305f3764729f19705527ce6ec3da5bd4692bad4c3b79770eae4ed9257",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-WaitForResponse-1440x900.png",
+      "name": "native-mobile-WaitForResponse-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b5c4d8d8b75a7bfcb4afcc05aad19467e4897731d18ad589eac7a0bb3341b161",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-WaitForResponse-390x844.png",
+      "name": "native-mobile-WaitForResponse-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "784ea962b18bb5a61385ab8fd683e87f63b5c4d4ec8e847b356d31ab398edf38",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-WaitForResponse-800x1100.png",
+      "name": "native-mobile-WaitForResponse-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "622ef6c98327abf2db965f308d41b08f52770b49a528d34d872e14c2970d9052",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-WaitForResponse-844x390.png",
+      "name": "native-mobile-WaitForResponse-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "500afedc7d1ed9fe59204fe08af599a3183c8d5b31948df0ae1a25355a683519",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-WaitForResponse-960x940.png",
+      "name": "native-mobile-WaitForResponse-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "02ef62b73822459e4fb9b68deb5b5aec18109820c11344e0461017e051240394",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-1440x900.png",
+      "name": "native-mobile-oxygen-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "2a11dcea52b0762c7c526dd09e8da5591813ad0000ce363ebfb1b7db0add1a3d",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-390x844.png",
+      "name": "native-mobile-oxygen-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "a1a9641d8a9bfc6430540183debd6cca6ba8124ad9144bae58e68b565e422da0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-800x1100.png",
+      "name": "native-mobile-oxygen-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "1762be961d1d5cfe181dc2d9e3238f9b8a92c66e3d6802cabde3329bcfa38abb",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-844x390.png",
+      "name": "native-mobile-oxygen-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "0e479f946acbd7a35c589b3ce5ec906659643cf8cefbee7b59ec782f53db45fe",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-960x940.png",
+      "name": "native-mobile-oxygen-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "9b5225a4ac91b8385852f82f06f21eaff4ee645af44fa387eb008cb706e998d5",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-exit-1440x900.png",
+      "name": "native-mobile-oxygen-exit-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "43f53bd95bbc195916934d8e3c5dbada772c1c5f0c04907abeeba2cd1a516b13",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-exit-390x844.png",
+      "name": "native-mobile-oxygen-exit-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "06a9471e2728bd52317b08f7d14ff0061cb642097dbd9d0083d78cb4d2298143",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-exit-800x1100.png",
+      "name": "native-mobile-oxygen-exit-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "12ec23e2fd2d8652fa3abc74e83e54011f6432dbb104a602d8d217a87c90305b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-exit-844x390.png",
+      "name": "native-mobile-oxygen-exit-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "a35c9f7d8e31b3348057d45861ac24dff4920aaf7e027eed1d7cfa08746528d3",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-exit-960x940.png",
+      "name": "native-mobile-oxygen-exit-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "59ccf1d2388b9c2dd02c19217212b9e3d8d35283f284d1e8a6715b2fc54612fd",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-help-1440x900.png",
+      "name": "native-mobile-oxygen-help-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "d43f8bfa9c8f6efd0387191cc4948e316e5ada154ddd13c30b538510495046b3",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-help-390x844.png",
+      "name": "native-mobile-oxygen-help-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "fe0af7316fce60ee3d48f80283bb709cfeeca87e4d4f1c00e2aaa87b1912c282",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-help-800x1100.png",
+      "name": "native-mobile-oxygen-help-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "ba6651c865f10bb59e307b41c55b511211bb481f3ad7a9a6e699855649f11c41",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-help-844x390.png",
+      "name": "native-mobile-oxygen-help-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "70d48a6414e7efcbe9f9e686b0424bd82f90cf69270a3c8bd831227e2504bada",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-help-960x940.png",
+      "name": "native-mobile-oxygen-help-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "9fa8d465aef2d5254eb094df0554697f26f23a927a64edee8f02b689400a6601",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-result-preview-1440x900.png",
+      "name": "native-mobile-oxygen-result-preview-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e3bad97fed0e43ea1ebb16d8128495968cc33b44849714b4a6dcc5b8659cea56",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-result-preview-390x844.png",
+      "name": "native-mobile-oxygen-result-preview-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "c830270f7c972dc58a2c7239e58697abdd992edbd9206ebde51d4ddbcf65e1a3",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-result-preview-800x1100.png",
+      "name": "native-mobile-oxygen-result-preview-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "d1bf592b8ff07e2de9a30b5f9e39c81e4e4a80671e485e1a75534277e6a5eea5",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-result-preview-844x390.png",
+      "name": "native-mobile-oxygen-result-preview-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "4f3d7161b46ab38631e773f4fd5a601e33cdb99087a774a20d08ac7a51caeb65",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-result-preview-960x940.png",
+      "name": "native-mobile-oxygen-result-preview-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "2725b256b8c42d881a4e7b6418a5e0987f4bdf4c3d4b4f6c1b77a30d8d0c5a6b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-oxygen-settled-1440x900.png",
+      "name": "native-mobile-oxygen-settled-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0146a058e2dae72faf37afaaaf95706c8c836d38ae41c40c0547cf24581fc184",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-question-1440x900.png",
+      "name": "native-mobile-question-1440x900.png",
+      "family": "Quiz and peer forms",
+      "width": 1440,
+      "height": 900,
+      "sha256": "b128f10a380e4939343995650d76dca73ce91419fb06985a96e2bad5b70d7823",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-question-390x844.png",
+      "name": "native-mobile-question-390x844.png",
+      "family": "Quiz and peer forms",
+      "width": 390,
+      "height": 844,
+      "sha256": "2ebd55a058cecee552f69d594809e6c877cea9ff05f99fce3e4a7881b17dcbd0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-question-800x1100.png",
+      "name": "native-mobile-question-800x1100.png",
+      "family": "Quiz and peer forms",
+      "width": 800,
+      "height": 1100,
+      "sha256": "80576461a287f30d10adf4b3d081ae6713e86ddcf8443c2f7d19294ff690dd93",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-question-844x390.png",
+      "name": "native-mobile-question-844x390.png",
+      "family": "Quiz and peer forms",
+      "width": 844,
+      "height": 390,
+      "sha256": "303f35fbb47acffa9f7e73cfbd410c3ba1cb7d630e8fe0d5141d1edd729e2132",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-question-960x940.png",
+      "name": "native-mobile-question-960x940.png",
+      "family": "Quiz and peer forms",
+      "width": 960,
+      "height": 940,
+      "sha256": "db518328be16b019be608943bc6e3ddd2aa21e917bc686a9d30240fd3cae6f18",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-1440x900.png",
+      "name": "native-mobile-white-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "9f2c3bce86a474c5a566a40b7f73f00649853d646b7cb0abe42334173d890f88",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-390x844.png",
+      "name": "native-mobile-white-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "1bd3d407f0d48b015b216cb7d1fcc0be5fcb31bc47379430c0e7c1de54ee0e11",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-800x1100.png",
+      "name": "native-mobile-white-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "6fa6f6547adc78bbc2f6fd50865c6c8d9a58ddd5ad423b975220f4c6bca0374b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-844x390.png",
+      "name": "native-mobile-white-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "49d8bd515dc9f3f8c21b4ac5772f4985716264411e16a54b834e6a03708a9857",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-960x940.png",
+      "name": "native-mobile-white-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "e8324950e5edb4022c809517c48ccfac0b8b8d12133b55626944d5f3f226e3d8",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-exit-1440x900.png",
+      "name": "native-mobile-white-exit-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "adf19c50df493d769f6d8ea900e6dac6125afe930ced83b7bbd4548b4d43a267",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-exit-390x844.png",
+      "name": "native-mobile-white-exit-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "336b782f228c04b1cf5daddb04c42b83806ec6dbedbe70b356c8b28f30fc9d50",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-exit-800x1100.png",
+      "name": "native-mobile-white-exit-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "1afb8e7b1dc962e2f5222129187903233bd25c2ac6f6709bb3257dcc27e499e3",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-exit-844x390.png",
+      "name": "native-mobile-white-exit-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "163995ffa2fc64732d1750726f1aa3ec17ae158ed3baaee4fab25114089e6896",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-exit-960x940.png",
+      "name": "native-mobile-white-exit-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "1d0d605765f634899b7bf7c7f04d5e39c4806b5c820a6b46912b7e9a94e46b63",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-help-1440x900.png",
+      "name": "native-mobile-white-help-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "65bb7590cea1626d94348fd523687ddc55021632dfb917ba8c79c618bfa1705b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-help-390x844.png",
+      "name": "native-mobile-white-help-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "3d93d7fa5bd605dca672f811229ae78f703b7850c87ea3740454a42a1fc095c6",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-help-800x1100.png",
+      "name": "native-mobile-white-help-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "e0a3a09c3cd1e08d36b401daa323d6e92d5f5d00dd77a322f8e5893d0a239fed",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-help-844x390.png",
+      "name": "native-mobile-white-help-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "09898d8dadabee7dd8a9b836ae597f921ae2e8695b5c3208e587a480ed2fdeae",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-help-960x940.png",
+      "name": "native-mobile-white-help-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "638cd55822ca88784ea18941ab0ac113ba846ca94f58631b1f5d9b8c86565f9b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-loading-preview-1440x900.png",
+      "name": "native-mobile-white-loading-preview-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "491a85a2b3a83dda7dee355eccd00b9358881487576e62f8a25427b4a4975bda",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-loading-preview-390x844.png",
+      "name": "native-mobile-white-loading-preview-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "6b47fa47373b502c6942f52c75bcc3cd6114f2e0b619d3694eb4fd5c5bc43346",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-loading-preview-800x1100.png",
+      "name": "native-mobile-white-loading-preview-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "e6077437a565819da8134e97db9937dc4e05fb928f45449ea395c0424e83a525",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-loading-preview-844x390.png",
+      "name": "native-mobile-white-loading-preview-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "a4195075b99043e19923e972b0cf21496dc2be932d7c068d374df13d15b1da51",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-loading-preview-960x940.png",
+      "name": "native-mobile-white-loading-preview-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "bc9a379c30183cd1db2b8f7f8fe447c3799ca89e0ba7cb605e09f08e04b697b2",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-result-preview-1440x900.png",
+      "name": "native-mobile-white-result-preview-1440x900.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 1440,
+      "height": 900,
+      "sha256": "56eb079b1f6c5e0052ca828565b66b236e3f5600fb5624ecabd65b0c925dc6a2",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-result-preview-390x844.png",
+      "name": "native-mobile-white-result-preview-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "2aba6f28b431f7bcbef76a8c8229ddbfef9789ef59a75e300d29a4e0a14f2cda",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-result-preview-800x1100.png",
+      "name": "native-mobile-white-result-preview-800x1100.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 800,
+      "height": 1100,
+      "sha256": "8d4f9bf8cda573e7cd693a776c75bac78707f2096d79a46165479002d1f24ae3",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-result-preview-844x390.png",
+      "name": "native-mobile-white-result-preview-844x390.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 844,
+      "height": 390,
+      "sha256": "6e22f6903f2284c12ea8640c30ada3fd64b195a0c7985332d31e79870d36ea35",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-result-preview-960x940.png",
+      "name": "native-mobile-white-result-preview-960x940.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 960,
+      "height": 940,
+      "sha256": "da0a6c83f87b1008797115fa9557b7bf7620dd13ef89567f37dbef684808d824",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-mobile-white-settled-390x844.png",
+      "name": "native-mobile-white-settled-390x844.png",
+      "family": "Minigames \u2014 generated pixel sketch art",
+      "width": 390,
+      "height": 844,
+      "sha256": "e95cabd0e6bea75b76eeea7661e16f3b987eaef1b3afd2bcd37f721160e21185",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-settings-1440x900.png",
+      "name": "native-settings-1440x900.png",
+      "family": "HUD and settings",
+      "width": 1440,
+      "height": 900,
+      "sha256": "88eea4de043d445f17ed6960e76e05c77216d3e59d913ab6cb8e4f66aa5a7a40",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/native-settings-960x600.png",
+      "name": "native-settings-960x600.png",
+      "family": "HUD and settings",
+      "width": 960,
+      "height": 600,
+      "sha256": "4e18e2abbb78b75c12e994cd74e96144456dd851f2b035bf1a98a7d9ab7270a6",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-1440x900-page02.png",
+      "name": "worksheet-1440x900-page02.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 1440,
+      "height": 900,
+      "sha256": "67fc5eefcf80caa881d399b335e0df68f897a2e5874a4b07dbe15782745f22f0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-1440x900-page04.png",
+      "name": "worksheet-1440x900-page04.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 1440,
+      "height": 900,
+      "sha256": "62961a2d45d5a48234c2e808855a5e70978c09356d204951828441e51409eaa6",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-1440x900-page13.png",
+      "name": "worksheet-1440x900-page13.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 1440,
+      "height": 900,
+      "sha256": "130b6e3d36d900f89a5bdc23058d56438d824e60e97c5be8c1411c2ea513954a",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-390x844-page02.png",
+      "name": "worksheet-390x844-page02.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "cfdbc9b4734641d5c6a7ed46829cb3fd354bb37a9f48348f7979ad1e8ca8faf0",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-390x844-page04.png",
+      "name": "worksheet-390x844-page04.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "07e4b7fdfc6efb75f055439f721383db4369bf49d4bf36d6d0a9baa1a4886fbd",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-390x844-page13.png",
+      "name": "worksheet-390x844-page13.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 390,
+      "height": 844,
+      "sha256": "a6a5983eb097d468a90da7f3ddd7c6936cd42ed5e363aabbe55ccdaa8b7a9b3e",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-844x390-page02.png",
+      "name": "worksheet-844x390-page02.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "87ea417c2f90bcc61eace7f51f99226419688ee80cab261e37bfa56c864544d4",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-844x390-page04.png",
+      "name": "worksheet-844x390-page04.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "6023157f5722602709152a45972d530caa1a4bec2f073258180cf3e0efd5ab4b",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-844x390-page13.png",
+      "name": "worksheet-844x390-page13.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 844,
+      "height": 390,
+      "sha256": "f061b61fe591bb2abeaab54718c0df59dcfc1c0ef2c6661f4acddb641d4a3a78",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-960x940-page02.png",
+      "name": "worksheet-960x940-page02.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 960,
+      "height": 940,
+      "sha256": "83b92923fae7c0550b34f3b6188ca2c545d10ae97fcf872d0ff8057f161fe133",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-960x940-page04.png",
+      "name": "worksheet-960x940-page04.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 960,
+      "height": 940,
+      "sha256": "b3e21734a78f14a0074106858b8f890bfde35f8243ae8f66364889a05e597c8a",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    },
+    {
+      "path": "Reports/OriginalScene/LayoutFollowup/worksheet-960x940-page13.png",
+      "name": "worksheet-960x940-page13.png",
+      "family": "Worksheet \u2014 all original pages",
+      "width": 960,
+      "height": 940,
+      "sha256": "4482dc9c5b400e54e1291eac2c01880b0fbc84580da16a4039406973da9523d8",
+      "scope": "Native scene render; layout preview, not an input-driven game result"
+    }
+  ],
+  "limitations": [
+    "Native result/loading previews exercise retained UI presentation; they do not establish an input-driven victory.",
+    "Browser captures are separate from native fixtures. Physical phones, Safari and external multiplayer/PING services are outside this local audit.",
+    "Legacy LAM forms are retained inactive previews; the standalone feedback flow uses its original unified peer contract."
+  ],
+  "review": {
+    "status": "passed",
+    "nativeReviewSha256": "97e4474b2e02050e4dcfbb41108380fc87e2e095deced19abd57015eb116bd5a",
+    "actualBrowserReviews": {
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/01-start.png": "581f78f74b926f3f2758881028e1ed5c1c9a20d4c5f8f5cce9101a885571c00a",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/02-exploration.png": "45e2b84ef251c2fa187334963e88d1a89ce1ba7e85be85b4fa0375167f68516d",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/03-Mo.png": "bae27964fb441831d64d8385a9b6a4bf483d61272fa177d05c96155130ba05db",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/04-exploration.png": "818580ab46dfa54d510cbfc2341d07939e16b3af1aed8d8fd95908c6eb9d798d",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/05-Mo_MeetRBC.png": "a7fb65a4a67a512a9b6e41045bdeb676ab3c4f87a0541cd8accc76183afc6f2c",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/06--_Follow_CAP.png": "d3745a8a3bf86b283b390dfafc17cb5a80ef1bd3374cdb556cbd9447efad99ef",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/07--_Meet_RBC.png": "f6d49ec107ef8215605e8cd8467be8169f9161add7a8aea65912e83f6bd21d99",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/08-Meeting_Cells.png": "13b5011bcdceee61fc6244a9edbd8c1443397d05a10ea2601297b601e86752c7",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/interaction-320056978242275436.png": "d72c74788c6c09bb687ff33d1d7b3a7646e02f678065a2477af0febeb7768df8",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-320056978242275436-960x940.png": "4d50229c1e8a5b3a456864d102e88f49a70f80c53d56723b8b40374faec006f8",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-320056978242275436-800x1100.png": "8ddd97a2f2e81c7114b6994afda064633a38b65ca625f18c0b663c81a8da4d3f",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/12-RBC_new.png": "5f7c28da933e6de868b574c060361117de702219cadf41f263f33cf3a91af4ee",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/13-exploration.png": "cd1fa9b00c13001f4ada52099c1e397c3f5367169017da4ad16b156272a75db8",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameRBC-launcher-960x940.png": "e054a9595c677cc776ef42daa1e8e4e1c9f2fecbef4e2baaae8637da1de0c322",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameRBC-launcher-800x1100.png": "9f7603fffa8c798a5dac75549681bfcbaad41b2e37ef216dad7b5292af0bf5be",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/16-oxygen-activity.png": "097b4829d541f8674be98da5ee4df5671c4e573d49630877b63120f3852d56a2",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-play-960x940.png": "e4fbcd867ac317aa85f9b0554833385220d2bfb140629dfd2b7a47fc2e423460",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-play-800x1100.png": "ce3c9180533e6c445ae681c9354ad1b76007418b7c18bb4e978e7b92b5cecf1b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help.png": "d0ed16fcc50db12b2243e7e7ae472e42fb18878fc763b0b8d3bed5bcbccd662b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help-960x940.png": "b752c7353281fe4bee6d4c9ff95be6f91e8901b30ea4a0daed873e847ea09c91",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-help-800x1100.png": "70e6aba9daa715d06cb2437c2f78c4ee9e8d0327114266df9c77ad079b872997",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-oxygen-exit.png": "cd143d54f159305ec128e0ed7c8fe546736b09f86b69c249bbf96d83d920fc9e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-oxygen-native-stick.png": "298ec1e983f72ed128e3df4bf1867f49b492ae20d61effb0d01868df6e404a4c",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/oxygen-full-timer-finished.png": "69b28452c646d5d1a8450cc8a32943589785de2aa423a978bd09b85d89f7c50b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/25-AfterRBCMinigame.png": "0219acce4ee4264f1879a0f5b94886284c53c416bd74580d0ee89827b094827e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/26-exploration.png": "e2638d3f657379d8e33dc551ccc2724c943d500727bc30332ac9c935c0d33255",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-quiz-960x940.png": "5e9a3455bf92773caf2cd4807458802219a386ef2fdcc4c803f382505e0be50d",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-quiz-800x1100.png": "7dfaad466389ef2f8da66cd260f3faaea9bb70db852f13851ec8f23efd024a30",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/quiz-before-answer.png": "03e8d09e6ca3f228e81dc35c4554ac6531f9cbb8e2f0d18e31f7dd43d1d13935",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/30-Agent.png": "18f61f8d33cc52938c9164e84dd6265824d25f79cf78dc7ae157aa7b73572f39",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/31-exploration.png": "aaf833c51369c1085579771ff2767962fbe5ed75c87acd163c26631abac6a595",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-input-960x940.png": "4e91a39fced0a35498fd0fe5b77d310d5b8ef69fc7ab89cfa50ecfab8ca61758",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-input-800x1100.png": "19be29572b8cc35c7b461c15830e7907e0b0efa3ab2ab2c42080b8d0736f186e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-1.png": "68066db61af9a4c477c88185b0e807467288572e695dc6d3a332d27c563bdf46",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-feedback-960x940.png": "8ce62f3c7aa97c85f8a6aadd65256c6d648e56c632965f259aeb720a04d47e4a",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-peer-feedback-800x1100.png": "2d6c5892f2190d90b9d38f0e0c3c48e9c99df4ea602039573a825dccad5b5143",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-retry-1.png": "f363689a81194755d25e63eeae79abde88587f9b8326888dd47af1d9fd0dcab9",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-2.png": "62eadac7fe150b00498775a73bf9d91711051733b224205ed573f4f22619b9be",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-retry-2.png": "7ff46d182fb6e454e289ccddd8d219a26d88991db06864b102a0e667473fd69c",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/peer-field-ready-3.png": "ef8061d6796b5e7a25b6115c0585c4b54b9e13932c8de6f13c8ca00e1a38edaf",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-peer-feedback.png": "e9e9aa6c62ac4454a3ca115609f88bf5937689a7b27d497d7939deeff18c1684",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/42-Incorrect.png": "ae59aa0737b1de5c1ecaec194b6bc5bbc6cccf1b868fabb5a2a1877910059cd1",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/43--_Find_White.png": "b2b901e467bb70dae57278dd7d059b0c0a94d360d4b3864b858365e62adb8f0b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/44-FindWBC_New.png": "bb312f48e9b5a4044c7f3f3367a46837bd5e8906b82c45db0b587bb834ad9df3",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/45--_Find_White.png": "d43aae29086886909ac4f772698e43edf3c7d1aec74a7183176d5a93dbbc20c7",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/46-Meeting_Cells.png": "6dfd9deb846adbd6280f5e9e712ae4cfca6fc9543db3299b4356f3328381f978",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/interaction-815680816.png": "96c07f1357df92e9b54a0c7bda92a3bff067c29fffac14aa6f304651c1b4e050",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-815680816-960x940.png": "276f5be669fbc53199ced888955baacd3e9d0a4aa0f391eda16eeb6a5bba5358",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-interaction-815680816-800x1100.png": "9be303eb42718e020198e32bcfe699848c63c52e87efc2865bf127da7b362971",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/50-WBC_New.png": "4f35eb85d705c2a64fa9d0d6cb35769753a0898c4fe95f8a1cec07456c0edd9c",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/51-exploration.png": "b81e27548dac7facdf0604fdac7118bbabcafe971745e7c0db8d798c8c220676",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameWBC-launcher-960x940.png": "bc71d16498625649ecfb51fedb7108c03beb261f34916833f68a4e0e72fa0685",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-PlayGameWBC-launcher-800x1100.png": "6a2ca52c84105e62ef9015de29674ee23906ec7378db7a0fa41da7f419a12396",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/54-white-activity.png": "4f3031790479b35094e94bdc171e86b2ac2fbfec47d694756d37e4b5867b16c9",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-play-960x940.png": "fe3f648d0075a98ff207a14ec782b36e8311389ee31fd9a30dc7475f361291fe",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-play-800x1100.png": "7332123b7bd1c882df2542721dd31f2133d3d011a6a9403b2234519b2f4d5d87",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help.png": "5820444c5bf442f253a2db63c7a7dccbf7f96655e00ac8d369f4bf2e52d25ab9",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help-960x940.png": "651435917360554952c9aaa1ca561e409bcec3a1fd9cb8577cf8a92a0e0813a7",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-help-800x1100.png": "f4fb531f0547240c8b12b6adc87701a8225062fcb9f30dca03920ad1e02a211b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-exit.png": "dab6d9e8f99dd2f9b358b16501c5e7432b9b8d24450000ef018bbae3216a0216",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-white-native-stick.png": "47d84bf7439374e3a828be67e345660f2cd12ec869969d0b5c41f8ab0eed2397",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/visual-white-result.png": "15a87fd216376ed09c969ecffce40c36ae98494803deae99f976b26995db4b2f",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/63-WBC_LOSE.png": "00242e8613541d58be28900306f85f968e393b33617ce1117967a80c6d493141",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/64-WBC_After.png": "b9fedfb1185963acf0de9c596ee5a7e232391529f8b2d81f6aff5cc59ec9da06",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/65-exploration.png": "1a8d79b533273a54b068041b237676ee1646bea0aab2fc983a2ec302d8820177",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-01.png": "0da046edb7d29c2194786220c6ff07f29e9799ce0e2f0010b879fdfdb635de26",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-01-filled.png": "0da046edb7d29c2194786220c6ff07f29e9799ce0e2f0010b879fdfdb635de26",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02.png": "1528db6956d342ea6239ad61f814bc40ec682a84e25c583dc9274d9cf814bfb1",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-field-entry.png": "786d6d48607ee9ddb0098129fff38823689b2ea533a46a38663a2f014ebc5b4d",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-field-committed.png": "6ba16ecdccd834311d5aafd5f85d94a9dcf852875b2cf5c9f85d7e6d8c88e7af",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-02-filled.png": "6ba16ecdccd834311d5aafd5f85d94a9dcf852875b2cf5c9f85d7e6d8c88e7af",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-03.png": "453e13b206342fd4b0a31b5f067494c6cb3065eee5bb4e311846bc5fc19ca617",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-03-filled.png": "737074f0aef1027a165155156bd6fe56914316e0df8ea830e321a7c94fecf09e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-04.png": "f3190ad3bcf3565a526721a817402c10d2f4fd64f3d59fe5e138c63e3a21ae65",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-04-filled.png": "c4bad573ee9e8840071dea7060d28c369c422902251048853e32a55c787f5c9e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-05.png": "3fa8fcd43b8dcb02d974d6f4d8a409e5becbb7174f0623a1bfaf84fcc5efb068",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-05-filled.png": "83b3c4211d9c2cbe9bf0cb6836c0e78395e8199b46a610d1675efdd1071e773b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-06.png": "3b27fd3666e2735dc9a64cc6faeeab482966533c53160c319b95a23af7829afe",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-06-filled.png": "597e1d81b97cdceed57bcb2e1643956af165a57cb73072e3ac9b4dcf52103f0b",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-07.png": "6e906fae3f8bc221de1b2d3e18e741d874a08c05f72507ede9ce79040126c643",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-07-filled.png": "4057a2d2e0638ccdb3dce8449ccc5c54d12b365c132514fbd41fe6b5b999bece",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-08.png": "10c0875c8c9b1b16030cd2760b1c1d290a01dfbc7f17e1a662f48445a03e7082",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-08-filled.png": "a5b3aef47902dcfa47ebeb85249143c63f909dc513c52702074edbe4edb39e6e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-09.png": "4b5241180a617254bd19f73b05c7583cd0ff59ac5006b682ce56775843136f5e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-09-filled.png": "24eb10e2a4f273bc6c7096cea2dae119404795127a5c601d751b43c87d6aff06",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-10.png": "283a4c24a98407aabc71a6914bcf01591ee375305a5f0c5130dcbf2b4de0a7c4",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-10-filled.png": "83154c57f43a770c680e1a3ce16c4b5a7aaac0aa94dd60cfebbd4dff1384bae6",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-11.png": "c83a0cffb023eb63a9d757cd547d587783da0c6058226416f3617b8d0f5953ea",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-11-filled.png": "c56f35add497456146ba0a12bfdb7acf8ba28458b2e56bc03fcc67e00b40914e",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-12.png": "55db781edaf8da957476e1c71e7d77376a64b39e9e3576d2a65f92b54052aee3",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-12-filled.png": "277e6cc39d72dbe59bfcf20574c82b1c5c31cfba69116a02c53b5e49d63f76ac",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-13.png": "f8c634a4904665a9613fc372af573ed76cbb1dc1f1899f762d42ac2e3b44afe9",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/mobile-workbook-13-filled.png": "f8c634a4904665a9613fc372af573ed76cbb1dc1f1899f762d42ac2e3b44afe9",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-ending-midpoint.png": "ae8e431b793f548133fe3b8030b9b142ec511f3da68538c9925a50068b20ee54",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/original-ending-complete.png": "c93a89a4b7d91c5cf41b944ce77cf8614721131f3acfa61b77c2d5786ca9a930",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/final-state.png": "c93a89a4b7d91c5cf41b944ce77cf8614721131f3acfa61b77c2d5786ca9a930",
+      "Reports/OriginalScene/BrowserJourney/2026-10-19T02-49-42-089Z/manual-replay-fresh-start.png": "0f0cd9b307f8ec4d11a74596b4f9885c6cf3021bcc8ce84cb51cd03c4bfa4967",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/01-original-camera.png": "f086f36b041d2a5deddee7943a14cca92f97d7c9027b760aad25ebc43f6e0080",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/02-original-third-person.png": "bcc92c160a8868a04a8206caef389638f5c4676a48921ddb15f23eec3078a7b6",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/03-original-walking-rig.png": "543b18f303b35fe241e818abcdb5f6aa1931158050fd9a786e66efa032f8929c",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/04-original-jump.png": "0c38e26d098d4b6ad7fdc8ee02b6e86f14b445839125944612d0e1b5630ce0be",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/05-original-first-person.png": "dcd79fff80a998f11d72b89df512795e12fc6cf56ee7df9272569d11c576fd46",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06-original-look.png": "10fd24239cc4c6bcb7cd57968759b3f6bd6b52f0057d22ad24260bc800295e32",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06a-objective-expanded.png": "528d66cab860f26ea0ea10daa2f79a9ec34a02724a71e02f55c3cd90bd5a61eb",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06b-objective-folded.png": "f0b0b15099766dd917613ccaf871d92393e77850834b58c8dd21f06e692eea21",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/06c-objective-reopened.png": "dc7bfbc688f05768c4fec3e91dc55ba3508dc66329d3401b2cf36e1954028f50",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/07-native-settings-desktop.png": "a3a08c302c59e38334d3e90895732ddb1043979310bbfa884e64d6f7c60daab9",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/08-native-settings-960x600.png": "73efb2879d6a4324316863a8ed5b70b87c2031dfcb5ccdc72958af0270df109b",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/09-native-settings-closed.png": "ffe14f2d88b9ae8bd26225f8c53052a8aee3745b01d63bd1939f100784d3c095",
+      "Reports/OriginalScene/ControlsBrowser/2026-10-19T02-37-48-890Z/10-native-chat-unavailable.png": "9b5a9dfb1eed33f611c2357e028f1e88c7a063a78787488a82e47308baaa1475",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/01-mobile-start-landscape.png": "48a80f83a8964ef5ab803a4f8afe6b6430546f848471d0670c389775840e4e2b",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/02-mobile-hud-landscape.png": "b7b45dcd609dbe55ebe98c87c8b0e5bf334f6e5025637e6a5a67a88539ff502c",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-forward-gesture-result.png": "ea300b620570a005949ed493b4cec6538240113d808c1bef099899c565d1660f",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-touch-jump.png": "2a3b2793122e6cf8ef053c2f4befbf30a579cc11bb74102f3ab497f06b309f20",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-settings.png": "37e261a027d9d17b0a62d97eb4f01879588bca02c6d0177aab5b4744e07daf7f",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/landscape-settings-closed.png": "2b6193778cadb49dc7c12cab38fe29a2eb2b70742326580dae419d8a543cbfb4",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-hud.png": "d321504d1347304af596a534266f9b263ac5c247571763135dc18a40c6ae67f5",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-forward-gesture-result.png": "285505bba141cad8354d97452280512be558f63090f6224fa2267bca4efd44da",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-right-gesture-result.png": "42e2cd5d6a5de5cac7d0787ab48c2c47333beb42991127f62b6e5be01907e39e",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-settings.png": "f7eedb10ac9a9d5ede20aa0023f0798797933f9aea4cd5c5171042739170c785",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/portrait-settings-closed.png": "3a6263a172af912c7e9d302431e7a6ae4124b862b44e0ad2a2c56302fac6bd38",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/tablet-hud.png": "53fbcaf39d3813aa6fe54f9c11761bb65af684097ae0a8b21891518ce7b208d2",
+      "Reports/OriginalScene/MobileBrowser/2026-10-19T02-39-41-017Z/dpr2-portrait-hud.png": "327972f3083694883f1279fc644215c79398c78e131bdfc36442df59bcaff102",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-start.png": "988a8a233f8729fd24554c27b05bb507d4846079d61a1b350b7e49576ff04d95",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-intro.png": "103d68ea283f44bce01199e8fbd39c4e3d539e604835070dbcf667b7ed4b5495",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/390x844-dialogue.png": "7ecaec3daf88ea97fb48746484769f9153e346cf6cfb99f57007b1182cf64aff",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-start.png": "98a9fb47344a4dec99449074c7e061ac61e11feeedd0c7b96d86472a895dee60",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-intro.png": "d2b135e3d9302434a7fcd38d070fb366d6d9e74658ca90e12a3903828811e48d",
+      "Reports/OriginalScene/ReleaseBrowser/mobile/2026-10-19T02-41-36-169Z/844x390-dialogue.png": "93b43d12eb12af9c62a91bec6e0076dd4389bba0beadfd8cd4842c3b9d2dfb11",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/01-original-start.png": "3e3fb560e8e2039c5746f1f0c08ff21def917e3df69d3e3a09b6e643cd136636",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/02-original-timeline.png": "ba92e983814fd4bcae16a6375650b02a943ddedaa48c688cbaadf7972b6c519a",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/03-original-dialogue.png": "854e53ef3258b2723240716f2f0d1ca55287261734309b9da690995a5aa97946",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/03b-dialogue-small-viewport.png": "a775e3f36a32e7b4cb7d1e53d89adfb0bd6626244e48658c2e1fdba4a4d70331",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/04-real-dialogue-input.png": "ab8cac02435fcd5a36e06602393756496d86b37ee8069c173c97a6ad0dc895d1",
+      "Reports/OriginalScene/ReleaseBrowser/chromium/05-small-viewport.png": "4c2730cc0ef8a42fe5016822814a8d7ac49e70c32ad4604b932badfe4f935cf6",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/01-original-start.png": "f7377aed911be93010cfe45e873fde8875a8e213e0c99a9fdc9790e0c545a8aa",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/02-original-timeline.png": "f15f8d354c3be87f20e76824628b768cfe0cbad12cb412061c50ca309b612ac0",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/03-original-dialogue.png": "e4104f1f8a78f2a7e237a530e07850444e343d793845f1049b3b1d61556b0b4c",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/03b-dialogue-small-viewport.png": "d353e30260aef6dd0f0fabaf7c790ac04eb2f2a2d4419cf5b0f352a204d05dd2",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/04-real-dialogue-input.png": "7c33af67000b59b0989717cfb7ec8e3d1c35d990b0972df8c826192da18caf50",
+      "Reports/OriginalScene/ReleaseBrowser/firefox/05-small-viewport.png": "d3cb8f537f17cf86650875552ad42cc78046235fa0dcc139e81b62ff270be29d"
+    },
+    "method": "Current source-bound native and browser capture review; native evidence inspected from contact sheets/full-size and actual browser evidence reviewed by route family.",
+    "findings": [
+      "The compact objective card, restored interaction menu, generated minigame art/effects, wider oxygen gap, mobile controls and notebook are represented in the current gallery."
+    ],
+    "scope": "Current source only; no stale candidate evidence.",
+    "limitations": [
+      "Browser emulation and layout previews do not certify physical hardware, Safari, audio or external Heart gameplay."
+    ]
+  }
+}

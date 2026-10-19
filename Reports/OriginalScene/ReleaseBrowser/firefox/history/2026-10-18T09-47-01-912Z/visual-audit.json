@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reviewedUtc": "2026-10-18T09:48:54.944609+00:00",
+  "acceptanceSha256": "cbb2e5a2d0ac25af1a74dc0a2e0d7e3132dfe4ad1326b1aabb8a9b183cff7d00",
+  "verifiedInputSha256": "b7ab281a1e6272b4343e59fb3c19dbce6a02eb98df66f02032c911a9d59c06ce",
+  "screenshots": {
+    "01-original-start.png": "4b92464089fbd05964f41f6204a4e5b3ad7bdc44131244d7c5506089fb2ca719",
+    "02-original-timeline.png": "4fd294862aae3e04cc46a4b6e5a706ac0631e3cbe01e9d2e831454f7f05bc4c5",
+    "03-original-dialogue.png": "77b185b0dbd5fdaf5561a8a1925d2ac27c51d934dc000ce9ff438e7207c672ef",
+    "03b-dialogue-small-viewport.png": "18f7674561e083e51f8ca6c1d25676f30034b6a90282c08a532a02b131ecbc58",
+    "04-real-dialogue-input.png": "15036fc6bb3fcb00b335aa23b0aae6136c698fbc010ba90cf8ffa71bed8b44ee",
+    "05-small-viewport.png": "ddf4929b39806b1a1452ba2b7e3efdb682c566e1cc3167eca87b1c10c2ad8010"
+  },
+  "method": "All six accepted release captures inspected in contact sheet; both dialogue viewports inspected individually at full resolution.",
+  "findings": [
+    "First capture is the native Unity splash, not the paper Start card; actual Start input passed separately.",
+    "Original intro caption is readable in this run; retained artwork and neutral lighting remain visible.",
+    "Desktop/small dialogue wraps inside its paper card with a visible native Continue action.",
+    "Real dialogue input returns to the original scene and resizes without clipped interface."
+  ],
+  "scope": "firefox production startup, intro, dialogue and viewport smoke; complete route is accepted separately in development.",
+  "limitations": [
+    "Known loader cancellations/warnings remain in the raw report. No physical-device or Safari acceptance."
+  ]
+}
