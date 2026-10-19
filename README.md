@@ -80,6 +80,54 @@ Desktop: WASD moves; drag on the scene (left or right button, trackpad friendly)
 
 Mobile: use the left thumbstick to move, swipe the right pad to look and tap Jump. Each pad owns its own finger. Dialogue and nearby interaction have touch actions. Native activity buttons and the original minigame joystick remain in use. Worksheet words support both drag/drop and tap-word, tap-blank; type into the original answer fields and use the original Next/Submit controls.
 
+## Peer-feedback service (live)
+
+The peer-explanation step POSTs `{text, session}` to same-origin `/api/sparc/agent`. On ping.agaii.org that path is served by `Tools/agent_service.py`, a loopback-only wrapper around `Tools/original_agent_proxy.py` (original prompt, allow-listed providers, rate limits; the browser never sees a key, provider URL or prompt). `Tools/agent_config.json` holds the key-free original settings and is regenerated with `python3 Tools/agent_service.py --export-config Tools/agent_config.json` from the private inventory.
+
+On `tang-server` it runs as the lingering user unit `sparc-meetingcells-agent` ([unit file](Tools/deploy/sparc-meetingcells-agent.service)) on `127.0.0.1:28093`, with the provider set in the unit (`SPARC_AGENT_BASE_URL=https://subtoken.shop/v1`, `SPARC_AGENT_MODEL=gpt-6-luna`). The key lives only in `~/.config/sparc-meetingcells-agent/key.env` (mode 600, one line `SPARC_AGENT_API_KEY=…`); without it, requests return `service_not_configured` and the game shows its original fallback. nginx forwards the exact path through [this block](Tools/deploy/nginx-sparc-agent.conf), placed before `location /api/` in `/www/server/panel/vhost/nginx/ping.agaii.org.conf` (backups: `ping.agaii.org.conf.bak_sparc_agent_*`).
+
+```sh
+# Set or rotate the key (hidden prompt; restarts the unit and prints its health)
+ssh -t tang-server bash apps/sparc-meetingcells-agent/set_agent_key.sh
+# Update code or settings, then restart
+rsync -a Tools/original_agent_proxy.py Tools/agent_service.py Tools/agent_config.json tang-server:apps/sparc-meetingcells-agent/
+ssh tang-server 'systemctl --user restart sparc-meetingcells-agent && curl -s http://127.0.0.1:28093/healthz'
+# Logs (request lines only, no bodies)
+ssh tang-server 'journalctl --user -u sparc-meetingcells-agent -n 50 --no-pager'
+```
+
+Each limit is an environment variable on the service. Unset means the default, the original single-player sizing. A bad value stops the service at startup with a message in the journal. `/healthz` and the startup line show the active values.
+
+| Variable | Default | Limit (code when exceeded) |
+|---|---|---|
+| `SPARC_AGENT_RATE_PER_MINUTE` | 12 | Accepted requests per rolling minute, all players (`rate_limited`) |
+| `SPARC_AGENT_CLIENT_RATE_PER_MINUTE` | 12 | The same per client address (`client_rate_limited`) |
+| `SPARC_AGENT_MAX_IN_FLIGHT` | 2 | Provider calls at once |
+| `SPARC_AGENT_QUEUE_SECONDS` | 8 (at most 8) | Wait for a free provider slot before answering `busy` |
+| `SPARC_AGENT_MAX_SESSIONS` | 64 | Open conversations, each expiring after 30 idle minutes (`too_many_sessions`) |
+
+The client address is the last `X-Forwarded-For` entry, the one nginx appends (`$proxy_add_x_forwarded_for`). Earlier entries come from the browser and are ignored, and the header is read only on requests from 127.0.0.1. A school behind one NAT address counts as one client, so keep the per-client limit above a class's busiest minute. The 8-second cap keeps the wait plus two 18-second provider attempts under the game's 45-second timeout. A new conversation whose first reply fails is dropped at once instead of holding a session slot.
+
+The game shows "Sorry, my brain is fried." after three failed sends. In a fake-provider smoke test (replies take 4–8 s; 30 students each send 3 answers within about 40 s), the original limits left 28 of 30 students there. For a class of about 30, add a drop-in on tang-server:
+
+```ini
+# ~/.config/systemd/user/sparc-meetingcells-agent.service.d/limits.conf
+# then: systemctl --user daemon-reload && systemctl --user restart sparc-meetingcells-agent
+[Service]
+Environment=SPARC_AGENT_RATE_PER_MINUTE=180
+Environment=SPARC_AGENT_CLIENT_RATE_PER_MINUTE=90
+Environment=SPARC_AGENT_MAX_IN_FLIGHT=16
+Environment=SPARC_AGENT_MAX_SESSIONS=200
+```
+
+With these values the same test answered all 90 requests, also with every student behind one address (median 6.7 s, slowest 13 s). Two classes at once fill 16 provider slots (3 of 60 students ran out of tries), so raise `SPARC_AGENT_MAX_IN_FLIGHT` for that. subtoken.shop queues a key's calls beyond its user concurrency (up to 20 waiting, 30 s each), so give that user at least the in-flight value or replies slow down. A provider 429 still pauses that provider for 60 s.
+
+Browser check against the deployed service: the journey serves the development build locally and forwards the game's peer POST to the live endpoint with the ping.agaii.org origin, then stops at the feedback panel (`original-peer-feedback.png`; replies are logged under `liveAgentResponses` in `acceptance.json`).
+
+```sh
+SPARC_LIVE_AGENT=https://ping.agaii.org SPARC_STOP_AFTER_PEER=1 SPARC_RBC_ASSIST=1 SPARC_VIEWPORT=1280x620 SPARC_DPR=2 node Tools/browser/original-journey.cjs
+```
+
 ## Improvements
 
 The main interface uses warm paper, ink outlines, readable type, teal accents and a 61-definition semantic icon library. Start, dialogue, subtitles, interaction prompts, objective cards, navigation, Settings, tooltips, inactive prefabs and dynamically created controls are covered. The objective card emphasizes the current instruction, folds through its native control and places the actual completion count in a compact header badge with a brief decorative task-change pulse. The toolbar fits before Start, and long intro captions wrap safely on phones while keeping their source text and timing. Utility targets are at least 44 CSS pixels. Settings hides the objective while open and returns through its native Back button.

@@ -12,3 +12,4 @@ Reports/Toolchain/
 *.userprefs
 Tools/browser/node_modules
 Assets/Resources/PerformanceTestRun*
+__pycache__/

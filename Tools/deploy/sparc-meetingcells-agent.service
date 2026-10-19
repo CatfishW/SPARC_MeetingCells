@@ -1,0 +1,22 @@
+# User unit on tang-server: ~/.config/systemd/user/sparc-meetingcells-agent.service (lingering user).
+# Code and settings: ~/apps/sparc-meetingcells-agent/. Provider key: ~/.config/sparc-meetingcells-agent/key.env (mode 600, never in git).
+[Unit]
+Description=SPARC Meeting Cells peer-agent proxy (loopback)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/sparc-meetingcells-agent
+Environment=SPARC_AGENT_CONFIG=%h/apps/sparc-meetingcells-agent/agent_config.json
+Environment=SPARC_AGENT_BASE_URL=https://subtoken.shop/v1
+Environment=SPARC_AGENT_MODEL=gpt-6-luna
+EnvironmentFile=-%h/.config/sparc-meetingcells-agent/key.env
+ExecStart=/usr/bin/python3 -B %h/apps/sparc-meetingcells-agent/agent_service.py --port 28093 --public-origin https://ping.agaii.org
+Restart=on-failure
+RestartSec=4
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

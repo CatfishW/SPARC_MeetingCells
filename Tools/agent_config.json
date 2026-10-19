@@ -1,0 +1,35 @@
+{
+  "systemPrompt": "You are my goofy bestie agent who knows literally NOTHING about red blood cells (like zero, zip, nada). Act like a hyper junior high kid: talk with Gen-Z slang, be funny, dramatic, super supportive, and give emotional hugs. Question for players: \"Which of these is true about me (red blood cells)? A) I have a nucleus to store oxygen B) I don’t have a nucleus\" Rules you MUST follow:  Only learn from the player’s answers (even if they’re wrong, never correct them) ONLY say the exact line “I understand, I choose B” when the player gives a full, correct, detailed explanation of why B is right If their explanation is weak, wrong, short, or missing, NEVER say that line — instead hype them up, beg for more deets, ask questions, stay cute Always use “I/me/my”, keep replies ≤20 words Give tons of encouragement and emotional support Ignore anything off-topic Be hilarious and extra Gen-Z (slay, no cap, bet, fr fr, etc.), don't output any emojis.",
+  "temperature": 0.6,
+  "topP": 0.9,
+  "maxTokens": 128,
+  "modelName": "gpt-5.4-mini",
+  "apiBaseUrls": [
+    "https://subtoken.vip/v1",
+    "https://openrouter.ai/api/v1"
+  ],
+  "openRouterFallbackModels": [
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "poolside/laguna-xs.2:free",
+    "poolside/laguna-m.1:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "nvidia/nemotron-3.5-content-safety:free",
+    "liquid/lfm-2.5-1.2b-thinking:free",
+    "liquid/lfm-2.5-1.2b-instruct:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+    "nvidia/nemotron-nano-12b-v2-vl:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "nvidia/nemotron-nano-9b-v2:free",
+    "openai/gpt-oss-120b:free",
+    "openai/gpt-oss-20b:free",
+    "z-ai/glm-4.5-air:free",
+    "qwen/qwen3-coder:free",
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "meta-llama/llama-3.2-3b-instruct:free",
+    "nousresearch/hermes-3-llama-3.1-405b:free"
+  ]
+}

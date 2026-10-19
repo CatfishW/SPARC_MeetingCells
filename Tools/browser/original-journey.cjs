@@ -7,7 +7,7 @@ const root=path.resolve(__dirname,'../..'),build=path.resolve(process.env.SPARC_
 // Laptop/desktop profiles: SPARC_VIEWPORT=1280x620 SPARC_DPR=2 (defaults keep the 1440x900 baseline).
 const [viewportWidth,viewportHeight]=(process.env.SPARC_VIEWPORT||'1440x900').split('x').map(Number),deviceScale=Number(process.env.SPARC_DPR||1);
 const mobileWorksheet=process.env.SPARC_MOBILE_WORKSHEET==='1';
-const requireWhiteWin=process.env.SPARC_REQUIRE_WHITE_WIN==='1',stopAfterWhite=process.env.SPARC_STOP_AFTER_WHITE==='1';
+const liveAgent=process.env.SPARC_LIVE_AGENT||'',stopAfterPeer=process.env.SPARC_STOP_AFTER_PEER==='1',requireWhiteWin=process.env.SPARC_REQUIRE_WHITE_WIN==='1',stopAfterWhite=process.env.SPARC_STOP_AFTER_WHITE==='1';
 const whiteVictoryHoldMilliseconds=Number(process.env.SPARC_WHITE_VICTORY_HOLD_MS||6200);
 assert(!requireWhiteWin||process.env.SPARC_WHITE_ASSIST!=='1','White win acceptance cannot use the activity exit assist');
 assert(Number.isFinite(whiteVictoryHoldMilliseconds)&&whiteVictoryHoldMilliseconds>=0,'Invalid White victory hold interval');
@@ -201,6 +201,8 @@ async function main(){
    const url=new URL(req.url,'http://localhost');if(url.pathname==='/favicon.ico'){res.writeHead(204);res.end();return;}
    // Layout-only runs without provider credentials: SPARC_STUB_AGENT=1 answers the peer contract locally.
    if(process.env.SPARC_STUB_AGENT==='1'&&url.pathname==='/api/sparc/agent'&&req.method==='POST'){req.resume();res.writeHead(200,{'Content-Type':'application/json'});res.end(JSON.stringify({ok:true,session:'stub',text:'Nice explanation! Losing the nucleus leaves room for hemoglobin, so B is correct.'}));report.stubAgent=true;return;}
+   // SPARC_LIVE_AGENT=https://ping.agaii.org forwards the game's peer POST to the deployed service as that page origin would send it.
+   if(liveAgent&&url.pathname==='/api/sparc/agent'&&req.method==='POST'){const chunks=[];req.on('data',c=>chunks.push(c));req.on('end',async()=>{try{const answer=await fetch(liveAgent+'/api/sparc/agent',{method:'POST',headers:{'Content-Type':'application/json',Origin:liveAgent,'Sec-Fetch-Site':'same-origin'},body:Buffer.concat(chunks)});const body=await answer.text();let parsed=null;try{parsed=JSON.parse(body);}catch{}(report.liveAgentResponses||(report.liveAgentResponses=[])).push({status:answer.status,ok:parsed?.ok===true,code:parsed?.code,text:parsed?.text});save();res.writeHead(answer.status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(body);}catch(e){(report.liveAgentResponses||(report.liveAgentResponses=[])).push({error:String(e)});res.writeHead(502);res.end();}});return;}
    const p=path.resolve(build,'.'+(url.pathname==='/'?'/index.html':decodeURIComponent(url.pathname)));
    if(!p.startsWith(build+path.sep)||!fs.existsSync(p)||!fs.statSync(p).isFile()){res.writeHead(404);res.end();return;}
    const size=fs.statSync(p).size,compressed=p.endsWith('.unityweb');const mime=/\.wasm(?:\.unityweb)?$/.test(p)?'application/wasm':/\.js(?:\.unityweb)?$/.test(p)?'application/javascript':/\.html$/.test(p)?'text/html; charset=utf-8':/\.mp4$/.test(p)?'video/mp4':/\.webm$/.test(p)?'video/webm':'application/octet-stream';
@@ -208,7 +210,9 @@ async function main(){
    if(range&&!compressed){const start=Number(range[1]),end=Math.min(size-1,range[2]?Number(range[2]):size-1);if(start>=size||start>end){res.writeHead(416,{'Content-Range':'bytes */'+size});res.end();return;}res.writeHead(206,{...headers,'Accept-Ranges':'bytes','Content-Range':`bytes ${start}-${end}/${size}`,'Content-Length':end-start+1});fs.createReadStream(p,{start,end}).pipe(res);}
    else{res.writeHead(200,{...headers,'Content-Length':size});fs.createReadStream(p).pipe(res);}
   }catch(e){res.writeHead(500);res.end();}
- });await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin=process.env.SPARC_TEST_ORIGIN||'http://127.0.0.1:'+server.address().port+'/';if(!/^http:\/\/(127\.0\.0\.1|localhost):\d+\/$/.test(origin))throw Error('External test origin must be loopback');
+ });await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ const origin=process.env.SPARC_TEST_ORIGIN||'http://127.0.0.1:'+server.address().port+'/';if(!/^http:\/\/(127\.0\.0\.1|localhost):\d+\/$/.test(origin))throw Error('External test origin must be loopback');
+ if(liveAgent){if(!/^https:\/\/[^/]+$/.test(liveAgent))throw Error('SPARC_LIVE_AGENT must be an https origin such as https://ping.agaii.org');if(process.env.SPARC_STUB_AGENT==='1')throw Error('SPARC_LIVE_AGENT exercises the deployed agent; unset SPARC_STUB_AGENT');report.liveAgent=liveAgent;}
  browser=await chromium.launch({headless:true,args:['--use-angle=metal','--enable-webgl']});report.browserVersion=browser.version();
  context=await browser.newContext({viewport:{width:viewportWidth,height:viewportHeight},deviceScaleFactor:deviceScale,...(mobileWorksheet?{isMobile:true,hasTouch:true,userAgent:devices['Pixel 7'].userAgent}:{}),recordVideo:{dir:path.join(out,'video'),size:{width:1280,height:800}}});page=await context.newPage();video=page.video();
  await context.route('**/*',r=>{const u=r.request().url();if(u.startsWith(origin)||/^(blob:|data:)/.test(u))return r.continue();report.externalRequests.push(u.split('?')[0]);return r.abort();});
@@ -264,13 +268,13 @@ async function main(){
   if(s.fields?.length&&!s.buttons.some(b=>b.name==='NextButton'))
   {
    if(s.peerAgent?.Pending){await wait(250);continue;}
-   const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');await clickButton(completion);await wait(400);continue;}
+   const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');if(stopAfterPeer){report.status='passed-original-peer-feedback';break;}await clickButton(completion);await wait(400);continue;}
    const again=s.buttons.find(b=>b.name==='ContinueButton');if(again){await clickButton(again);await wait(250);continue;}
    await auditUiProfiles('peer-input');s=await state();const initialField=s.fields.find(f=>/InputField/.test(f.name))||s.fields[0],field=await readyPeerField(initialField,s.frame);await capture('peer-field-ready-'+String((report.peerSubmissions||0)+1));await clickButton(field);await page.keyboard.type('Red blood cells do not contain a nucleus. Losing the nucleus leaves more room for hemoglobin to carry oxygen, and helps them bend through narrow capillaries. That is why B is correct.',{delay:8});
    await wait(350);const send=(await state()).buttons.find(b=>b.name==='Send'||b.name==='__SPARC_UI_PeerSend');assert(send,'A visible, enabled Send action must be available after typing');await clickButton(send);report.peerSendMethod='real-native-Send-button';report.peerSubmissions=(report.peerSubmissions||0)+1;assert(report.peerSubmissions<=7,'Peer input did not converge or send');await wait(600);continue;
   }
   const retryPeer=s.buttons.find(b=>b.name==='ContinueButton');if(retryPeer){await auditUiProfiles('peer-feedback');await capture('original-peer-retry-'+(s.peerAgent?.Failures||0));await clickButton((await state()).buttons.find(b=>b.name==='ContinueButton'));await wait(250);continue;}
-  const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');await clickButton(completion);await wait(300);continue;}
+  const completion=s.buttons.find(b=>b.name==='CompleteBButton'||b.name==='CompleteAButton');if(completion){await capture('original-peer-feedback');if(stopAfterPeer){report.status='passed-original-peer-feedback';break;}await clickButton(completion);await wait(300);continue;}
   const workbookNext=s.buttons.find(b=>b.name==='NextButton');
   if(workbookNext){
    assert(workbookPages<13,'The workbook repeated a page or failed to submit');
