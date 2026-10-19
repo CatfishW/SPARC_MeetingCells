@@ -123,7 +123,7 @@ namespace Sparc.Original
                 var obj=new GameObject("__SPARC_MENU_ControlHelp",typeof(RectTransform),typeof(CanvasRenderer),typeof(TextMeshProUGUI));obj.layer=panel.layer;obj.transform.SetParent(panel.transform,false);help=obj.GetComponent<RectTransform>();var text=obj.GetComponent<TMP_Text>();text.font=Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");text.raycastTarget=false;
             }
             Rect(help,center,center,new Vector2(0,-h/2+pad+68)*unit,new Vector2(contentWidth,136)*unit);var helpText=help.GetComponent<TMP_Text>();
-            helpText.text=OriginalHudLayout.HasTouch?"<b>Touch controls</b>\nLeft stick: Move\nRight swipe: Look\nTap Jump / Talk nearby\nCamera icon: Switch view":"<b>Controls</b>\nWASD: Move\nRight-drag: Look\nE: Talk nearby    Space: Jump    V: Switch view";
+            helpText.text=OriginalHudLayout.HasTouch?"<b>Touch controls</b>\nLeft stick: Move\nRight swipe: Look\nTap Jump / Talk nearby\nCamera icon: Switch view":"<b>Controls</b>\nWASD: Move\nDrag or arrow keys: Look\nE: Talk    Q: Observe    Space: Jump    V: Switch view";
             Readable(helpText,17*unit);helpText.alignment=TextAlignmentOptions.TopLeft;helpText.textWrappingMode=TextWrappingModes.Normal;helpText.lineSpacing=4;
             var reverse=Child(panel.transform,"ContronReverseToggle");var perspective=Child(panel.transform,"PerspectiveSwitchToggle");
             var reverseLabel=Child(panel.transform,"Left Handed txt");if(reverseLabel)reverseLabel.gameObject.SetActive(reverse&&reverse.gameObject.activeSelf);

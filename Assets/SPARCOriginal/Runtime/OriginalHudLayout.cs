@@ -45,13 +45,15 @@ namespace Sparc.Original
         {if(!r)return;r.localScale=Vector3.one;r.localRotation=Quaternion.identity;r.anchorMin=r.anchorMax=anchor;r.pivot=pivot;r.anchoredPosition=position;r.sizeDelta=size;}
         static void Inset(RectTransform r,float left,float right,float vertical)
         {if(!r)return;r.localScale=Vector3.one;r.localRotation=Quaternion.identity;r.anchorMin=Vector2.zero;r.anchorMax=Vector2.one;r.offsetMin=new Vector2(left,vertical);r.offsetMax=new Vector2(-right,-vertical);}
+        static float Opacity(Transform row,Transform stop)
+        {float alpha=1;for(var p=row;p&&p!=stop;p=p.parent){var group=p.GetComponent<CanvasGroup>();if(group)alpha*=group.alpha;}return alpha;}
         static float Scale(Canvas canvas)=>canvas?Mathf.Max(.1f,canvas.scaleFactor):1;
         static float Density=>OriginalMobileControls.PixelScale; // CSS-size targets on high-DPI browsers.
         static void CanvasLayout(Canvas canvas)
         {
             if(!canvas)return;canvas.renderMode=RenderMode.ScreenSpaceOverlay;
             var scaler=canvas.GetComponent<CanvasScaler>();if(scaler){scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1440,900);scaler.screenMatchMode=CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;scaler.matchWidthOrHeight=.5f;}
-            canvas.transform.localScale=Vector3.one;canvas.transform.localRotation=Quaternion.identity;
+            canvas.transform.localRotation=Quaternion.identity;OriginalComponents.MatchOverlayScale(canvas);
         }
         public void Repair()
         {
@@ -138,7 +140,9 @@ namespace Sparc.Original
                         // details button in the common paper card's header.
                         float y=i==0?header-2*unit:0;Rect(button.transform as RectTransform,new Vector2(1,1),new Vector2(1,1),new Vector2(-4*unit,y),new Vector2(target,target));
                     }
-                    if(toast.gameObject.activeSelf){rowsHeight+=rowHeight+(visible++>0?4*unit:0);if(first==0)first=toast.GetInstanceID();}
+                    // A completed row fades its own CanvasGroup out but stays active; it must not
+                    // keep reserving an empty block above the current task.
+                    if(toast.gameObject.activeSelf&&Opacity(rect,panel)>.05f){rowsHeight+=rowHeight+(visible++>0?4*unit:0);if(first==0)first=toast.GetInstanceID();}
                 }
                 Rect(panel,new Vector2(0,1),new Vector2(0,1),new Vector2(inset,-inset-header),new Vector2(cardWidth,Mathf.Max(1,rowsHeight)));
                 int completed=runtime.objectives?runtime.objectives.CompletedCount:0;
@@ -185,7 +189,11 @@ namespace Sparc.Original
         void LateUpdate(){RefreshAffordance();}
         void RefreshAffordance()
         {
-            if(!button)return;var icon=button.transform.Find("__SPARC_UI_Icon");if(icon&&icon.GetComponent<Image>()){var graphic=icon.GetComponent<Image>();graphic.sprite=OriginalUiIcons.Get("chevron");graphic.rectTransform.localRotation=Quaternion.Euler(0,0,DetailsExpanded?180:0);}
+            if(!button)return;
+            // The source prefab spins this button's frame; at HUD size the turning square read
+            // as a jittering icon. Hold the frame still after the Animator has written it.
+            foreach(var part in button.GetComponentsInChildren<RectTransform>(true))if(part.name!="__SPARC_UI_Icon")part.localRotation=Quaternion.identity;
+            var icon=button.transform.Find("__SPARC_UI_Icon");if(icon&&icon.GetComponent<Image>()){var graphic=icon.GetComponent<Image>();graphic.sprite=OriginalUiIcons.Get("chevron");graphic.rectTransform.localRotation=Quaternion.Euler(0,0,DetailsExpanded?180:0);}
             var hint=button.GetComponent<OriginalUiHint>();if(hint)hint.label=DetailsExpanded?"Hide task details":"Show task details";
         }
         void OnDestroy(){if(button)button.onClick.RemoveListener(ToggleDetails);}

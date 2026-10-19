@@ -33,16 +33,13 @@ namespace Sparc.Original
         }
         void Start(){Initialize();}
         public int LauncherCount=>launchers.Length;
-        static void RevealParents(Transform target)
-        {var chain=new Stack<Transform>();for(var p=target;p;p=p.parent)chain.Push(p);while(chain.Count>0){var t=chain.Pop();if(!t.gameObject.activeSelf)t.gameObject.SetActive(true);}}
         static void CanvasReady(Canvas canvas,int order)
         {
             if(!canvas)return;canvas.enabled=true;canvas.renderMode=RenderMode.ScreenSpaceOverlay;canvas.overrideSorting=true;canvas.sortingOrder=Mathf.Max(canvas.sortingOrder,order);
             // Root overlay canvas dimensions are driven by Unity. Zeroing its size here
             // produces a zero-width rectangle until the next WebGL canvas rebuild.
             canvas.transform.rotation=Quaternion.identity;
-            var parentScale=canvas.transform.parent?canvas.transform.parent.lossyScale:Vector3.one;
-            canvas.transform.localScale=new Vector3(1/Mathf.Max(.0001f,Mathf.Abs(parentScale.x)),1/Mathf.Max(.0001f,Mathf.Abs(parentScale.y)),1/Mathf.Max(.0001f,Mathf.Abs(parentScale.z)));
+            OriginalComponents.MatchOverlayScale(canvas);
             var scale=OriginalComponents.Ensure<CanvasScaler>(canvas.gameObject);scale.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scale.referenceResolution=new Vector2(1440,900);scale.screenMatchMode=CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;scale.matchWidthOrHeight=0.5f;
             OriginalComponents.Ensure<GraphicRaycaster>(canvas.gameObject).enabled=true;
             var group=canvas.GetComponent<CanvasGroup>();if(group){group.alpha=1;group.interactable=true;group.blocksRaycasts=true;}
@@ -58,27 +55,32 @@ namespace Sparc.Original
                 if(!launcher)graphic.enabled=false;
             }
         }
+        /// <summary>The launcher's own overlay, in CSS pixels. The authored button sits beneath
+        /// animated dialogue/world HUD parents whose transforms moved it off-screen on short
+        /// desktop viewports; one stable owner keeps it bottom-centre at every size.</summary>
+        Canvas launcherCanvas;
+        public const float LauncherHeight=56,LauncherBottom=28;
+        public bool LauncherVisible=>launchers.Any(b=>b&&b.gameObject.activeInHierarchy&&!startedLaunchers.Contains(b.GetInstanceID())&&b.interactable&&(b.GetComponent<CanvasGroup>()?.alpha??1)>.5f);
+        Canvas LauncherCanvas()
+        {
+            if(launcherCanvas)return launcherCanvas;
+            var obj=new GameObject("__SPARC_UI_LauncherCanvas",typeof(RectTransform),typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));
+            obj.layer=LayerMask.NameToLayer("UI")<0?0:LayerMask.NameToLayer("UI");obj.transform.SetParent(runtime.transform,false);
+            launcherCanvas=obj.GetComponent<Canvas>();launcherCanvas.renderMode=RenderMode.ScreenSpaceOverlay;launcherCanvas.overrideSorting=true;launcherCanvas.sortingOrder=150;
+            obj.GetComponent<CanvasScaler>().uiScaleMode=CanvasScaler.ScaleMode.ConstantPixelSize;return launcherCanvas;
+        }
         public void RepairLauncher(Button button)
         {
             if(!button||!button.gameObject.activeSelf||startedLaunchers.Contains(button.GetInstanceID()))return;
-            RevealParents(button.transform);var canvas=button.GetComponentInParent<Canvas>(true);CanvasReady(canvas,150);
+            var canvas=LauncherCanvas();canvas.GetComponent<CanvasScaler>().scaleFactor=OriginalMobileControls.PixelScale;
+            if(button.transform.parent!=canvas.transform){button.transform.SetParent(canvas.transform,false);}
             var visibility=OriginalComponents.Ensure<CanvasGroup>(button.gameObject);bool ready=!runtime.presentation.IsSpeaking&&!runtime.activities.IsOpen;
             visibility.alpha=ready?1:0;visibility.interactable=visibility.blocksRaycasts=ready;
-            var rect=button.transform as RectTransform;
             OriginalComponents.Ensure<LayoutElement>(button.gameObject).ignoreLayout=true;
-            for(var p=button.transform.parent;p&&canvas&&p!=canvas.transform;p=p.parent){p.localScale=Vector3.one;p.localRotation=Quaternion.identity;var mask=p.GetComponent<Mask>();if(mask)mask.enabled=false;var rectMask=p.GetComponent<RectMask2D>();if(rectMask)rectMask.enabled=false;}
-            Canvas.ForceUpdateCanvases();var v=View(canvas);
-            Fixed(rect,new Vector2(.5f,.5f),new Vector2(.5f,.5f),new Vector2(Mathf.Min(320,v.width-32),52)*v.unit);
-            // The authored launcher is nested beneath StoryText, not directly under the canvas.
-            // Its parent text can have zero width while the new dialogue panel is being used.
-            // Position the same button in canvas coordinates without changing its hierarchy.
-            float bottom=OriginalHudLayout.HasTouch?180:24;
-            var point=new Vector2((v.left+v.width/2)*OriginalMobileControls.PixelScale,Screen.height-(v.top+v.height-bottom-26)*OriginalMobileControls.PixelScale);
-            var viewCamera=canvas.renderMode==RenderMode.ScreenSpaceOverlay?null:canvas.worldCamera;
-            if(canvas&&rect&&RectTransformUtility.ScreenPointToWorldPointInRectangle((RectTransform)canvas.transform,point,viewCamera,out var position))rect.position=position;
-            foreach(var group in button.GetComponentsInParent<CanvasGroup>(true).Where(g=>g!=visibility)){group.alpha=1;group.interactable=true;group.blocksRaycasts=true;}
+            var v=View(canvas);var area=((RectTransform)canvas.transform).rect;float bottom=(OriginalHudLayout.HasTouch?180:LauncherBottom)+Mathf.Max(0,area.height-v.top-v.height);
+            Fixed(button.transform as RectTransform,new Vector2(.5f,0),new Vector2(.5f,0),new Vector2(Mathf.Min(340,v.width-32),LauncherHeight),new Vector2(v.left+v.width/2-area.width/2,bottom));
             button.enabled=true;button.interactable=true;var graphic=button.targetGraphic;if(graphic){graphic.raycastTarget=true;var c=graphic.color;c.a=1;graphic.color=c;}
-            foreach(var text in button.GetComponentsInChildren<TMP_Text>(true)){NativeText(text,18*v.unit,true);text.alignment=TextAlignmentOptions.Center;text.margin=new Vector4(40,0,12,0)*v.unit;}
+            foreach(var text in button.GetComponentsInChildren<TMP_Text>(true)){NativeText(text,19,true);text.alignment=TextAlignmentOptions.Center;text.margin=new Vector4(36,0,10,0);}
         }
         public void PrepareGame(OriginalBehaviour manager,bool reset)
         {
@@ -135,8 +137,7 @@ namespace Sparc.Original
             // The authored questionnaire is nested under a rotated/scaled Timeline object.
             // Overlay UI must cancel that world transform rather than compress its choices.
             canvas.transform.rotation=Quaternion.identity;
-            var parentScale=canvas.transform.parent?canvas.transform.parent.lossyScale:Vector3.one;
-            canvas.transform.localScale=new Vector3(1/Mathf.Max(0.0001f,Mathf.Abs(parentScale.x)),1/Mathf.Max(0.0001f,Mathf.Abs(parentScale.y)),1/Mathf.Max(0.0001f,Mathf.Abs(parentScale.z)));
+            OriginalComponents.MatchOverlayScale(canvas);
             var content=Child(canvas.transform,"Content");
             if(content)
             {
@@ -164,7 +165,7 @@ namespace Sparc.Original
         void PeerPanel(Canvas canvas)
         {
             CanvasReady(canvas,1400);canvas.transform.rotation=Quaternion.identity;
-            var scale=canvas.transform.parent?canvas.transform.parent.lossyScale:Vector3.one;canvas.transform.localScale=new Vector3(1/Mathf.Max(0.0001f,Mathf.Abs(scale.x)),1/Mathf.Max(0.0001f,Mathf.Abs(scale.y)),1/Mathf.Max(0.0001f,Mathf.Abs(scale.z)));
+            OriginalComponents.MatchOverlayScale(canvas);
             if(canvas.name is "PlayerInputField" or "LAMInputField")
             {
                 var field=canvas.GetComponentInChildren<TMP_InputField>(true);if(!field)return;

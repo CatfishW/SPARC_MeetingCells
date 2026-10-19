@@ -10,3 +10,5 @@ Reports/Toolchain/
 *.csproj
 *.sln
 *.userprefs
+Tools/browser/node_modules
+Assets/Resources/PerformanceTestRun*

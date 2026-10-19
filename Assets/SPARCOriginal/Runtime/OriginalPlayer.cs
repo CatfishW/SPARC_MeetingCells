@@ -21,7 +21,8 @@ namespace Sparc.Original
         public float speed=4,jumpForce=0.66f;
         Rigidbody body;CapsuleCollider capsule;OriginalBehaviour source;Vector2 movement;Vector3 crowdVelocity;float pitch,pendingYaw;float lastJump=-10;
         bool modelRequested,cameraListener;
-        Quaternion firstBase,thirdBase;Vector3 previous;
+        Quaternion firstBase,orbitBase;Vector3 previous;Transform orbit;bool dragLook;
+        readonly System.Collections.Generic.List<Renderer> clearanceCandidates=new();readonly System.Collections.Generic.HashSet<Renderer> clearanceHidden=new();float clearanceScan=-10;
         public float DistanceTravelled {get;private set;}
         public bool Walking {get;private set;}
         float groundedAt=-10;
@@ -68,7 +69,10 @@ namespace Sparc.Original
                 ??candidates.FirstOrDefault(a=>a.runtimeAnimatorController);
             if(!animator)runtime.Missing("original-player-animator-binding");
             if(animator){animator.enabled=true;animator.cullingMode=AnimatorCullingMode.AlwaysAnimate;animator.applyRootMotion=false;}
-            if(firstPerson)firstBase=firstPerson.transform.localRotation;if(thirdPerson)thirdBase=thirdPerson.transform.localRotation;previous=transform.position;
+            if(firstPerson)firstBase=firstPerson.transform.localRotation;previous=transform.position;
+            // The third-person rig aims at the body and orbits its Follow target, so pitch
+            // belongs on that target (PlayerCameraRoot) rather than the virtual camera.
+            orbit=thirdPerson?thirdPerson.GetComponent<CinemachineVirtualCamera>()?.Follow:null;if(orbit&&orbit.IsChildOf(transform))orbitBase=orbit.localRotation;else orbit=null;
             if(!cameraListener){CinemachineCore.CameraUpdatedEvent.AddListener(CameraUpdated);cameraListener=true;}
             foreach(var b in FindObjectsByType<Button>(FindObjectsInactive.Include,FindObjectsSortMode.None))
             {if(b.name=="PerspectiveSwitchBtn")b.onClick.AddListener(TogglePerspective);else if(b.name=="ViewResetBtn")b.onClick.AddListener(ResetView);else if(b.name=="JumpBtn")b.onClick.AddListener(Jump);}
@@ -77,7 +81,20 @@ namespace Sparc.Original
 #endif
         }
         public void TogglePerspective(){if(!firstPerson||!thirdPerson||(runtime&&runtime.HandoffStarted))return;bool next=!thirdPerson.activeSelf;thirdPerson.SetActive(next);firstPerson.SetActive(!next);ShowModel(next);}
-        public void ResetView(){if(runtime&&runtime.HandoffStarted)return;pitch=0;if(firstPerson)firstPerson.transform.localRotation=firstBase;if(thirdPerson)thirdPerson.transform.localRotation=thirdBase;}
+        public void ResetView(){if(runtime&&runtime.HandoffStarted)return;pitch=0;ApplyPitch();}
+        void ApplyPitch()
+        {
+            if(firstPerson)firstPerson.transform.localRotation=firstBase*Quaternion.Euler(pitch,0,0);
+            if(orbit)orbit.localRotation=orbitBase*Quaternion.Euler(Mathf.Clamp(pitch,-40,55),0,0);
+        }
+        void Look(Vector2 delta){pendingYaw+=delta.x;pitch=Mathf.Clamp(pitch-delta.y,-70,75);ApplyPitch();}
+        /// <summary>Left-drag on the world (never on a card or button) looks around, which a
+        /// laptop trackpad can do; right-drag and Tab capture keep working as before.</summary>
+        bool WorldPointer(Vector2 position)
+        {
+            if(EventSystem.current&&EventSystem.current.IsPointerOverGameObject())return false;
+            return !runtime||!runtime.presentation||!runtime.presentation.PointerOverInterface(position);
+        }
         public void ShowModel(bool show)
         {
             modelRequested=show;
@@ -94,7 +111,36 @@ namespace Sparc.Original
             // the avatar. Keep the rig active; hide only its render layer until clear.
             if(modelRequested&&(!runtime||!runtime.activityUi||!runtime.activityUi.IsTaskPanelOpen)&&!CameraNearBody(camera.transform.position))camera.cullingMask|=1<<layer;
             else camera.cullingMask&=~(1<<layer);
+            Clearance(camera);
         }
+        /// <summary>Characters and drifting cells that enter the lens, or stand between the
+        /// third-person camera and the explorer, stop rendering until they move clear.</summary>
+        void Clearance(Camera camera)
+        {
+            // Authored cinematics frame their own close-ups; only the explorer's rigs are cleared.
+            if(!runtime||!runtime.Started||runtime.CinematicActive||runtime.HandoffStarted){RestoreClearance();return;}
+            if(Time.unscaledTime>clearanceScan)
+            {
+                clearanceScan=Time.unscaledTime+2;clearanceCandidates.Clear();
+                foreach(var r in FindObjectsByType<Renderer>(FindObjectsSortMode.None))
+                    if((r is SkinnedMeshRenderer||r is MeshRenderer)&&r.gameObject.scene==gameObject.scene&&!r.transform.IsChildOf(transform)&&!r.isPartOfStaticBatch&&r.bounds.size.magnitude<10
+                        &&!r.GetComponentInParent<Canvas>()&&(r.GetComponentInParent<Animator>()||r.GetComponentInParent<OriginalCrowdActor>()||r.GetComponentInParent<UnityEngine.AI.NavMeshAgent>()))clearanceCandidates.Add(r);
+            }
+            var eye=camera.transform.position;var head=orbit?orbit.position:transform.position+Vector3.up*1.5f;
+            var toHead=head-eye;float span=toHead.magnitude;var ray=new Ray(eye,span>.001f?toHead/span:camera.transform.forward);bool third=ThirdPerson;
+            foreach(var r in clearanceCandidates)
+            {
+                // Never clear anything enclosing the explorer itself (an animated set piece).
+                // Hysteresis: a hidden character returns only once clearly away, so one hovering
+                // at the threshold does not blink in and out.
+                if(!r)continue;var bounds=r.bounds;bool hidden=clearanceHidden.Contains(r),encloses=bounds.Contains(transform.position);
+                bool block=!encloses&&bounds.SqrDistance(eye)<(hidden?.81f:.36f);
+                if(!block&&third&&span>.5f&&!encloses){var inner=bounds;inner.Expand(hidden?-.05f:-.25f);block=inner.size.x>0&&inner.IntersectRay(ray,out var hit)&&hit<span-(hidden?.2f:.35f);}
+                if(block){if(clearanceHidden.Add(r))r.forceRenderingOff=true;}
+                else if(clearanceHidden.Remove(r))r.forceRenderingOff=false;
+            }
+        }
+        void RestoreClearance(){foreach(var r in clearanceHidden)if(r)r.forceRenderingOff=false;clearanceHidden.Clear();}
         bool CameraNearBody(Vector3 position)
         {
             if(!capsule)return false;
@@ -129,21 +175,21 @@ namespace Sparc.Original
                 if(k.vKey.wasPressedThisFrame)TogglePerspective();if(k.spaceKey.wasPressedThisFrame)Jump();
             }
             if(available&&Gamepad.current!=null){movement+=Gamepad.current.leftStick.ReadValue();if(Gamepad.current.buttonSouth.wasPressedThisFrame)Jump();}
-            bool look=m!=null&&m.rightButton.isPressed;
+            if(m!=null&&m.leftButton.wasPressedThisFrame)dragLook=available&&!OriginalHudLayout.HasTouch&&WorldPointer(m.position.ReadValue());
+            if(m==null||!m.leftButton.isPressed||!available)dragLook=false;
+            bool look=m!=null&&(m.rightButton.isPressed||dragLook);
 #if UNITY_WEBGL && !UNITY_EDITOR
             look|=SPARC_BrowserPointer()!=0;
 #else
             look|=Cursor.lockState==CursorLockMode.Locked;
 #endif
-            if(available&&look&&m!=null)
+            if(available&&look&&m!=null)Look(m.delta.ReadValue()*source.Number("keyboardLookSpeed",1.15f)*0.12f);
+            if(available&&k!=null)
             {
-                var delta=m.delta.ReadValue()*source.Number("keyboardLookSpeed",1.15f)*0.12f;
-                pendingYaw+=delta.x;pitch=Mathf.Clamp(pitch-delta.y,-70,75);
-                if(firstPerson)firstPerson.transform.localRotation=firstBase*Quaternion.Euler(pitch,0,0);
-                if(thirdPerson)thirdPerson.transform.localRotation=thirdBase*Quaternion.Euler(pitch,0,0);
+                var keys=new Vector2((k.rightArrowKey.isPressed?1:0)-(k.leftArrowKey.isPressed?1:0),(k.upArrowKey.isPressed?1:0)-(k.downArrowKey.isPressed?1:0));
+                if(keys.sqrMagnitude>0)Look(new Vector2(keys.x*110,keys.y*70)*Mathf.Min(Time.unscaledDeltaTime,.05f)); // a hitch must not spin the view
             }
-            if(available&&TouchLook.sqrMagnitude>0)
-            {var delta=TouchLook;pendingYaw+=delta.x;pitch=Mathf.Clamp(pitch-delta.y,-70,75);if(firstPerson)firstPerson.transform.localRotation=firstBase*Quaternion.Euler(pitch,0,0);if(thirdPerson)thirdPerson.transform.localRotation=thirdBase*Quaternion.Euler(pitch,0,0);}
+            if(available&&TouchLook.sqrMagnitude>0)Look(TouchLook);
             TouchLook=Vector2.zero;
             movement=Vector2.ClampMagnitude(movement,1);
             float travelled=Vector3.Distance(previous,transform.position);if(travelled<2)DistanceTravelled+=travelled;previous=transform.position;
@@ -169,10 +215,10 @@ namespace Sparc.Original
         void OnCollisionStay(Collision contact){if(contact.contacts.Any(c=>c.normal.y>0.5f))groundedAt=Time.time;}
         void OnApplicationFocus(bool focus){if(!focus)ReleaseTouchInput();}
         void OnApplicationPause(bool paused){if(paused)ReleaseTouchInput();}
-        void OnDestroy(){if(cameraListener)CinemachineCore.CameraUpdatedEvent.RemoveListener(CameraUpdated);}
+        void OnDestroy(){if(cameraListener)CinemachineCore.CameraUpdatedEvent.RemoveListener(CameraUpdated);RestoreClearance();}
         void OnDisable()
         {
-            ReleaseTouchInput();crowdVelocity=Vector3.zero;if(animator)animator.SetBool("IsWalking",false);
+            ReleaseTouchInput();RestoreClearance();crowdVelocity=Vector3.zero;if(animator)animator.SetBool("IsWalking",false);
 #if UNITY_WEBGL && !UNITY_EDITOR
             SPARC_BrowserGameplay(0);
 #endif

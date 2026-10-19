@@ -46,7 +46,10 @@ namespace Sparc.Original
         public bool CompletionVisible=>runtime&&runtime.HandoffCompleted&&!runtime.ShuttingDown;
         void PresentationViewport(out float scale,out Rect safe)
         {
-            scale=OriginalHudLayout.HasTouch?OriginalMobileControls.PixelScale:Mathf.Clamp(Mathf.Min(Screen.width/1440f,Screen.height/900f),1f,1.35f);safe=new Rect(0,0,Screen.width,Screen.height);
+            // Desktop cards are sized in CSS pixels, then fitted to the window. Device pixels
+            // alone made laptop cards shrink on high-DPI screens and overflow short windows.
+            float density=OriginalMobileControls.PixelScale;
+            scale=OriginalHudLayout.HasTouch?density:density*Mathf.Clamp(Mathf.Min(Screen.width/density/1280f,Screen.height/density/760f),.82f,1.2f);safe=new Rect(0,0,Screen.width,Screen.height);
             if(OriginalHudLayout.HasTouch){var mobile=runtime?runtime.GetComponent<OriginalMobileControls>():null;var candidate=mobile?mobile.SafeScreenRect:Screen.safeArea;if(candidate.width>1&&candidate.height>1)safe=candidate;}
         }
         Rect CompletionViewportRect(bool replay)
@@ -57,6 +60,16 @@ namespace Sparc.Original
         public Rect CompletionCardViewportRect=>CompletionViewportRect(false);
         public Rect CompletionReplayViewportRect=>CompletionViewportRect(true);
         public void Advance(){advance=true;}
+        readonly System.Collections.Generic.List<Rect> interfaceRects=new();
+        /// <summary>True when a screen point (bottom-left origin) is over a card drawn last frame.
+        /// World drag-to-look starts only outside these cards.</summary>
+        public bool PointerOverInterface(Vector2 screen)
+        {var point=new Vector2(screen.x,Screen.height-screen.y);foreach(var r in interfaceRects)if(r.Contains(point))return true;return false;}
+        void Interface(Rect r)
+        {
+            if(Event.current.type!=EventType.Repaint)return;
+            Vector2 a=GUI.matrix.MultiplyPoint3x4(r.min),b=GUI.matrix.MultiplyPoint3x4(r.max);interfaceRects.Add(Rect.MinMaxRect(Mathf.Min(a.x,b.x),Mathf.Min(a.y,b.y),Mathf.Max(a.x,b.x),Mathf.Max(a.y,b.y)));
+        }
         public IEnumerator Say(OriginalBehaviour source)
         {
             while(IsSpeaking)yield return null;
@@ -117,6 +130,11 @@ namespace Sparc.Original
         {var texture=new Texture2D(1,1,TextureFormat.RGBA32,false){name=name};texture.SetPixel(0,0,color);texture.Apply(false,true);return texture;}
         static void Stroke(Vector2 a,Vector2 b,Color color,float width=1)
         {
+            if(Mathf.Abs(b.y-a.y)<=2.5f||Mathf.Abs(b.x-a.x)<=2.5f)
+            {
+                bool horizontal=Mathf.Abs(b.x-a.x)>=Mathf.Abs(b.y-a.y);float y=Mathf.Round((a.y+b.y)/2),x=Mathf.Round((a.x+b.x)/2);
+                Fill(horizontal?new Rect(Mathf.Min(a.x,b.x),y-width/2,Mathf.Abs(b.x-a.x),width):new Rect(x-width/2,Mathf.Min(a.y,b.y),width,Mathf.Abs(b.y-a.y)),color);return;
+            }
             var saved=GUI.matrix;var tint=GUI.color;GUI.color=color;
             // Compose in local GUI coordinates so a high-DPI parent matrix does
             // not apply the rotation pivot's scale twice.
@@ -134,7 +152,7 @@ namespace Sparc.Original
         }
         void Paper(Rect r,bool accent=false)
         {
-            Fill(new Rect(r.x+5,r.y+7,r.width,r.height),new Color(0.10f,0.15f,0.15f,0.17f));
+            Interface(r);Fill(new Rect(r.x+5,r.y+7,r.width,r.height),new Color(0.10f,0.15f,0.15f,0.17f));
             GUI.Box(r,GUIContent.none,panelStyle);
             Stroke(new Vector2(r.x,r.y+1),new Vector2(r.xMax-1,r.y),Ink,1.3f);
             Stroke(new Vector2(r.xMax-1,r.y),new Vector2(r.xMax,r.yMax),Ink,1.2f);
@@ -192,7 +210,7 @@ namespace Sparc.Original
                 float top=Mathf.Clamp(h/2+8,card.y+114,card.yMax-92);
                 if(height>290)GUI.Label(new Rect(left,card.y+112,inner,48),"Meet Red and White. Learn by playing.",hintStyle);
                 if(Button(new Rect(left,top,inner,56),"Start exploring","play"))runtime.Begin();
-                GUI.Label(new Rect(left,top+69,inner,height>290?52:28),touch?(height>290?"Left stick: move / Right swipe: look\nTap Jump / Use Talk when nearby":"Left stick: move / Right swipe: look"):(height>290?"WASD move / Right-drag look\nSPACE jump / E talk / V view":"WASD move / Right-drag look / E talk"),hintStyle);
+                GUI.Label(new Rect(left,top+69,inner,height>290?52:28),touch?(height>290?"Left stick: move / Right swipe: look\nTap Jump / Use Talk when nearby":"Left stick: move / Right swipe: look"):(height>290?"WASD move / Drag or arrows look\nSPACE jump / E talk / V view":"WASD move / Drag to look / E talk"),hintStyle);
             }
             else
             {
@@ -206,7 +224,7 @@ namespace Sparc.Original
                 float top=h/2+8;if(Button(new Rect(left,top,inner,60),"Start exploring","play"))runtime.Begin();
                 float third=inner/3;
                 ControlHint(new Rect(left,top+85,third,54),"move",touch?"Left stick":"WASD","Move");
-                ControlHint(new Rect(left+third,top+85,third,54),"look",touch?"Right swipe":"Right-drag","Look around");
+                ControlHint(new Rect(left+third,top+85,third,54),"look",touch?"Right swipe":"Drag / arrows","Look around");
                 ControlHint(new Rect(left+third*2,top+85,third,54),"camera",touch?"View button":"V","Change view");
                 GUI.Label(new Rect(left,card.yMax-38,inner,26),touch?"Tap Jump / Use Talk when nearby":"SPACE jump / E talk / ENTER start",kickerStyle);
             }
@@ -217,7 +235,7 @@ namespace Sparc.Original
             float fullHeight=textStyle.CalcHeight(new GUIContent(Line??""),textWidth);
             float availableHeight=Mathf.Max(180,h-32),minimumHeight=Mathf.Min(compact?246:220,availableHeight);
             float height=Mathf.Clamp(fullHeight+186,minimumHeight,Mathf.Min(availableHeight,Mathf.Max(minimumHeight,h*0.64f)));
-            var card=new Rect((w-width)/2,h-height-16,width,height);Paper(card,true);
+            var card=new Rect((w-width)/2,h-height-20,width,height);Paper(card,true);
             Icon(new Rect(card.x+padding,card.y+22,34,34),Speaker is "WhiteBloodCell" or "White Blood Cell"?"shield":"chat",Accent);
             GUI.Label(new Rect(card.x+padding+48,card.y+14,card.width-padding*2-48,34),DisplaySpeaker(Speaker),titleStyle);
             GUI.Label(new Rect(card.x+padding+48,card.y+48,card.width-padding*2-48,23),"CONVERSATION",kickerStyle);
@@ -240,6 +258,7 @@ namespace Sparc.Original
         }
         void OnGUI()
         {
+            if(Event.current.type==EventType.Repaint)interfaceRects.Clear();
             if(!runtime||runtime.ShuttingDown)return;var menu=runtime.GetComponent<OriginalMenuUi>();if(menu&&menu.IsOpen&&!runtime.HandoffStarted)return;Styles();
             // Small viewports keep readable type and touch targets; narrow cards reflow.
             PresentationViewport(out var scale,out var safe);var old=GUI.matrix;GUI.matrix=Matrix4x4.TRS(new Vector3(safe.xMin,Screen.height-safe.yMax,0),Quaternion.identity,Vector3.one*scale);float w=safe.width/scale,h=safe.height/scale;
@@ -253,7 +272,9 @@ namespace Sparc.Original
             else if(IsSpeaking)DialogueCard(w,h);
             else if(runtime.player&&runtime.player.CanControl&&!runtime.CinematicActive&&runtime.NearestTalk&&!runtime.activities.IsOpen&&(!runtime.interaction||!runtime.interaction.HasMenuFor(runtime.NearestTalk)))
             {
-                float width=Mathf.Min(418,w-32);var card=new Rect((w-width)/2,h-110,width,82);Paper(card);
+                // Stack above a visible activity launcher instead of covering it.
+                float lift=runtime.activityUi&&runtime.activityUi.LauncherVisible?((OriginalHudLayout.HasTouch?180:OriginalActivityUi.LauncherBottom)+OriginalActivityUi.LauncherHeight+12)*OriginalMobileControls.PixelScale/scale-28:0;
+                float width=Mathf.Min(418,w-32);var card=new Rect((w-width)/2,h-110-Mathf.Max(0,lift),width,82);Paper(card);
                 if(Button(new Rect(card.x+10,card.y+10,card.width-20,62),"Talk to "+TalkName()+(OriginalHudLayout.HasTouch?"":"  /  E"),"talk"))runtime.Call(runtime.NearestTalk,"StartTalk",null);
             }
             if(showDiagnostics&&!runtime.HandoffStarted)

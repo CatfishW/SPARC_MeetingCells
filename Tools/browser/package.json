@@ -1,0 +1,8 @@
+{
+  "name": "sparc-meetingcells-browser-acceptance",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Local-only WebGL acceptance in an isolated browser profile; never uses real account credentials.",
+  "scripts": { "test": "node webgl-smoke.cjs" },
+  "devDependencies": { "playwright": "1.64.1" }
+}

@@ -29,6 +29,11 @@ namespace Sparc.Original
         readonly Dictionary<int,Vector2> cuePositions = new();
         readonly Dictionary<int,float> cueRestingY = new();
         readonly List<Texture2D> textures = new();
+        // Each native graphic is styled once. Re-applying the whole skin on a timer fought the
+        // HUD, launcher, interaction and menu owners (alternating colour, sprite and margins)
+        // and rebuilt every path string, which read as flickering text and periodic hitches.
+        readonly HashSet<int> styled = new(),styledButtons = new(),styledShadows = new(),styledFields = new();
+        readonly List<TMP_Text> teachingCues = new(),sceneSubtitles = new();
         readonly List<Sprite> sprites = new();
         TMP_FontAsset font; Material fontMaterial,subtitleMaterial; Font legacyFont;
         Sprite panel,primary,tile,drop,line;
@@ -108,24 +113,36 @@ namespace Sparc.Original
         {
             Initialize();
             var all=FindObjectsByType<Graphic>(FindObjectsInactive.Include,FindObjectsSortMode.None)
-                .Where(g=>g.gameObject.scene==gameObject.scene).ToArray();
+                .Where(g=>g.gameObject.scene==gameObject.scene&&!styled.Contains(g.GetInstanceID())).ToArray();
             foreach(var g in all){OriginalTexture(g);if(!sourceColors.ContainsKey(g.GetInstanceID()))sourceColors[g.GetInstanceID()]=g.color;}
-            foreach(var effect in FindObjectsByType<Shadow>(FindObjectsInactive.Include,FindObjectsSortMode.None)
-                .Where(e=>e.gameObject.scene==gameObject.scene&&(!IsOriginalMiniGame(e.transform)||e.GetComponent<TMP_Text>()||e.GetComponent<Text>())))effect.enabled=false;
-            foreach(var button in FindObjectsByType<Button>(FindObjectsInactive.Include,FindObjectsSortMode.None).Where(b=>b.gameObject.scene==gameObject.scene))StyleButton(button);
+            foreach(var effect in FindObjectsByType<Shadow>(FindObjectsInactive.Include,FindObjectsSortMode.None))
+                if(effect.gameObject.scene==gameObject.scene&&styledShadows.Add(effect.GetInstanceID())&&(!IsOriginalMiniGame(effect.transform)||effect.GetComponent<TMP_Text>()||effect.GetComponent<Text>()))effect.enabled=false;
+            foreach(var button in FindObjectsByType<Button>(FindObjectsInactive.Include,FindObjectsSortMode.None))
+                if(button.gameObject.scene==gameObject.scene&&styledButtons.Add(button.GetInstanceID()))StyleButton(button);
             foreach(var g in all)
             {
+                if(!g)continue;
                 if(g is TMP_Text tmp)StyleText(tmp);
                 else if(g is Text text)StyleLegacyText(text);
                 else if(g is Image image)StyleImage(image);
                 else if(g is RawImage raw)StyleRaw(raw);
                 else Mark(g,"native graphic / ink palette");
+                styled.Add(g.GetInstanceID());
             }
             StyleWorldMarkers();
-            foreach(var field in FindObjectsByType<TMP_InputField>(FindObjectsInactive.Include,FindObjectsSortMode.None).Where(f=>f.gameObject.scene==gameObject.scene))
-            {field.customCaretColor=true;field.caretColor=Ink;field.selectionColor=new Color(Teal.r,Teal.g,Teal.b,.22f);if(field.placeholder is TMP_Text placeholder){placeholder.color=Muted;placeholder.fontStyle=FontStyles.Italic;}}
-            foreach(var field in FindObjectsByType<InputField>(FindObjectsInactive.Include,FindObjectsSortMode.None).Where(f=>f.gameObject.scene==gameObject.scene))
-            {field.customCaretColor=true;field.caretColor=Ink;field.selectionColor=new Color(Teal.r,Teal.g,Teal.b,.22f);}
+            foreach(var field in FindObjectsByType<TMP_InputField>(FindObjectsInactive.Include,FindObjectsSortMode.None))
+                if(field.gameObject.scene==gameObject.scene&&styledFields.Add(field.GetInstanceID()))
+                {field.customCaretColor=true;field.caretColor=Ink;field.selectionColor=new Color(Teal.r,Teal.g,Teal.b,.22f);if(field.placeholder is TMP_Text placeholder){placeholder.color=Muted;placeholder.fontStyle=FontStyles.Italic;}}
+            foreach(var field in FindObjectsByType<InputField>(FindObjectsInactive.Include,FindObjectsSortMode.None))
+                if(field.gameObject.scene==gameObject.scene&&styledFields.Add(field.GetInstanceID()))
+                {field.customCaretColor=true;field.caretColor=Ink;field.selectionColor=new Color(Teal.r,Teal.g,Teal.b,.22f);}
+        }
+        /// <summary>Captions animate under their Timelines; follow them every frame so the
+        /// safe-area fit never lags the authored motion or the typewriter text.</summary>
+        void LayoutCaptions()
+        {
+            foreach(var text in teachingCues)if(text&&text.isActiveAndEnabled)LayoutTeachingCue(text);
+            foreach(var text in sceneSubtitles)if(text&&text.isActiveAndEnabled)LayoutSceneSubtitle(text);
         }
         public static string Semantic(Transform target)
         {
@@ -246,7 +263,8 @@ namespace Sparc.Original
                 text.color=KeepOpacity(text,Paper);
                 if(subtitleMaterial&&text.fontSharedMaterial!=subtitleMaterial)
                 {text.fontSharedMaterial=subtitleMaterial;text.extraPadding=true;text.UpdateMeshPadding();}
-                if(teaching)LayoutTeachingCue(text);else LayoutSceneSubtitle(text);
+                if(teaching){if(!teachingCues.Contains(text))teachingCues.Add(text);LayoutTeachingCue(text);}
+                else{if(!sceneSubtitles.Contains(text))sceneSubtitles.Add(text);LayoutSceneSubtitle(text);}
             }
             Mark(text,inButton?"redesigned button typography":"redesigned clean typography");
         }
@@ -432,7 +450,7 @@ namespace Sparc.Original
                 badge.AddComponent<OriginalUiWorldBadge>();
             }
         }
-        void LateUpdate(){if(Time.unscaledTime>=next){next=Time.unscaledTime+.3f;Refresh();}}
+        void LateUpdate(){if(Time.unscaledTime>=next){next=Time.unscaledTime+.5f;Refresh();}LayoutCaptions();}
         public void Hint(string label,RectTransform anchor)
         {
             hint=label;if(string.IsNullOrEmpty(label)||!anchor)return;

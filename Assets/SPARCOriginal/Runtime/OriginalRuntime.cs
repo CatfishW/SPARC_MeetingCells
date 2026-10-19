@@ -254,6 +254,8 @@ namespace Sparc.Original
             var receiver=target?target.GetComponents<OriginalBehaviour>().FirstOrDefault(c=>c.sourceType==command.Text("targetComponentText")):null;
             if(receiver)Call(receiver,method);else Missing("InvokeMethod-receiver:"+command.sourceId+":"+method);
         }
+        /// <summary>True when the story currently allows talking to this guide (it may be out of reach).</summary>
+        public bool TalkAvailable(OriginalBehaviour npc)=>npc&&npc.isActiveAndEnabled&&!forbiddenTalk.Contains(npc.GetInstanceID());
         public void Missing(string boundary)
         {if(Unhandled.Add(boundary))Debug.LogWarning("[OriginalScene boundary] "+boundary);}
         void Update()
@@ -262,12 +264,14 @@ namespace Sparc.Original
             if(!Started||!player)return;
             if(HandoffStarted){NearestTalk=null;return;}
             var menu=GetComponent<OriginalMenuUi>();if((menu&&menu.IsOpen)||activities.IsOpen||activities.IsWorksheetOpen||(activityUi&&activityUi.IsTaskPanelOpen)){NearestTalk=null;return;}
-            NearestTalk=null;float closest=100;
+            // Small hysteresis: crowd pushes at the range edge otherwise blink the Talk prompt.
+            var previous=nearestTalk;NearestTalk=null;float closest=100;
             foreach(var npc in OfType("NPC_Talk"))
             {
                 if(!npc.isActiveAndEnabled||npc.gameObject==player.gameObject||forbiddenTalk.Contains(npc.GetInstanceID()))continue;
                 var col=npc.GetComponents<Collider>().FirstOrDefault(c=>c.isTrigger);float d=col?Vector3.Distance(col.ClosestPoint(player.transform.position),player.transform.position):Vector3.Distance(npc.transform.position,player.transform.position);
-                if(d<Mathf.Max(1,player.InteractionRange)&&d<closest){closest=d;NearestTalk=npc;}
+                float range=Mathf.Max(1,player.InteractionRange)+(npc==previous?.4f:0);
+                if(d<range&&d<closest){closest=d;NearestTalk=npc;}
                 if(allowedFollow.TryGetValue(npc.GetInstanceID(),out bool follow)&&follow&&!TalkingOrCinematic())visuals.FollowNpc(npc,player.transform);
             }
             var target=objectives.ActiveTalk?.Object("NPCTalkTo");var objectiveNpc=target?target.GetComponents<OriginalBehaviour>().FirstOrDefault(c=>c.sourceType=="NPC_Talk"):null;
@@ -282,6 +286,8 @@ namespace Sparc.Original
             }
             if(NearestTalk&&player.CanControl&&!TalkingOrCinematic()&&Keyboard.current?.eKey.wasPressedThisFrame==true)
             {if(!interaction||!interaction.HasMenuFor(NearestTalk))Call(NearestTalk,"StartTalk");else interaction.TryTalk();}
+            // Q is the second verb on the interaction chips (Observe).
+            if(NearestTalk&&player.CanControl&&!TalkingOrCinematic()&&Keyboard.current?.qKey.wasPressedThisFrame==true&&interaction)interaction.TryObserve();
         }
         void ObserveHandoff(bool advance)
         {

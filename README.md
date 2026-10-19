@@ -26,6 +26,14 @@ Captured from the verified WebGL builds (see `Reports/OriginalScene/`).
 
 ![Settings](docs/screenshots/07-settings.png)
 
+### Interaction (laptop, 1280×620)
+
+Guides in reach get a white silhouette, a name label with a caret, and an ink line into brush-stroke choices (`E` Talk, `Q` Observe) tinted per character; guides in view but out of reach carry a quiet name tag and dot.
+
+| Red | White |
+|---|---|
+| ![Interaction with Red](docs/screenshots/16-interaction-red.png) | ![Interaction with White](docs/screenshots/17-interaction-white.png) |
+
 ### Activities
 
 | Oxygen Run | White-cell defence |
@@ -44,6 +52,20 @@ Captured from the verified WebGL builds (see `Reports/OriginalScene/`).
 
 ![Landscape mobile settings](docs/screenshots/13-mobile-landscape.png)
 
+## Desktop and laptop fixes (2026-10-19)
+
+- **Canvas scale.** Overlay canvases were rescaled with `1/parentScale`, which is only right when the CanvasScaler factor is 1 (the 1440×900 test profile). At other sizes, Unity's layout and the drawn pixels disagreed by the scale factor, pushing the minigame launcher off-screen on short laptop windows. `OriginalComponents.MatchOverlayScale` now matches the factor.
+- **Launcher.** The Play RBC/WBC button lives in its own CSS-pixel overlay, bottom-centre, and the Talk prompt stacks above it.
+- **Flicker.** The UI theme re-applied colours, sprites and margins to every graphic every 0.3 s, fighting the HUD, launcher, interaction and menu owners. It now styles each graphic once, and animated captions are fitted every frame. The objective button's spinning frame is held still.
+- **Look.** Left-drag on the scene (trackpad friendly) and the arrow keys look around. Third-person pitch orbits the camera through its Follow target, because the Composer overwrote rotations applied to the virtual camera itself.
+- **Camera clearance.** Characters that enter the lens, or stand between the third-person camera and the explorer, stop rendering until clear (with hysteresis).
+- **Desktop cards.** IMGUI dialogue/start cards are sized in CSS pixels and fitted to the window, with crisp axis-aligned rules.
+- **Standalone build.** The repo now carries the files Unity loads by path rather than by GUID: `BrowserPlatform.jslib`, the TMP shader includes and runtime resources, `MeetingCellsHighlight.shader`, `AppearanceCatalog.json`, the URP global settings, and folder metas.
+
+Checks: `Tools/browser/original-journey.cjs` passes the full route at `SPARC_VIEWPORT=1280x620 SPARC_DPR=2` (with `SPARC_STUB_AGENT=1` when no provider credentials are configured). `Tools/browser/desktop-look-check.cjs` covers drag, arrow and pitch look. `Tools/browser/flicker-probe.cjs` measures zero changed pixels in idle UI cards.
+
+Static hosting without `Content-Encoding` support: `python3 Tools/stage_static_release.py OUT_DIR` decompresses the release bundle and repoints `index.html`.
+
 ## Play locally
 
 ```sh
@@ -54,7 +76,7 @@ python3 Tools/serve_webgl.py --port 8092
 
 The default serves `Builds/WebGLOriginalRelease/` over HTTP with WebAssembly/gzip headers and video byte-range support. The compiled distribution is `Deliverables/OriginalScene/SPARC_MeetingCells_Original_WebGL.zip`; extract it and run `python3 serve-preview.py --port 8092`. `--development` explicitly selects the development bundle with a read-only acceptance observer. The release has no test telemetry.
 
-Desktop: WASD moves; right-drag looks; Space jumps or advances dialogue; E interacts nearby; V switches the original first/third-person cameras; Tab requests/releases browser pointer capture.
+Desktop: WASD moves; drag on the scene (left or right button, trackpad friendly) or the arrow keys look around in both first and third person; Space jumps or advances dialogue; E interacts nearby; V switches the original first/third-person cameras; Tab requests/releases browser pointer capture.
 
 Mobile: use the left thumbstick to move, swipe the right pad to look and tap Jump. Each pad owns its own finger. Dialogue and nearby interaction have touch actions. Native activity buttons and the original minigame joystick remain in use. Worksheet words support both drag/drop and tap-word, tap-blank; type into the original answer fields and use the original Next/Submit controls.
 
